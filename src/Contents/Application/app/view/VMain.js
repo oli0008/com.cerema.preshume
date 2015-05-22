@@ -63,6 +63,29 @@ App.view.define('VMain', {
 					items:[
 						{
 							xtype: "textfield",		//xtype création d'un obj GUI
+							itemId: "txtEtab",
+						//	flex: 1,				//Prend la totalité de la largeur
+							margin: {
+								left: 20,
+								bottom:20,
+								top:20
+							}
+						},
+						{
+							xtype: "button",		//xtype création d'un obj GUI
+							itemId: "clickme2",
+							text: "Etablissement",
+						/*	text: "OK", */
+							width: 100,
+							margin: {
+								left: 20,
+								top: 20,
+								bottom: 20,
+								right: 20
+							}
+						},
+						{
+							xtype: "textfield",		//xtype création d'un obj GUI
 							itemId: "text1",
 						//	flex: 1,				//Prend la totalité de la largeur
 							margin: {
@@ -83,7 +106,7 @@ App.view.define('VMain', {
 								bottom: 20,
 								right: 20
 							}
-						}					
+						}							
 					]
 				},
 				{	// 2em ligne
@@ -102,7 +125,7 @@ App.view.define('VMain', {
 						},
 						{
 							xtype: "button",		//xtype création d'un obj GUI
-							itemId: "clickme2",
+							itemId: "clickme3",
 							text: "Etablissement",
 							width: 100,
 							margin: {
