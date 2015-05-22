@@ -90,17 +90,22 @@ App.view.define('VMain', {
 					itemId: "grid1",
 					columns: [
 					{
-						text: "Nom",
-						dataIndex: "nom"
+						text: "Catégorie",
+						dataIndex: "categorie"
 					},
 					{
-						text: "Prénom",
-						dataIndex: "prenom"
+						text: "Sub total",
+						dataIndex: "subtotal"
+					},
+										{
+						text: "Unité",
+						dataIndex: "unite"
 					}
 					],
 					flex: 1,
 					width: "100%",
-					store: App.store.create("App.Agents.cherche")		//???
+			/*		store: App.store.create("App.Agents.cherche")	*/	//???
+					store: App.store.create("App.EffectifPhysique.cherche")	
 				}
 			]
 		}
