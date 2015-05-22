@@ -91,15 +91,15 @@ App.view.define('VMain', {
 					columns: [
 					{
 						text: "Catégorie",
-						dataIndex: "categorie"
+						dataIndex: "LibCgr"
 					},
 					{
 						text: "Sub total",
-						dataIndex: "subtotal"
+						dataIndex: "agentTotal"
 					},
 										{
 						text: "Unité",
-						dataIndex: "unite"
+						dataIndex: "LibUnic"
 					}
 					],
 					flex: 1,
