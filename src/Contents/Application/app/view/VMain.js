@@ -52,6 +52,7 @@ App.view.define('VMain', {
 			}
 			]		
 		},
+//*************************************************/
 		{
 			region: "center",			
 			split:true,
@@ -83,7 +84,8 @@ App.view.define('VMain', {
 							}
 						}					
 					]
-				},{
+				},
+				{
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "grid1",
 					columns: [
