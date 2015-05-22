@@ -4,10 +4,10 @@
 /* NOTE: la table agents représente les éffectifs à l'instant T. */
 
 
-/**************/
+
 select 
 	catgrad.LibCgr,
-	count(agents.kage), 
+	count(agents.kage) as agentTotal, 
 	unites.LibUnic 
 from 
 	agents 
