@@ -64,7 +64,7 @@ App.view.define('VMain', {
 						{
 							xtype: "textfield",		//xtype création d'un obj GUI
 							itemId: "text1",
-							flex: 1,				//???
+						//	flex: 1,				//???
 							margin: {
 								left: 20,
 								bottom:20,
