@@ -30,7 +30,7 @@ where
 	and
 	unites.archive = 0
 /*	and 
-	etablissements.Kets = 1	/* LibEtsC est NULL pour Kets = 6, Kets = 1 == DTerMed */
+	etablissements.Kets = 1	*/ /* LibEtsC est NULL pour Kets = 6, Kets = 1 == DTerMed */
 /*	and
 	unites.Kuni = 11 */ 	/*selecteur d'unité */
 	and
