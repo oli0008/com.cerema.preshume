@@ -102,8 +102,8 @@ App.view.define('VMain', {
 						},
 						{
 							xtype: "button",		//xtype création d'un obj GUI
-							itemId: "Etablissement",
-							text: "OK2",
+							itemId: "clickme2",
+							text: "Etablissement",
 							width: 100,
 							margin: {
 								left: 20,
