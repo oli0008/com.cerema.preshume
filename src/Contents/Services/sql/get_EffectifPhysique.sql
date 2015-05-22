@@ -31,9 +31,9 @@ where
 	and 
 	etablissements.Kets = 1	/* LibEtsC est NULL pour Kets = 6, Kets = 1 == DTerMed */
 	and
-	unites.Kuni = 11 */ 	/* selecteur d'unité */
+/*	unites.Kuni = 11 */ 	/* selecteur d'unité */
 	
-/*	unites.Kuni = 	{RECHERCHE}	*/
+	unites.Kuni = 	{RECHERCHE}	
 	
 group by 
 	unites.LibUnic,
