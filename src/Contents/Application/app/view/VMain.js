@@ -61,7 +61,7 @@ App.view.define('VMain', {
 					layout: "hbox",
 					border: false,
 					items:[
-						{
+						{	//test git update
 							xtype: "textfield",		//xtype création d'un obj GUI
 							itemId: "txtEtab",
 						//	flex: 1,				//Prend la totalité de la largeur
