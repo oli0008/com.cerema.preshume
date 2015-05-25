@@ -29,22 +29,21 @@ App.view.define('VMain', {
 					//mnu niveau 2
 					text: "Future",
 					itemId: "mnuFuture"
-				}
-					
+				}	
 				]
 			}
 			]		
 		},
-/* *********************************************** */
+//************************************************ CENTER
 		{
 			region: "center",			
 			split:true,
 			items: [
 				{	// 1er ligne
 					layout: "hbox",
-					border: false,
+					border: true,	//false,
 					items:[
-						{	//test git update
+						{	
 							xtype: "textfield",		//xtype création d'un obj GUI
 							itemId: "txtEtab",
 						//	flex: 1,				//Prend la totalité de la largeur
