@@ -131,7 +131,7 @@ App.view.define('VMain', {
 				},			
 			
 //************************************************** ligne 1 *************************
-				{	// 1er ligne
+/*				{	// 1er ligne
 					layout: "hbox",
 					border: true,	//false,
 					items:[
@@ -149,7 +149,7 @@ App.view.define('VMain', {
 							xtype: "button",		//xtype création d'un obj GUI
 							itemId: "clickme2",
 							text: "Etablissement333",
-						/*	text: "OK", */
+
 							width: 100,
 							margin: {
 								left: 20,
@@ -172,7 +172,7 @@ App.view.define('VMain', {
 							xtype: "button",		//xtype création d'un obj GUI
 							itemId: "clickme",
 							text: "Unité333",
-						/*	text: "OK", */
+
 							width: 100,
 							margin: {
 								left: 20,
@@ -183,6 +183,7 @@ App.view.define('VMain', {
 						}							
 					]
 				},
+*/
 //************************************************** ligne 1 *************************
 				{	// 2em ligne
 					layout: "hbox",
