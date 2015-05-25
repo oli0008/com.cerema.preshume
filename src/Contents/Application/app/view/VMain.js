@@ -42,6 +42,7 @@ App.view.define('VMain', {
 				{	// 1er ligne
 					layout: "hbox",
 					border: true,	//false,
+					width: "100%",
 					items:[
 					{
 						xtype: "combo",
@@ -51,7 +52,7 @@ App.view.define('VMain', {
 								left:10
 								
 							},
-						fieldLabel: "Nom--Etablissement",
+						fieldLabel: "Etablissement",
 						allowBlank: false,
 						editable: false,
 						labelAlign: "top",
