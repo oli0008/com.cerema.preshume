@@ -43,6 +43,30 @@ App.view.define('VMain', {
 					layout: "hbox",
 					border: true,	//false,
 					items:[
+					{
+						xtype: "combo",
+						itemId: "cboEtablis",
+						margin: {
+								top: 10,
+								left:10
+								
+							},
+						fieldLabel: "Nom--Etablissement",
+						allowBlank: false,
+						editable: false,
+						labelAlign: "top",
+						labelWidth: 200,
+						width: 200,
+/* 						 displayField: "NomSource",
+						valueField: "IdSource",
+						
+						store: App.store.create('MNomSource', // Creation du store
+												{
+													autoLoad: true
+												})  */
+						
+					},
+					//*************************
 						{	
 							xtype: "textfield",		//xtype création d'un obj GUI
 							itemId: "txtEtab",
