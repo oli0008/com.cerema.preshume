@@ -18,37 +18,20 @@ App.view.define('VMain', {
 			menu: [
 			{
 				//mnu niveau 1
-				text: "Fichier",
+				text: "Effectifs",
 				menu: [
 				{
 					//mnu niveau 2
-					text: "Nouveau",
-					itemId: "MNU_NEW"
+					text: "Présent",
+					itemId: "mnuPresent"
 				},
 				{
 					//mnu niveau 2
-					text: "Edition",
-					menu: [
-					{
-						//mnu niveau 3
-						text: "Couper",
-						itemId: "MNU_CUT"
-					},
-					{
-						//mnu niveau 3
-						text: "Coller"
-					}
-					]
+					text: "Future",
+					itemId: "mnuFuture"
 				}
+					
 				]
-			},
-			{
-				//mnu niveau 1
-				text: "Edition"
-			},
-			{
-				//mnu niveau 1
-				text: "Affichage"
 			}
 			]		
 		},
