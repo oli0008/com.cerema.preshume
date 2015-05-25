@@ -218,7 +218,9 @@ App.view.define('VMain', {
 */				
 //************************************************** ligne 2e *************************				
 				{	//grid1_s
-
+					layout: "hbox",
+					border: true,
+					items:[
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "grid1",
 					columns: [
@@ -262,6 +264,7 @@ App.view.define('VMain', {
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
 				}	//grid2_e
+				]
 			]
 		},
 		//********************** SOUTH ***************************	
