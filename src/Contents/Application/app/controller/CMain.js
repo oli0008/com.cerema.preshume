@@ -26,9 +26,9 @@ App.controller.define('CMain', {
 	{
 		if (p.itemId) {
 			if (p.itemId=="mnuPresent") 
-				alert('clic sur mnuPresent');
+				alert('clic sur mnuPresent -- TODO');
 			else if (p.itemId=="mnuFuture") 
-				alert('clic sur mnuFuture');
+				alert('clic sur mnuFuture -- TODO');
 		};			
 	},
 	clickme_onclick: function()
