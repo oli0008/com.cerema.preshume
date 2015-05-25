@@ -234,7 +234,7 @@ App.view.define('VMain', {
 						dataIndex: "LibUnic"
 					}
 					],
-					flex: 1,
+				//	flex: 1,
 					width: "100%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
@@ -256,7 +256,7 @@ App.view.define('VMain', {
 						dataIndex: "LibUnic"
 					}
 					],
-					flex: 1,
+				//	flex: 1,
 					width: "100%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
