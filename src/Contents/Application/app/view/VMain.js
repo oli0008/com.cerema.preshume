@@ -218,6 +218,7 @@ App.view.define('VMain', {
 */				
 //************************************************** ligne 2e *************************				
 				{
+
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "grid1",
 					columns: [
