@@ -240,7 +240,55 @@ App.view.define('VMain', {
 					store: App.store.create("App.EffectifPhysique.cherche")	
 				}
 			]
-		}
+		},
+		//********************** SOUTH ***************************	
+
+
+
+		
+		{
+			region: "south",			
+			split:true,
+			items: [
+				{
+					xtype: "button",
+					itemId: "btnSouth",		//id
+					text: "region south",	//caption
+					margin: 20,
+					
+					
+				}
+			]
+		},
+//********************** EAST ***************************	
+		{
+			region: "east",			
+			split:true,
+			items: [
+				{
+					xtype: "button",
+					itemId: "btnEast",		//id
+					text: "region east",	//caption
+					margin: 20,
+					
+				}
+			]
+		},
+		
+//********************** WEST ***************************	
+		{
+			region: "west",			
+			split:true,
+			items: [
+				{
+					xtype: "button",
+					itemId: "btnWest",		//id
+					text: "region west",	//caption
+					margin: 20,
+					
+				}
+			]
+		},
 	]
 	
 });
