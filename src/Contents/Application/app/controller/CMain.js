@@ -25,7 +25,10 @@ App.controller.define('CMain', {
 	Menu_onClick: function(p)
 	{
 		if (p.itemId) {
-			if (p.itemId=="mnuPresent") alert('clic sur mnuPresent');
+			if (p.itemId=="mnuPresent") 
+				alert('clic sur mnuPresent');
+			else if (p.itemId=="mnuFuture") 
+				alert('clic sur mnuFuture');
 		};			
 	},
 	clickme_onclick: function()
