@@ -221,6 +221,7 @@ App.view.define('VMain', {
 					layout: "hbox",
 					border: true,
 					items:[
+					{
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "grid1",
 					columns: [
