@@ -238,6 +238,28 @@ App.view.define('VMain', {
 					width: "100%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
+				},
+				{
+					xtype: "grid",			//xtype création d'un obj GUI
+					itemId: "grid2",
+					columns: [
+					{
+						text: "Catégorie2",
+						dataIndex: "LibCgr"
+					},
+					{
+						text: "Sub total2",
+						dataIndex: "agentTotal"
+					},
+										{
+						text: "Unité2",
+						dataIndex: "LibUnic"
+					}
+					],
+					flex: 1,
+					width: "100%",
+			/*		store: App.store.create("App.Agents.cherche")	*/	//???
+					store: App.store.create("App.EffectifPhysique.cherche")	
 				}
 			]
 		},
