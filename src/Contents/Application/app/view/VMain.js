@@ -217,7 +217,7 @@ App.view.define('VMain', {
 				},	
 */				
 //************************************************** ligne 2e *************************				
-				{
+				{	//grid1_s
 
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "grid1",
@@ -239,8 +239,8 @@ App.view.define('VMain', {
 					width: "100%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
-				},
-				{
+				},	//grid1_e
+				{	//grid2_s
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "grid2",
 					columns: [
@@ -261,7 +261,7 @@ App.view.define('VMain', {
 					width: "100%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
-				}
+				}	//grid2_e
 			]
 		},
 		//********************** SOUTH ***************************	
