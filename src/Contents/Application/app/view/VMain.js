@@ -302,7 +302,7 @@ App.view.define('VMain', {
 					columns: [
 					{
 						text: "Unité",
-						dataIndex: "LibUni"
+						dataIndex: "LibUni1"
 					},					
 					{
 						text: "Total",
