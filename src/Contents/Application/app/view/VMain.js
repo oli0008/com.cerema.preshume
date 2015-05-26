@@ -53,7 +53,7 @@ App.view.define('VMain', {
 								left:10	
 							},
 						fieldLabel: "Etablissement",
-						allowBlank: false,
+					//	allowBlank: false,
 						editable: false,
 						labelAlign: "top",
 						labelWidth: 200,
