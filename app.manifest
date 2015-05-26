@@ -58,6 +58,7 @@
     "api": [
         "Agents",
         "EffectifPhysique",
+        "EffectifPhysique",
         "MyService"
     ],
     "db": [
