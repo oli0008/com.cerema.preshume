@@ -252,16 +252,8 @@ App.view.define('VMain', {
 					itemId: "gridGrandTotalpresent",
 					columns: [
 					{
-						text: "Catégorie_GT",
-						dataIndex: "LibCgr"
-					},
-					{
-						text: "Sub total_GT",
-						dataIndex: "agentTotal"
-					},
-										{
-						text: "Unité_GT",
-						dataIndex: "LibUnic"
+						text: "Total",
+						dataIndex: "GrandTotal"	//sum(CountAge) as GrandTotal
 					}
 					],
 					flex: 1,
