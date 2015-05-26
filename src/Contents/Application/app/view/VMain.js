@@ -211,7 +211,8 @@ App.view.define('VMain', {
 					]
 				},	
 */				
-//************************************************** ligne 2end *************************				
+//************************************************** ligne 2end *************************	
+//************************************ Layout final start *****************************			
 				{	//grid1_start
 					layout: "hbox",
 					border: true,
@@ -265,9 +266,63 @@ App.view.define('VMain', {
 				}	//grid2_end
 				]
 				}
+//************************************ Layout final start *****************************					
+				
 // *********** TEMP FIX START *******************************************	
-
-// *********** TEMP FIX END *******************************************			
+				{	//grid1_start
+					layout: "hbox",
+					border: true,
+					items:[
+					{
+							xtype: "grid",			//xtype création d'un obj GUI
+							itemId: "gridTotalsPresent",
+							columns: [
+							{
+							text: "A+",
+							dataIndex: "LibCgr"
+							},
+							{
+							text: "A",
+							dataIndex: "agentTotal"
+							},
+							{
+								text: "B",
+								dataIndex: "agentTotal"
+							},
+							{
+								text: "C",
+								dataIndex: "agentTotal"
+							},
+							{
+								text: "Exploitation",
+								dataIndex: "LibUnic"
+							}
+						],
+						flex: 1,
+					//	width: "100%",
+						width: "50%",
+				/*		store: App.store.create("App.Agents.cherche")	*/	//???
+						store: App.store.create("App.EffectifPhysique.cherche")	
+				},	//grid1_end
+				{	//grid2_start
+					xtype: "grid",			//xtype création d'un obj GUI
+					itemId: "gridGrandTotalpresent",
+					columns: [
+					{
+						text: "Total",
+						dataIndex: "GrandTotal"	//sum(CountAge) as GrandTotal
+					}
+					],
+					flex: 1,
+				//	width: "100%",
+					width: "50%",
+			/*		store: App.store.create("App.Agents.cherche")	*/	//???
+			//		store: App.store.create("App.EffectifPhysique.cherche")	
+					store: App.store.create("App.EffectifPhysique.cherche")	
+				}	//grid2_end
+				]
+				}
+// *********** TEMP FIX END *********************************************			
 			]	//CENTER 
 		},
 
