@@ -1,7 +1,7 @@
 Service={
 	get_Service: function(o,cb)
 	{
-		Service.using('db').model('bpclight','select nom,prenom,matri from agents',cb);
+		Service.using('db').model('bpclight','select kuni, LibSubc, LibSub from subdis where archive = 0',cb);
 	}
 };
 
