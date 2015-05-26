@@ -292,7 +292,7 @@ App.view.define('VMain', {
 							dataIndex: "agentTotal"
 							}
 						],
-				//		flex: 1,
+						flex: 1,
 				//		width: "100%",
 				//		width: "50%",
 				//		store: App.store.create("App.Agents.cherche")		//???
