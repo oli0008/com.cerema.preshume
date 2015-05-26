@@ -57,7 +57,7 @@ App.view.define('VMain', {
 						editable: false,
 						labelAlign: "top",
 						labelWidth: 200,
-						width: 230,
+						width: 330,
  						displayField: "LibEts",
 						valueField: "kets",
 						
