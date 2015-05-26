@@ -99,13 +99,13 @@ App.view.define('VMain', {
 						labelAlign: "top",
 						labelWidth: 200,
 						width: 200,
-/* 						 displayField: "NomSource",
-						valueField: "IdSource",
+ 						displayField: "NomSource",
+						valueField: "Ksub",
 						
 						store: App.store.create('MNomSource', 
 												{
 													autoLoad: true
-												})  // Creation du store	*/
+												})  // Creation du store	
 					},
 						//*************************
 						{
