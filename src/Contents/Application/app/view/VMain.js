@@ -75,7 +75,7 @@ App.view.define('VMain', {
 								left:10	
 							},
 						fieldLabel: "Unité",
-						allowBlank: false,
+					//	allowBlank: false,			//false = mandatory filling
 						editable: false,
 						labelAlign: "top",
 						labelWidth: 200,
