@@ -273,7 +273,7 @@ App.view.define('VMain', {
 // *********** TEMP FIX START *******************************************	
 				{	//grid1_start
 					layout: "hbox",
-					border: true,
+				//	border: true,
 					items:[
 					{
 							xtype: "grid",			//xtype création d'un obj GUI
