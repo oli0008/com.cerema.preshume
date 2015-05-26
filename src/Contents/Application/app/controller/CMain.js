@@ -41,6 +41,15 @@ App.controller.define('CMain', {
 		
 		/*
 			//combo logic here
+			// **************************************************************** 
+			Selection Logique des combos
+			E	U 	S 	
+			0	0	0	tous les établissements
+			1	0	0	par établissements
+			1	1	0	par unité
+			1	1 	1 	par service
+
+			// ****************************************************************
 		*/
 	},
 
