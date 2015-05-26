@@ -316,7 +316,7 @@ App.view.define('VMain', {
 					width: "50%",
 			//		store: App.store.create("App.Agents.cherche")		//???
 			//		store: App.store.create("App.EffectifPhysique.cherche")	
-					store: App.store.create("App.EffectifPhysique.cherche")	
+					store: App.store.create("App.GTotalEffectifPhysique.cherche")	
 				}	//grid2_end
 				]
 				}
