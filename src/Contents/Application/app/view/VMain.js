@@ -313,7 +313,7 @@ App.view.define('VMain', {
 					],
 				//	flex: 1,
 				//	width: "100%",
-				//	width: "50%",
+					width: "50%",
 			//		store: App.store.create("App.Agents.cherche")		//???
 			//		store: App.store.create("App.EffectifPhysique.cherche")	
 					store: App.store.create("App.EffectifPhysique.cherche")	
