@@ -218,18 +218,18 @@ App.view.define('VMain', {
 					items:[
 					{
 					xtype: "grid",			//xtype création d'un obj GUI
-					itemId: "grid1",
+					itemId: "grdTotalsPresent",
 					columns: [
 					{
-						text: "Catégorie",
+						text: "CatégorieX",
 						dataIndex: "LibCgr"
 					},
 					{
-						text: "Sub total",
+						text: "Sub totalX",
 						dataIndex: "agentTotal"
 					},
 										{
-						text: "Unité",
+						text: "UnitéX",
 						dataIndex: "LibUnic"
 					}
 					],
@@ -241,18 +241,18 @@ App.view.define('VMain', {
 				},	//grid1_e
 				{	//grid2_s
 					xtype: "grid",			//xtype création d'un obj GUI
-					itemId: "grid2",
+					itemId: "grdGrandTotalpresent",
 					columns: [
 					{
-						text: "Catégorie2",
+						text: "Catégorie_GT",
 						dataIndex: "LibCgr"
 					},
 					{
-						text: "Sub total2",
+						text: "Sub total_GT",
 						dataIndex: "agentTotal"
 					},
 										{
-						text: "Unité2",
+						text: "Unité_GT",
 						dataIndex: "LibUnic"
 					}
 					],
