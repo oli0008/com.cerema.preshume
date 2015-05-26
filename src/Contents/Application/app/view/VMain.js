@@ -80,7 +80,7 @@ App.view.define('VMain', {
 						labelAlign: "top",
 						labelWidth: 200,
 						width: 200,
- 						displayField: "LibUni",		//LibUnic
+ 						displayField: "LibUni",		//Alt use: LibUnic
 						valueField: "Kuni",
 						
 						store: App.store.create("App.Unite.get_Unite", // Creation du store
