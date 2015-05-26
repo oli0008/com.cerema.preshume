@@ -212,7 +212,7 @@ App.view.define('VMain', {
 				},	
 */				
 //************************************************** ligne 2e *************************				
-				{	//grid1_s
+				{	//grid1_start
 					layout: "hbox",
 					border: true,
 					items:[
@@ -246,8 +246,8 @@ App.view.define('VMain', {
 					width: "50%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
-				},	//grid1_e
-				{	//grid2_s
+				},	//grid1_end
+				{	//grid2_start
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "gridGrandTotalpresent",
 					columns: [
@@ -269,7 +269,7 @@ App.view.define('VMain', {
 					width: "50%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
 					store: App.store.create("App.EffectifPhysique.cherche")	
-				}	//grid2_e
+				}	//grid2_end
 				]
 				}
 			]
