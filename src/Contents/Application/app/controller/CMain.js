@@ -32,7 +32,6 @@ App.controller.define('CMain', {
 		};			
 	},
 	clickme_onclick: function()
-	
 	{
 		//on passe la valeur sélectionnée dans cboEtablis comme argument à la requette pour charger cboUnite
 		//App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboEtablis').getValue();
