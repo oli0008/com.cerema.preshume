@@ -61,10 +61,9 @@ App.view.define('VMain', {
  						displayField: "LibEts",
 						valueField: "kets",
 						
-						store: App.store.create("App.Etablis.get_Etablis", // Creation du store
-												{
+						store: App.store.create("App.Etablis.get_Etablis", {
 													autoLoad: true
-												}) 					
+												}) 		// Creation du store				
 					},
 					//*************************
 					{
@@ -83,12 +82,11 @@ App.view.define('VMain', {
  						displayField: "LibUni",		//Alt use: LibUnic
 						valueField: "Kuni",
 						
-						store: App.store.create("App.Unite.get_Unite", // Creation du store
-												{
+						store: App.store.create("App.Unite.get_Unite", {
 													autoLoad: true
-												})  	
+												})  	// Creation du store
 					},
-											{
+					{
 						xtype: "combo",
 						itemId: "cboService",
 						margin: {
@@ -96,7 +94,7 @@ App.view.define('VMain', {
 								left:10	
 							},
 						fieldLabel: "Service",
-						allowBlank: false,
+					//	allowBlank: false,					//false = mandatory filling
 						editable: false,
 						labelAlign: "top",
 						labelWidth: 200,
@@ -104,10 +102,10 @@ App.view.define('VMain', {
 /* 						 displayField: "NomSource",
 						valueField: "IdSource",
 						
-						store: App.store.create('MNomSource', // Creation du store
+						store: App.store.create('MNomSource', 
 												{
 													autoLoad: true
-												})  */	
+												})  // Creation du store	*/
 					},
 						//*************************
 						{
