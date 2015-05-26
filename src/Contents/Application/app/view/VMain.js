@@ -231,14 +231,6 @@ App.view.define('VMain', {
 										{
 						text: "B",
 						dataIndex: "LibUnic"
-					},
-					{
-						text: "C,
-						dataIndex: "LibCgr"
-					},
-					{
-						text: "Exploitation",
-						dataIndex: "agentTotal"
 					}
 					],
 					flex: 1,
