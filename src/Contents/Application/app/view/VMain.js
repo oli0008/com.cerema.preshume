@@ -217,35 +217,35 @@ App.view.define('VMain', {
 					border: true,
 					items:[
 					{
-					xtype: "grid",			//xtype création d'un obj GUI
-					itemId: "gridTotalsPresent",
-					columns: [
-					{
-						text: "A+",
-						dataIndex: "LibCgr"
-					},
-					{
-						text: "A",
-						dataIndex: "agentTotal"
-					},
-										{
-						text: "B",
-						dataIndex: "agentTotal"
-					},
-										{
-						text: "C",
-						dataIndex: "agentTotal"
-					},
-					{
-						text: "Exploitation",
-						dataIndex: "LibUnic"
-					}
-					],
-					flex: 1,
-				//	width: "100%",
-					width: "50%",
-			/*		store: App.store.create("App.Agents.cherche")	*/	//???
-					store: App.store.create("App.EffectifPhysique.cherche")	
+							xtype: "grid",			//xtype création d'un obj GUI
+							itemId: "gridTotalsPresent",
+							columns: [
+							{
+							text: "A+",
+							dataIndex: "LibCgr"
+							},
+							{
+							text: "A",
+							dataIndex: "agentTotal"
+							},
+							{
+								text: "B",
+								dataIndex: "agentTotal"
+							},
+							{
+								text: "C",
+								dataIndex: "agentTotal"
+							},
+							{
+								text: "Exploitation",
+								dataIndex: "LibUnic"
+							}
+						],
+						flex: 1,
+					//	width: "100%",
+						width: "50%",
+				/*		store: App.store.create("App.Agents.cherche")	*/	//???
+						store: App.store.create("App.EffectifPhysique.cherche")	
 				},	//grid1_end
 				{	//grid2_start
 					xtype: "grid",			//xtype création d'un obj GUI
@@ -260,11 +260,15 @@ App.view.define('VMain', {
 				//	width: "100%",
 					width: "50%",
 			/*		store: App.store.create("App.Agents.cherche")	*/	//???
+			//		store: App.store.create("App.EffectifPhysique.cherche")	
 					store: App.store.create("App.EffectifPhysique.cherche")	
 				}	//grid2_end
 				]
 				}
-			]
+// *********** TEMP FIX START *******************************************	
+
+// *********** TEMP FIX END *******************************************			
+			]	//CENTER 
 		},
 
 /*		
