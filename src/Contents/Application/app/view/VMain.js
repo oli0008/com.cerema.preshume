@@ -278,24 +278,16 @@ App.view.define('VMain', {
 							itemId: "gridTotalsPresent",
 							columns: [
 							{
-							text: "A+",
+							text: "Unité",
+							dataIndex: "LibUni"
+							},
+							{
+							text: "Catégorie",
 							dataIndex: "LibCgr"
 							},
 							{
-							text: "A",
+							text: "Total",
 							dataIndex: "agentTotal"
-							},
-							{
-								text: "B",
-								dataIndex: "agentTotal"
-							},
-							{
-								text: "C",
-								dataIndex: "agentTotal"
-							},
-							{
-								text: "Exploitation",
-								dataIndex: "LibUnic"
 							}
 						],
 						flex: 1,
@@ -308,6 +300,10 @@ App.view.define('VMain', {
 					xtype: "grid",			//xtype création d'un obj GUI
 					itemId: "gridGrandTotalpresent",
 					columns: [
+					{
+						text: "Unité",
+						dataIndex: "LibUni"
+					},					
 					{
 						text: "Total",
 						dataIndex: "GrandTotal"	//sum(CountAge) as GrandTotal
