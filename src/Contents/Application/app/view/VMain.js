@@ -270,7 +270,7 @@ App.view.define('VMain', {
 				
 // *********** TEMP FIX START *******************************************	
 				{	//grid1_start
-					layout: "hbox",
+					layout: "vbox",
 					border: true,
 					items:[
 					{
