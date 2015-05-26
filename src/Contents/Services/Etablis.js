@@ -4,8 +4,8 @@ Etablis = {
 	 get_Etablis: function(o,cb) {
 		// 1er argument = error
 		// 2eme argument = response
-//		Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', cb); 
-		Etablis.using('db').model('bpclight',q.sql('get_agent'),cb); 
+		Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', cb); 
+//		Etablis.using('db').model('bpclight',q.sql('get_agent'),cb); 
 		//q.model
 		//q.post
 		//q.delete
