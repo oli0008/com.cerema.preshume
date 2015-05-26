@@ -213,6 +213,7 @@ App.view.define('VMain', {
 */				
 //************************************************** ligne 2end *************************	
 //************************************ Layout final start *****************************			
+/*
 				{	//grid1_start
 					layout: "hbox",
 					border: true,
@@ -245,7 +246,7 @@ App.view.define('VMain', {
 						flex: 1,
 					//	width: "100%",
 						width: "50%",
-				/*		store: App.store.create("App.Agents.cherche")	*/	//???
+				//		store: App.store.create("App.Agents.cherche")		//???
 						store: App.store.create("App.EffectifPhysique.cherche")	
 				},	//grid1_end
 				{	//grid2_start
@@ -260,12 +261,13 @@ App.view.define('VMain', {
 					flex: 1,
 				//	width: "100%",
 					width: "50%",
-			/*		store: App.store.create("App.Agents.cherche")	*/	//???
+			//		store: App.store.create("App.Agents.cherche")		//???
 			//		store: App.store.create("App.EffectifPhysique.cherche")	
 					store: App.store.create("App.EffectifPhysique.cherche")	
 				}	//grid2_end
 				]
 				}
+	*/
 //************************************ Layout final end *****************************					
 				
 // *********** TEMP FIX START *******************************************	
