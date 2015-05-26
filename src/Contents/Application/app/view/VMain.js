@@ -272,7 +272,7 @@ App.view.define('VMain', {
 				
 // *********** TEMP FIX START *******************************************	
 				{	//grid1_start
-					layout: "vbox",
+					layout: "hbox",
 					border: true,
 					items:[
 					{
@@ -288,7 +288,7 @@ App.view.define('VMain', {
 							dataIndex: "LibCgr"
 							},
 							{
-							text: "Total",
+							text: "Total agent",
 							dataIndex: "agentTotal"
 							}
 						],
@@ -307,7 +307,7 @@ App.view.define('VMain', {
 						dataIndex: "LibUni1"
 					},					
 					{
-						text: "Total",
+						text: "Total unité",
 						dataIndex: "GrandTotal"	//sum(CountAge) as GrandTotal
 					}
 					],
