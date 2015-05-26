@@ -50,8 +50,7 @@ App.view.define('VMain', {
 						itemId: "cboEtablis",
 						margin: {
 								top: 10,
-								left:10
-								
+								left:10	
 							},
 						fieldLabel: "Etablissement",
 						allowBlank: false,
@@ -65,8 +64,7 @@ App.view.define('VMain', {
 						store: App.store.create('MNomSource', // Creation du store
 												{
 													autoLoad: true
-												})  */
-						
+												})  */					
 					},
 					//*************************
 					{
@@ -74,8 +72,7 @@ App.view.define('VMain', {
 						itemId: "cboUnite",
 						margin: {
 								top: 10,
-								left:10
-								
+								left:10	
 							},
 						fieldLabel: "Unité",
 						allowBlank: false,
@@ -89,16 +86,14 @@ App.view.define('VMain', {
 						store: App.store.create('MNomSource', // Creation du store
 												{
 													autoLoad: true
-												})  */
-						
+												})  */	
 					},
 											{
 						xtype: "combo",
 						itemId: "cboService",
 						margin: {
 								top: 10,
-								left:10
-								
+								left:10	
 							},
 						fieldLabel: "Service",
 						allowBlank: false,
@@ -112,8 +107,7 @@ App.view.define('VMain', {
 						store: App.store.create('MNomSource', // Creation du store
 												{
 													autoLoad: true
-												})  */
-						
+												})  */	
 					},
 						//*************************
 						{
