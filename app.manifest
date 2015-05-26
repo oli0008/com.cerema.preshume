@@ -58,7 +58,7 @@
     "api": [
         "Agents",
         "EffectifPhysique",
-        "EffectifPhysique",
+        "GTotalEffectifPhysique",
         "MyService"
     ],
     "db": [
