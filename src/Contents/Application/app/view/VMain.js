@@ -99,11 +99,10 @@ App.view.define('VMain', {
 						labelAlign: "top",
 						labelWidth: 200,
 						width: 200,
- 						displayField: "NomSource",
+ 						displayField: "LibSubc",
 						valueField: "Ksub",
 						
-						store: App.store.create('MNomSource', 
-												{
+						store: App.store.create("App.Service.get_Service", {
 													autoLoad: true
 												})  // Creation du store	
 					},
