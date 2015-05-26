@@ -122,7 +122,7 @@ App.view.define('VMain', {
 							width: 100,
 							margin: {
 								left: 20,
-								top: 30,
+								top: 28,
 								bottom: 20,
 								right: 20
 							}
