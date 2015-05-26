@@ -34,6 +34,13 @@ App.controller.define('CMain', {
 	clickme_onclick: function()
 	
 	{
+		//on passe la valeur sélectionnée dans cboEtablis comme argument à la requette pour charger cboUnite
+		//App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboEtablis').getValue();
+		
+		
+		//on passe la valeur sélectionnée dans cboUnite comme argument à la requette pour charger cboService
+		//App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboUnite').getValue();
+		
 		// on charge le store avec une variable "recherche"
 		App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
 		// on rafraichit le store
