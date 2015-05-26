@@ -80,13 +80,13 @@ App.view.define('VMain', {
 						labelAlign: "top",
 						labelWidth: 200,
 						width: 200,
-/* 						 displayField: "NomSource",
-						valueField: "IdSource",
+ 						displayField: "LibUni",		//LibUnic
+						valueField: "Kuni",
 						
-						store: App.store.create('MNomSource', // Creation du store
+						store: App.store.create("App.Unite.get_Unite", // Creation du store
 												{
 													autoLoad: true
-												})  */	
+												})  	
 					},
 											{
 						xtype: "combo",
