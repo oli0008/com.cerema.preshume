@@ -60,7 +60,8 @@
         "EffectifPhysique",
         "Etablis",
         "GTotalEffectifPhysique",
-        "MyService"
+        "MyService",
+        "Unite"
     ],
     "db": [
         "bpclight"
