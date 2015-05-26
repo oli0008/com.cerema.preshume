@@ -38,6 +38,10 @@ App.controller.define('CMain', {
 		App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
 		// on rafraichit le store
 		App.get('grid#grid1').getStore().load();
+		
+		/*
+			//combo logic here
+		*/
 	},
 
 	onLoad: function()
