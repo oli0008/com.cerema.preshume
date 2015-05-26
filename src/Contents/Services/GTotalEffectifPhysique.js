@@ -15,7 +15,8 @@ GTotalEffectifPhysique = {
 //		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE:'%' + t.recherche + '%'}),fonction_retour);
 //test		q.model('bpclight',q.sql('get_GTotalEffectifPhysique',{RECHERCHE: t.recherche}),fonction_retour);
 		//q.model('bpclight','select nom,prenom from EffectifPhysique',fonction_retour);
-		q.model('bpclight','select nom,prenom from GTotalEffectifPhysique',fonction_retour);
+		q.model('bpclight','select LibUnic, GrandTotal from GTotalEffectifPhysique',fonction_retour);
+//alt		q.model('bpclight','select LibUnic, sum(CountAge) as GrandTotal from GTotalEffectifPhysique',fonction_retour);
 	}
 	
 };
