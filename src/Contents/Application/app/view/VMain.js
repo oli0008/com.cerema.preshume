@@ -221,15 +221,15 @@ App.view.define('VMain', {
 					itemId: "gridTotalsPresent",
 					columns: [
 					{
-						text: "A+",
+						text: "A",
 						dataIndex: "LibCgr"
 					},
 					{
-						text: "A",
+						text: "Sub totalX",
 						dataIndex: "agentTotal"
 					},
 										{
-						text: "B",
+						text: "UnitéX",
 						dataIndex: "LibUnic"
 					}
 					],
