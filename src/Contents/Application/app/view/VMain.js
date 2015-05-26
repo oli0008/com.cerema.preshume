@@ -225,10 +225,10 @@ App.view.define('VMain', {
 						dataIndex: "LibCgr"
 					},
 					{
-						text: "Sub totalX",
+						text: "A",
 						dataIndex: "agentTotal"
 					},
-										{
+					{
 						text: "UnitéX",
 						dataIndex: "LibUnic"
 					}
