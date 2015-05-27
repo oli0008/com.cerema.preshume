@@ -48,7 +48,7 @@ App.controller.define('CMain', {
 	
 	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
 	valider_cboService: function(p, record) {
-		var kets = App.get('combo#cboUnite').getValue();
+		var kuni = App.get('combo#cboUnite').getValue();
 		App.get('combo#cboService').setValue('');
 		App.get('combo#cboService').getStore().getProxy().extraParams.id_Service = kuni;
 		App.get('combo#cboService').getStore().load();
