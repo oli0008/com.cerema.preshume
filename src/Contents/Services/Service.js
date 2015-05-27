@@ -20,6 +20,3 @@ from subdis
 where archive = 0 
 and kuni = 13		// user select kuni = 13 -- result = 6 
 */
-
-
-id_Service
