@@ -35,11 +35,13 @@ App.controller.define('CMain', {
 		};			
 	},
 	
+	//Sélectionner un établissement 
 	//Selon le domaine selectionné cela affiche la thematique correspondante
 	valider_cboUnite: function(p, record) {
-		var kets=App.get('combo#cboEtablis').getValue();
+		//sauvegarde valeur 
+		var kets = App.get('combo#cboEtablis').getValue();
 		App.get('combo#cboUnite').setValue('');
-		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis=kets;
+		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis = kets;
 		App.get('combo#cboUnite').getStore().load();
 	},
 	
