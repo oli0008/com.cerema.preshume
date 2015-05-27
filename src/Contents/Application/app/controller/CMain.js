@@ -17,6 +17,9 @@ App.controller.define('CMain', {
 			"combo#cboEtablis": {
 				select: "valider_cboUnite"
 			},
+			"combo#cboUnite": {
+				select: "valider_cboService"
+			},
 			"button#clickme": {
 				click: "clickme_onclick"
 			}
@@ -35,14 +38,20 @@ App.controller.define('CMain', {
 		};			
 	},
 	
-	//Sélectionner un établissement 
-	//Selon le domaine selectionné cela affiche la thematique correspondante
+	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboUnite: function(p, record) {
-		//sauvegarde valeur 
 		var kets = App.get('combo#cboEtablis').getValue();
 		App.get('combo#cboUnite').setValue('');
 		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis = kets;
 		App.get('combo#cboUnite').getStore().load();
+	},
+	
+	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
+	valider_cboService: function(p, record) {
+		var kets = App.get('combo#cboUnite').getValue();
+		App.get('combo#cboService').setValue('');
+		App.get('combo#cboService').getStore().getProxy().extraParams.id_Service = kuni;
+		App.get('combo#cboService').getStore().load();
 	},
 	
 	clickme_onclick: function()
