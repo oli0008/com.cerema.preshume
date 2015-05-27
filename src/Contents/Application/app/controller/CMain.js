@@ -14,7 +14,7 @@ App.controller.define('CMain', {
 			"menu>menuitem": {
 				click: "Menu_onClick"
 			},
-			"combo#cboUnite": {
+			"combo#cboEtablis": {
 				select: "valider_cboUnite"
 			},
 			"button#clickme": {
