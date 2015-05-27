@@ -43,6 +43,7 @@ App.controller.define('CMain', {
 		var Kets = App.get('combo#cboEtablis').getValue();
 		console.log(App.get('combo#cboEtablis').getValue());
 		App.get('combo#cboUnite').setValue('');
+		App.get('combo#cboService').setValue('');
 		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis = Kets;
 		App.get('combo#cboUnite').getStore().load();
 	},
