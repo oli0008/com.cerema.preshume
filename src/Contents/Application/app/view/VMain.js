@@ -59,7 +59,7 @@ App.view.define('VMain', {
 						labelWidth: 200,
 						width: 250,
  						displayField: "LibEts",
-						valueField: "kets",
+						valueField: "kets",			//BIZZARE: Kets doit être en minuscule
 						
 						store: App.store.create("App.Etablis.get_Etablis", {
 													autoLoad: true
@@ -80,7 +80,7 @@ App.view.define('VMain', {
 						labelWidth: 200,
 						width: 200,
  						displayField: "LibUni",		//Alt use: LibUnic
-						valueField: "kuni",
+						valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
 						
 						store: App.store.create("App.Unite.get_Unite", {
 													autoLoad: true
@@ -100,7 +100,7 @@ App.view.define('VMain', {
 						labelWidth: 200,
 						width: 200,
  						displayField: "LibSubc",
-						valueField: "ksub",
+						valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule
 						
 						store: App.store.create("App.Service.get_Service", {
 													autoLoad: true
@@ -314,7 +314,7 @@ App.view.define('VMain', {
 			//		store: App.store.create("App.Agents.cherche")		//???
 			//		store: App.store.create("App.EffectifPhysique.cherche")	
 				//	store: App.store.create("App.GTotalEffectifPhysique.cherche")	
-//				store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
+				store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
 				}	//grid2_end
 				]
 				}
