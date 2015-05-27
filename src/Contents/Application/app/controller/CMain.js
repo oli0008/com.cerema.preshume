@@ -35,14 +35,12 @@ App.controller.define('CMain', {
 		};			
 	},
 	
-		//Selon le domaine selectionné cela affiche la thematique correspondante
+	//Selon le domaine selectionné cela affiche la thematique correspondante
 	valider_cboUnite: function(p, record) {
-	
-	var kets=App.get('combo#cboEtablis').getValue();
-	App.get('combo#cboUnite').setValue('');
-	App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis=kets;
-	App.get('combo#cboUnite').getStore().load();
-	
+		var kets=App.get('combo#cboEtablis').getValue();
+		App.get('combo#cboUnite').setValue('');
+		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis=kets;
+		App.get('combo#cboUnite').getStore().load();
 	},
 	
 	clickme_onclick: function()
