@@ -80,7 +80,7 @@ App.view.define('VMain', {
 						labelWidth: 200,
 						width: 200,
  						displayField: "LibUni",		//Alt use: LibUnic
-						valueField: "Kuni",
+						valueField: "kuni",
 						
 						store: App.store.create("App.Unite.get_Unite", {
 													autoLoad: true
