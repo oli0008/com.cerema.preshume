@@ -69,7 +69,9 @@ App.controller.define('CMain', {
 		//
 		
 		// on charge le store avec une variable "recherche"
+		tempVar = 1;
 		App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
+		App.get('grid#grid1').getStore().getProxy().extraParams.recherche=11;
 		// on rafraichit le store
 		App.get('grid#grid1').getStore().load();
 		
