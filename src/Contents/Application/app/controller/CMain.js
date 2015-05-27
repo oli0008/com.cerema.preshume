@@ -40,19 +40,19 @@ App.controller.define('CMain', {
 	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboUnite: function(p, record) {
-		var kets = App.get('combo#cboEtablis').getValue();
+		var Kets = App.get('combo#cboEtablis').getValue();
 		console.log(App.get('combo#cboEtablis').getValue());
 		App.get('combo#cboUnite').setValue('');
-		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis = kets;
+		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis = Kets;
 		App.get('combo#cboUnite').getStore().load();
 	},
 	
 	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
 	valider_cboService: function(p, record) {
-		var kuni = App.get('combo#cboUnite').getValue();
+		var Kuni = App.get('combo#cboUnite').getValue();
 		console.log(App.get('combo#cboUnite').getValue());
 		App.get('combo#cboService').setValue('');
-		App.get('combo#cboService').getStore().getProxy().extraParams.id_Service = kuni;
+		App.get('combo#cboService').getStore().getProxy().extraParams.id_Service = Kuni;
 		App.get('combo#cboService').getStore().load();
 	},
 	

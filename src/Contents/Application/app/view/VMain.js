@@ -59,7 +59,7 @@ App.view.define('VMain', {
 						labelWidth: 200,
 						width: 250,
  						displayField: "LibEts",
-						valueField: "kets",
+						valueField: "Kets",
 						
 						store: App.store.create("App.Etablis.get_Etablis", {
 													autoLoad: true
@@ -80,7 +80,7 @@ App.view.define('VMain', {
 						labelWidth: 200,
 						width: 200,
  						displayField: "LibUni",		//Alt use: LibUnic
-						valueField: "kuni",
+						valueField: "Kuni",
 						
 						store: App.store.create("App.Unite.get_Unite", {
 													autoLoad: true
