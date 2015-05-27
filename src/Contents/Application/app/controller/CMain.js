@@ -14,6 +14,9 @@ App.controller.define('CMain', {
 			"menu>menuitem": {
 				click: "Menu_onClick"
 			},
+			"combo#cboUnite": {
+				select: "valider_cboUnite"
+			},
 			"button#clickme": {
 				click: "clickme_onclick"
 			}
@@ -31,6 +34,17 @@ App.controller.define('CMain', {
 				alert('clic sur mnuFuture -- TODO');
 		};			
 	},
+	
+		//Selon le domaine selectionné cela affiche la thematique correspondante
+	valider_cboUnite: function(p, record) {
+	
+	var kets=App.get('combo#cboEtablis').getValue();
+	App.get('combo#cboUnite').setValue('');
+	App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis=kets;
+	App.get('combo#cboUnite').getStore().load();
+	
+	},
+	
 	clickme_onclick: function()
 	{
 		//on passe la valeur sélectionnée dans cboEtablis comme argument à la requette pour charger cboUnite
