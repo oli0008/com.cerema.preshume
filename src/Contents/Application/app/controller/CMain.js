@@ -23,10 +23,6 @@ App.controller.define('CMain', {
 			"button#btnOk": {
 				click: "clickme_onclick"
 			}
-//			,	//btnOk
-//						"button#clickme": {
-//				click: "clickme_onclick"
-//			}	//btnOk
 		});
 		
 		App.init('VMain',this.onLoad);

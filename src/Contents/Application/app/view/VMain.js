@@ -278,7 +278,7 @@ App.view.define('VMain', {
 							columns: [
 							{
 							text: "Unité",
-							dataIndex: "LibUni"
+							dataIndex: "LibUniC"
 							},
 							{
 							text: "Catégorie",
