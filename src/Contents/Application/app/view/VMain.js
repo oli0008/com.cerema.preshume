@@ -226,7 +226,7 @@ App.view.define('VMain', {
 				//	flex: 1,
 				//	width: "100%",
 					width: "50%",
-	//				store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
+//					store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
 					App.store.create(
 				}	//grid2_end
 				]
