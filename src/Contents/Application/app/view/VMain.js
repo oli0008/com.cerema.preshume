@@ -180,7 +180,7 @@ App.view.define('VMain', {
 					store: App.store.create("App.EffectifPhysique.cherche")	
 				}	//grid2_end
 				]
-				}
+				},
 	
 //************************************ Layout final end *****************************					
 				
