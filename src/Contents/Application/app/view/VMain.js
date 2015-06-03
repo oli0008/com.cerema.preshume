@@ -229,10 +229,11 @@ App.view.define('VMain', {
 //					store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
 					App.store.create(
 					fields: [ 
-							Service, Cat, Type, Valeur
+							{Service, Cat, Type, Valeur}
 							]
 					data: 	[
-							{Service: "SG",
+							{
+							Service: "SG",
 							Cat:	"A+",
 							Type: "A",
 							Valeur: "3"
