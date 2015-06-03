@@ -228,6 +228,16 @@ App.view.define('VMain', {
 					width: "50%",
 //					store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
 					App.store.create(
+					fields: [ 
+							Service, Cat, Type, Valeur
+							]
+					data: 	[
+							Service: "SG",
+							Cat:	"A+",
+							Type: "A",
+							Valeur: "3"
+							]
+					)
 				}	//grid2_end
 				]
 				}
