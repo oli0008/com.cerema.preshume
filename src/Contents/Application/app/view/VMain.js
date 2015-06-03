@@ -232,10 +232,11 @@ App.view.define('VMain', {
 							Service, Cat, Type, Valeur
 							]
 					data: 	[
-							Service: "SG",
+					{Service: "SG",
 							Cat:	"A+",
 							Type: "A",
 							Valeur: "3"
+					}
 							]
 					)
 				}	//grid2_end
