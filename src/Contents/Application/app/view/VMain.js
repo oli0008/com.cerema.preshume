@@ -226,11 +226,12 @@ App.view.define('VMain', {
 				//	flex: 1,
 				//	width: "100%",
 					width: "50%",
-					store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
-/*
+//					store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
+/* */
 					App.store.create(
 					fields: [ 
-							{Service, Cat, Type, Valeur}
+						//	'Service', 'Cat', 'Type','Valeur'
+							'name', 'email', 'phone'
 							]
 					data: 	[
 							{
@@ -241,10 +242,11 @@ App.view.define('VMain', {
 							}
 							]
 					)
-*/					
+/* */					
 
-				},	//grid2_end
-				
+				}//,	//grid2_end
+/*
+				{}	
 Ext.create('Ext.data.Store', {
     storeId:'simpsonsStore',
     fields:['name', 'email', 'phone'],
@@ -275,7 +277,7 @@ Ext.create('Ext.grid.Panel', {
     width: 400,
     renderTo: Ext.getBody()
 });				
-				
+*/				
 				]
 				}
 // *********** TEMP FIX END *********************************************			
