@@ -5,7 +5,7 @@ Etablis = {
 		// 1er argument = error
 		// 2eme argument = response
 //		Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', cb); 
-		Etablis.using('db').model('bpclight',q.sql('get_etablis'),cb); 
+		Etablis.using('db').model('bpclight',q.sql('get_etablis.sql'),cb); 
 		//q.model
 		//q.post
 		//q.delete
