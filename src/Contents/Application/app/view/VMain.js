@@ -229,10 +229,12 @@ App.view.define('VMain', {
 //					store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
 /* */
 					App.store.create(
-					fields: [ 
+/*					fields: [ 
 						//	'Service', 'Cat', 'Type','Valeur'
 							'name', 'email', 'phone'
 							],
+							
+							
 					data: 	[
 							{
 							Service: "SG",
@@ -240,7 +242,18 @@ App.view.define('VMain', {
 							Type: "A",
 							Valeur: "3"
 							}
-							]
+							] */
+					fields: [ 
+						//	'Service', 'Cat', 'Type','Valeur'
+							'name', 'email', 'phone'
+							],							
+							    data:{'items':[
+        { 'name': 'Lisa',  "email":"lisa@simpsons.com",  "phone":"555-111-1224"  },
+        { 'name': 'Bart',  "email":"bart@simpsons.com",  "phone":"555-222-1234" },
+        { 'name': 'Homer', "email":"home@simpsons.com",  "phone":"555-222-1244"  },
+        { 'name': 'Marge', "email":"marge@simpsons.com", "phone":"555-222-1254"  }
+    ]},
+
 					)
 /* */					
 
