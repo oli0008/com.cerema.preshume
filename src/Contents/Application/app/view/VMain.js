@@ -232,7 +232,7 @@ App.view.define('VMain', {
 					fields: [ 
 						//	'Service', 'Cat', 'Type','Valeur'
 							'name', 'email', 'phone'
-							]
+							],
 					data: 	[
 							{
 							Service: "SG",
