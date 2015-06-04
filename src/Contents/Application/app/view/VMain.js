@@ -236,11 +236,10 @@ App.view.define('VMain', {
 							
 							
 					data: 	[
-							{
-							Service: "SG",
-							Cat:	"A+",
-						//	Type: "A",
-							Valeur: "3"
+							{	'Service' : "SG",
+							'Cat':	"A+",
+						//	'Type': "A",
+							'Valeur': "3"
 							}
 							] 
 
