@@ -2,8 +2,8 @@ App.controller.define('CMain', {
 
 	views: [
 		"VMain"
-	//	,
-	//	"main.VAgent"
+		,
+		"main.VAgent"
 	],
 	
 	models: [
@@ -37,8 +37,13 @@ App.controller.define('CMain', {
 				alert('clic sur mnuPresent -- TODO');
 			else if (p.itemId=="mnuFuture") 
 				alert('clic sur mnuFuture -- TODO');
-			else if (p.itemId=="mnuModAgent") 
-				alert('clic sur mnuModAgent -- TODO');			
+			else if (p.itemId=="mnuModAgent") {
+				alert('clic sur mnuModAgent -- TODO');	
+				//			"button#win_marches": {
+			//	click: "open_marches"
+			open_window_agent;
+			},
+			}
 		};			
 	},
 	
@@ -94,7 +99,16 @@ App.controller.define('CMain', {
 			// ****************************************************************
 		*/
 	},
-
+	open_window_agent: function()
+//	open_marches: function()
+	{
+//		App.view.create('main.VMarches',{
+		App.view.create('main.VAgent',{
+			
+			modal:true
+		}).show();
+	},
+	
 	onLoad: function()
 	{
 		// form loaded	
