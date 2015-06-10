@@ -224,6 +224,7 @@ App.view.define('VMain', {
 				//		width: "100%",
 						width: "50%",
 				//		store: App.store.create("App.Agents.cherche")		//???
+						//invocation de la méthode dans le web service "EffectifPhysique.cherche()" qui a été préchargé avec un paramétre
 						store: App.store.create("App.EffectifPhysique.cherche")	
 				},	//grid1_end
 				{	//grid2_start
