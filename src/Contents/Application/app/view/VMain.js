@@ -32,6 +32,22 @@ App.view.define('VMain', {
 					itemId: "mnuFuture"
 				}	
 				]
+			},
+			{
+				//mnu niveau 1
+				text: "Agents",
+				menu: [
+				{
+					//mnu niveau 2
+					text: "Modifier",
+					itemId: "mnuModAgent"
+				},
+				{
+					//mnu niveau 2
+					text: "FutureXXX",
+					itemId: "mnuFutureXXX"
+				}	
+				]
 			}
 			]	
 //
