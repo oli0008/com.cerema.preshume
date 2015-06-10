@@ -81,7 +81,6 @@ App.controller.define('CMain', {
 		//Passe un parametre au Store 
 		App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche='11';
 		// on rafraichit le store
-//		App.get('grid#grid1').getStore().load();
 		App.get('grid#gridTotalsPresent').getStore().load();
 		
 		/*
