@@ -1,7 +1,8 @@
-App.view.define('main.VMarches', 
+App.view.define('main.VAgent', 
 {
     extend: 'Ext.window.Window',
-	alias : 'widget.marches',
+//	alias : 'widget.marches',
+	alias : 'widget.agent',
 	x:50,
 	y:50,
     height: 535,
@@ -10,8 +11,9 @@ App.view.define('main.VMarches',
 	draggable: true,
 	resizable: false,
 	closeAction: 'destroy',
-	title: 'Marchés',
+	title: 'MarchésXXX',
 	tbar:[
+	//Top bar buttons
 	{ 
 		text:'Nouveau', 
 		formBind:true, 
@@ -26,6 +28,7 @@ App.view.define('main.VMarches',
 	}
 	],
 	bbar:[
+	//Bottom bar buttons
 	'->',
 	{ 
 		text:'Supprimer	', 
@@ -64,10 +67,10 @@ App.view.define('main.VMarches',
 					itemId: "marches_categories",
 					fieldLabel: 'Catégorie',
 					name: 'CAT_ID',
-					store: new Ext.data.DirectStore({
+/* 					store: new Ext.data.DirectStore({
 						autoLoad: true,
 						directFn: App.Categories.getAll						
-					}),
+					}), */
 					typeAhead: true,
 					editable: false,
 					triggerAction: 'all',
