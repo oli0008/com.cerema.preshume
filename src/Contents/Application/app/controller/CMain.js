@@ -39,9 +39,6 @@ App.controller.define('CMain', {
 				alert('clic sur mnuFuture -- TODO');
 			else if (p.itemId=="mnuModAgent") {
 				alert('clic sur mnuModAgent -- TODO');	
-				//			"button#win_marches": {
-			//	click: "open_marches"
-			},
 			}
 		};			
 	},
@@ -99,15 +96,6 @@ App.controller.define('CMain', {
 		*/
 	},
 
-	open_marches: function()
-	{
-//		App.view.create('main.VMarches',{
-		App.view.create('main.VAgent',{
-			
-			modal:true
-		}).show();
-	},
-	
 	onLoad: function()
 	{
 		// form loaded	
