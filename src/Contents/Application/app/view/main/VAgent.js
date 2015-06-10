@@ -141,10 +141,10 @@ App.view.define('main.VAgent',
 			xtype: 'grid',
 			border: false,
 			itemId: "GridMarches",
-			store: new Ext.data.DirectStore({
+/* 			store: new Ext.data.DirectStore({
 				autoLoad: false,
 				directFn: App.Marches.getAll			
-			}),
+			}), */
 			height:305,
 			//listeners: {
 //				itemclick: grid_marches_click
