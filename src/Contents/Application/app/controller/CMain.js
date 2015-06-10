@@ -99,6 +99,7 @@ App.controller.define('CMain', {
 			// ****************************************************************
 		*/
 	},
+	/*
 	open_window_agent: function()
 //	open_marches: function()
 	{
@@ -108,7 +109,7 @@ App.controller.define('CMain', {
 			modal:true
 		}).show();
 	},
-	
+*/	
 	onLoad: function()
 	{
 		// form loaded	
