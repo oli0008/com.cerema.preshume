@@ -1,17 +1,17 @@
 // class Etablis
 // class omneedia db = classe moteur d'abstraction de base de données
 Etablis = {
-	 get_Etablis: function(o,cb) {
+	 get_Etablis: function(input_p,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 // works Ok		
-//				Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', cb); 
+
 // works Ok			
   		var q = Etablis.using('db');
-		q.model('bpclight',q.sql('get_etablis'),cb);  
-// param		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);			
+		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
+			
 
-//NOK		Etablis.using('db').model('bpclight',q.sql('get_etablis'),cb); 
+ 
 		//q.model
 		//q.post
 		//q.delete
@@ -24,6 +24,11 @@ Etablis = {
 	
 };
 
-module.exports=Etablis;
+module.exports = Etablis;
 
-//	'select kets, LibEts from etablissements where archive = 0'
+
+//Hard coded query
+//				Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', fn_cb); 
+
+//Version with parameter
+//		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
