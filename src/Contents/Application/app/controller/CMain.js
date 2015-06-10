@@ -41,7 +41,7 @@ App.controller.define('CMain', {
 				alert('clic sur mnuModAgent -- TODO');	
 				//			"button#win_marches": {
 			//	click: "open_marches"
-			open_window_agent;
+	//		open_window_agent;
 			},
 			}
 		};			
