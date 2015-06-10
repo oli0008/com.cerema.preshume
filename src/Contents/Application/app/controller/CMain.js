@@ -11,7 +11,7 @@ App.controller.define('CMain', {
 	
 	init: function()
 	{
-
+		//declaration des évenements
 		this.control({
 			"menu>menuitem": {
 				click: "Menu_onClick"
