@@ -34,7 +34,7 @@ App.view.define('VMain', {
 				]
 				
 			}
-			]	//,
+			]	,
 /*
 // second menu
 						xtype: "Menu",		//xtype création d'un obj GUI
