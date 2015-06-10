@@ -18,32 +18,32 @@ App.view.define('VMain', {
 			itemId: "MenuPanel",
 			menu: [
 			{
-				//mnu niveau 1
+				//Menu Effectifs
 				text: "Effectifs",
 				menu: [
 				{
-					//mnu niveau 2
+					//Menu item
 					text: "Présent",
 					itemId: "mnuPresent"
 				},
 				{
-					//mnu niveau 2
+					//Menu item
 					text: "Future",
 					itemId: "mnuFuture"
 				}	
 				]
 			},
 			{
-				//mnu niveau 1
+				//Menu Agents
 				text: "Agents",
 				menu: [
 				{
-					//mnu niveau 2
+					//Menu item
 					text: "Modifier",
 					itemId: "mnuModAgent"
 				},
 				{
-					//mnu niveau 2
+					//Menu item
 					text: "FutureXXX",
 					itemId: "mnuFutureXXX"
 				}	
