@@ -32,10 +32,9 @@ App.view.define('VMain', {
 					itemId: "mnuFuture"
 				}	
 				]
-				
 			}
 			]	,
-
+/*
 // second menu
 						xtype: "Menu",		//xtype création d'un obj GUI
 			itemId: "MenuPanel2",
@@ -58,8 +57,7 @@ App.view.define('VMain', {
 			}
 			]	
 		},
-		
-		
+	*/
 //********************************************* CENTER *******************************
 		{
 			region: "center",			
