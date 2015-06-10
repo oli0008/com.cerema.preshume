@@ -118,10 +118,10 @@ App.view.define('main.VAgent',
 					xtype: 'combo',
 					fieldLabel: 'Cat.',
 					id: 'NEW_CAT_ID',
-					store: new Ext.data.DirectStore({
+	/* 				store: new Ext.data.DirectStore({
 						autoLoad: true,
 						directFn: App.Categories.getAll						
-					}),
+					}), */
 					typeAhead: true,
 					editable: false,
 					triggerAction: 'all',
