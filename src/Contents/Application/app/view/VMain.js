@@ -15,7 +15,7 @@ App.view.define('VMain', {
 			border:false,	//cache la ligne de bordure 
 			baseCls: 'cls-header',
 			xtype: "Menu",		//xtype création d'un obj GUI
-			itemId: "MenuPanel",
+			itemId: "MenuPanel1",
 			menu: [
 			{
 				//mnu niveau 1
@@ -37,7 +37,7 @@ App.view.define('VMain', {
 
 // second menu
 						xtype: "Menu",		//xtype création d'un obj GUI
-			itemId: "MenuPanel",
+			itemId: "MenuPanel2",
 			menu: [
 			{
 				//mnu niveau 1
