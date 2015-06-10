@@ -33,31 +33,11 @@ App.view.define('VMain', {
 				}	
 				]
 			}
-			]	//,
-/*
-// second menu
-						xtype: "Menu",		//xtype création d'un obj GUI
-			itemId: "MenuPanel2",
-			menu: [
-			{
-				//mnu niveau 1
-				text: "Agent",
-				menu: [
-				{
-					//mnu niveau 2
-					text: "Modifier",
-					itemId: "mnuModAgent"
-				},
-				{
-					//mnu niveau 2
-					text: "FutureXXX",
-					itemId: "mnuFutureXXX"
-				}	
-				]
-			}
 			]	
+
+// second menu
+			
 		},
-	*/
 //********************************************* CENTER *******************************
 		{
 			region: "center",			
