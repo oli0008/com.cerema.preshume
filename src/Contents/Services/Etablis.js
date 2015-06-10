@@ -6,6 +6,7 @@ Etablis = {
 		// 2eme argument = response
 		
   		var q = Etablis.using('db');
+		console.log('*************** OLI ********************');
 		console.log(q.sql('get_etablis'));
 		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
  
