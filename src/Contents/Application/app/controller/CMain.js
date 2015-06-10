@@ -42,7 +42,7 @@ App.controller.define('CMain', {
 				//			"button#win_marches": {
 			//	click: "open_marches"
 	//		open_window_agent();
-			},
+			}//,
 			}
 		};			
 	},
