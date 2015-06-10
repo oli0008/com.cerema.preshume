@@ -6,18 +6,9 @@ Etablis = {
 		// 2eme argument = response
 		
   		var q = Etablis.using('db');
-//		console.log('*************** OLI ********************');
+
 //		console.log(q.sql('get_etablis'));		//log apparait dans DOS box
 		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
- 
-		//q.model
-		//q.post
-		//q.delete
-		//q.sql method
-//		console.log(q.sql('get_agent',{RECHERCHE:'%' + t.recherche + '%'}));	//log apparait dans DOS box
-//		console.log('*** oli ***');
-//		q.model('bpclight',q.sql('get_agent',{RECHERCHE:'%' + t.recherche + '%'}),fonction_retour);
-		//q.model('bpclight','select nom,prenom from Etablis',fonction_retour);
 	}
 	
 };
