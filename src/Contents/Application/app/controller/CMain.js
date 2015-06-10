@@ -79,7 +79,7 @@ App.controller.define('CMain', {
 		console.log('** HERE **');
 	//	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
 		//Passe un parametre au Store 
-		App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche='1';
+		App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche='11';
 		// on rafraichit le store
 //		App.get('grid#grid1').getStore().load();
 		App.get('grid#gridTotalsPresent').getStore().load();
