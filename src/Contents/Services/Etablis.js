@@ -4,13 +4,10 @@ Etablis = {
 	 get_Etablis: function(input_p,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
-// works Ok		
-
-// works Ok			
+		
   		var q = Etablis.using('db');
+		console.log(q.sql('get_etablis'));
 		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
-			
-
  
 		//q.model
 		//q.post
