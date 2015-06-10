@@ -8,7 +8,7 @@ Etablis = {
 			//	Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', cb); 
 // works Ok			
 		var q = Etablis.using('db');
-		q.model('bpclight',q.sql('get_etablis'),fonction_retour);
+		q.model('bpclight',q.sql('get_etablis'),cb);
 // param		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);			
 
 //NOK		Etablis.using('db').model('bpclight',q.sql('get_etablis'),cb); 
