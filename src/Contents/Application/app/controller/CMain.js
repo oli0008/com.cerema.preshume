@@ -2,8 +2,8 @@ App.controller.define('CMain', {
 
 	views: [
 		"VMain"
-		,
-		"main.VAgent"
+	//	,
+	//	"main.VAgent"
 	],
 	
 	models: [
