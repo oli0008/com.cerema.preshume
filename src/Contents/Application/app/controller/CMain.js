@@ -38,7 +38,7 @@ App.controller.define('CMain', {
 			else if (p.itemId=="mnuFuture") 
 				alert('clic sur mnuFuture -- TODO');
 			else if (p.itemId=="mnuModAgent") {
-				alert('clic sur mnuModAgent -- TODO');	
+			//	alert('clic sur mnuModAgent -- TODO');	
 				open_window_agent();
 			}
 		};			
