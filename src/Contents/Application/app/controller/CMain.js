@@ -95,7 +95,18 @@ App.controller.define('CMain', {
 			// ****************************************************************
 		*/
 	},
+//***********
+	
+	open_window_agent: function()
+//	open_marches: function()
+	{
+//		App.view.create('main.VMarches',{
+		App.view.create('main.VAgent',{			
+			modal:true
+		}).show();
+	},
 
+//****************
 	onLoad: function()
 	{
 		// form loaded	
