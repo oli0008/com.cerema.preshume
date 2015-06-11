@@ -94,7 +94,7 @@ App.view.define('main.VAgent',
 			},
 //**************************************************			
 				xtype: "combo",
-				itemId: "cboNom",
+				itemId: "cboNom2",
 				margin: {
 						top: 10,
 						left:10
@@ -116,7 +116,7 @@ App.view.define('main.VAgent',
 			},			
 			{
 				xtype: "textfield",
-				itemId: "txtResidenceAdmin", 
+				itemId: "txtResidenceAdmin2", 
 	//			text: "Laitages",
 				margin: {
 						top : 10,
