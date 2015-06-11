@@ -118,7 +118,7 @@ App.view.define('VMain', {
  						displayField: "LibSubc",
 						valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule
 						
-						store: App.store.create("App.Service.get_Service", {
+						store: App.store.create("App.Service.get_service", {
 													autoLoad: true
 												})  // Creation du store	
 					},
