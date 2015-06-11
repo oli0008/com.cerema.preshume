@@ -5,7 +5,7 @@ GTotalEffectifPhysique = {
 	 cherche: function(t,fonction_retour) {
 		// 1er argument = error
 		// 2eme argument = response
-		var q=GTotalEffectifPhysique.using('db');  
+		var q = GTotalEffectifPhysique.using('db');  
 		//q.model
 		//q.post
 		//q.delete
@@ -21,4 +21,4 @@ GTotalEffectifPhysique = {
 	
 };
 
-module.exports=GTotalEffectifPhysique;
+module.exports = GTotalEffectifPhysique;
