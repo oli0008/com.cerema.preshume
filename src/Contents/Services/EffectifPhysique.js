@@ -2,7 +2,7 @@
 // class omneedia db = classe moteur d'abstraction de base de données
 
 EffectifPhysique = {
-	 cherche: function(t,fonction_retour) {
+	 cherche: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		var q = EffectifPhysique.using('db');  
@@ -11,11 +11,11 @@ EffectifPhysique = {
 		//q.delete
 		//q.sql method
 		console.log('>>EffectifPhysique.cherche()');
-		console.log(q.sql('qget_EffectifPhysique',{RECHERCHE: t.param_recherche}));	//log apparait dans DOS box
+		console.log(q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}));	//log apparait dans DOS box
 
-//		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE:'%' + t.param_recherche + '%'}),fonction_retour);
-		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
-		//q.model('bpclight','select nom,prenom from EffectifPhysique',fonction_retour);
+//		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE:'%' + in1.param_recherche + '%'}),fn_cb);
+		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);
+		//q.model('bpclight','select nom,prenom from EffectifPhysique',fn_cb);
 	}
 };
 
