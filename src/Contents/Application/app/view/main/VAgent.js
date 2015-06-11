@@ -1,7 +1,6 @@
 App.view.define('main.VAgent', 
 {
     extend: 'Ext.window.Window',
-//	alias : 'widget.marches',
 	alias : 'widget.agent',
 	x:50,
 	y:50,
