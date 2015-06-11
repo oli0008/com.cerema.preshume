@@ -1,7 +1,7 @@
 // class Etablis
 // class omneedia db = classe moteur d'abstraction de base de données
 Etablis = {
-	 get_Etablis: function(in1,fn_cb) {
+	 get_etablis: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		
