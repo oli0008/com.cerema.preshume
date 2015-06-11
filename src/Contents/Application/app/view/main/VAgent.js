@@ -11,7 +11,7 @@ App.view.define('main.VAgent',
 	draggable: true,
 	resizable: false,
 	closeAction: 'destroy',
-	title: 'MarchésXXX',
+	title: 'Modification Agent',
 	tbar:[
 	//Top bar buttons
 	{ 

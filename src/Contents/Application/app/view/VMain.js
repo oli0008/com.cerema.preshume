@@ -7,46 +7,46 @@ App.view.define('VMain', {
 	layout: "border",
 	
 	items: [
-		{
+	{
 //*************************************** NORTH - Menus ****************************
-			region: 'north',
-			height: 25,
-			minHeight: 25,
-			border:false,	//cache la ligne de bordure 
-			baseCls: 'cls-header',
-			xtype: "Menu",		//xtype création d'un obj GUI
-			itemId: "MenuPanel",
+		region: 'north',
+		height: 25,
+		minHeight: 25,
+		border:false,	//cache la ligne de bordure 
+		baseCls: 'cls-header',
+		xtype: "Menu",		//xtype création d'un obj GUI
+		itemId: "MenuPanel",
+		menu: [
+		{
+			//Menu Effectifs
+			text: "Effectifs",
 			menu: [
 			{
-				//Menu Effectifs
-				text: "Effectifs",
-				menu: [
-				{
-					//Menu item
-					text: "Présent",
-					itemId: "mnuPresent"
-				},
-				{
-					//Menu item
-					text: "Future",
-					itemId: "mnuFuture"
-				}	
+				//Menu item
+				text: "Présent",
+				itemId: "mnuPresent"
+			},
+			{
+				//Menu item
+				text: "Future",
+				itemId: "mnuFuture"
+			}	
 				]
 			},
 			{
-				//Menu Agents
-				text: "Agents",
-				menu: [
-				{
-					//Menu item
-					text: "Modifier",
-					itemId: "mnuModAgent"
-				},
-				{
-					//Menu item
-					text: "FutureXXX",
-					itemId: "mnuFutureXXX"
-				}	
+			//Menu Agents
+			text: "Agents",
+			menu: [
+			{
+				//Menu item
+				text: "Modifier",
+				itemId: "mnuModAgent"
+			},
+			{
+				//Menu item
+				text: "FutureXXX",
+				itemId: "mnuFutureXXX"
+			}	
 				]
 			}
 			]				
@@ -56,28 +56,28 @@ App.view.define('VMain', {
 			region: "center",			
 			split:true,
 			items: [
-				{	// 1er ligne
-					layout: "hbox",
-					border: true,	//false,
-					width: "100%",
-					items:[
-					{
-						xtype: "combo",
-						itemId: "cboEtablis",
-						margin: {
-								top: 10,
-								left:10	
+			{	// 1er ligne
+				layout: "hbox",
+				border: true,	//false,
+				width: "100%",
+				items:[
+				{
+					xtype: "combo",
+					itemId: "cboEtablis",
+					margin: {
+							top: 10,
+							left:10	
 							},
-						fieldLabel: "Etablissement",
-					//	allowBlank: false,		//false = mandatory filling
-						editable: false,
-						labelAlign: "top",
-						labelWidth: 200,
-						width: 250,
- 						displayField: "LibEts",
-						valueField: "kets",			//BIZZARE: Kets doit être en minuscule
-// HERE *****************						
-						store: App.store.create("App.Etablis.get_etablis", {
+					fieldLabel: "Etablissement",
+				//	allowBlank: false,		//false = mandatory filling
+					editable: false,
+					labelAlign: "top",
+					labelWidth: 200,
+					width: 250,
+ 					displayField: "LibEts",
+					valueField: "kets",			//BIZZARE: Kets doit être en minuscule
+						
+					store: App.store.create("App.Etablis.get_etablis", {
 													autoLoad: true
 												}) 		// Creation du store				
 					},
@@ -97,7 +97,7 @@ App.view.define('VMain', {
 						width: 200,
  						displayField: "LibUni",		//Alt use: LibUnic
 						valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
-// HERE 2 *****************						
+						
 						store: App.store.create("App.Unite.get_unite", {
 													autoLoad: true
 												})  	// Creation du store
@@ -122,21 +122,21 @@ App.view.define('VMain', {
 													autoLoad: true
 												})  // Creation du store	
 					},
-						//*************************
-						{
-							xtype: "button",		//xtype création d'un obj GUI
-							itemId: "btnOk",	//"clickme",
-							text: "Ok", 
-							width: 100,
-							margin: {
+					//*************************
+					{
+						xtype: "button",		//xtype création d'un obj GUI
+						itemId: "btnOk",	//"clickme",
+						text: "Ok", 
+						width: 100,
+						margin: {
 								left: 20,
 								top: 28,
 								bottom: 20,
 								right: 20
-							}
-						}							
-					]
-				},			
+						}
+				}							
+				]
+			},			
 			
 
 
@@ -204,10 +204,10 @@ App.view.define('VMain', {
 				//	border: true,
 					items:[
 					{
-							xtype: "grid",			//xtype création d'un obj GUI
-							itemId: "gridTotalsPresent",
-							columns: [
-							{
+						xtype: "grid",			//xtype création d'un obj GUI
+						itemId: "gridTotalsPresent",
+						columns: [
+						{
 							text: "Unité",
 							dataIndex: "LibUnic"
 							},
@@ -303,8 +303,6 @@ Ext.create('Ext.grid.Panel', {
 // *********** TEMP FIX END *********************************************			
 			]	//CENTER 
 		},
-
-
 	]
 	
 });
