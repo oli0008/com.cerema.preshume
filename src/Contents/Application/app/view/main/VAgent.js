@@ -72,7 +72,7 @@ App.view.define('main.VAgent',
 					itemId: "txtLaitage", 
 					text: "Laitages",
 					margin: {
-						top : 40,
+						top : 10,
 					//	bottom : 20,
 						left : 20,
 					//	right : 20
