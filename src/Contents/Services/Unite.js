@@ -1,4 +1,6 @@
-Unite={
+// class Unite
+// class omneedia db = classe moteur d'abstraction de base de données
+Unite = {
 	get_Unite: function(o,cb)
 	{
 		console.log('select kuni, LibUnic, LibUni from unites where archive = 0 and kets = "' + o.id_Etablis + '" ');
