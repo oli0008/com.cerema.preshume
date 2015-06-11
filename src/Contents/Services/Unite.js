@@ -2,7 +2,7 @@
 // class omneedia db = classe moteur d'abstraction de base de données
 Unite = {
 //	get_unite: function(o,cb)  {
-	get_unite: function(input_p,fn_cb) {
+	get_unite: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		
@@ -13,13 +13,13 @@ Unite = {
 	//old			q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 		//		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
 // /* test	**	
-	//?	console.log(q.sql('get_etablis' + ' input_p= ' + input_p.id_Etablis));		//log apparait dans DOS box
+	//?	console.log(q.sql('get_etablis' + ' in1= ' + in1.id_Etablis));		//log apparait dans DOS box
 		console.log('>>Unite.get_unite()');
-		console.log(q.sql( 'get_unite' + {RECHERCHE: input_p.id_Etablis} ) );		//log apparait dans DOS box
-//		console.log(q.sql( 'get_unite' + ' input_p= ' + {RECHERCHE: input_p.id_Etablis} ) );		//log apparait dans DOS box
-//		console.log("Query= " + q.sql( 'get_unite' + ' input_p= ' + {RECHERCHE: input_p.id_Etablis} ) );		//log apparait dans DOS box
-//		console.log("$XXX$-OLI-$XXX$" + q.sql( 'get_unite' + ' input_p= ' + {RECHERCHE: input_p.id_Etablis} ) + " $BB$-OLI-$BB$");		//log apparait dans DOS box
-		q.model('bpclight',q.sql('get_unite',{RECHERCHE: input_p.id_Etablis}),fn_cb);
+		console.log(q.sql( 'get_unite' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
+//		console.log(q.sql( 'get_unite' + ' in1= ' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
+//		console.log("Query= " + q.sql( 'get_unite' + ' in1= ' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
+//		console.log("$XXX$-OLI-$XXX$" + q.sql( 'get_unite' + ' in1= ' + {RECHERCHE: in1.id_Etablis} ) + " $BB$-OLI-$BB$");		//log apparait dans DOS box
+		q.model('bpclight',q.sql('get_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
 	
 	}
 //temp	
