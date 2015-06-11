@@ -1,14 +1,15 @@
 // class Etablis
 // class omneedia db = classe moteur d'abstraction de base de données
 Etablis = {
-	 get_Etablis: function(input_p,fn_cb) {
+	 get_Etablis: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		
   		var q = Etablis.using('db');
-
-//		console.log(q.sql('get_etablis'));		//log apparait dans DOS box
-		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
+		
+		console.log('>>Etablis.get_etablis()');
+		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
 	}
 	
 };
