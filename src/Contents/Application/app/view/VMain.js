@@ -80,60 +80,60 @@ App.view.define('VMain', {
 					store: App.store.create("App.Etablis.get_etablis", {
 													autoLoad: true
 												}) 		// Creation du store				
-					},
-					//*************************
-					{
-						xtype: "combo",
-						itemId: "cboUnite",
-						margin: {
-								top: 10,
-								left:10	
+				},
+				//*************************
+				{
+					xtype: "combo",
+					itemId: "cboUnite",
+					margin: {
+							top: 10,
+							left:10	
 							},
-						fieldLabel: "Unité",
-						allowBlank: false,			//false = red notification
-						editable: false,
-						labelAlign: "top",
-						labelWidth: 200,
-						width: 200,
- 						displayField: "LibUni",		//Alt use: LibUnic
-						valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
+					fieldLabel: "Unité",
+					allowBlank: false,			//false = red notification
+					editable: false,
+					labelAlign: "top",
+					labelWidth: 200,
+					width: 200,
+ 					displayField: "LibUni",		//Alt use: LibUnic
+					valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
 						
-						store: App.store.create("App.Unite.get_unite", {
+					store: App.store.create("App.Unite.get_unite", {
 													autoLoad: true
 												})  	// Creation du store
-					},
-					{
-						xtype: "combo",
-						itemId: "cboService",
-						margin: {
-								top: 10,
-								left:10	
+				},
+				{
+					xtype: "combo",
+					itemId: "cboService",
+					margin: {
+							top: 10,
+							left:10	
 							},
-						fieldLabel: "Service",
-						allowBlank: false,					//false = mandatory filling
-						editable: false,
-						labelAlign: "top",
-						labelWidth: 200,
-						width: 200,
- 						displayField: "LibSubc",
-						valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule
+					fieldLabel: "Service",
+					allowBlank: false,					//false = mandatory filling
+					editable: false,
+					labelAlign: "top",
+					labelWidth: 200,
+					width: 200,
+ 					displayField: "LibSubc",
+					valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule
 						
-						store: App.store.create("App.Service.get_service", {
+					store: App.store.create("App.Service.get_service", {
 													autoLoad: true
 												})  // Creation du store	
-					},
-					//*************************
-					{
-						xtype: "button",		//xtype création d'un obj GUI
-						itemId: "btnOk",	//"clickme",
-						text: "Ok", 
-						width: 100,
-						margin: {
-								left: 20,
-								top: 28,
-								bottom: 20,
-								right: 20
-						}
+				},
+				//*************************
+				{
+					xtype: "button",		//xtype création d'un obj GUI
+					itemId: "btnOk",	//"clickme",
+					text: "Ok", 
+					width: 100,
+					margin: {
+							left: 20,
+							top: 28,
+							bottom: 20,
+							right: 20
+							}
 				}							
 				]
 			},			

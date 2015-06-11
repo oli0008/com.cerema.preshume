@@ -101,10 +101,8 @@ App.controller.define('CMain', {
 //***********
 	
 	open_window_agent: function()
-//	open_marches: function()
 	{
-		alert('clic sur mnuModAgent -- TODO222');
-//		App.view.create('main.VMarches',{
+//		alert('clic sur mnuModAgent');
 		App.view.create('main.VAgent',{			
 			modal:true
 		}).show();
