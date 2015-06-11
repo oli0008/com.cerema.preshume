@@ -14,7 +14,7 @@ Unite = {
 		//		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
 // /* test	**	
 	//?	console.log(q.sql('get_etablis' + ' input_p= ' + input_p.id_Etablis));		//log apparait dans DOS box
-		console.log(q.sql('get_etablis' + ' input_p= ' + {RECHERCHE: input_p.id_Etablis} + ""$$$-OLI-$$$"));		//log apparait dans DOS box
+		console.log(q.sql("$$$-OLI-$$$" + 'get_unite' + ' input_p= ' + {RECHERCHE: input_p.id_Etablis} + "$$$-OLI-$$$"));		//log apparait dans DOS box
 		q.model('bpclight',q.sql('get_unite',{RECHERCHE: input_p.id_Etablis}),fn_cb);
 	
 	}
