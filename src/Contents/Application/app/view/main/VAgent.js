@@ -13,181 +13,125 @@ App.view.define('main.VAgent',
 	closeAction: 'destroy',
 	title: 'Modification Agent',
 	
-/* OLI1 
-	tbar:[
-	//Top bar buttons
-	{ 
-		text:'Nouveau', 
-		formBind:true, 
-		id:'TMarcheNew',
-		hidden: false,
-		scope:this/*, 
-		handler: mymarches_new*/
-/*		
-	},
-	{
-		text:'Annuler',
-		id: 'TMarcheClose'
-	}
-	],
-	bbar:[
-	//Bottom bar buttons
-	'->',
-	{ 
-		text:'Supprimer	', 
-		formBind:true, 
-		id:'TMarcheDelete',
-		scope:this, 
-		hidden: false/*,
-		handler: mymarches_del*/
-/*		
-	},
-	{ 
-		text: 'Enregistrer', 
-		formBind: true, 
-		id:'TMarcheRecord',
-		hidden: false,
-		scope: this/*, 
-		handler: myform_record*/
-/*		
-	}
-	],	
-	listeners: {
-		show: function()
-		{
-			/*$('#filetosend').click(uploadFile);
-			$('#filetodownload').click(downloadFile);*/
-/*			
-		}
-	},
+////////////////////
+	border: false,
 	
-OLI1 */
-	
+	layout: "border",
+//********************** NORTH ***************************	
 	items: [
+		{	//menu bar
+			region: 'north',
+			height: 25,
+			minHeight: 25,
+			border:false,
+			baseCls: 'cls-header',
+			xtype: "Menu",
+			itemId: "MenuPanel",
+			menu: [
+			]	
+		},
+		
+//********************** CENTER ***************************	
 		{
-			xtype:'form',
-			border: false,
-			itemId: 'TFormMarche',
-			bodyStyle:'padding:5px 5px 0',
-			defaults: {width: 450},			
+			region: "center",			
+			split:true,
 			items: [
+
 				{
-					xtype: 'combo',
-					itemId: "marches_categories",
-					fieldLabel: 'Catégorie',
-					name: 'CAT_ID',
-/* 					store: new Ext.data.DirectStore({
-						autoLoad: true,
-						directFn: App.Categories.getAll						
-					}), */
-					typeAhead: true,
-					editable: false,
-					triggerAction: 'all',
-					mode: 'remote',
-					emptyText:'Sélectionner une catégorie',
-					selectOnFocus:true,
-					readonly:true,
-					displayField:'libelle',
-					valueField: 'id'
+					xtype: "button",
+					itemId: "clickme", 
+					text: "region center2",
+					margin: 20
 				},
 				{
-					xtype: 'textfield',
-					fieldLabel: 'Nom',
-					id: 'TMarcheNom',
-					name: 'TITLE'
+					xtype: "textfield",
+					itemId: "txtLaitage", 
+					text: "Laitages",
+					margin: {
+						top : 40,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20
+						
+					}
 				},
+								{
+					xtype: "label",
+					itemId: "lblFromage", 
+					text: "Fromage--Lbl",
+					margin: 20
+				},		
 				{
-					xtype: 'textfield',
-					fieldLabel: 'Description',
-					id: 'TMarcheDescription',
-					name: '_DESC'
-				},
-				{
-					xtype: 'numberfield',
-					fieldLabel: 'Prix',
-					id: 'TMarchePrix',
-					name: 'PRICE'			
-				},
-				{
-					id: 'DropPDF',
-					border: false,
-					align:'right',
-					hidden: true,
-					height:30,
-					html:'<input type="file" id="fileToUpload" width="50px"></input><button style="float:right" id="filetodownload">Document</button>&nbsp;&nbsp;<button style="float:right" id="filetosend">Téléverser</button>'
+					xtype: "textarea",
+					itemId: "txtFromage", 
+					text: "Fromage--Txt",
+					margin: 20
 				},				
+
+
+		//********************
 				{
-					xtype: 'textfield',
-					fieldLabel: 'Id',
-					name: 'ID',
-					hidden: true,
-					id:'MyIDMarche'
+		
+					layout: "hbox",
+					border: false,
+					width: "100%",
+					items: [				
+					{
+						xtype: "combo",
+						itemId: "cboNom",
+						margin: {
+								top: 10,
+								left:10
+								
+							},
+						fieldLabel: "Nom",
+						allowBlank: false,
+						editable: false,
+						labelAlign: "top",
+						labelWidth: 200,
+						width: 200,
+/* 						 displayField: "NomSource",
+						valueField: "IdSource",
+						
+						store: App.store.create('MNomSource', // Creation du store
+												{
+													autoLoad: true
+												})  */
+						
+					},
+					{
+						xtype: "datefield",
+						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
+						itemId: "date",
+						labelAlign: "top",
+						allowBlank: false,
+						editable: false,
+						margin: {
+								top: 10,
+								left:30
+								
+							},
+						width:100,
+						fieldLabel: 'Date de parution',
+					},
+					{
+						xtype: "datefield",
+						itemId: "date_limite",
+						labelAlign: "top",
+						margin: {
+								top: 10,
+								left: 20
+								
+							},
+						width:80,
+						fieldLabel: 'Date limite',
+						allowBlank: false,
+					}
+					]
 				},
-				{
-					xtype: 'combo',
-					fieldLabel: 'Cat.',
-					id: 'NEW_CAT_ID',
-	/* 				store: new Ext.data.DirectStore({
-						autoLoad: true,
-						directFn: App.Categories.getAll						
-					}), */
-					typeAhead: true,
-					editable: false,
-					triggerAction: 'all',
-					mode: 'remote',
-					emptyText:'Sélectionner une catégorie',
-					selectOnFocus:true,
-					readonly:true,
-					displayField:'libelle',
-					valueField: 'id'/*,
-					listeners: {
-						select: mymarches_select_newcat
-					}*/
-				}				
 			]
 		},
-		{
-			xtype: 'grid',
-			border: false,
-			itemId: "GridMarches",
-/* 			store: new Ext.data.DirectStore({
-				autoLoad: false,
-				directFn: App.Marches.getAll			
-			}), */
-			height:305,
-			//listeners: {
-//				itemclick: grid_marches_click
-			//},/
-			columns: [
-				{
-					header   : 'ID', 
-					width    : 1, 
-					sortable : true, 
-					dataIndex: 'ID',
-					hidden	: true
-				},
-				{
-					header   : 'Titre', 
-					width    : 160, 
-					sortable : true, 
-					dataIndex: 'TITLE'
-				},
-				{
-					header   : 'Description', 
-					width    : 250,
-					flex	 : 1,					
-					sortable : true, 
-					dataIndex: '_DESC'
-				},			
-				{
-					header   : 'Montant', 
-					width    : 90, 
-					sortable : true, 
-					align: 'right',
-					renderer : Ext.util.Format.Euro, 
-					dataIndex: 'PRICE'
-				}			
-			]			
-		}
 	]
+	
 });
+/////////////////////	
