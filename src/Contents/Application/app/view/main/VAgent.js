@@ -94,7 +94,7 @@ App.view.define('main.VAgent',
 			}
 			]
 		},
- 		{
+/* 		{
 //**************************************************
 			layout: "hbox",
 			border: false,
@@ -139,7 +139,7 @@ App.view.define('main.VAgent',
 			},			
 			
 			]					
-		} 
+		} */
 	]
 });
 	
