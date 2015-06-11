@@ -20,13 +20,11 @@ App.view.define('main.VAgent',
 		xtype: "button",
 		itemId: "clickme5", 
 		text: "Nouveau",
-
 	},
 	{
 		xtype: "button",
 		itemId: "clickme4", 
 		text: "Annuler",
-
 	}
 	],
 	bbar:[
@@ -42,18 +40,8 @@ App.view.define('main.VAgent',
 		xtype: "button",
 		itemId: "clickme2", 
 		text: "Annuler2",
-
 	}
 	],	
-	listeners: {
-		show: function()
-		{
-			/*$('#filetosend').click(uploadFile);
-			$('#filetodownload').click(downloadFile);*/
-			
-		}
-	},
-	
 
 	border: false,
 	
