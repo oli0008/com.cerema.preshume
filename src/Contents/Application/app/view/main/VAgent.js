@@ -132,7 +132,7 @@ App.view.define('main.VAgent',
 					//	right : 20
 						
 						},
-				fieldLabel: "Résidence administrative",
+				fieldLabel: "Résidence administrative2",
 				labelAlign: "top",
 			},			
 			
