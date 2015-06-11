@@ -12,7 +12,7 @@ Unite = {
 //**		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 				q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 		//		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
-		q.model('bpclight',q.sql('get_Unite',{RECHERCHE: input_p.param_recherche}),fn_cb);
+		q.model('bpclight',q.sql('get_Unite',{RECHERCHE: input_p.id_Etablis}),fn_cb);
 	
 	}
 //temp	
