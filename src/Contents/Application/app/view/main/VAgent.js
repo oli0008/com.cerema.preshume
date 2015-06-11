@@ -16,39 +16,33 @@ App.view.define('main.VAgent',
 /* OLI1 */
 	tbar:[
 	//Top bar buttons
-					{
-					xtype: "button",
-					itemId: "clickme", 
-					text: "Nouveau",
-					margin: 20
-				},
-					{
-					xtype: "button",
-					itemId: "clickme", 
-					text: "Annuler",
-					margin: 20
-				},
+	{
+		xtype: "button",
+		itemId: "clickme", 
+		text: "Nouveau",
+		margin: 20
+	},
+	{
+		xtype: "button",
+		itemId: "clickme", 
+		text: "Annuler",
+		margin: 20
+	}
 	],
 	bbar:[
 	//Bottom bar buttons
 	'->',
-	{ 
-		text:'Supprimer	', 
-		formBind:true, 
-		id:'TMarcheDelete',
-		scope:this, 
-		hidden: false/*,
-		handler: mymarches_del*/
-		
+	{
+		xtype: "button",
+		itemId: "clickme", 
+		text: "Nouveau2",
+		margin: 20
 	},
-	{ 
-		text: 'Enregistrer', 
-		formBind: true, 
-		id:'TMarcheRecord',
-		hidden: false,
-		scope: this/*, 
-		handler: myform_record*/
-		
+	{
+		xtype: "button",
+		itemId: "clickme", 
+		text: "Annuler2",
+		margin: 20
 	}
 	],	
 	listeners: {
