@@ -56,7 +56,9 @@ App.view.define('main.VAgent',
 			width: "100%", 
 			
 			items: [
-			{
+			
+			
+/* 			{
 				xtype: "combo",
 				itemId: "cboNom",
 				margin: {
@@ -77,7 +79,7 @@ App.view.define('main.VAgent',
 								{
 											autoLoad: true
 								})  						
-			},			
+			},			 */
 			{
 				xtype: "textfield",
 				itemId: "txtResidenceAdmin", 
