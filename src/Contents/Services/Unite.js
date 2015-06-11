@@ -1,25 +1,26 @@
 // class Unite
 // class omneedia db = classe moteur d'abstraction de base de données
 Unite = {
-	get_unite: function(o,cb)  {
-//	get_unite: function(input_p,fn_cb) {
+//	get_unite: function(o,cb)  {
+	get_unite: function(input_p,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		
-  //		var q = Unite.using('db');
+  		var q = Unite.using('db');
 
 //		console.log(q.sql('get_etablis'));		//log apparait dans DOS box
 //**		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 	//old			q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 		//		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
-/* test	**	
+// /* test	**	
 	//?	console.log(q.sql('get_etablis' + ' input_p= ' + input_p.id_Etablis));		//log apparait dans DOS box
 		console.log(q.sql('get_etablis' + ' input_p= ' + {RECHERCHE: input_p.id_Etablis}));		//log apparait dans DOS box
 		q.model('bpclight',q.sql('get_unite',{RECHERCHE: input_p.id_Etablis}),fn_cb);
 	
 	}
 //temp	
-** test	*/
+// ** test	*/
+/*
 //	{
 		console.log('select kuni, LibUnic, LibUni from unites where archive = 0 and kets = "' + o.id_Etablis + '" ');
 		console.log('V2 -- select kuni, LibUnic, LibUni from unites where archive = 0 and kets = "' + o.id_Etablis + '" µµOLI<o.id_Etablis>= ' + o.id_Etablis);
@@ -28,7 +29,7 @@ Unite = {
 //		Unite.using('db').model('bpclight','select nom,prenom,matri from agents',cb);
 		//		Unite.using('db').model('bpclight',q.sql('get_Unite'),cb); 
 	}
-
+*/
 };
 
 module.exports = Unite;
