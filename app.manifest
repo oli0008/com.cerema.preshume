@@ -63,6 +63,7 @@
         "GTotalEffectifPhysique",
         "MyService",
         "Service",
+        "Unite",
         "Unite"
     ],
     "db": [
