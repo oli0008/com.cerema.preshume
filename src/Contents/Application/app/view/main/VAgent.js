@@ -78,11 +78,8 @@ App.view.define('main.VAgent',
 						store: App.store.create('MNomSource', // Creation du store
 												{
 													autoLoad: true
-												})  */
-						
+												})  */						
 					},			
-
-
 				{
 					xtype: "textfield",
 					itemId: "txtLaitage", 
@@ -102,4 +99,4 @@ App.view.define('main.VAgent',
 		}
 	]
 });
-/////////////////////	
+	
