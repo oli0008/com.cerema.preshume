@@ -77,7 +77,8 @@ App.view.define('main.VAgent',
 						left : 20,
 					//	right : 20
 						
-					}
+					},
+					fieldLabel: "Résidence",
 				},
 				]
 					
