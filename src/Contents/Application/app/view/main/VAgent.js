@@ -27,7 +27,7 @@ App.view.define('main.VAgent',
 	],
 	bbar:[
 	//Bottom bar buttons
-	'->',
+//	'->',
 	{
 		xtype: "button",
 		itemId: "btnAgentSupprimer", 
