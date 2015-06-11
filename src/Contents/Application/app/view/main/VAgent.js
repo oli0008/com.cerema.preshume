@@ -36,6 +36,11 @@ App.view.define('main.VAgent',
 		{
 			region: "center",			
 			split:true,
+			
+			layout: "hbox",
+			border: false,
+			width: "50%",
+			
 			items: [
 
 				{
@@ -75,7 +80,7 @@ App.view.define('main.VAgent',
 		
 					layout: "hbox",
 					border: false,
-					width: "100%",
+					width: "50%",
 					items: [				
 					{
 						xtype: "combo",
