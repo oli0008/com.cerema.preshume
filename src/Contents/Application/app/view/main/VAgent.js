@@ -19,22 +19,15 @@ App.view.define('main.VAgent',
 					{
 					xtype: "button",
 					itemId: "clickme", 
-					text: "region center2",
+					text: "Nouveau",
 					margin: 20
 				},
-	{ 
-		text:'Nouveau', 
-
-		ItemId:'TMarcheNew',
-		hidden: false,
-		scope:this/*, 
-		handler: mymarches_new*/
-		
-	},
-	{
-		text:'Annuler',
-		id: 'TMarcheClose'
-	}
+					{
+					xtype: "button",
+					itemId: "clickme", 
+					text: "Annuler",
+					margin: 20
+				},
 	],
 	bbar:[
 	//Bottom bar buttons
