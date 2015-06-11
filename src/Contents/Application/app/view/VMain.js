@@ -97,7 +97,7 @@ App.view.define('VMain', {
 						width: 200,
  						displayField: "LibUni",		//Alt use: LibUnic
 						valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
-						
+// HERE 2 *****************						
 						store: App.store.create("App.Unite.get_unite", {
 													autoLoad: true
 												})  	// Creation du store
