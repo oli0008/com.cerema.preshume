@@ -13,7 +13,7 @@ Unite = {
 	//old			q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 		//		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
 		
-		console.log(q.sql('get_etablis'));		//log apparait dans DOS box
+		console.log(q.sql('get_etablis' + ' input_p= ' + input_p.id_Etablis));		//log apparait dans DOS box
 		q.model('bpclight',q.sql('get_unite',{RECHERCHE: input_p.id_Etablis}),fn_cb);
 	
 	}
