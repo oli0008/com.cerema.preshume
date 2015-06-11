@@ -46,21 +46,8 @@ App.view.define('main.VAgent',
 	border: false,
 	
 	layout: "border",
-//********************** NORTH ***************************	
+	
 	items: [
-/*	
-		{	//menu bar
-			region: 'north',
-			height: 25,
-			minHeight: 25,
-			border:false,
-			baseCls: 'cls-header',
-			xtype: "Menu",
-			itemId: "MenuPanel",
-			menu: [
-			]	
-		},
-*/		
 //********************** CENTER ***************************	
 		{
 			region: "center",			
