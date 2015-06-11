@@ -78,7 +78,8 @@ App.view.define('main.VAgent',
 		//********************
 				{
 		
-					layout: "hbox",
+				//	layout: "hbox",
+					layout: "vbox",
 					border: false,
 					width: "50%",
 					items: [				
