@@ -18,15 +18,15 @@ App.view.define('main.VAgent',
 	//Top bar buttons
 	{
 		xtype: "button",
-		itemId: "clickme", 
+		itemId: "clickme5", 
 		text: "Nouveau",
-		margin: 20
+
 	},
 	{
 		xtype: "button",
-		itemId: "clickme", 
+		itemId: "clickme4", 
 		text: "Annuler",
-		margin: 20
+
 	}
 	],
 	bbar:[
@@ -34,15 +34,15 @@ App.view.define('main.VAgent',
 	'->',
 	{
 		xtype: "button",
-		itemId: "clickme", 
+		itemId: "clickme3", 
 		text: "Nouveau2",
-		margin: 20
+
 	},
 	{
 		xtype: "button",
-		itemId: "clickme", 
+		itemId: "clickme2", 
 		text: "Annuler2",
-		margin: 20
+
 	}
 	],	
 	listeners: {
@@ -54,9 +54,7 @@ App.view.define('main.VAgent',
 		}
 	},
 	
-/* OLI1 */
-	
-////////////////////
+
 	border: false,
 	
 	layout: "border",
