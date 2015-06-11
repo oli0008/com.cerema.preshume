@@ -17,12 +17,12 @@ App.view.define('main.VAgent',
 	//Top bar buttons
 	{
 		xtype: "button",
-		itemId: "clickme5", 
+		itemId: "btnAgentNouveau", 
 		text: "Nouveau",
 	},
 	{
 		xtype: "button",
-		itemId: "clickme4", 
+		itemId: "btnAgentAnnuler", 
 		text: "Annuler",
 	}
 	],
@@ -31,14 +31,14 @@ App.view.define('main.VAgent',
 	'->',
 	{
 		xtype: "button",
-		itemId: "clickme3", 
-		text: "Nouveau2",
+		itemId: "btnAgentSupprimer", 
+		text: "Supprimer",
 
 	},
 	{
 		xtype: "button",
-		itemId: "clickme2", 
-		text: "Annuler2",
+		itemId: "btnAgentEnregistrer", 
+		text: "Enregistrer",
 	}
 	],	
 
