@@ -11,7 +11,7 @@ GTotalEffectifPhysique = {
 		//q.delete
 		//q.sql method
 		console.log(q.sql('get_GTotalEffectifPhysique',{RECHERCHE: t.recherche}));	//log apparait dans DOS box
-		console.log('*** oli ***');
+		console.log('*** oli GTotalEffectifPhysique.cherche ***');
 //		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE:'%' + t.recherche + '%'}),fonction_retour);
 //test		q.model('bpclight',q.sql('get_GTotalEffectifPhysique',{RECHERCHE: t.recherche}),fonction_retour);
 		//q.model('bpclight','select nom,prenom from EffectifPhysique',fonction_retour);
