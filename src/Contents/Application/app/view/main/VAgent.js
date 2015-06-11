@@ -37,9 +37,9 @@ App.view.define('main.VAgent',
 			region: "center",			
 			split:true,
 			
-			layout: "hbox",
+/* 			layout: "hbox",
 			border: false,
-			width: "50%",
+			width: "50%", */
 			
 			items: [
 
