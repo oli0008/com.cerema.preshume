@@ -95,6 +95,7 @@ App.view.define('main.VAgent',
 						
 					},
 					fieldLabel: "Résidence",
+					labelAlign: "top",
 				},
 				]
 					
