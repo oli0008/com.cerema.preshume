@@ -94,11 +94,11 @@ App.view.define('main.VAgent',
 			},
 			],
 //**************************************************
-/* 			layout: "hbox",
+			layout: "hbox",
 			border: false,
-			width: "100%",  */
+			width: "100%",  
 			
-// 			items: 
+ 			items: 
 [		
 			{
 				xtype: "combo",
