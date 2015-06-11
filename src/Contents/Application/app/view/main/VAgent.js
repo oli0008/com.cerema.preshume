@@ -12,6 +12,56 @@ App.view.define('main.VAgent',
 	resizable: false,
 	closeAction: 'destroy',
 	title: 'Modification Agent',
+
+/* OLI1 */
+	tbar:[
+	//Top bar buttons
+	{ 
+		text:'Nouveau', 
+		formBind:true, 
+		id:'TMarcheNew',
+		hidden: false,
+		scope:this/*, 
+		handler: mymarches_new*/
+		
+	},
+	{
+		text:'Annuler',
+		id: 'TMarcheClose'
+	}
+	],
+	bbar:[
+	//Bottom bar buttons
+	'->',
+	{ 
+		text:'Supprimer	', 
+		formBind:true, 
+		id:'TMarcheDelete',
+		scope:this, 
+		hidden: false/*,
+		handler: mymarches_del*/
+		
+	},
+	{ 
+		text: 'Enregistrer', 
+		formBind: true, 
+		id:'TMarcheRecord',
+		hidden: false,
+		scope: this/*, 
+		handler: myform_record*/
+		
+	}
+	],	
+	listeners: {
+		show: function()
+		{
+			/*$('#filetosend').click(uploadFile);
+			$('#filetodownload').click(downloadFile);*/
+			
+		}
+	},
+	
+/* OLI1 */
 	
 ////////////////////
 	border: false,
