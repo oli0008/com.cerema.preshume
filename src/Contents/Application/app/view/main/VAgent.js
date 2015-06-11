@@ -136,7 +136,7 @@ App.view.define('main.VAgent',
 				labelAlign: "top",
 			},	 */		
 			
-			]					
+//			]					
 		}
 	]
 });
