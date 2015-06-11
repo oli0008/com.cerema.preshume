@@ -22,7 +22,7 @@ App.controller.define('CMain', {
 			"combo#cboUnite": {
 				select: "valider_cboService"
 			},
-			"button#btnOk": {
+			"button#btnMainOk": {
 				click: "clickme_onclick"
 			}
 		});
