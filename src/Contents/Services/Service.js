@@ -1,6 +1,9 @@
 // class Service
 // class omneedia db = classe moteur d'abstraction de base de données
 Service = {
+	
+/* **	
+
 	get_service: function(o,cb)
 	{
 //		console.log('select kuni, LibUnic, LibUni from unites where archive = 0 and kets = "'+o.id_Etablis+'" ');
@@ -15,6 +18,8 @@ Service = {
 
 module.exports = Service;
 
+** */
+
 /* 
 // *** combo services 
 select kuni, LibSubc, LibSub  
@@ -22,7 +27,7 @@ from subdis
 where archive = 0 
 and kuni = 13		// user select kuni = 13 -- result = 6 
 */
-/*
+
 	get_service: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
@@ -30,7 +35,10 @@ and kuni = 13		// user select kuni = 13 -- result = 6
   		var q = Service.using('db');
 
 		console.log('>>Service.get_service()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Etablis}),fn_cb);
+		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	}
-*/
+};
+
+module.exports = Service;
+
