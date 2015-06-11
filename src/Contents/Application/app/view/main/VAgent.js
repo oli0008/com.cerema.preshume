@@ -92,7 +92,14 @@ App.view.define('main.VAgent',
 				fieldLabel: "Résidence administrative",
 				labelAlign: "top",
 			},
-//**************************************************			
+			],
+//**************************************************
+			layout: "hbox",
+			border: false,
+			width: "100%", 
+			
+			items: [		
+			{
 				xtype: "combo",
 				itemId: "cboNom2",
 				margin: {
