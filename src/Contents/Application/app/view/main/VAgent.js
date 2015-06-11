@@ -12,6 +12,8 @@ App.view.define('main.VAgent',
 	resizable: false,
 	closeAction: 'destroy',
 	title: 'Modification Agent',
+	
+/* OLI1 
 	tbar:[
 	//Top bar buttons
 	{ 
@@ -21,6 +23,7 @@ App.view.define('main.VAgent',
 		hidden: false,
 		scope:this/*, 
 		handler: mymarches_new*/
+/*		
 	},
 	{
 		text:'Annuler',
@@ -37,6 +40,7 @@ App.view.define('main.VAgent',
 		scope:this, 
 		hidden: false/*,
 		handler: mymarches_del*/
+/*		
 	},
 	{ 
 		text: 'Enregistrer', 
@@ -45,6 +49,7 @@ App.view.define('main.VAgent',
 		hidden: false,
 		scope: this/*, 
 		handler: myform_record*/
+/*		
 	}
 	],	
 	listeners: {
@@ -52,8 +57,12 @@ App.view.define('main.VAgent',
 		{
 			/*$('#filetosend').click(uploadFile);
 			$('#filetodownload').click(downloadFile);*/
+/*			
 		}
 	},
+	
+OLI1 */
+	
 	items: [
 		{
 			xtype:'form',
