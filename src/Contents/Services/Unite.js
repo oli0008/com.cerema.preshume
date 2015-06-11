@@ -6,7 +6,7 @@ Unite = {
 		// 1er argument = error
 		// 2eme argument = response
 		
-  		var q = Unite.using('db');
+  //		var q = Unite.using('db');
 
 //		console.log(q.sql('get_etablis'));		//log apparait dans DOS box
 //**		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
