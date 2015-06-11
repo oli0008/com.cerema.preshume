@@ -80,7 +80,7 @@ App.view.define('main.VAgent',
 			},			
 			{
 				xtype: "textfield",
-				itemId: "txtLaitage", 
+				itemId: "txtResidenceAdmin", 
 				text: "Laitages",
 				margin: {
 						top : 10,
