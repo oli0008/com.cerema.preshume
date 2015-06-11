@@ -48,6 +48,7 @@ App.controller.define('CMain', {
 	valider_cboUnite: function(p, record) {
 		var Kets = App.get('combo#cboEtablis').getValue();
 		console.log(App.get('combo#cboEtablis').getValue());
+		//Efface les infos montrées (displayField) sur les 2 combos
 		App.get('combo#cboUnite').setValue('');
 		App.get('combo#cboService').setValue('');
 		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis = Kets;
@@ -58,6 +59,7 @@ App.controller.define('CMain', {
 	valider_cboService: function(p, record) {
 		var Kuni = App.get('combo#cboUnite').getValue();
 		console.log(App.get('combo#cboUnite').getValue());
+		//Efface l'info montrée (displayField) sur le combo
 		App.get('combo#cboService').setValue('');
 		App.get('combo#cboService').getStore().getProxy().extraParams.id_Service = Kuni;
 		App.get('combo#cboService').getStore().load();
