@@ -17,9 +17,9 @@ App.controller.define('CMain', {
 				click: "Menu_onClick"
 			},
 			"combo#cboMainEtablis": {
-				select: "valider_cboUnite"
+				select: "valider_cboMainUnite"
 			},
-			"combo#cboUnite": {
+			"combo#cboMainUnite": {
 				select: "valider_cboMainService"
 			},
 			"button#btnMainOk": {
@@ -45,20 +45,20 @@ App.controller.define('CMain', {
 	},
 	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
-	valider_cboUnite: function(p, record) {
+	valider_cboMainUnite: function(p, record) {
 		var Kets = App.get('combo#cboMainEtablis').getValue();
 		console.log(App.get('combo#cboMainEtablis').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos
-		App.get('combo#cboUnite').setValue('');
+		App.get('combo#cboMainUnite').setValue('');
 		App.get('combo#cboMainService').setValue('');
-		App.get('combo#cboUnite').getStore().getProxy().extraParams.id_Etablis = Kets;
-		App.get('combo#cboUnite').getStore().load();
+		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets;
+		App.get('combo#cboMainUnite').getStore().load();
 	},
 	
 	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
 	valider_cboMainService: function(p, record) {
-		var Kuni = App.get('combo#cboUnite').getValue();
-		console.log(App.get('combo#cboUnite').getValue());
+		var Kuni = App.get('combo#cboMainUnite').getValue();
+		console.log(App.get('combo#cboMainUnite').getValue());
 		//Efface l'info montrée (displayField) sur le combo
 		App.get('combo#cboMainService').setValue('');
 		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni;
@@ -67,12 +67,12 @@ App.controller.define('CMain', {
 	
 	clickme_onclick: function()
 	{
-		//on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboUnite
-		//App.get('combo#cboUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
+		//on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
+		//App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
 		
 		
-		//on passe la valeur sélectionnée dans cboUnite comme argument à la requette pour charger cboMainService
-		//App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboUnite').getValue();
+		//on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
+		//App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
 		
 		//
 		
