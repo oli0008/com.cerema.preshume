@@ -1,5 +1,7 @@
-Service={
-	get_Service: function(o,cb)
+// class Service
+// class omneedia db = classe moteur d'abstraction de base de données
+Service = {
+	get_service: function(o,cb)
 	{
 //		console.log('select kuni, LibUnic, LibUni from unites where archive = 0 and kets = "'+o.id_Etablis+'" ');
 		console.log('bpclight','select kuni, LibSubc, LibSub from subdis where archive = 0 and kuni = "' + o.id_Service + '" ');
@@ -11,7 +13,7 @@ Service={
 	}
 };
 
-module.exports=Service;
+module.exports = Service;
 
 /* 
 // *** combo services 
@@ -20,4 +22,14 @@ from subdis
 where archive = 0 
 and kuni = 13		// user select kuni = 13 -- result = 6 
 */
-
+/*
+	 get_Etablis: function(in1,fn_cb) {
+		// 1er argument = error
+		// 2eme argument = response
+		
+  		var q = Etablis.using('db');
+		
+		console.log('>>Etablis.get_etablis()');
+		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
+*/
