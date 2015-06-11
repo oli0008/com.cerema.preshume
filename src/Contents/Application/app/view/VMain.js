@@ -77,7 +77,7 @@ App.view.define('VMain', {
  						displayField: "LibEts",
 						valueField: "kets",			//BIZZARE: Kets doit être en minuscule
 // HERE *****************						
-						store: App.store.create("App.Etablis.get_Etablis", {
+						store: App.store.create("App.Etablis.get_etablis", {
 													autoLoad: true
 												}) 		// Creation du store				
 					},
