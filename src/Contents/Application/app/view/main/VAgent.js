@@ -27,7 +27,7 @@ App.view.define('main.VAgent',
 	],
 	bbar:[
 	//Bottom bar buttons
-//	'->',
+	'->',			//Met les autres éléments du coté droit
 	{
 		xtype: "button",
 		itemId: "btnAgentSupprimer", 
