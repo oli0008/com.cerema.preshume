@@ -10,8 +10,8 @@ GTotalEffectifPhysique = {
 		//q.post
 		//q.delete
 		//q.sql method
-		console.log(q.sql('qget_GTotalEffectifPhysique',{RECHERCHE: t.recherche}));	//log apparait dans DOS box
 		console.log('>>GTotalEffectifPhysique.cherche()');
+		console.log(q.sql('qget_GTotalEffectifPhysique',{RECHERCHE: t.recherche}));	//log apparait dans DOS box
 
 //test		q.model('bpclight',q.sql('get_GTotalEffectifPhysique',{RECHERCHE: t.recherche}),fonction_retour);
 		//q.model('bpclight','select nom,prenom from EffectifPhysique',fonction_retour);
