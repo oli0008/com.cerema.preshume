@@ -107,7 +107,7 @@ App.view.define('main.VAgent',
 						left:10
 								
 						},
-				fieldLabel: "Nom",
+				fieldLabel: "Nom2",
 				allowBlank: false,
 				editable: false,
 				labelAlign: "top",
