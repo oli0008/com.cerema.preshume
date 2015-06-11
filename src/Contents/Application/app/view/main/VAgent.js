@@ -56,7 +56,26 @@ App.view.define('main.VAgent',
 			width: "100%", 
 			
 			items: [
-			
+				{
+					xtype: "combo",
+					itemId: "cboAgentEtablis",
+					margin: {
+							top: 10,
+							left:10	
+							},
+					fieldLabel: "Etablissement",
+				//	allowBlank: false,		//false = mandatory filling
+					editable: false,
+					labelAlign: "top",
+					labelWidth: 200,
+					width: 250,
+ 					displayField: "LibEts",
+					valueField: "kets",			//BIZZARE: Kets doit être en minuscule
+						
+					store: App.store.create("App.Etablis.get_etablis", {
+													autoLoad: true
+												}) 		// Creation du store				
+				},			
 			
 /* 			{
 				xtype: "combo",
