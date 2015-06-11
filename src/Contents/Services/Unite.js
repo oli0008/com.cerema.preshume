@@ -19,7 +19,7 @@ Unite = {
 //		console.log(q.sql( 'qget_unite' + ' in1= ' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
 //		console.log("Query= " + q.sql( 'qget_unite' + ' in1= ' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
 //		console.log("$XXX$-OLI-$XXX$" + q.sql( 'qget_unite' + ' in1= ' + {RECHERCHE: in1.id_Etablis} ) + " $BB$-OLI-$BB$");		//log apparait dans DOS box
-		q.model('bpclight',q.sql('get_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
+		q.model('bpclight',q.sql('qget_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
 	
 	}
 //temp	
