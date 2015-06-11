@@ -93,7 +93,41 @@ App.view.define('main.VAgent',
 				labelAlign: "top",
 			},
 //**************************************************			
-			
+				xtype: "combo",
+				itemId: "cboNom",
+				margin: {
+						top: 10,
+						left:10
+								
+						},
+				fieldLabel: "Nom",
+				allowBlank: false,
+				editable: false,
+				labelAlign: "top",
+				labelWidth: 200,
+				width: 200,
+ 				displayField: "NomSource",
+				valueField: "IdSource",
+						
+				store: App.store.create('MNomSource', // Creation du store
+								{
+											autoLoad: true
+								})  						
+			},			
+			{
+				xtype: "textfield",
+				itemId: "txtResidenceAdmin", 
+	//			text: "Laitages",
+				margin: {
+						top : 10,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20
+						
+						},
+				fieldLabel: "Résidence administrative",
+				labelAlign: "top",
+			},			
 			
 			]					
 		}
