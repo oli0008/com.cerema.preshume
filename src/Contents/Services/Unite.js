@@ -1,8 +1,8 @@
 // class Unite
 // class omneedia db = classe moteur d'abstraction de base de données
 Unite = {
-//	get_Unite: function(o,cb)
-	get_Unite: function(input_p,fn_cb) {
+//	get_unite: function(o,cb)
+	get_unite: function(input_p,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		
@@ -12,7 +12,9 @@ Unite = {
 //**		q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 	//old			q.model('bpclight',q.sql('get_etablis'),fn_cb);  
 		//		q.model('bpclight',q.sql('get_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
-		q.model('bpclight',q.sql('get_Unite',{RECHERCHE: input_p.id_Etablis}),fn_cb);
+		
+		console.log(q.sql('get_etablis'));		//log apparait dans DOS box
+		q.model('bpclight',q.sql('get_unite',{RECHERCHE: input_p.id_Etablis}),fn_cb);
 	
 	}
 //temp	
