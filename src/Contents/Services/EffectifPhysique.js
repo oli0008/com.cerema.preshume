@@ -10,10 +10,7 @@ EffectifPhysique = {
 
 		console.log('>>EffectifPhysique.cherche()');
 		console.log(q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}));	//log apparait dans DOS box
-
-//		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE:'%' + in1.param_recherche + '%'}),fn_cb);
 		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);
-		//q.model('bpclight','select nom,prenom from EffectifPhysique',fn_cb);
 	}
 };
 
