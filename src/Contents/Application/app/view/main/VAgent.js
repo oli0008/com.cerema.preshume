@@ -27,7 +27,7 @@ App.view.define('main.VAgent',
 	],
 	bbar:[
 	//Bottom bar buttons
-//	'->',			//Met les autres éléments du coté droit
+	'->',			//Met les autres éléments du coté droit
 	{
 		xtype: "button",
 		itemId: "btnAgentSupprimer", 
@@ -94,7 +94,7 @@ App.view.define('main.VAgent',
 			}
 			]
 		},
-/* 		{
+ 		{
 //**************************************************
 			layout: "hbox",
 			border: false,
@@ -139,7 +139,7 @@ App.view.define('main.VAgent',
 			},			
 			
 			]					
-		} */
+		} 
 	]
 });
 	
