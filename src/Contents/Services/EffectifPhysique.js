@@ -11,7 +11,7 @@ EffectifPhysique = {
 		//q.delete
 		//q.sql method
 		console.log(q.sql('qget_EffectifPhysique',{RECHERCHE: t.param_recherche}));	//log apparait dans DOS box
-		console.log('>> oli EffectifPhysique.cherche()');
+		console.log('>>EffectifPhysique.cherche()');
 //		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE:'%' + t.param_recherche + '%'}),fonction_retour);
 		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: t.param_recherche}),fonction_retour);
 		//q.model('bpclight','select nom,prenom from EffectifPhysique',fonction_retour);
