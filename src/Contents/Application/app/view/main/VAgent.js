@@ -16,10 +16,16 @@ App.view.define('main.VAgent',
 /* OLI1 */
 	tbar:[
 	//Top bar buttons
+					{
+					xtype: "button",
+					itemId: "clickme", 
+					text: "region center2",
+					margin: 20
+				},
 	{ 
 		text:'Nouveau', 
-		formBind:true, 
-		id:'TMarcheNew',
+
+		ItemId:'TMarcheNew',
 		hidden: false,
 		scope:this/*, 
 		handler: mymarches_new*/
