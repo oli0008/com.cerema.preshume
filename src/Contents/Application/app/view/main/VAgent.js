@@ -37,52 +37,11 @@ App.view.define('main.VAgent',
 			region: "center",			
 			split:true,
 			
-/* 			layout: "hbox",
+ 			layout: "hbox",
 			border: false,
-			width: "50%", */
+			width: "100%", 
 			
 			items: [
-
-				{
-					xtype: "button",
-					itemId: "clickme", 
-					text: "region center2",
-					margin: 20
-				},
-				{
-					xtype: "textfield",
-					itemId: "txtLaitage", 
-					text: "Laitages",
-					margin: {
-						top : 40,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20
-						
-					}
-				},
-								{
-					xtype: "label",
-					itemId: "lblFromage", 
-					text: "Fromage--Lbl",
-					margin: 20
-				},		
-				{
-					xtype: "textarea",
-					itemId: "txtFromage", 
-					text: "Fromage--Txt",
-					margin: 20
-				},				
-
-
-		//********************
-				{
-		
-				//	layout: "hbox",
-					layout: "vbox",
-					border: false,
-					width: "50%",
-					items: [				
 					{
 						xtype: "combo",
 						itemId: "cboNom",
@@ -105,40 +64,23 @@ App.view.define('main.VAgent',
 													autoLoad: true
 												})  */
 						
-					},
-					{
-						xtype: "datefield",
-						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
-						itemId: "date",
-						labelAlign: "top",
-						allowBlank: false,
-						editable: false,
-						margin: {
-								top: 10,
-								left:30
-								
-							},
-						width:100,
-						fieldLabel: 'Date de parution',
-					},
-					{
-						xtype: "datefield",
-						itemId: "date_limite",
-						labelAlign: "top",
-						margin: {
-								top: 10,
-								left: 20
-								
-							},
-						width:80,
-						fieldLabel: 'Date limite',
-						allowBlank: false,
+					},			
+
+
+				{
+					xtype: "textfield",
+					itemId: "txtLaitage", 
+					text: "Laitages",
+					margin: {
+						top : 40,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20
+						
 					}
 					]
-				},
-			]
-		},
+					
+
 	]
-	
 });
 /////////////////////	
