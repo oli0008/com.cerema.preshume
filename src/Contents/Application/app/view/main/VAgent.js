@@ -92,6 +92,9 @@ App.view.define('main.VAgent',
 				fieldLabel: "Résidence administrative",
 				labelAlign: "top",
 			},
+//**************************************************			
+			
+			
 			]					
 		}
 	]
