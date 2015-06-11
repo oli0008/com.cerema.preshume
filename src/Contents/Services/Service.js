@@ -23,13 +23,14 @@ where archive = 0
 and kuni = 13		// user select kuni = 13 -- result = 6 
 */
 /*
-	 get_Etablis: function(in1,fn_cb) {
+	get_service: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		
-  		var q = Etablis.using('db');
-		
-		console.log('>>Etablis.get_etablis()');
-		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
+  		var q = Service.using('db');
+
+		console.log('>>Service.get_service()');
+		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Etablis}),fn_cb);
+	}
 */
