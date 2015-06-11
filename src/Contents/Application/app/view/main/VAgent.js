@@ -70,13 +70,13 @@ App.view.define('main.VAgent',
 				labelAlign: "top",
 				labelWidth: 200,
 				width: 200,
-/* 				displayField: "NomSource",
+ 				displayField: "NomSource",
 				valueField: "IdSource",
 						
 				store: App.store.create('MNomSource', // Creation du store
 								{
 											autoLoad: true
-								})  */						
+								})  						
 			},			
 			{
 				xtype: "textfield",
