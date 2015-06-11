@@ -63,7 +63,7 @@ App.view.define('VMain', {
 				items:[
 				{
 					xtype: "combo",
-					itemId: "cboEtablis",
+					itemId: "cboMainEtablis",
 					margin: {
 							top: 10,
 							left:10	

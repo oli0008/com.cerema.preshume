@@ -16,7 +16,7 @@ App.controller.define('CMain', {
 			"menu>menuitem": {
 				click: "Menu_onClick"
 			},
-			"combo#cboEtablis": {
+			"combo#cboMainEtablis": {
 				select: "valider_cboUnite"
 			},
 			"combo#cboUnite": {
@@ -46,8 +46,8 @@ App.controller.define('CMain', {
 	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboUnite: function(p, record) {
-		var Kets = App.get('combo#cboEtablis').getValue();
-		console.log(App.get('combo#cboEtablis').getValue());
+		var Kets = App.get('combo#cboMainEtablis').getValue();
+		console.log(App.get('combo#cboMainEtablis').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos
 		App.get('combo#cboUnite').setValue('');
 		App.get('combo#cboMainService').setValue('');
@@ -67,8 +67,8 @@ App.controller.define('CMain', {
 	
 	clickme_onclick: function()
 	{
-		//on passe la valeur sélectionnée dans cboEtablis comme argument à la requette pour charger cboUnite
-		//App.get('combo#cboUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboEtablis').getValue();
+		//on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboUnite
+		//App.get('combo#cboUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
 		
 		
 		//on passe la valeur sélectionnée dans cboUnite comme argument à la requette pour charger cboMainService
