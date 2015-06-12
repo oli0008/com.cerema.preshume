@@ -19,11 +19,15 @@ App.view.define('main.VContratTravail',
 		itemId: "btnAnnulerContratTravail", 
 		text: "Annuler",
 	},
+/* TODO - Rollback() */	
+
 	{
 		xtype: "button",
 		itemId: "btnEnregistrerContratTravail", 
 		text: "Enregistrer",
 	}
+/* TODO - Commit() */	
+
 	],
 /* 	bbar:[
 	//Bottom bar buttons
