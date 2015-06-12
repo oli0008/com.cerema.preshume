@@ -80,21 +80,75 @@ App.view.define('main.VAgent',
 				store: App.store.create("App.Etablis.get_etablis", {
 													autoLoad: true
 										}) 		// Creation du store				
-			},					
-			{
-				xtype: "textfield",
-				itemId: "txtResidenceAdmin", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20
+			},
+				//*************************
+				{
+					xtype: "combo",
+					itemId: "cboMainUnite",
+					margin: {
+							top: 10,
+							left:10	
+							},
+					fieldLabel: "Unité",
+					allowBlank: false,			//false = red notification
+					editable: false,
+					labelAlign: "top",
+					labelWidth: 200,
+					width: 200,
+ 					displayField: "LibUni",		//Alt use: LibUnic
+					valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
 						
-						},
-				fieldLabel: "Résidence administrative",
-				labelAlign: "top",
-			}
+					store: App.store.create("App.Unite.get_unite", {
+													autoLoad: true
+												})  	// Creation du store
+				},
+				{
+					xtype: "combo",
+					itemId: "cboMainService",
+					margin: {
+							top: 10,
+							left:10	
+							},
+					fieldLabel: "Service",
+					allowBlank: false,					//false = mandatory filling
+					editable: false,
+					labelAlign: "top",
+					labelWidth: 200,
+					width: 200,
+ 					displayField: "LibSubc",
+					valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule
+						
+					store: App.store.create("App.Service.get_service", {
+													autoLoad: true
+												})  // Creation du store	
+				},
+				//*************************			
+					{
+						xtype: "combo",
+						itemId: "cboAgentThematique",
+						margin: {
+								top: 10,
+								left:10								
+							},
+							
+// TODO check fieldLabel: "Nom"  
+
+//						fieldLabel: "Nom",
+						allowBlank: false,
+						editable: false,
+						labelAlign: "top",
+						labelWidth: 200,
+						width: 200,
+						displayField: "nom_thematique",
+						valueField: "id_thematique",
+						
+//						store: App.store.create('MNomSource', // Creation du store
+//												{
+//													autoLoad: true
+//												})  	
+					},
+
+			
 			]
 		},
 /* 		{
