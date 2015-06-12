@@ -148,7 +148,55 @@ App.view.define('main.VAgent',
 //													autoLoad: true
 //												})  	
 					},
+//////HBOBX/////////
+ 		{
+//**************************************************
+			layout: "hbox",
+			border: false,
+			width: "100%",  
+			
+ 			items: [		
+			{
+				xtype: "combo",
+				itemId: "cboNom2",
+				margin: {
+						top: 10,
+						left:10
+								
+						},
+				fieldLabel: "Nom2",
+				allowBlank: false,
+				editable: false,
+				labelAlign: "top",
+				labelWidth: 200,
+				width: 200,
+ 				displayField: "NomSource",
+				valueField: "IdSource",
+						
+				store: App.store.create('MNomSource', // Creation du store
+								{
+											autoLoad: true
+								})  						
+			},			
+			{
+				xtype: "textfield",
+				itemId: "txtResidenceAdmin2", 
+	//			text: "Laitages",
+				margin: {
+						top : 10,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20
+						
+						},
+				fieldLabel: "Résidence administrative2",
+				labelAlign: "top",
+			},			
+			
+			]					
+		} 
 
+//////////////
 			
 			]
 		},
