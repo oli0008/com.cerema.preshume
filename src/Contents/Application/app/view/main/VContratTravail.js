@@ -123,8 +123,7 @@ App.view.define('main.VContratTravail',
 				itemId: "cboTypeContrat",
 				margin: {
 						top: 10,
-						left:20
-								
+						left:20							
 						},
 				fieldLabel: "Type de contrat",
 				allowBlank: false,
