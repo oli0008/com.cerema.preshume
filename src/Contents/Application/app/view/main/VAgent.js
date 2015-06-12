@@ -26,6 +26,8 @@ App.view.define('main.VAgent',
 		itemId: "btnAgentEnregistrer", 
 		text: "Enregistrer",
 	}
+/* TODO - Commit() */	
+
 	],
 /* 
 	bbar:[
