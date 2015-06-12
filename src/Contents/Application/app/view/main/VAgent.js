@@ -146,7 +146,7 @@ App.view.define('main.VAgent',
 		{
 			region: "south",			
 			split:true,
-			
+/* TODO --check */			
 					layout: "hbox",
 					border: false,
 					width: "100%",			
