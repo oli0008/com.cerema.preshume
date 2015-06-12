@@ -43,12 +43,11 @@ App.view.define('main.VContratTravail',
 		itemId: "btnAgentEnregistrer", 
 		text: "Enregistrer",
 	}
-	],	 */
+	],	 
+*/
 
-	border: false,
-	
-	layout: "border",
-	
+	border: false,	
+	layout: "border",	
 	items: [
 //********************** CENTER ***************************	
 		{
