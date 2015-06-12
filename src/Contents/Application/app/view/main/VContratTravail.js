@@ -29,6 +29,7 @@ App.view.define('main.VContratTravail',
 /* TODO - Commit() */	
 
 	],
+	
 /* 	bbar:[
 	//Bottom bar buttons
 	'->',			//Met les autres éléments du coté droit
