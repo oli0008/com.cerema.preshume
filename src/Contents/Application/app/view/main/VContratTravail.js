@@ -185,6 +185,7 @@ App.view.define('main.VContratTravail',
 				labelAlign: "top",
 			},	
 	 */	
+/* 	 
 					{
 						xtype: "datefield",
 						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
@@ -199,18 +200,19 @@ App.view.define('main.VContratTravail',
 						width:100,
 						fieldLabel: 'Date de parution',
 					},
-					{
-						xtype: "datefield",
-						itemId: "date_limite",
-						labelAlign: "top",
-						margin: {
-								top: 10,
-								left: 20								
-							},
-						width:80,
-						fieldLabel: 'Date limite',
-						allowBlank: false,
-					},	 
+	 */				
+			{
+				xtype: "datefield",
+				itemId: "datDateArrivee",
+				labelAlign: "top",
+				margin: {
+							top: 10,
+							left: 20								
+						},
+				width:200,
+				fieldLabel: "Date d'arrivée",
+				allowBlank: false,
+			},	 
 			{
 				xtype: "textfield",
 				itemId: "txtDescriptionPoste", 
