@@ -114,8 +114,7 @@ App.view.define('main.VContratTravail',
 						top : 10,
 					//	bottom : 20,
 						left : 20,
-					//	right : 20
-						
+					//	right : 20						
 						},
 				fieldLabel: "Agent",
 				labelAlign: "top",
@@ -146,14 +145,13 @@ App.view.define('main.VContratTravail',
 			},			
 			{
 				xtype: "textfield",
-				itemId: "txtResidenceAdmin2", 
+				itemId: "txtNumeroContrat", 
 	//			text: "Laitages",
 				margin: {
 						top : 10,
 					//	bottom : 20,
 						left : 20,
-					//	right : 20
-						
+					//	right : 20						
 						},
 				fieldLabel: "Numéro de contrat",
 				labelAlign: "top",
@@ -166,8 +164,7 @@ App.view.define('main.VContratTravail',
 						top : 10,
 					//	bottom : 20,
 						left : 20,
-					//	right : 20
-						
+					//	right : 20						
 						},
 				fieldLabel: "Salaire",
 				labelAlign: "top",
@@ -181,8 +178,7 @@ App.view.define('main.VContratTravail',
 						top : 10,
 					//	bottom : 20,
 						left : 20,
-					//	right : 20
-						
+					//	right : 20						
 						},
 				fieldLabel: "Date d'arrivée",
 				labelAlign: "top",
@@ -195,8 +191,7 @@ App.view.define('main.VContratTravail',
 						top : 10,
 					//	bottom : 20,
 						left : 20,
-					//	right : 20
-						
+					//	right : 20						
 						},
 				fieldLabel: "Description du poste",
 				labelAlign: "top",
