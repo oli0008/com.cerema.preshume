@@ -143,6 +143,20 @@ App.view.define('main.VAgent',
 			
 			]					
 		} */
+				{
+			region: "south",			
+			split:true,
+			items: [
+				{
+					xtype: "button",
+					itemId: "btnSouth",		//id
+					text: "region south",	//caption
+					margin: 20,
+					
+					
+				}
+			]
+		},
 	]
 });
 	
