@@ -210,7 +210,7 @@ App.view.define('main.VContratTravail',
 						width:80,
 						fieldLabel: 'Date limite',
 						allowBlank: false,
-					}	 
+					},	 
 			{
 				xtype: "textfield",
 				itemId: "txtDescriptionPoste", 
