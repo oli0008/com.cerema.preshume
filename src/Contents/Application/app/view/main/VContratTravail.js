@@ -169,7 +169,8 @@ App.view.define('main.VContratTravail',
 				fieldLabel: "Salaire",
 				labelAlign: "top",
 			},	
-/* TODO date field ? */			
+/* TODO date field ? */	
+/* 		
 			{
 				xtype: "textfield",
 				itemId: "txtDateArrivee", 
@@ -182,7 +183,34 @@ App.view.define('main.VContratTravail',
 						},
 				fieldLabel: "Date d'arrivée",
 				labelAlign: "top",
-			},			
+			},	
+	 */	
+					{
+						xtype: "datefield",
+						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
+						itemId: "date",
+						labelAlign: "top",
+						allowBlank: false,
+						editable: false,
+						margin: {
+								top: 10,
+								left:30	
+							},
+						width:100,
+						fieldLabel: 'Date de parution',
+					},
+					{
+						xtype: "datefield",
+						itemId: "date_limite",
+						labelAlign: "top",
+						margin: {
+								top: 10,
+								left: 20								
+							},
+						width:80,
+						fieldLabel: 'Date limite',
+						allowBlank: false,
+					}	 
 			{
 				xtype: "textfield",
 				itemId: "txtDescriptionPoste", 
