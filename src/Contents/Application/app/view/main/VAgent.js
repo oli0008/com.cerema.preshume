@@ -5,7 +5,7 @@ App.view.define('main.VAgent',
 	x:50,
 	y:50,
     height: 535,
-    width: 930,
+    width: 930,	//width: 720
 	closable: true,
 	draggable: true,
 	resizable: false,
