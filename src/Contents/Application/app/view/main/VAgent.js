@@ -126,7 +126,7 @@ App.view.define('main.VAgent',
 				//*************************			
 					{
 						xtype: "combo",
-						itemId: "cboAgentThematique",
+						itemId: "cboAgent_2",
 						margin: {
 								top: 10,
 								left:10								
@@ -140,8 +140,8 @@ App.view.define('main.VAgent',
 						labelAlign: "top",
 						labelWidth: 200,
 						width: 200,
-						displayField: "nom_thematique",
-						valueField: "id_thematique",
+						displayField: "Nom",	// "Prenom",
+						valueField: "Kage",
 						
 //						store: App.store.create('MNomSource', // Creation du store
 //												{
