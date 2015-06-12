@@ -229,7 +229,7 @@ App.view.define('main.VAgent',
 					},
 					{
 						xtype: "combo",
-						itemId: "cboAgentMetier",
+						itemId: "cboAgentDomaneIntervention",
 						margin: {
 								top: 10,
 								left:10								
@@ -243,8 +243,8 @@ App.view.define('main.VAgent',
 						labelAlign: "top",
 						labelWidth: 200,
 						width: 200,
-						displayField: "nom_metier",
-						valueField: "id_metier",
+						displayField: "nom_domaine",
+						valueField: "id_domaine",
 						
 //						store: App.store.create('MNomSource', // Creation du store
 //												{
