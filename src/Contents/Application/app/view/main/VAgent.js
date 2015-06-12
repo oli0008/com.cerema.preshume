@@ -171,6 +171,67 @@ App.view.define('main.VAgent',
 				labelAlign: "top",
 			}
 			]
+/////////////////////			
+		//********************
+				{
+		
+					layout: "hbox",
+					border: false,
+					width: "100%",
+					items: [				
+					{
+						xtype: "combo",
+						itemId: "cboNom",
+						margin: {
+								top: 10,
+								left:10
+								
+							},
+						fieldLabel: "Nom",
+						allowBlank: false,
+						editable: false,
+						labelAlign: "top",
+						labelWidth: 200,
+						width: 200,
+/* 						 displayField: "NomSource",
+						valueField: "IdSource",
+						
+						store: App.store.create('MNomSource', // Creation du store
+												{
+													autoLoad: true
+												})  */
+						
+					},
+					{
+						xtype: "datefield",
+						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
+						itemId: "date",
+						labelAlign: "top",
+						allowBlank: false,
+						editable: false,
+						margin: {
+								top: 10,
+								left:30	
+							},
+						width:100,
+						fieldLabel: 'Date de parution',
+					},
+					{
+						xtype: "datefield",
+						itemId: "date_limite",
+						labelAlign: "top",
+						margin: {
+								top: 10,
+								left: 20								
+							},
+						width:80,
+						fieldLabel: 'Date limite',
+						allowBlank: false,
+					}
+					]
+				},			
+			
+/////////////////////////			
 		},
 	]
 });
