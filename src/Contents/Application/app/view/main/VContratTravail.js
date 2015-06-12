@@ -96,7 +96,7 @@ App.view.define('main.VContratTravail',
  		{
  */	
 //**************************************************
-			layout: "hbox",
+			layout: "vbox",
 			border: false,
 			width: "100%",  
 			
