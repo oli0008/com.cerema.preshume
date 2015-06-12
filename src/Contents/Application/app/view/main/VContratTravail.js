@@ -54,52 +54,6 @@ App.view.define('main.VContratTravail',
 		{
 			region: "center",			
 			split:true,
-/* 			
- 			layout: "hbox",
-			border: false,
-			width: "100%", 
-			
-			items: [
-			{
-				xtype: "combo",
-				itemId: "cboAgentEtablis",
-				margin: {
-						top: 10,
-						left:10	
-						},
-				fieldLabel: "Etablissement",
-			//	allowBlank: false,		//false = mandatory filling
-				editable: false,
-				labelAlign: "top",
-				labelWidth: 200,
-				width: 250,
- 				displayField: "LibEts",
-				valueField: "kets",			//BIZZARE: Kets doit être en minuscule
-						
-				store: App.store.create("App.Etablis.get_etablis", {
-													autoLoad: true
-										}) 		// Creation du store				
-			},					
-			{
-				xtype: "textfield",
-				itemId: "txtResidenceAdmin", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20
-						
-						},
-				fieldLabel: "Résidence administrative",
-				labelAlign: "top",
-			}
-			]
-		},
-	
- 		{
- */	
-//**************************************************
 			layout: "vbox",
 			border: false,
 			width: "100%",  
