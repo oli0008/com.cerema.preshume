@@ -189,7 +189,7 @@ App.view.define('main.VAgent',
 							
 // TODO check fieldLabel: "Nom"  
 
-						fieldLabel: "Nom",
+//						fieldLabel: "Nom",
 						allowBlank: false,
 						editable: false,
 						labelAlign: "top",
@@ -198,37 +198,59 @@ App.view.define('main.VAgent',
 						displayField: "nom_metier",
 						valueField: "id_metier",
 						
-						store: App.store.create('MNomSource', // Creation du store
-												{
-													autoLoad: true
-												})  	
+//						store: App.store.create('MNomSource', // Creation du store
+//												{
+//													autoLoad: true
+//												})  	
 					},
 					{
-						xtype: "datefield",
-						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
-						itemId: "date",
-						labelAlign: "top",
+						xtype: "combo",
+						itemId: "cboAgentThematique",
+						margin: {
+								top: 10,
+								left:10								
+							},
+							
+// TODO check fieldLabel: "Nom"  
+
+//						fieldLabel: "Nom",
 						allowBlank: false,
 						editable: false,
-						margin: {
-								top: 10,
-								left:30	
-							},
-						width:100,
-						fieldLabel: 'Date de parution',
+						labelAlign: "top",
+						labelWidth: 200,
+						width: 200,
+						displayField: "nom_thematique",
+						valueField: "id_thematique",
+						
+//						store: App.store.create('MNomSource', // Creation du store
+//												{
+//													autoLoad: true
+//												})  	
 					},
 					{
-						xtype: "datefield",
-						itemId: "date_limite",
-						labelAlign: "top",
+						xtype: "combo",
+						itemId: "cboAgentMetier",
 						margin: {
 								top: 10,
-								left: 20								
+								left:10								
 							},
-						width:80,
-						fieldLabel: 'Date limite',
+							
+// TODO check fieldLabel: "Nom"  
+
+//						fieldLabel: "Nom",
 						allowBlank: false,
-					}
+						editable: false,
+						labelAlign: "top",
+						labelWidth: 200,
+						width: 200,
+						displayField: "nom_metier",
+						valueField: "id_metier",
+						
+//						store: App.store.create('MNomSource', // Creation du store
+//												{
+//													autoLoad: true
+//												})  	
+					},					
 					]
 				},			
 			
