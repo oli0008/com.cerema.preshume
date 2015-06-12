@@ -131,10 +131,7 @@ App.view.define('main.VAgent',
 								top: 10,
 								left:10								
 							},
-							
-// TODO check fieldLabel: "Nom"  
-
-						fieldLabel: "Agent",
+						fieldLabel: "Agent",	//item caption
 						allowBlank: false,
 						editable: false,
 						labelAlign: "top",
