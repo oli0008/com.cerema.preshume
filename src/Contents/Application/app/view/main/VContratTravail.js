@@ -135,7 +135,8 @@ App.view.define('main.VContratTravail',
  				displayField: "type_contrat",
 				valueField: "id_type_contrat",
 /* TODO store setup */						
-				store: App.store.create('MNomSource', // Creation du store
+				store: App.store.create("App.Etablis.get_etablis", {
+				//'MNomSource', // Creation du store
 								{
 											autoLoad: true
 								})  						
