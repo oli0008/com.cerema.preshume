@@ -1,9 +1,10 @@
 App.controller.define('CMain', {
 
 	views: [
-		"VMain"
-		,
+		"VMain",
 		"main.VAgent"
+		,
+		"main.VContratTravail"
 	],
 	
 	models: [
@@ -40,6 +41,11 @@ App.controller.define('CMain', {
 			else if (p.itemId=="mnuModAgent") {
 			//	alert('clic sur mnuModAgent -- TODO');	
 				this.open_window_agent();
+			}
+/* TODO -- temp fix */			
+						else if (p.itemId=="mnuFutureXXX") {
+			//	alert('clic sur mnuModAgent -- TODO');	
+				this.open_window_contrat_travail();
 			}
 		};			
 	},
@@ -107,7 +113,14 @@ App.controller.define('CMain', {
 			modal:true
 		}).show();
 	},
-
+	
+	open_window_contrat_travail: function()
+	{
+//		alert('clic sur mnuModAgent');
+		App.view.create('main.VContratTravail',{			
+			modal:true
+		}).show();
+	},
 //****************
 	onLoad: function()
 	{
