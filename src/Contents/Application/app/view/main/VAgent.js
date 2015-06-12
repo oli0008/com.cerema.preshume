@@ -18,7 +18,9 @@ App.view.define('main.VAgent',
 		xtype: "button",
 		itemId: "btnAgentAnnuler", 
 		text: "Annuler",
-	}
+	},
+/* TODO - Rollback() */	
+
 	{
 		xtype: "button",
 		itemId: "btnAgentEnregistrer", 
