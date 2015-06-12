@@ -153,8 +153,8 @@ App.view.define('main.VAgent',
 			items: [
 			{
 				xtype: "button",
-				itemId: "btnSouth",		//id
-				text: "region south",	//caption
+				itemId: "btnVoireContratTravail",		//id
+				text: "Voire contrat de travail",	//caption
 				margin: 20,	
 			},
 			{
