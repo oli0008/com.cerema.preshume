@@ -143,18 +143,33 @@ App.view.define('main.VAgent',
 			
 			]					
 		} */
-				{
+		{
 			region: "south",			
 			split:true,
+			
+					layout: "hbox",
+					border: false,
+					width: "100%",			
 			items: [
-				{
-					xtype: "button",
-					itemId: "btnSouth",		//id
-					text: "region south",	//caption
-					margin: 20,
-					
-					
-				}
+			{
+				xtype: "button",
+				itemId: "btnSouth",		//id
+				text: "region south",	//caption
+				margin: 20,	
+			},
+			{
+				xtype: "textfield",
+				itemId: "txtResidenceAdmin", 
+	//			text: "Laitages",
+				margin: {
+						top : 10,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20		
+						},
+				fieldLabel: "Résidence administrative",
+				labelAlign: "top",
+			}
 			]
 		},
 	]
