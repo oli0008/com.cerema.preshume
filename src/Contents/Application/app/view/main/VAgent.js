@@ -122,6 +122,7 @@ App.view.define('main.VAgent',
 													autoLoad: true
 												})  // Creation du store	
 				},
+				
 				//*************************			
 					{
 						xtype: "combo",
