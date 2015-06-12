@@ -92,8 +92,9 @@ App.view.define('main.VContratTravail',
 			}
 			]
 		},
- */		
+	
  		{
+ */	
 //**************************************************
 			layout: "hbox",
 			border: false,
