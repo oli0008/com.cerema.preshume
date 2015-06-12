@@ -25,6 +25,7 @@ App.view.define('main.VAgent',
 		text: "Enregistrer",
 	}
 	],
+/* 
 	bbar:[
 	//Bottom bar buttons
 	'->',			//Met les autres éléments du coté droit
@@ -40,7 +41,7 @@ App.view.define('main.VAgent',
 		text: "Nouveau",
 	},
 	],	
-
+ */
 	border: false,
 	
 	layout: "border",
