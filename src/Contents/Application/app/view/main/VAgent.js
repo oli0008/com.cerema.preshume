@@ -172,7 +172,9 @@ App.view.define('main.VAgent',
 			}
 			]
 //// TO FIX -- START /////////////////			
+/* 		
 		//********************
+		
 				{
 		
 					layout: "hbox",
@@ -253,7 +255,7 @@ App.view.define('main.VAgent',
 					},					
 					]
 				},			
-			
+	 */		
 //// TO FIX -- END /////////////////				
 		},
 	]
