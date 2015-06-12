@@ -146,7 +146,7 @@ App.view.define('main.VAgent',
 		{
 			region: "south",			
 			split:true,
-/* TODO --check */			
+// TODO --check 			
 					layout: "hbox",
 					border: false,
 					width: "100%",			
@@ -171,7 +171,7 @@ App.view.define('main.VAgent',
 				labelAlign: "top",
 			}
 			]
-/////////////////////			
+//// TO FIX -- START /////////////////			
 		//********************
 				{
 		
@@ -181,26 +181,27 @@ App.view.define('main.VAgent',
 					items: [				
 					{
 						xtype: "combo",
-						itemId: "cboNom",
+						itemId: "cboAgentMetier",
 						margin: {
 								top: 10,
-								left:10
-								
+								left:10								
 							},
+							
+// TODO check fieldLabel: "Nom"  
+
 						fieldLabel: "Nom",
 						allowBlank: false,
 						editable: false,
 						labelAlign: "top",
 						labelWidth: 200,
 						width: 200,
-/* 						 displayField: "NomSource",
-						valueField: "IdSource",
+						displayField: "nom_metier",
+						valueField: "id_metier",
 						
 						store: App.store.create('MNomSource', // Creation du store
 												{
 													autoLoad: true
-												})  */
-						
+												})  	
 					},
 					{
 						xtype: "datefield",
@@ -231,7 +232,7 @@ App.view.define('main.VAgent',
 					]
 				},			
 			
-/////////////////////////			
+//// TO FIX -- END /////////////////				
 		},
 	]
 });
