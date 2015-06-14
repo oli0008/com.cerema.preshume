@@ -12,8 +12,8 @@ App.view.define('main.VAgent',
 	closeAction: 'destroy',
 	title: 'Modification Agent',
 
-	tbar:[
-	//Top bar buttons
+	bbar:[
+	//Bottom bar buttons
 	{
 		xtype: "button",
 		itemId: "btnAgentAnnuler", 
@@ -30,8 +30,8 @@ App.view.define('main.VAgent',
 
 	],
 /* 
-	bbar:[
-	//Bottom bar buttons
+	tbar:[
+	//Top bar buttons
 	'->',			//Met les autres éléments du coté droit
 	{
 		xtype: "button",
@@ -48,245 +48,107 @@ App.view.define('main.VAgent',
  */
  
 	border: false,
-	
-//	layout: "border",
 	layout: "vbox",
 	
 	items: [
-//********************** CENTER ***************************	
-
+	{
+		layout: "hbox",
+		width: "100%",
+		border: false,
+		items: [
 		{
-			region: "center",			
-			split:true,
-			
- 			layout: "hbox",
-			border: false,
-			width: "100%", 
-			
-			items: [
-			{
-				xtype: "combo",
-				itemId: "cboAgentEtablis",
-				margin: {
-						top: 10,
-						left:10	
-						},
-				fieldLabel: "Etablissement",
+			xtype: "combo",	
+			fieldLabel: "Etablissement",
+			labelAlign: "top",			
+			itemId: "cboMainEtablis",
 			//	allowBlank: false,		//false = mandatory filling
-				editable: false,
-				labelAlign: "top",
-				labelWidth: 200,
-				width: 250,
- 				displayField: "LibEts",
-				valueField: "kets",			//BIZZARE: Kets doit être en minuscule
-						
-				store: App.store.create("App.Etablis.get_etablis", {
-													autoLoad: true
-										}) 		// Creation du store				
-			},
-				//*************************
-				{
-					xtype: "combo",
-					itemId: "cboMainUnite",
-					margin: {
-							top: 10,
-							left:10	
-							},
-					fieldLabel: "Unité",
-					allowBlank: false,			//false = red notification
-					editable: false,
-					labelAlign: "top",
-					labelWidth: 200,
-					width: 200,
- 					displayField: "LibUni",		//Alt use: LibUnic
-					valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
-						
-					store: App.store.create("App.Unite.get_unite", {
-													autoLoad: true
-												})  	// Creation du store
-				},
-				{
-					xtype: "combo",
-					itemId: "cboMainService",
-					margin: {
-							top: 10,
-							left:10	
-							},
-					fieldLabel: "Service",
-					allowBlank: false,					//false = mandatory filling
-					editable: false,
-					labelAlign: "top",
-					labelWidth: 200,
-					width: 200,
- 					displayField: "LibSubc",
-					valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule
-						
-					store: App.store.create("App.Service.get_service", {
-													autoLoad: true
-												})  // Creation du store	
-				},
-				
-				//*************************			
-					{
-						xtype: "combo",
-						itemId: "cboAgent_2",
-						margin: {
-								top: 10,
-								left:10								
-							},
-						fieldLabel: "Agent",	//item caption
-						allowBlank: false,
-						editable: false,
-						labelAlign: "top",
-						labelWidth: 200,
-						width: 200,
-						displayField: "Nom",	// "Prenom",
-						valueField: "Kage",
-						
-//						store: App.store.create('MNomSource', // Creation du store
-//												{
-//													autoLoad: true
-//												})  	
-					},
-//////HBOBX/////////
-
-//////HBOBX/////////
-/* 		{
-//**************************************************
-			layout: "hbox",
-			border: false,
-			width: "100%",  
-			
- 			items: [		
-			{
-				xtype: "combo",
-				itemId: "cboNom2",
-				margin: {
-						top: 10,
-						left:10
-								
-						},
-				fieldLabel: "Nom2",
-				allowBlank: false,
-				editable: false,
-				labelAlign: "top",
-				labelWidth: 200,
-				width: 200,
- 				displayField: "NomSource",
-				valueField: "IdSource",
-						
-				store: App.store.create('MNomSource', // Creation du store
-								{
-											autoLoad: true
-								})  						
-			},			
-			{
-				xtype: "textfield",
-				itemId: "txtResidenceAdmin2", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20
-						
-						},
-				fieldLabel: "Résidence administrative2",
-				labelAlign: "top",
-			},			
-			
-			]					
-		} */
-
-//////////////
-			
-			]
+			editable: false,
+			flex: 1,
+			margin: 5
+			displayField: "LibEts",
+			valueField: "kets",			//BIZZARE: Kets doit être en minuscule						
+			store: App.store.create("App.Etablis.get_etablis", {
+												autoLoad: true
+									}) 		// Creation du store				
 		},
-/* 		{
-//**************************************************
-			layout: "hbox",
-			border: false,
-			width: "100%",  
-			
- 			items: [		
-			{
-				xtype: "combo",
-				itemId: "cboNom2",
-				margin: {
-						top: 10,
-						left:10
-								
-						},
-				fieldLabel: "Nom2",
-				allowBlank: false,
-				editable: false,
-				labelAlign: "top",
-				labelWidth: 200,
-				width: 200,
- 				displayField: "NomSource",
-				valueField: "IdSource",
-						
-				store: App.store.create('MNomSource', // Creation du store
-								{
-											autoLoad: true
-								})  						
-			},			
-			{
-				xtype: "textfield",
-				itemId: "txtResidenceAdmin2", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20
-						
-						},
-				fieldLabel: "Résidence administrative2",
-				labelAlign: "top",
-			},			
-			
-			]					
-		} */
+		//*************************
 		{
-			region: "south",			
-			split:true,
-// TODO --check 			
-					layout: "hbox",
-					border: false,
-					width: "100%",			
+			xtype: "combo",
+			fieldLabel: "Unité",
+			labelAlign: "top",
+			itemId: "cboMainUnite",
+			allowBlank: false,			//false = red notification
+			editable: false,
+			flex: 1,
+			margin: 5
+			displayField: "LibUni",		//Alt use: LibUnic
+			valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
+			store: App.store.create("App.Unite.get_unite", {
+												autoLoad: true
+									})  	// Creation du store
+		},
+		//*************************
+		{
+			xtype: "combo",
+			fieldLabel: "Service",
+			labelAlign: "top",
+			allowBlank: false,					//false = mandatory filling
+			editable: false,
+			flex: 1,
+			margin: 5
+ 			displayField: "LibSubc",
+			valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule	
+			store: App.store.create("App.Service.get_service", {
+													autoLoad: true
+									})  // Creation du store			
+		}
+		]
+	},
+	//*************************
+	{
+		xtype: "grid",
+		columns: [		
+		{
+			text: "Nom",
+			dataIndex: "Lastname"
+		},
+		{
+			text: "Prénom",
+			dataIndex: "Firstname"
+		}
+		],
+		border: false,
+		width: "100%",
+		height: 100,
+		store: App.store.create({
+			fields: [
+				"Lastname",
+				"Firstname"
+			],
+			data: [
+			{
+				Lastname: "Too",
+				Firstname: "fslkdfkklj"
+			}
+			]			
+		})
+	},
+	{
+		flex: 1,
+		width: "100%",
+		items: [
+		{
+			layout: "hbox",
+			width: "100%",
+			border: false,
 			items: [
 			{
-				xtype: "button",
-				itemId: "btnVoireContratTravail",		//id
-				text: "Voire contrat de travail",	//caption
-				margin: 20,	
-			},
-			{
-				xtype: "textfield",
-				itemId: "txtResidenceAdmin", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20		
-						},
-				fieldLabel: "Résidence administrative",
-				labelAlign: "top",
-			}
-			]
-//// TO FIX -- START /////////////////			
-/* 		
-		//********************
-		
-				{
-		
-					layout: "hbox",
-					border: false,
-					width: "100%",
-					items: [				
-					{
+				layout: "vbox",
+				flex: 1,
+				items: [
+// HERE start //	
+
+{
 						xtype: "combo",
 						itemId: "cboAgentMetier",
 						margin: {
@@ -296,7 +158,7 @@ App.view.define('main.VAgent',
 							
 // TODO check fieldLabel: "Nom"  
 
-//						fieldLabel: "Nom",
+						fieldLabel: "NomXX",
 						allowBlank: false,
 						editable: false,
 						labelAlign: "top",
@@ -320,7 +182,7 @@ App.view.define('main.VAgent',
 							
 // TODO check fieldLabel: "Nom"  
 
-//						fieldLabel: "Nom",
+						fieldLabel: "NomYY",
 						allowBlank: false,
 						editable: false,
 						labelAlign: "top",
@@ -334,35 +196,157 @@ App.view.define('main.VAgent',
 //													autoLoad: true
 //												})  	
 					},
-					{
-						xtype: "combo",
-						itemId: "cboAgentDomaneIntervention",
-						margin: {
-								top: 10,
-								left:10								
-							},
-							
-// TODO check fieldLabel: "Nom"  
 
-//						fieldLabel: "Nom",
+
+// HERE stop //		
+				]
+			},
+			{
+				layout: "vbox",
+				flex: 1,
+				items: [
+// HERE start 2 //				
+			{
+				xtype: "combo",
+				itemId: "cboTypeContrat",
+				margin: {
+						top: 10,
+						left:20							
+						},
+				fieldLabel: "Type de contrat",
+				allowBlank: false,
+				editable: false,
+				labelAlign: "top",
+				labelWidth: 200,
+				width: 200,
+ 				displayField: "type_contrat",
+				valueField: "id_type_contrat",
+/* TODO store setup */		
+//				store: App.store.create("App.Etablis.get_etablis", {				
+				store: App.store.create('MNomSource', // Creation du store
+								{
+											autoLoad: true
+								})  						
+			},			
+			{
+				xtype: "textfield",
+				itemId: "txtNumeroContrat", 
+	//			text: "Laitages",
+				margin: {
+						top : 10,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20						
+						},
+				width:200,
+				fieldLabel: "Numéro de contrat",
+				labelAlign: "top",
+			},			
+			{
+				xtype: "textfield",
+				itemId: "txtSalaire", 
+	//			text: "Laitages",
+				margin: {
+						top : 10,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20						
+						},
+				width:200,
+				fieldLabel: "Salaire",
+				labelAlign: "top",
+			},	
+/* TODO date field ? */	
+/* 		
+			{
+				xtype: "textfield",
+				itemId: "txtDateArrivee", 
+	//			text: "Laitages",
+				margin: {
+						top : 10,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20						
+						},
+				fieldLabel: "Date d'arrivée",
+				labelAlign: "top",
+			},	
+	 */	
+/* 	 
+					{
+						xtype: "datefield",
+						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
+						itemId: "date",
+						labelAlign: "top",
 						allowBlank: false,
 						editable: false,
-						labelAlign: "top",
-						labelWidth: 200,
-						width: 200,
-						displayField: "nom_domaine",
-						valueField: "id_domaine",
-						
-//						store: App.store.create('MNomSource', // Creation du store
-//												{
-//													autoLoad: true
-//												})  	
-					},					
-					]
-				},			
-	 */		
-//// TO FIX -- END /////////////////				
-		},
+						margin: {
+								top: 10,
+								left:30	
+							},
+						width:100,
+						fieldLabel: 'Date de parution',
+					},
+	 */				
+			{
+				xtype: "datefield",
+				itemId: "datDateArrivee",
+				labelAlign: "top",
+				margin: {
+							top: 10,
+							left: 20								
+						},
+				width:200,
+				fieldLabel: "Date d'arrivée",
+				allowBlank: false,
+			},	 
+/* 			
+			{
+				xtype: "textfield",
+				itemId: "txtDescriptionPoste", 
+	//			text: "Laitages",
+				margin: {
+						top : 10,
+					//	bottom : 20,
+						left : 20,
+					//	right : 20						
+						},
+				width:200,
+				fieldLabel: "Description du poste",
+				labelAlign: "top",
+			},	
+		 */	
+// HERE stop 2 //	
+/* 			
+				{
+					xtype: "combo",
+					fieldLabel: "Unité",
+					labelAlign: "top"
+				},
+				{
+					xtype: "textfield",
+					width: "100%"
+					
+				},
+	 */			
+				{
+					xtype: "datefield",
+					fieldLabel: "date dup",
+					width: "100%"
+					
+				},
+				{
+					xtype: "htmleditor",
+					width: "100%",
+					flex: 1
+				}
+				]
+				
+			}
+			]
+		}
+		]
+	}
 	]
 });
 	
