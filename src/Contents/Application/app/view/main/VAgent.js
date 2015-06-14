@@ -62,7 +62,7 @@ App.view.define('main.VAgent',
 			labelAlign: "top",			
 //			itemId: "cboMainEtablis",
 			itemId: "cboAgentEtablis",
-			//	allowBlank: false,		//false = mandatory filling
+		//	allowBlank: false,		//false = mandatory filling
 			editable: false,
 			flex: 1,
 			margin: 5,
@@ -79,7 +79,7 @@ App.view.define('main.VAgent',
 			labelAlign: "top",
 //			itemId: "cboMainUnite",
 			itemId: "cboAgentUnite",
-			allowBlank: false,			//false = red notification
+//			allowBlank: false,			//false = red notification
 			editable: false,
 			flex: 1,
 			margin: 5,
@@ -96,7 +96,7 @@ App.view.define('main.VAgent',
 			labelAlign: "top",
 //			itemId: "cboMainService",
 			itemId: "cboAgentService",
-			allowBlank: false,					//false = mandatory filling
+//			allowBlank: false,					//false = mandatory filling
 			editable: false,
 			flex: 1,
 			margin: 5,
