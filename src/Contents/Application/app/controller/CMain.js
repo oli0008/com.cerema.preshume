@@ -3,8 +3,8 @@ App.controller.define('CMain', {
 	views: [
 		"VMain",
 		"main.VAgent"
-		,
-		"main.VContratTravail"
+/* 		,
+		"main.VContratTravail" */
 	],
 	
 	models: [
