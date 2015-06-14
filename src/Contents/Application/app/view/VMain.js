@@ -110,7 +110,7 @@ App.view.define('VMain', {
 							left:10	
 							},
 					fieldLabel: "Service",
-					allowBlank: false,					//false = mandatory filling
+				//	allowBlank: false,					//false = mandatory filling
 					editable: false,
 					labelAlign: "top",
 					labelWidth: 200,
