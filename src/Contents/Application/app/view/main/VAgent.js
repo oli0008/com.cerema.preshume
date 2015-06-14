@@ -94,10 +94,12 @@ App.view.define('main.VAgent',
 			xtype: "combo",
 			fieldLabel: "Service",
 			labelAlign: "top",
+//			itemId: "cboMainService",
+			itemId: "cboAgentService",
 			allowBlank: false,					//false = mandatory filling
 			editable: false,
 			flex: 1,
-			margin: 5
+			margin: 5,
  			displayField: "LibSubc",
 			valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule	
 			store: App.store.create("App.Service.get_service", {
