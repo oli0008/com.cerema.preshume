@@ -90,7 +90,7 @@ App.view.define('VMain', {
 							left:10	
 							},
 					fieldLabel: "Unité",
-					allowBlank: false,			//false = red notification
+					allowBlank: true,			//false = red notification
 					editable: false,
 					labelAlign: "top",
 					labelWidth: 200,
