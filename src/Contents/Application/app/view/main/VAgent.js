@@ -60,11 +60,12 @@ App.view.define('main.VAgent',
 			xtype: "combo",	
 			fieldLabel: "Etablissement",
 			labelAlign: "top",			
-			itemId: "cboMainEtablis",
+//			itemId: "cboMainEtablis",
+			itemId: "cboAgentEtablis",
 			//	allowBlank: false,		//false = mandatory filling
 			editable: false,
 			flex: 1,
-			margin: 5
+			margin: 5,
 			displayField: "LibEts",
 			valueField: "kets",			//BIZZARE: Kets doit être en minuscule						
 			store: App.store.create("App.Etablis.get_etablis", {
@@ -76,11 +77,12 @@ App.view.define('main.VAgent',
 			xtype: "combo",
 			fieldLabel: "Unité",
 			labelAlign: "top",
-			itemId: "cboMainUnite",
+//			itemId: "cboMainUnite",
+			itemId: "cboAgentUnite",
 			allowBlank: false,			//false = red notification
 			editable: false,
 			flex: 1,
-			margin: 5
+			margin: 5,
 			displayField: "LibUni",		//Alt use: LibUnic
 			valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
 			store: App.store.create("App.Unite.get_unite", {
