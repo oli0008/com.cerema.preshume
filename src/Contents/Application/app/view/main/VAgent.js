@@ -46,12 +46,15 @@ App.view.define('main.VAgent',
 	},
 	],	
  */
+ 
 	border: false,
 	
-	layout: "border",
+//	layout: "border",
+	layout: "vbox",
 	
 	items: [
 //********************** CENTER ***************************	
+
 		{
 			region: "center",			
 			split:true,
