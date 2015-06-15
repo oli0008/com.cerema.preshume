@@ -85,9 +85,9 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.get_thematique()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
-		AgentsMod.using('db').model('bpclight', 'select id_thematique, nom_thematique from thematiques order by id_thematique asc', fn_cb);
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_thematique',fn_cb);
+//		AgentsMod.using('db').model('bpclight', 'select id_thematique, nom_thematique from thematiques order by id_thematique asc', fn_cb);
 	},	
 
 	get_domaine_intervention: function(in1,fn_cb) {
