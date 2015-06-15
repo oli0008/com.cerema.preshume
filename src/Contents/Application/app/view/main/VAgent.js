@@ -192,10 +192,10 @@ App.view.define('main.VAgent',
 			allowBlank: false,
 			editable: false,
 			itemId: "cboAgentMetier",
-/* 			margin: {
+ 			margin: {
 					top: 10,
 					left:10								
-			},  */
+			},  
 			labelWidth: 300,
 			width: 300,
 			displayField: "nom_metier",
