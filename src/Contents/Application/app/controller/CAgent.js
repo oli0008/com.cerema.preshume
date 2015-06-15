@@ -8,6 +8,18 @@ App.controller.define('CAgent', {
 	{
 alert('CAgent.init()');
 		this.control({
+			"combo#cboMainEtablis": {
+				select: "valider_cboMainUnite"
+			},
+			"combo#cboMainUnite": {
+				select: "valider_cboMainService"
+			},
+			
+			
+			"button#btnMainOk": {
+				click: "clickme_onclick"
+			}			
+			
 			"combo#cboAgentThematique": {
 				select: "valider_cboAgentThematique"
 			},
@@ -28,12 +40,19 @@ alert('CAgent.init()');
 		});				
 	},
 	
+	
+	
+	
+	
+	
+	
+	
+	//----------------------------------------------	
+	// OLD stuff
+	//----------------------------------------------
 	valider_cboAgentThematique: function()
 	{
 		alert('select sur cboAgentThematique');
-/* 		App.view.create('main.VAgent',{			
-			modal:true
-		}).show(); */
 	},
 	
 	//---------------------------------------------
