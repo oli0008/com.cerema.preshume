@@ -1,6 +1,6 @@
 App.controller.define('CAgent', {
 	views: [		
-		"VAgent",
+		"main.VAgent",
 	],	
 	models: [
 	],	
