@@ -151,104 +151,103 @@ App.view.define('main.VAgent',
 				flex: 1,			//trouble with bottom space usage
 				items: [
 // HERE start //	
-		{
-			xtype: "combo",
-			fieldLabel: "Résidence administrative",
-			labelAlign: "top",
-			itemId: "cboAgentResAdmin",
-			allowBlank: false,			//false = red notification
-			editable: false,
-//			flex: 1,
-//			margin: 5,
- 			margin: {
-					top: 10,
-					left:10								
-			},  
-			labelWidth: 300,
-			width: 300,
-	//		displayField: "rue_residence" + ", " + "ville_residence",	
-			displayField: "ville_residence",
-			displayField: "ville_residence",			
-	//		valueField: "rue_residence",
-			valueField: "ville_residence",			
-/* 			store: App.store.create("App.XXX__Unite.get_unite", {
+				{
+					xtype: "combo",
+					fieldLabel: "Résidence administrative",
+					labelAlign: "top",
+					itemId: "cboAgentResAdmin",
+					allowBlank: false,			//false = red notification
+					editable: false,
+//					flex: 1,
+//					margin: 5,
+					margin: {
+							top: 10,
+							left:10								
+					},  
+					labelWidth: 300,
+					width: 300,
+	//				displayField: "rue_residence" + ", " + "ville_residence",	
+					displayField: "ville_residence",
+					displayField: "ville_residence",			
+	//				valueField: "rue_residence",
+					valueField: "ville_residence",			
+/* 					store: App.store.create("App.XXX__Unite.get_unite", {
 												autoLoad: true
 									})  	// Creation du store */
-		store: App.store.create({
-			fields: [
-				"rue_residence",
-				"ville_residence"
-			],
-			data: [
-			{	rue_residence: "rue_1", ville_residence: "ville_1"},
-			{	rue_residence: "rue_2", ville_residence: "ville_2"}
-			]			
-		})
-		},
-		{
-			xtype: "combo",
-			fieldLabel: "Métier",
-			labelAlign: "top",
-			allowBlank: false,
-			editable: false,
-			itemId: "cboAgentMetier",
- 			margin: {
-					top: 10,
-					left:10								
-			},  
-			labelWidth: 300,
-			width: 300,
-			displayField: "nom_metier",
-			valueField: "id_metier",						
-//			store: App.store.create('MNomSource', // Creation du store
+					store: App.store.create({
+					fields: [
+							"rue_residence",
+							"ville_residence"
+					],
+					data: [
+							{	rue_residence: "rue_1", ville_residence: "ville_1"},
+							{	rue_residence: "rue_2", ville_residence: "ville_2"}
+					]			
+					})
+				},
+				{
+					xtype: "combo",
+					fieldLabel: "Métier",
+					labelAlign: "top",
+					allowBlank: false,
+					editable: false,
+					itemId: "cboAgentMetier",
+					margin: {
+							top: 10,
+							left:10								
+					},  
+					labelWidth: 300,
+					width: 300,
+					displayField: "nom_metier",
+					valueField: "id_metier",						
+//					store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
 //												})  	
-		},
-		{
-			xtype: "combo",
-			fieldLabel: "Thématique",
-			labelAlign: "top",
-			allowBlank: false,
-			editable: false,
-			itemId: "cboAgentThematique",	
-			margin: {
-					top: 10,
-					left:10								
-			},						
-			labelWidth: 300,
-			width: 300,
-			displayField: "nom_thematique",
-			valueField: "id_thematique",			
-//			store: App.store.create('MNomSource', // Creation du store
+				},
+				{
+					xtype: "combo",
+					fieldLabel: "Thématique",
+					labelAlign: "top",
+					allowBlank: false,
+					editable: false,
+					itemId: "cboAgentThematique",	
+					margin: {
+							top: 10,
+							left:10								
+					},						
+					labelWidth: 300,
+					width: 300,
+					displayField: "nom_thematique",
+					valueField: "id_thematique",			
+//					store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
 //												})  	
-		},
-		{
-			xtype: "combo",
-			fieldLabel: "Domaine d'intervention",
-			labelAlign: "top",
-			allowBlank: false,
-			editable: false,
-			itemId: "cboAgentDomaine",	
-			margin: {
-					top: 10,
-					left:10								
-			},						
-			labelWidth: 300,
-			width: 300,
-			displayField: "nom_domaine",
-			valueField: "id_domaine",			
-//			store: App.store.create('MNomSource', // Creation du store
+				},
+				{
+					xtype: "combo",
+					fieldLabel: "Domaine d'intervention",
+					labelAlign: "top",
+					allowBlank: false,
+					editable: false,
+					itemId: "cboAgentDomaine",	
+					margin: {
+							top: 10,
+							left:10								
+					},						
+					labelWidth: 300,
+					width: 300,
+					displayField: "nom_domaine",
+					valueField: "id_domaine",			
+//					store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
 //												})  	
-		},
-
-// HERE stop //		
+				},	
 				]
 			},
+			// 
 			{
 				layout: "vbox",
 				flex: 1,
