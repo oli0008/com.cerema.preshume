@@ -18,7 +18,7 @@ alert('CAgent.init()');
 			
 			"button#btnMainOk": {
 				click: "clickme_onclick"
-			}			
+			},			
 			
 			"combo#cboAgentThematique": {
 				select: "valider_cboAgentThematique"
