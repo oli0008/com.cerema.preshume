@@ -75,8 +75,7 @@ App.view.define('VMain', {
 					labelWidth: 200,
 					width: 250,
  					displayField: "LibEts",
-					valueField: "Kets",			
-						
+					valueField: "Kets",									
 					store: App.store.create("App.Etablis.get_etablis", {
 													autoLoad: true
 												}) 		// Creation du store				
