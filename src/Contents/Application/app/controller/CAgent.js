@@ -75,6 +75,7 @@ App.controller.define('CAgent', {
 	//---------------------------------------------
 	onLoad: function()
 	{
+				alert('CAgent.onLoad()');
 		// form loaded	
 		Ext.tip.QuickTipManager.init(); // lance de quicktip manager (pour les bulles d'aide)
 	}
