@@ -100,7 +100,7 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.get_domaine_intervention()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('XXX_qget_service'),fn_cb);
 		q.model('bpclight', 'select id_domaine, nom_domaine from domaine order by id_domaine asc', fn_cb);
 	},	
@@ -110,8 +110,9 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.type_contrat()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+//		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
 	},	
 
 	get_numero_contrat: function(in1,fn_cb) {
