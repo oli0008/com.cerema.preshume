@@ -148,7 +148,7 @@ App.view.define('main.VAgent',
 			items: [
 			{
 				layout: "vbox",
-				flex: 1,
+//				flex: 1,
 				items: [
 // HERE start //	
 		{
