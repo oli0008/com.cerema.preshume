@@ -14,7 +14,7 @@ alert('CAgent.init()');
 			"combo#cboMainUnite": {
 				select: "valider_cboMainService"
 			},
-			
+/* 			
 			
 			"button#btnMainOk": {
 				click: "clickme_onclick"
@@ -36,7 +36,7 @@ alert('CAgent.init()');
 			},
 			"grid#gridAgents": {
 				itemclick: "gridAgents_onclick"
-			},
+			}, */
 		});				
 	},
 	
