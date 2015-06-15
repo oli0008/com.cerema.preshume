@@ -154,7 +154,7 @@ App.view.define('main.VAgent',
 			{
 // Colonne inférieure gauche				
 				layout: "vbox",
-				flex: 1,			//trouble with bottom space usage
+//				flex: 1,			//trouble with bottom space usage
 				items: [
 				{
 					xtype: "combo",
