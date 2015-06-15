@@ -148,7 +148,7 @@ App.view.define('main.VAgent',
 			items: [
 			{
 				layout: "vbox",
-				flex: 1,
+				flex: 1,			//trouble with bottom space usage
 				items: [
 // HERE start //	
 		{
