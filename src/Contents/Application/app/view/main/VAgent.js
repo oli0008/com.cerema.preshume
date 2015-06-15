@@ -47,6 +47,9 @@ App.view.define('main.VAgent',
 	],	
  */
  
+ var label_width = 350;
+ var with_ = 350;
+ 
 	border: false,
 	layout: "vbox",
 	
@@ -147,7 +150,7 @@ App.view.define('main.VAgent',
 			border: false,
 			items: [
 			{
-// Colonne inférieure droite				
+// Colonne inférieure gauche				
 				layout: "vbox",
 				flex: 1,			//trouble with bottom space usage
 				items: [
@@ -163,9 +166,11 @@ App.view.define('main.VAgent',
 					margin: {
 							top: 10,
 							left:10								
-					},  
-					labelWidth: 300,
-					width: 300,
+					}, 
+laleWidth: label_width;
+width: width_					
+//					labelWidth: 300,
+//					width: 300,
 	//				displayField: "rue_residence" + ", " + "ville_residence",	
 					displayField: "ville_residence",
 					displayField: "ville_residence",			
