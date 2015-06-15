@@ -270,8 +270,8 @@ width: width_, */
 					allowBlank: false,
 					editable: false,
 					labelAlign: "top",
-					labelWidth: 200,
-					width: 200,
+					labelWidth: 300,
+					width: 300,
 					displayField: "type_contrat",
 					valueField: "id_type_contrat",
 /* TODO store setup */		
@@ -291,7 +291,8 @@ width: width_, */
 						left : 20,
 					//	right : 20						
 						},
-				width:200,
+				labelWidth: 300,
+				width:300,
 				fieldLabel: "Numéro de contrat",
 				labelAlign: "top",
 			},			
@@ -301,56 +302,25 @@ width: width_, */
 	//			text: "Laitages",
 				margin: {
 						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20						
+						left : 20,					
 						},
-				width:200,
+				labelWidth: 300,
+				width:300,
 				fieldLabel: "Salaire",
 				labelAlign: "top",
-			},	
-/* TODO date field ? */	
-/* 		
-			{
-				xtype: "textfield",
-				itemId: "txtDateArrivee", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20						
-						},
-				fieldLabel: "Date d'arrivée",
-				labelAlign: "top",
-			},	
-	 */	
-/* 	 
-					{
-						xtype: "datefield",
-						renderer: Ext.util.Format.dateRenderer('d/m/Y'),
-						itemId: "date",
-						labelAlign: "top",
-						allowBlank: false,
-						editable: false,
-						margin: {
-								top: 10,
-								left:30	
-							},
-						width:100,
-						fieldLabel: 'Date de parution',
-					},
-	 */				
+			},					
 			{
 				xtype: "datefield",
-				itemId: "datDateArrivee",
+				fieldLabel: "Date d'arrivée",
+//				renderer: Ext.util.Format.dateRenderer('d/m/Y'),
 				labelAlign: "top",
+				itemId: "datDateArrivee",
 				margin: {
 							top: 10,
 							left: 20								
 						},
-				width:200,
-				fieldLabel: "Date d'arrivée",
+				labelWidth: 300,
+				width:300,
 				allowBlank: false,
 			},	 
 /* 			
