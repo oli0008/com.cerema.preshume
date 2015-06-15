@@ -220,12 +220,31 @@ App.view.define('main.VAgent',
 			width: 300,
 			displayField: "nom_thematique",
 			valueField: "id_thematique",			
-//						store: App.store.create('MNomSource', // Creation du store
+//			store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
 //												})  	
 		},
-
+		{
+			xtype: "combo",
+			fieldLabel: "Domaine d'intervention",
+			labelAlign: "top",
+			allowBlank: false,
+			editable: false,
+			itemId: "cboAgentDomaine",	
+			margin: {
+					top: 10,
+					left:10								
+			},						
+			labelWidth: 300,
+			width: 300,
+			displayField: "nom_domaine",
+			valueField: "id_domaine",			
+//			store: App.store.create('MNomSource', // Creation du store
+//												{
+//													autoLoad: true
+//												})  	
+		},
 
 // HERE stop //		
 				]
