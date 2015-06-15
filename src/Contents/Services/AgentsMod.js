@@ -40,6 +40,10 @@ AgentsMod = {
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},	
 
+	read: function(o,cb) {		// Read = select
+		AgentsMod.using('db').model('bpclight','SELECT kage,nom,prenom FROM agents',cb);
+	},
+	
 /* 
 	cherche: function(in1,fn_cb) {
 		// 1er argument = error
