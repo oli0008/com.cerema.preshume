@@ -63,11 +63,11 @@ App.controller.define('CMain', {
 	
 	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
 	valider_cboMainService: function(p, record) {
-		var Kuni = App.get('combo#cboMainUnite').getValue();
+		var Kuni2 = App.get('combo#cboMainUnite').getValue();
 		console.log(App.get('combo#cboMainUnite').getValue());
 		//Efface l'info montrée (displayField) sur le combo
 		App.get('combo#cboMainService').setValue('');
-		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni;
+		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
 		App.get('combo#cboMainService').getStore().load();
 	},
 	
