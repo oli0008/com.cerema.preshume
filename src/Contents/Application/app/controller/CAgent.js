@@ -6,8 +6,13 @@ App.controller.define('CAgent', {
 	],	
 	init: function()
 	{
-						alert('CAgent.init()');
+alert('CAgent.init()');
 		this.control({
+			"combo#cboAgentThematique": {
+				select: "valider_cboAgentThematique"
+			},
+			
+			
 			"button#btnSupprAgent": {
 				click: "btnSupprAgent_onclick"
 			},
@@ -22,6 +27,15 @@ App.controller.define('CAgent', {
 			},
 		});				
 	},
+	
+	valider_cboAgentThematique: function()
+	{
+		alert('select sur cboAgentThematique');
+/* 		App.view.create('main.VAgent',{			
+			modal:true
+		}).show(); */
+	},
+	
 	//---------------------------------------------
 	gridAgents_onclick: function( item, record) //, item, index, e, eOpts )
 	{
