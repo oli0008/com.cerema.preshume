@@ -139,7 +139,7 @@ App.view.define('main.VAgent',
 			})	 */
 	},
 //---------------------	
-	{
+/* 	{
 		xtype: "grid",
 		columns: [		
 		{
@@ -166,7 +166,7 @@ App.view.define('main.VAgent',
 			}
 			]			
 		})
-	},
+	}, */
 	{
 		flex: 1,
 		width: "100%",
