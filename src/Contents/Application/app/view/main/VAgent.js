@@ -282,62 +282,64 @@ width: width_, */
 								})  						
 				},			
 				{
-				xtype: "textfield",
-				itemId: "txtNumeroContrat", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20						
-						},
-				labelWidth: 300,
-				width:300,
-				fieldLabel: "Numéro de contrat",
-				labelAlign: "top",
-			},			
-			{
-				xtype: "textfield",
-				itemId: "txtSalaire", 
-	//			text: "Laitages",
-				margin: {
-						top : 10,
-						left : 20,					
-						},
-				labelWidth: 300,
-				width:300,
-				fieldLabel: "Salaire",
-				labelAlign: "top",
-			},					
-			{
-				xtype: "datefield",
-				fieldLabel: "Date d'arrivée",
-//				renderer: Ext.util.Format.dateRenderer('d/m/Y'),
-				labelAlign: "top",
-				itemId: "datDateArrivee",
-				margin: {
+					xtype: "textfield",
+					fieldLabel: "Numéro de contrat",
+					labelAlign: "top",
+					itemId: "txtNumeroContrat", 
+	//				text: "Laitages",
+					margin: {
+							top : 10,
+					//		bottom : 20,
+							left : 20,
+					//		right : 20						
+					},
+					labelWidth: 300,
+					width:300,
+					allowBlank: false,
+				},			
+				{
+					xtype: "textfield",
+					fieldLabel: "Salaire",
+					labelAlign: "top",
+					itemId: "txtSalaire", 
+	//				text: "Laitages",
+					margin: {
+							top : 10,
+							left : 20,					
+							},
+					labelWidth: 300,
+					width:300,
+					allowBlank: false,
+				},					
+				{
+					xtype: "datefield",
+					fieldLabel: "Date d'arrivée",
+					labelAlign: "top",
+//					renderer: Ext.util.Format.dateRenderer('d/m/Y'),				
+					itemId: "datDateArrivee",
+					margin: {
 							top: 10,
 							left: 20								
-						},
-				labelWidth: 300,
-				width:300,
-				allowBlank: false,
-			},	 
+							},
+					labelWidth: 300,
+					width:300,
+					allowBlank: false,
+				},	 
 /* 			
-			{
-				xtype: "textfield",
-				itemId: "txtDescriptionPoste", 
-	//			text: "Laitages",
-				margin: {
+				{
+					xtype: "textfield",
+					itemId: "txtDescriptionPoste", 
+	//				text: "Laitages",
+					margin: {
 						top : 10,
 					//	bottom : 20,
 						left : 20,
 					//	right : 20						
 						},
-				width:200,
-				fieldLabel: "Description du poste",
-				labelAlign: "top",
-			},	
+					width:200,
+					fieldLabel: "Description du poste",
+					labelAlign: "top",
+				},	
 		 */	
 // HERE stop 2 //	
 /* 		
@@ -349,15 +351,18 @@ width: width_, */
 				}, */
 				{
 					xtype: "htmleditor",
+					fieldLabel: "Description du poste",
+					labelAlign: "top",
+					itemId: "txthtmlDescriptionPoste", 
 /* 					width: "100%",
 					flex: 1 */
-								margin: {
-							top: 10,
-							left: 20								
-						},
-				labelWidth: 300,
-				width:300,
-				allowBlank: false,
+					margin: {
+						top: 10,
+						left: 20								
+					},
+					labelWidth: 300,
+					width:300,
+					allowBlank: false,
 				}
 				]
 				
