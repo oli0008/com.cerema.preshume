@@ -1,14 +1,14 @@
 /* combo services */
 
-select kuni, LibSubc, LibSub 
+select Kuni, LibSubc, LibSub 
 from subdis 
 where archive = 0 
-and kuni =  {RECHERCHE}
+and Kuni =  {RECHERCHE}
 
 
 /* combo services 
-select kuni, LibSubc, LibSub  
+select Kuni, LibSubc, LibSub  
 from subdis 
 where archive = 0 
-and kuni = 13		// user select kuni = 13 -- result = 6 
+and Kuni = 13		// user select Kuni = 13 -- result = 6 
 */

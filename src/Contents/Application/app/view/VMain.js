@@ -95,7 +95,7 @@ App.view.define('VMain', {
 					labelWidth: 200,
 					width: 200,
  					displayField: "LibUni",		//Alt use: LibUnic
-					valueField: "Kuni",			//BIZZARE: Kuni doit être en minuscule						
+					valueField: "Kuni",									
 					store: App.store.create("App.Unite.get_unite", {
 													autoLoad: true
 												})  	// Creation du store
@@ -114,8 +114,7 @@ App.view.define('VMain', {
 					labelWidth: 200,
 					width: 200,
  					displayField: "LibSubc",
-					valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule
-						
+					valueField: "Ksub",			//BIZZARE: Ksub doit être en minuscule	
 					store: App.store.create("App.Service.get_service", {
 													autoLoad: true
 												})  // Creation du store	
