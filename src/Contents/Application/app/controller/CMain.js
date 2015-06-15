@@ -52,12 +52,12 @@ App.controller.define('CMain', {
 	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboMainUnite: function(p, record) {
-		var Kets = App.get('combo#cboMainEtablis').getValue();
+		var Kets2 = App.get('combo#cboMainEtablis').getValue();
 		console.log(App.get('combo#cboMainEtablis').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos
 		App.get('combo#cboMainUnite').setValue('');
 		App.get('combo#cboMainService').setValue('');
-		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets;
+		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
 		App.get('combo#cboMainUnite').getStore().load();
 	},
 	
