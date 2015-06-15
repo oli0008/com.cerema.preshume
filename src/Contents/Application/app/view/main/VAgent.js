@@ -147,10 +147,10 @@ App.view.define('main.VAgent',
 			border: false,
 			items: [
 			{
+// Colonne inférieure droite				
 				layout: "vbox",
 				flex: 1,			//trouble with bottom space usage
 				items: [
-// HERE start //	
 				{
 					xtype: "combo",
 					fieldLabel: "Résidence administrative",
@@ -247,35 +247,34 @@ App.view.define('main.VAgent',
 				},	
 				]
 			},
-			// 
+// Colonne inférieure droite
 			{
 				layout: "vbox",
 				flex: 1,
-				items: [
-// HERE start 2 //				
-			{
-				xtype: "combo",
-				itemId: "cboTypeContrat",
-				margin: {
-						top: 10,
-						left:20							
-						},
-				fieldLabel: "Type de contrat",
-				allowBlank: false,
-				editable: false,
-				labelAlign: "top",
-				labelWidth: 200,
-				width: 200,
- 				displayField: "type_contrat",
-				valueField: "id_type_contrat",
+				items: [				
+				{
+					xtype: "combo",
+					itemId: "cboTypeContrat",
+					margin: {
+							top: 10,
+							left:20							
+					},
+					fieldLabel: "Type de contrat",
+					allowBlank: false,
+					editable: false,
+					labelAlign: "top",
+					labelWidth: 200,
+					width: 200,
+					displayField: "type_contrat",
+					valueField: "id_type_contrat",
 /* TODO store setup */		
-//				store: App.store.create("App.Etablis.get_etablis", {				
-				store: App.store.create('MNomSource', // Creation du store
+//					store: App.store.create("App.Etablis.get_etablis", {				
+					store: App.store.create('MNomSource', // Creation du store
 								{
 											autoLoad: true
 								})  						
-			},			
-			{
+				},			
+				{
 				xtype: "textfield",
 				itemId: "txtNumeroContrat", 
 	//			text: "Laitages",
