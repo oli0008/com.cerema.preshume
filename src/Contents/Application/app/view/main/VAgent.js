@@ -206,7 +206,10 @@ width: width_, */
 					labelWidth: 300,
 					width: 300,
 					displayField: "nom_metier",
-					valueField: "id_metier",						
+					valueField: "id_metier",
+					store: App.store.create("App.AgentsMod.get_metier", {
+													autoLoad: true
+												})  	// Creation du store					
 //					store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
@@ -226,7 +229,10 @@ width: width_, */
 					labelWidth: 300,
 					width: 300,
 					displayField: "nom_thematique",
-					valueField: "id_thematique",			
+					valueField: "id_thematique",
+					store: App.store.create("App.AgentsMod.get_thematique", {
+													autoLoad: true
+												})  	// Creation du store					
 //					store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
