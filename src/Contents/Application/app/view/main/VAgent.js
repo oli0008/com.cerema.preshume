@@ -172,12 +172,8 @@ App.view.define('main.VAgent',
 				"ville_residence"
 			],
 			data: [
-			{
-				rue_residence: "rue_1",
-				ville_residence: "ville_1",
-				rue_residence: "rue_2",
-				ville_residence: "ville_2"
-			}
+			{	rue_residence: "rue_1", ville_residence: "ville_1"},
+			{	rue_residence: "rue_2", ville_residence: "ville_2"}
 			]			
 		})
 		},
