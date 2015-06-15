@@ -83,7 +83,7 @@ AgentsMod = {
 	get_thematique: function(in1,fn_cb) {
 		
   		var q = AgentsMod.using('db');
-
+		
 		console.log('>>AgentsMod.get_thematique()');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_thematique',fn_cb);
