@@ -294,12 +294,15 @@ width: width_, */
 					width: 300,
 					displayField: "type_contrat",
 					valueField: "id_type_contrat",
+					store: App.store.create('App.AgentsMod.get_type_contrat',{
+							autoLoad: true
+					})	 
 /* TODO store setup */		
 //					store: App.store.create("App.Etablis.get_etablis", {				
-					store: App.store.create('MNomSource', // Creation du store
+/* 					store: App.store.create('MNomSource', // Creation du store
 								{
 											autoLoad: true
-								})  						
+								}) */  						
 				},			
 				{
 					xtype: "textfield",
