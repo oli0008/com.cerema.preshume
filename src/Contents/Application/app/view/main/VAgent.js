@@ -46,10 +46,12 @@ App.view.define('main.VAgent',
 	},
 	],	
  */
-  
+ 
+/*  
  var label_width = 350;
  var with_ = 350;
-  
+
+ */ 
 	border: false,
 	layout: "vbox",
 	
