@@ -231,25 +231,6 @@ width: width_, */
 				},
 				{
 					xtype: "combo",
-					fieldLabel: "Thématique",
-					labelAlign: "top",
-					allowBlank: false,
-					editable: false,
-					itemId: "cboAgentThematique",	
-					margin: {
-							top: 10,
-							left:10								
-					},						
-					labelWidth: 300,
-					width: 300,
-					displayField: "nom_thematique",
-					valueField: "id_thematique",
-					store: App.store.create("App.AgentsMod.get_thematique", {
-													autoLoad: true
-												})  	// Creation du store						
-				},
-				{
-					xtype: "combo",
 					fieldLabel: "Domaine d'intervention",
 					labelAlign: "top",
 					allowBlank: false,
@@ -266,7 +247,26 @@ width: width_, */
 					store: App.store.create('App.AgentsMod.get_domaine_intervention',{
 							autoLoad: true
 					})						
-				},	
+				},
+				{
+					xtype: "combo",
+					fieldLabel: "Thématique",
+					labelAlign: "top",
+					allowBlank: false,
+					editable: false,
+					itemId: "cboAgentThematique",	
+					margin: {
+							top: 10,
+							left:10								
+					},						
+					labelWidth: 300,
+					width: 300,
+					displayField: "nom_thematique",
+					valueField: "id_thematique",
+					store: App.store.create("App.AgentsMod.get_thematique", {
+							autoLoad: true
+					})  	// Creation du store						
+				},				
 				]
 			},
 // Colonne inférieure droite
