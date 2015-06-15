@@ -4,8 +4,8 @@ App.view.define('main.VAgent',
 	alias : 'widget.agent',
 	x:50,
 	y:50,
-    height: 535,
-    width: 730,	//width: 720
+    height: 550,
+    width: 750,	//width: 720
 	closable: true,
 	draggable: true,
 	resizable: false,
