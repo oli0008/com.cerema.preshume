@@ -162,9 +162,21 @@ App.view.define('main.VAgent',
 			margin: 5,
 			displayField: "rue_residence, ville_residence",		
 			valueField: "id_residence",			
-			store: App.store.create("App.Unite.get_unite", {
+/* 			store: App.store.create("App.XXX__Unite.get_unite", {
 												autoLoad: true
-									})  	// Creation du store
+									})  	// Creation du store */
+		store: App.store.create({
+			fields: [
+				"rue_residence",
+				"ville_residence"
+			],
+			data: [
+			{
+				rue_residence: "rue_1",
+				ville_residence: "ville_1"
+			}
+			]			
+		})
 		},
 {
 						xtype: "combo",
