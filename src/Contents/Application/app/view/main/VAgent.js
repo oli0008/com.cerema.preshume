@@ -115,6 +115,31 @@ App.view.define('main.VAgent',
 	},
 	//*************************
 	{
+			xtype	: "grid",
+			itemId	: "gridAgents",
+//			title	: "Agents (READ)",
+			//width	: 360,
+			height	: '100%',
+			flex	: 1,
+			//autoScroll	:true,
+			columns: [
+				{
+					text: "Matricule", 	dataIndex: "kage"
+				},
+				{
+					text: "Nom",		dataIndex: "nom"
+				},
+				{
+					text: "Prénom",		dataIndex: "prenom"
+				}
+			],
+//			store: App.store.create('App.Agents.read',{
+			store: App.store.create('App.AgentsMod.read',{
+				autoLoad: true
+			})	
+	},
+//---------------------	
+	{
 		xtype: "grid",
 		columns: [		
 		{
