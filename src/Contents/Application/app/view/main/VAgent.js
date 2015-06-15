@@ -114,10 +114,13 @@ App.view.define('main.VAgent',
 		]
 	},
 	//*************************
-/*  	{
+  	{
 			xtype	: "grid",
-			itemId	: "gridAgents",
+			itemId	: "gridAgents_2",
 //			title	: "Agents (READ)",
+		border: false,
+		width: "100%",
+		height: 100,
 			//width	: 360,
 //			height	: '100%',
 //			flex	: 1,
@@ -137,18 +140,16 @@ App.view.define('main.VAgent',
 // 			store: App.store.create('App.AgentsMod.read',{
 //				autoLoad: true
 //			})	 
-	},  */
+	},  
 //---------------------	
- 	{
+ /* 	{
 		xtype: "grid",
 		columns: [		
 		{
-			text: "Nom",
-			dataIndex: "Lastname"
+			text: "Nom",	dataIndex: "Lastname"
 		},
 		{
-			text: "Prénom",
-			dataIndex: "Firstname"
+			text: "Prénom",	dataIndex: "Firstname"
 		}
 		],
 		border: false,
@@ -166,7 +167,7 @@ App.view.define('main.VAgent',
 			}
 			]			
 		})
-	}, 
+	},  */
 	{
 		flex: 1,
 		width: "100%",
