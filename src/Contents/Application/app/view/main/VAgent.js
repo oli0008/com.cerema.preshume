@@ -188,10 +188,10 @@ width: width_, */
 					labelWidth: 300,
 					width: 300,
 	//				displayField: "rue_residence" + ", " + "ville_residence",	
-					displayField: "ville_residence",
-					displayField: "ville_residence",			
+					displayField: "rue_ville_residence",
+	//				displayField: "ville_residence",			
 	//				valueField: "rue_residence",
-					valueField: "ville_residence",			
+					valueField: "id_residence",			
 /* 					store: App.store.create("App.XXX__Unite.get_unite", {
 												autoLoad: true
 									})  	// Creation du store */
