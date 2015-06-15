@@ -158,8 +158,14 @@ App.view.define('main.VAgent',
 			itemId: "cboAgentResAdmin",
 			allowBlank: false,			//false = red notification
 			editable: false,
-			flex: 1,
-			margin: 5,
+//			flex: 1,
+//			margin: 5,
+/* 			margin: {
+					top: 10,
+					left:10								
+			},  */
+			labelWidth: 300,
+			width: 300,
 	//		displayField: "rue_residence" + ", " + "ville_residence",	
 			displayField: "ville_residence",
 			displayField: "ville_residence",			
@@ -179,54 +185,46 @@ App.view.define('main.VAgent',
 			]			
 		})
 		},
-{
-						xtype: "combo",
-						itemId: "cboAgentMetier",
-						margin: {
-								top: 10,
-								left:10								
-							},
-							
-// TODO check fieldLabel: "Nom"  
-
-						fieldLabel: "NomXX",
-						allowBlank: false,
-						editable: false,
-						labelAlign: "top",
-						labelWidth: 200,
-						width: 300,
-						displayField: "nom_metier",
-						valueField: "id_metier",
-						
+		{
+			xtype: "combo",
+			fieldLabel: "Métier",
+			labelAlign: "top",
+			allowBlank: false,
+			editable: false,
+			itemId: "cboAgentMetier",
+/* 			margin: {
+					top: 10,
+					left:10								
+			},  */
+			labelWidth: 300,
+			width: 300,
+			displayField: "nom_metier",
+			valueField: "id_metier",						
+//			store: App.store.create('MNomSource', // Creation du store
+//												{
+//													autoLoad: true
+//												})  	
+		},
+		{
+			xtype: "combo",
+			fieldLabel: "Thématique",
+			labelAlign: "top",
+			allowBlank: false,
+			editable: false,
+			itemId: "cboAgentThematique",	
+			margin: {
+					top: 10,
+					left:10								
+			},						
+			labelWidth: 300,
+			width: 300,
+			displayField: "nom_thematique",
+			valueField: "id_thematique",			
 //						store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
 //												})  	
-					},
-					{
-						xtype: "combo",
-						itemId: "cboAgentThematique",
-						margin: {
-								top: 10,
-								left:10								
-							},
-							
-// TODO check fieldLabel: "Nom"  
-
-						fieldLabel: "NomYY",
-						allowBlank: false,
-						editable: false,
-						labelAlign: "top",
-						labelWidth: 200,
-						width: 200,
-						displayField: "nom_thematique",
-						valueField: "id_thematique",
-						
-//						store: App.store.create('MNomSource', // Creation du store
-//												{
-//													autoLoad: true
-//												})  	
-					},
+		},
 
 
 // HERE stop //		
