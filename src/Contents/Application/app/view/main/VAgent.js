@@ -246,11 +246,7 @@ width: width_, */
 					valueField: "id_thematique",
 					store: App.store.create("App.AgentsMod.get_thematique", {
 													autoLoad: true
-												})  	// Creation du store					
-//					store: App.store.create('MNomSource', // Creation du store
-//												{
-//													autoLoad: true
-//												})  	
+												})  	// Creation du store						
 				},
 				{
 					xtype: "combo",
@@ -266,11 +262,10 @@ width: width_, */
 					labelWidth: 300,
 					width: 300,
 					displayField: "nom_domaine",
-					valueField: "id_domaine",			
-//					store: App.store.create('MNomSource', // Creation du store
-//												{
-//													autoLoad: true
-//												})  	
+					valueField: "id_domaine",
+					store: App.store.create('App.AgentsMod.get_domaine_intervention',{
+							autoLoad: true
+					})						
 				},	
 				]
 			},
