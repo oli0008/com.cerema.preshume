@@ -161,8 +161,9 @@ App.view.define('main.VAgent',
 			flex: 1,
 			margin: 5,
 			displayField: "rue_residence, ville_residence",	
-	//		valueField: "id_residence",	
-			valueField: "rue_residence",		
+	//		displayField: "id_residence",	
+			valueField: "rue_residence",
+			valueField: "rue_residence, ville_residence",			
 /* 			store: App.store.create("App.XXX__Unite.get_unite", {
 												autoLoad: true
 									})  	// Creation du store */
