@@ -1,9 +1,9 @@
 /* combo unites */
-select kuni, LibUnic, LibUni 
+select Kuni, LibUnic, LibUni 
 from unites
 where archive = 0
-and kets = {RECHERCHE}
+and Kets = {RECHERCHE}
 /*
 and kets = 1		
 */
-/* user select kets = 1 -- result = 10 */
+/* user select Kets = 1 -- result = 10 */
