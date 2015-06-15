@@ -116,7 +116,7 @@ App.view.define('main.VAgent',
 	//*************************
   	{
 			xtype	: "grid",
-			itemId	: "gridAgents_2",
+			itemId	: "gridAgents",
 //			title	: "Agents (READ)",
 		border: false,
 		width: "100%",
