@@ -159,11 +159,11 @@ App.view.define('main.VAgent',
 			allowBlank: false,			//false = red notification
 			editable: false,
 //			flex: 1,
-			margin: 5,
-/* 			margin: {
+//			margin: 5,
+ 			margin: {
 					top: 10,
 					left:10								
-			},  */
+			},  
 			labelWidth: 300,
 			width: 300,
 	//		displayField: "rue_residence" + ", " + "ville_residence",	
