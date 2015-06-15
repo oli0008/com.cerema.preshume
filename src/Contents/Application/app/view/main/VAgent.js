@@ -137,9 +137,9 @@ App.view.define('main.VAgent',
 				}
 			],
 //			store: App.store.create('App.Agents.read',{
-// 			store: App.store.create('App.AgentsMod.read',{
-//				autoLoad: true
-//			})	 
+ 			store: App.store.create('App.AgentsMod.read',{
+				autoLoad: true
+			})	 
 	},  
 //---------------------	
  /* 	{
