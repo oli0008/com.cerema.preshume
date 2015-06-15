@@ -69,9 +69,18 @@ AgentsMod = {
 
 		console.log('>>AgentsMod.get_metier()');
 		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+//		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		AgentsMod.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', fn_cb);
 	},	
 
+//Hard coded query
+//		Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', fn_cb); 
+
+//Version with parameter
+//		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
+	
+	
+	
 	get_thematique: function(in1,fn_cb) {
 		
   		var q = AgentsMod.using('db');
