@@ -57,7 +57,7 @@
     "plugins": [],
     "api": [
         "Agents",
-        "Agents",
+        "AgentsMod",
         "EffectifPhysique",
         "Etablis",
         "Etablis",
