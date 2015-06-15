@@ -340,28 +340,24 @@ width: width_, */
 			},	
 		 */	
 // HERE stop 2 //	
-/* 			
-				{
-					xtype: "combo",
-					fieldLabel: "Unité",
-					labelAlign: "top"
-				},
-				{
-					xtype: "textfield",
-					width: "100%"
-					
-				},
-	 */			
+/* 		
 				{
 					xtype: "datefield",
 					fieldLabel: "date dup",
 					width: "100%"
 					
-				},
+				}, */
 				{
 					xtype: "htmleditor",
-					width: "100%",
-					flex: 1
+/* 					width: "100%",
+					flex: 1 */
+								margin: {
+							top: 10,
+							left: 20								
+						},
+				labelWidth: 300,
+				width:300,
+				allowBlank: false,
 				}
 				]
 				
