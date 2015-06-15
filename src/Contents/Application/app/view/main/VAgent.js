@@ -151,7 +151,21 @@ App.view.define('main.VAgent',
 				flex: 1,
 				items: [
 // HERE start //	
-
+		{
+			xtype: "combo",
+			fieldLabel: "Résidence administrative",
+			labelAlign: "top",
+			itemId: "cboAgentResAdmin",
+			allowBlank: false,			//false = red notification
+			editable: false,
+			flex: 1,
+			margin: 5,
+			displayField: "rue_residence, ville_residence",		
+			valueField: "id_residence",			
+			store: App.store.create("App.Unite.get_unite", {
+												autoLoad: true
+									})  	// Creation du store
+		},
 {
 						xtype: "combo",
 						itemId: "cboAgentMetier",
