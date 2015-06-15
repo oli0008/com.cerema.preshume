@@ -174,7 +174,9 @@ App.view.define('main.VAgent',
 			data: [
 			{
 				rue_residence: "rue_1",
-				ville_residence: "ville_1"
+				ville_residence: "ville_1",
+				rue_residence: "rue_2",
+				ville_residence: "ville_2"
 			}
 			]			
 		})
