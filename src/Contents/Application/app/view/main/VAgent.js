@@ -167,8 +167,8 @@ App.view.define('main.VAgent',
 							top: 10,
 							left:10								
 					}, 
-laleWidth: label_width;
-width: width_					
+laleWidth: label_width,
+width: width_,					
 //					labelWidth: 300,
 //					width: 300,
 	//				displayField: "rue_residence" + ", " + "ville_residence",	
