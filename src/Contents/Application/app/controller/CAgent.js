@@ -6,6 +6,7 @@ App.controller.define('CAgent', {
 	],	
 	init: function()
 	{
+						alert('CAgent.init()');
 		this.control({
 			"button#btnSupprAgent": {
 				click: "btnSupprAgent_onclick"
