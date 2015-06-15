@@ -41,7 +41,7 @@ AgentsMod = {
 	},	
 
 	read: function(o,cb) {		// Read = select
-		AgentsMod.using('db').model('bpclight','SELECT kage,nom,prenom FROM agents',cb);
+		AgentsMod.using('db').model('bpclight','SELECT Nom, Prenom, Matri FROM agents',cb);
 	},
 	
 /* 
