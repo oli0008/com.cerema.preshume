@@ -67,7 +67,7 @@ App.view.define('main.VAgent',
 			flex: 1,
 			margin: 5,
 			displayField: "LibEts",
-			valueField: "kets",			//BIZZARE: Kets doit être en minuscule						
+			valueField: "Kets",								
 			store: App.store.create("App.Etablis.get_etablis", {
 												autoLoad: true
 									}) 		// Creation du store				
@@ -77,14 +77,14 @@ App.view.define('main.VAgent',
 			xtype: "combo",
 			fieldLabel: "Unité",
 			labelAlign: "top",
-//			itemId: "cboMainUnite",
-			itemId: "cboAgentUnite",
+			itemId: "cboMainUnite",
+//			itemId: "cboAgentUnite",
 //			allowBlank: false,			//false = red notification
 			editable: false,
 			flex: 1,
 			margin: 5,
 			displayField: "LibUni",		//Alt use: LibUnic
-			valueField: "kuni",			//BIZZARE: Kuni doit être en minuscule
+			valueField: "Kuni",			
 			store: App.store.create("App.Unite.get_unite", {
 												autoLoad: true
 									})  	// Creation du store
@@ -94,14 +94,14 @@ App.view.define('main.VAgent',
 			xtype: "combo",
 			fieldLabel: "Service",
 			labelAlign: "top",
-//			itemId: "cboMainService",
-			itemId: "cboAgentService",
+			itemId: "cboMainService",
+//			itemId: "cboAgentService",
 //			allowBlank: false,					//false = mandatory filling
 			editable: false,
 			flex: 1,
 			margin: 5,
  			displayField: "LibSubc",
-			valueField: "ksub",			//BIZZARE: Ksub doit être en minuscule	
+			valueField: "Ksub",				
 			store: App.store.create("App.Service.get_service", {
 													autoLoad: true
 									})  // Creation du store			
