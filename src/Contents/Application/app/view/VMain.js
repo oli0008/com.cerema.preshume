@@ -75,7 +75,7 @@ App.view.define('VMain', {
 					labelWidth: 200,
 					width: 250,
  					displayField: "LibEts",
-					valueField: "kets",			//BIZZARE: Kets doit être en minuscule
+					valueField: "Kets",			//BIZZARE: Kets doit être en minuscule
 						
 					store: App.store.create("App.Etablis.get_etablis", {
 													autoLoad: true
