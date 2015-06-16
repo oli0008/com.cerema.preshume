@@ -46,25 +46,25 @@ AgentsMod = {
 		q.model('bpclight',q.sql('qget_allAgents'),fn_cb);  
 	},
 	
-	get_agentsByEtablis: function(in1,fn_cb) {	
+	get_agentsByEtablis: function(in1, fn_cb) {	
 	  	var q = AgentsMod.using('db');
 		console.log('>>AgentsMod.get_agentsByEtablis()');
-		console.log(q.sql( 'qget_agentsByEtablis' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_agentsByEtablis',{RECHERCHE: in1.id_Service}),fn_cb);
+		console.log(q.sql( 'qget_agentsByEtablis' + {P_ETABLIS: in1.id_Etablis} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agentsByEtablis',{P_ETABLIS: in1.id_Etablis}),fn_cb);
 	},
 	
-	get_agentsByUnite: function(in1,fn_cb) {	
+	get_agentsByUnite: function(in1, in2, fn_cb) {	
 	  	var q = AgentsMod.using('db');
 		console.log('>>AgentsMod.get_agentsByUnite()');
-		console.log(q.sql( 'qget_agentsByUnite' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_agentsByUnite',{RECHERCHE: in1.id_Service}),fn_cb);
+		console.log(q.sql( 'qget_agentsByUnite' + {P_ETABLIS: in1.id_Etablis} + {P_UNITE: in2.id_Unite} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agentsByUnite',{P_ETABLIS: in1.id_Etablis} + {P_UNITE: in2.id_Unite} ),fn_cb);
 	},
 	
-	get_agentsByService: function(in1,fn_cb) {	
+	get_agentsByService: function(in1, in2, in3, fn_cb) {	
 	  	var q = AgentsMod.using('db');
 		console.log('>>AgentsMod.get_agentsByService()');
-		console.log(q.sql( 'qget_agentsByService' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_agentsByService',{RECHERCHE: in1.id_Service}),fn_cb);
+		console.log(q.sql( 'qget_agentsByService' + {P_ETABLIS: in1.id_Etablis} + {P_UNITE: in2.id_Unite} + {P_SERVICE: in2.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agentsByService',{P_ETABLIS: in1.id_Etablis} + {P_UNITE: in2.id_Unite} + {P_SERVICE: in2.id_Service} ),fn_cb);
 	},
 
 
