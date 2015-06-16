@@ -25,10 +25,13 @@ where
 	and
 	s.archive = 0
 	and
-	e.Kets = {P_ETABLIS}
+	e.Kets = {P_ETABLIS}		
+	and
+	u.Kuni = {P_UNITE}	
 order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub	
-
+		
 /* e.Kets = 1 == DTerMed */
 /* u.Kuni = 5 == LAP */
-/* s.Ksub = 47 == SGRN */	
+/* s.Ksub = 47 == SGRN */
+	
 
