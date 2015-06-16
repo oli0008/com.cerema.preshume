@@ -256,7 +256,8 @@ width: width_, */
 					itemId: "cboAgentThematique",	
 					margin: {
 							top: 10,
-							left:10								
+							left:10,
+							bottom: 10
 					},						
 					labelWidth: 300,
 					width: 300,
