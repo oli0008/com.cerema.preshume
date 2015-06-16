@@ -10,6 +10,9 @@ alert('CAgent.init()');
 		
 		//declaration des évenements
 		this.control({
+			"agent": {
+				show: "agent_onshow"
+			}
 			"combo#cboAgentEtablis": {
 				select: "valider_cboAgentUnite"
 			},
