@@ -40,7 +40,7 @@ AgentsMod = {
 	},
 	
 	get_allAgents: function(in1,fn_cb) {	
-	  	var q = AgentsMod.using('db');
+	  	var q = AgentsMod.using('db'); 
 //		alert('AgentsMod.get_allAgents()');
 		console.log('>>AgentsMod.get_allAgents()');
 		console.log(q.sql('qget_allAgents'));		//log apparait dans DOS box
