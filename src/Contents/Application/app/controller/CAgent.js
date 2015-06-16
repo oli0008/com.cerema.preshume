@@ -93,6 +93,7 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentUnite').getStore().load();
 		//met à jour gridAgents pour cette valeur d'établissement
 		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
+		App.get('grid#gridAgents').getStore().load();
 	},
 	
 	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
