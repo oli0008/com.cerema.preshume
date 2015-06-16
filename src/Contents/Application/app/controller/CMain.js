@@ -1,3 +1,4 @@
+// Déclaration des variables globales
 var label_width = 350;
 var with_ = 350;
 
