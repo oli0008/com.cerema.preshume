@@ -58,7 +58,7 @@ App.controller.define('CMain', {
 	valider_cboMainUnite: function(p, record) 
 	{
 		var Kets2 = App.get('combo#cboMainEtablis').getValue();
-		console.log(App.get('combo#cboMainEtablis').getValue());
+//		console.log(App.get('combo#cboMainEtablis').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos esclaves
 		App.get('combo#cboMainUnite').setValue('');
 		App.get('combo#cboMainService').setValue('');
@@ -70,7 +70,7 @@ App.controller.define('CMain', {
 	valider_cboMainService: function(p, record) 
 	{
 		var Kuni2 = App.get('combo#cboMainUnite').getValue();
-		console.log(App.get('combo#cboMainUnite').getValue());
+//		console.log(App.get('combo#cboMainUnite').getValue());
 		//Efface l'info montrée (displayField) sur le combo esclave
 		App.get('combo#cboMainService').setValue('');
 		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
@@ -90,7 +90,7 @@ App.controller.define('CMain', {
 		
 		// on charge le store avec une variable "recherche"
 		tempVar = 1;
-		console.log('** HERE **');
+//		console.log('** HERE **');
 	//	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
 		//Passe un parametre au Store 
 		App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche='11';

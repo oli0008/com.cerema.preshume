@@ -87,7 +87,7 @@ App.controller.define('CAgent', {
 		var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
 //		alert('CAgent.valider_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
-		console.log(App.get('combo#cboAgentEtablis').getValue());
+//		console.log(App.get('combo#cboAgentEtablis').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos esclaves
 		App.get('combo#cboAgentUnite').setValue('');
 		App.get('combo#cboAgentService').setValue('');
@@ -104,7 +104,7 @@ App.controller.define('CAgent', {
 	valider_cboAgentService: function(p, record) 
 	{
 		var KuniTemp = App.get('combo#cboAgentUnite').getValue();
-		console.log(App.get('combo#cboAgentUnite').getValue());
+//		console.log(App.get('combo#cboAgentUnite').getValue());
 		//Efface l'info montrée (displayField) sur le combo
 		App.get('combo#cboAgentService').setValue('');
 		App.get('combo#cboAgentService').getStore().getProxy().extraParams.id_Service = KuniTemp;
@@ -117,7 +117,7 @@ App.controller.define('CAgent', {
 		alert('select sur cboAgentDomaine interv');
 		
 		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
-		console.log(App.get('combo#cboAgentDomaine').getValue());
+//		console.log(App.get('combo#cboAgentDomaine').getValue());
 		//Efface les infos montrées (displayField) sur le combo esclave
 		App.get('combo#cboAgentThematique').setValue('');
 		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_domaine = id_domaineTemp;
@@ -175,7 +175,7 @@ App.controller.define('CAgent', {
 				nom		: App.get('textfield#nomAgent').getValue(),
 				prenom	: App.get('textfield#prenomAgent').getValue(),
 			};
-		console.log(obj);
+//		console.log(obj);
 		App.Agents.create(obj, function(result) {
 			App.get('grid#gridAgents').getStore().load();
 		});

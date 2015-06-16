@@ -7,8 +7,8 @@ Etablis = {
 		
   		var q = Etablis.using('db');
 		
-		console.log('>>Etablis.get_etablis()');
-		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
+//		console.log('>>Etablis.get_etablis()');
+//		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
 	}
 	
