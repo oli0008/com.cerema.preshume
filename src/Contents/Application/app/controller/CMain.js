@@ -36,7 +36,7 @@ App.controller.define('CMain', {
 	},
 	agent_onshow: function()
 	{
-		App.get('agent combo#cboAgentEtablis').setValue('007');
+		
 	},
 	Menu_onClick: function(p)
 	{
@@ -127,6 +127,7 @@ App.controller.define('CMain', {
 		App.view.create('main.VContratTravail',{			
 			modal:true
 		}).show();
+		App.get('agent combo#cboAgentEtablis').setValue('007');
 	},
 //****************
 	onLoad: function()
