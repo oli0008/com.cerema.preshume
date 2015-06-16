@@ -36,7 +36,7 @@ App.controller.define('CMain', {
 	},
 	agent_onshow: function()
 	{
-		alert('la fenetre s\'est ouverte sans probleme');
+		App.get('agent combo#Etablissement').setValue('007');
 	},
 	Menu_onClick: function(p)
 	{
@@ -123,7 +123,7 @@ App.controller.define('CMain', {
 	
 	open_window_contrat_travail: function()
 	{
-		alert('clic sur mnuModAgent');
+		//alert('clic sur mnuModAgent');
 		App.view.create('main.VContratTravail',{			
 			modal:true
 		}).show();
