@@ -191,11 +191,14 @@ width: width_, */
 					displayField: "rue_ville_residence",
 	//				displayField: "ville_residence",			
 	//				valueField: "rue_residence",
-					valueField: "id_residence",			
+					valueField: "id_residence",	
+					store: App.store.create("App.AgentsMod.get_residence_admin", {
+													autoLoad: true
+												})  	// Creation du store					
 /* 					store: App.store.create("App.XXX__Unite.get_unite", {
 												autoLoad: true
 									})  	// Creation du store */
-					store: App.store.create({
+/* 					store: App.store.create({
 					fields: [
 							"rue_residence",
 							"ville_residence"
@@ -204,7 +207,7 @@ width: width_, */
 							{	rue_residence: "rue_1", ville_residence: "ville_1"},
 							{	rue_residence: "rue_2", ville_residence: "ville_2"}
 					]			
-					})
+					}) */
 				},
 				{
 					xtype: "combo",
