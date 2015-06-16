@@ -117,9 +117,12 @@ App.view.define('main.VAgent',
 		width: "100%",
 		height: 130,
 		columns: [
-			{	text: "Nom",		dataIndex: "Nom"	},
-			{	text: "Prénom",		dataIndex: "Prenom"	},
-			{	text: "Matricule", 	dataIndex: "Matri"	},
+			{	text: "Nom",			dataIndex: "Nom"		},
+			{	text: "Prénom",			dataIndex: "Prenom"		},
+			{	text: "Matricule", 		dataIndex: "Matri"		},
+			{	text: "Etablissement",	dataIndex: "LibEts"		},
+			{	text: "Unité",			dataIndex: "LibUnic"	},
+			{	text: "Service", 		dataIndex: "LibSubC"	},
 		],
  		store: App.store.create('App.AgentsMod.readAllAgents',{
 				autoLoad: true

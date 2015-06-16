@@ -6,11 +6,11 @@ select
 from 
 	agents a
 	join unites u
-			on u.Kuni = a.Kuni 
+		on u.Kuni = a.Kuni 
 	join subdis s
-			on s.Ksub = a.Ksub 	
+		on s.Ksub = a.Ksub 	
 	join etablissements e
-			on e.Kets = u.Kets
+		on e.Kets = u.Kets
 where 
 	a.actif = 1 
 	and 
