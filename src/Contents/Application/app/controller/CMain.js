@@ -1,3 +1,6 @@
+var label_width = 350;
+var with_ = 350;
+
 App.controller.define('CMain', {
 
 	views: [
