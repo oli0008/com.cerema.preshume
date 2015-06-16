@@ -54,7 +54,8 @@ App.controller.define('CMain', {
 	},
 	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
-	valider_cboMainUnite: function(p, record) {
+	valider_cboMainUnite: function(p, record) 
+	{
 		var Kets2 = App.get('combo#cboMainEtablis').getValue();
 		console.log(App.get('combo#cboMainEtablis').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos esclaves
@@ -65,7 +66,8 @@ App.controller.define('CMain', {
 	},
 	
 	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
-	valider_cboMainService: function(p, record) {
+	valider_cboMainService: function(p, record) 
+	{
 		var Kuni2 = App.get('combo#cboMainUnite').getValue();
 		console.log(App.get('combo#cboMainUnite').getValue());
 		//Efface l'info montrée (displayField) sur le combo esclave
