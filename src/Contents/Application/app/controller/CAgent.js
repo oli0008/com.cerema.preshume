@@ -46,7 +46,10 @@ alert('CAgent.init()');
 			}, */
 		});				
 	},
-	
+	agent_onshow: function(item)
+	{
+		App.get('agent combo#cboAgentEtablis').setValue('007');		
+	},	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboAgentUnite: function(p, record) 
 	{

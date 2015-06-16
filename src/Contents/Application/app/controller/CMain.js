@@ -25,17 +25,10 @@ App.controller.define('CMain', {
 			},
 			"button#btnMainOk": {
 				click: "clickme_onclick"
-			},
-			"agent": {
-				show: "agent_onshow"
 			}
 		});
 		
 		App.init('VMain',this.onLoad);
-		
-	},
-	agent_onshow: function()
-	{
 		
 	},
 	Menu_onClick: function(p)
@@ -126,8 +119,7 @@ App.controller.define('CMain', {
 		//alert('clic sur mnuModAgent');
 		App.view.create('main.VContratTravail',{			
 			modal:true
-		}).show();
-		App.get('agent combo#cboAgentEtablis').setValue('007');
+		}).show();		
 	},
 //****************
 	onLoad: function()
