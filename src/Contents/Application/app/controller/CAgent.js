@@ -31,7 +31,7 @@ alert('CAgent.init()');
 			},			
 			
 		//	"combo#cboAgentThematique": {
-		//		select: "valider_cboAgentThematique"
+		//		select: "valider_cboAgentThematiqueXXX"
 			},
 			
 			
