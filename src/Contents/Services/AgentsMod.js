@@ -61,7 +61,8 @@ AgentsMod = {
 	 */	
 	
 	get_residence_admin: function(in1,fn_cb) {
-		
+	
+	
  // 		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.get_residence_admin()');
