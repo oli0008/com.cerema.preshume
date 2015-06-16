@@ -24,19 +24,11 @@ where
 	u.archive = 0
 	and
 	s.archive = 0
+	and
+	e.Kets = {P_ETABLIS}
+order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub	
+
+/*		
 	and 
-	e.Kets = 1		/* e.Kets = 1 == DTerMed */
-	and
-	u.Kuni = 5		/* u.Kuni = 5 == LAP */
-	and
-	s.Ksub = 47 	/* s.Ksub = 47 == SGRN */
-	
-/*	
-	and
-	e.Kets = {P_ETABLIS}		
-	and
-	u.Kuni = {P_UNITE}			
-	and
-	s.Ksub = {P_SERVICE}		
-*/
-order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub
+	e.Kets = 1	*/	/* e.Kets = 1 == DTerMed */		
+
