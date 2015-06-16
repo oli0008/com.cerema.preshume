@@ -39,32 +39,32 @@ AgentsMod = {
 		q.model('bpclight','SELECT Nom, Prenom, Matri FROM agents',cb);
 	},
 	
-	get_AllAgents: function(in1,fn_cb) {	
+	get_allAgents: function(in1,fn_cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.get_AllAgents()');
-		console.log(q.sql('qget_AllAgents'));		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_AllAgents'),fn_cb);  
+		console.log('>>AgentsMod.get_allAgents()');
+		console.log(q.sql('qget_allAgents'));		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_allAgents'),fn_cb);  
 	},
 	
-	get_AgentsByEtablis: function(in1,fn_cb) {	
+	get_agentsByEtablis: function(in1,fn_cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.readAgentsByEtablis()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		console.log('>>AgentsMod.get_agentsByEtablis()');
+		console.log(q.sql( 'qget_agentsByEtablis' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agentsByEtablis',{RECHERCHE: in1.id_Service}),fn_cb);
 	},
 	
-	get_AgentsByUnite: function(in1,fn_cb) {	
+	get_agentsByUnite: function(in1,fn_cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.readAgentsByUnite()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		console.log('>>AgentsMod.get_agentsByUnite()');
+		console.log(q.sql( 'qget_agentsByUnite' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agentsByUnite',{RECHERCHE: in1.id_Service}),fn_cb);
 	},
 	
-	get_AgentsByService: function(in1,fn_cb) {	
+	get_agentsByService: function(in1,fn_cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.readAgentsByService()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		console.log('>>AgentsMod.get_agentsByService()');
+		console.log(q.sql( 'qget_agentsByService' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agentsByService',{RECHERCHE: in1.id_Service}),fn_cb);
 	},
 
 

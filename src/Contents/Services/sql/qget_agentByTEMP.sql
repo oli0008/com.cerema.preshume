@@ -1,3 +1,4 @@
+/* selectionne tous les agents en fonction qui ne sont ni vacataires ni stagiaires */
 select 
 	a.Nom, a.Prenom, a.Matri, 
 	e.Kets, e.LibEts, 
