@@ -12,7 +12,7 @@ alert('CAgent.init()');
 		this.control({
 			"agent": {
 				show: "agent_onshow"
-			}
+			},
 			"agent combo#cboAgentEtablis": {
 				select: "valider_cboAgentUnite"
 			},
