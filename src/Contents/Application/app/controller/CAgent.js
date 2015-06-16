@@ -53,13 +53,13 @@ App.controller.define('CAgent', {
 	{
 		alert('CAgent.btnAgentEnregistrer_onclick()');
 		var errors = [];
-		if (!App.get('agent combo#Etablissement').getValue()) {			
+		if (!App.get('agent combo#cboAgentEtablis').getValue()) {			
 			errors.push("combo Etablissement est vide");
 		};
-			if (!App.get('agent combo#Unite').getValue()) {			
+			if (!App.get('agent combo#cboAgentUnite').getValue()) {			
 			errors.push("combo Unité est vide");
 		};
-			if (!App.get('agent combo#Service').getValue()) {			
+			if (!App.get('agent combo#cboAgentService').getValue()) {			
 			errors.push("combo Service est vide");
 		};
 		if (errors.length > 0) {
