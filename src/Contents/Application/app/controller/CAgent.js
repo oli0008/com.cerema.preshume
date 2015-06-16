@@ -85,6 +85,7 @@ App.controller.define('CAgent', {
 	valider_cboAgentUnite: function(p, record) 
 	{
 		var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
+		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 		console.log(App.get('combo#cboAgentEtablis').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos esclaves
 		App.get('combo#cboAgentUnite').setValue('');
