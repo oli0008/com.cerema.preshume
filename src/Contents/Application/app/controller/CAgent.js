@@ -114,7 +114,7 @@ App.controller.define('CAgent', {
 	//Sélectionner un domaine d'intervention affiche la thématique correspondante (cela active le store de l'unité)
 	valider_cboAgentThematique: function(p, record) 
 	{
-		alert('select sur cboAgentDomaine interv');
+//		alert('select sur cboAgentDomaine interv');
 		
 		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
 //		console.log(App.get('combo#cboAgentDomaine').getValue());
