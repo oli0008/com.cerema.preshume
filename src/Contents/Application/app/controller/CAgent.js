@@ -51,6 +51,7 @@ App.controller.define('CAgent', {
 	},
 	btnAgentEnregistrer_onclick: function()
 	{
+		alert('CAgent.btnAgentEnregistrer_onclick()');
 		var errors = [];
 		if (!App.get('agent combo#Etablissement').getValue()) {			
 			errors.push("combo Etablissement est vide");
