@@ -48,8 +48,7 @@ App.view.define('main.VAgent',
  */
  
 /*  
- var label_width = 350;
- var with_ = 350;
+
 
  */ 
 	border: false,
@@ -154,7 +153,7 @@ App.view.define('main.VAgent',
 		})
 	},  */
 	{
-		flex: 1,
+		height: 300,
 		width: "100%",
 		items: [
 		{
@@ -360,28 +359,30 @@ width: width_, */
 					width: "100%"
 					
 				}, */
-				{
-					xtype: "htmleditor",
-					fieldLabel: "Description du poste",
-					labelAlign: "top",
-					itemId: "txthtmlDescriptionPoste", 
-/* 					width: "100%",
-					flex: 1 */
-					margin: {
-						top: 10,
-						left: 20								
-					},
-					labelWidth: 300,
-					width:300,
-					allowBlank: false,
-				}
 				]
 				
 			}
 			]
 		}
 		]
+	},
+	{
+		xtype: "htmleditor",
+		flex: 1,
+		fieldLabel: "Description du poste",
+		labelAlign: "top",
+		itemId: "txthtmlDescriptionPoste", 
+/* 					width: "100%",
+		flex: 1 */
+		margin: {
+			top: 10,
+			left: 20								
+		},
+		labelWidth: 300,
+		width:300,
+		allowBlank: false,
 	}
+
 	]
 });
 	
