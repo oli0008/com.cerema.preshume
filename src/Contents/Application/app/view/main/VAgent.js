@@ -187,7 +187,6 @@ App.view.define('main.VAgent',
 width: width_, */					
 					labelWidth: 300,
 					width: 300,
-	//				displayField: "rue_residence" + ", " + "ville_residence",	
 					displayField: "rue_ville_residence",
 	//				displayField: "ville_residence",			
 	//				valueField: "rue_residence",
