@@ -1,6 +1,9 @@
 // class AgentsMod
 // class omneedia db = classe moteur d'abstraction de base de données
 AgentsMod = {
+
+	//Variables globales
+  	var q = AgentsMod.using('db');
 	 	 
 	get_etablis: function(in1,fn_cb) {
 		// 1er argument = error
@@ -60,7 +63,7 @@ AgentsMod = {
 	
 	get_residence_admin: function(in1,fn_cb) {
 		
-  		var q = AgentsMod.using('db');
+ // 		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.get_residence_admin()');
 		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
