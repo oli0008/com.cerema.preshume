@@ -122,7 +122,7 @@ App.view.define('main.VAgent',
 			{	text: "Prénom",		dataIndex: "Prenom"	},
 			{	text: "Matricule", 	dataIndex: "Matri"	},
 		],
- 		store: App.store.create('App.AgentsMod.read',{
+ 		store: App.store.create('App.AgentsMod.readAllAgents',{
 				autoLoad: true
 			})	 
 	},  
