@@ -43,9 +43,34 @@ AgentsMod = {
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},	
 
-	read: function(o,cb) {		// Read = select
-		AgentsMod.using('db').model('bpclight','SELECT Nom, Prenom, Matri FROM agents',cb);
+	readAllAgents: function(o,cb) {	
+	  	var q = AgentsMod.using('db');
+		console.log('>>AgentsMod.readAllAgents()');
+		q.model('bpclight','SELECT Nom, Prenom, Matri FROM agents',cb);
 	},
+	
+	readAgentsByEtablis: function(o,cb) {	
+	  	var q = AgentsMod.using('db');
+		console.log('>>AgentsMod.get_agent()');
+		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+	},
+	
+	readAgentsByUnite: function(o,cb) {	
+	  	var q = AgentsMod.using('db');
+		console.log('>>AgentsMod.get_agent()');
+		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+	},
+	
+	readAgentsByService: function(o,cb) {	
+	  	var q = AgentsMod.using('db');
+		console.log('>>AgentsMod.get_agent()');
+		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+	},
+
+
 	
 /* 
 	cherche: function(in1,fn_cb) {
