@@ -24,7 +24,7 @@ App.controller.define('CAgent', {
 			},
 			"agent button#btnAgentEnregistrer": {
 				click: "btnAgentEnregistrer_onclick"
-			}
+			} 
 /*			
 			"button#btnMainOk": {
 				click: "clickme_onclick"
