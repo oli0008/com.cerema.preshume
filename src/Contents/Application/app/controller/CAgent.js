@@ -13,13 +13,13 @@ alert('CAgent.init()');
 			"agent": {
 				show: "agent_onshow"
 			}
-			"combo#cboAgentEtablis": {
+			"agent combo#cboAgentEtablis": {
 				select: "valider_cboAgentUnite"
 			},
-			"combo#cboAgentUnite": {
+			"agent combo#cboAgentUnite": {
 				select: "valider_cboAgentService"
 			},			
-			"combo#cboAgentDomaine": {
+			"agent combo#cboAgentDomaine": {
 				select: "valider_cboAgentThematique"
 			},
 /*			
