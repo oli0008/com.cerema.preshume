@@ -1,6 +1,6 @@
 // Déclaration des variables globales
-var label_width = 350;
-var with_ = 350;
+var VAgent_label_width = 	350;
+var VAgent_width = 			350;
 
 App.controller.define('CMain', {
 
