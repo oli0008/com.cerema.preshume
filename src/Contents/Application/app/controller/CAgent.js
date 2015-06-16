@@ -53,7 +53,7 @@ alert('CAgent.init()');
 	
 	
 
-	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
+	//Sélectionner un domaine d'intervention affiche la thématique correspondante (cela active le store de l'unité)
 	valider_cboAgentThematique: function(p, record) 
 	{
 		alert('select sur cboAgentDomaine interv');
