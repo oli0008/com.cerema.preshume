@@ -36,7 +36,7 @@ App.controller.define('CMain', {
 	},
 	agent_onshow: function()
 	{
-		App.get('agent combo#Etablissement').setValue('007');
+		App.get('agent combo#cboAgentEtablis').setValue('007');
 	},
 	Menu_onClick: function(p)
 	{
