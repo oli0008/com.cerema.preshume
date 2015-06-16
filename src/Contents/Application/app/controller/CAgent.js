@@ -52,24 +52,25 @@ alert('CAgent.init()');
 	
 	
 	
-	//----------------------------------------------	
-	// OLD stuff
-	//----------------------------------------------
+
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
-//	valider_cboMainUnite: function(p, record) {
 	valider_cboAgentThematique: function(p, record) 
 	{
 		alert('select sur cboAgentDomaine interv');
 		
-		var id_domaine2 = App.get('combo#cboAgentDomaine').getValue();
+		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
 		console.log(App.get('combo#cboAgentDomaine').getValue());
-		//Efface les infos montrées (displayField) sur les 2 combos
+		//Efface les infos montrées (displayField) sur le combo esclave
 		App.get('combo#cboAgentThematique').setValue('');
-	//	App.get('combo#cboMainService').setValue('');
-		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_domaine = id_domaine2;
+		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_domaine = id_domaineTemp;
 		App.get('combo#cboAgentThematique').getStore().load();
-//	},
 	},
+
+	
+	//----------------------------------------------	
+	// OLD stuff
+	//----------------------------------------------	
+	
 	
 	//---------------------------------------------
 	gridAgents_onclick: function( item, record) //, item, index, e, eOpts )
