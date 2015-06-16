@@ -68,7 +68,7 @@ alert('CAgent.init()');
 	//	App.get('combo#cboMainService').setValue('');
 		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_Etablis = id_domaine;
 		App.get('combo#cboAgentThematique').getStore().load();
-	},
+//	},
 	},
 	
 	//---------------------------------------------
