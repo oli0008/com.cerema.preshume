@@ -107,7 +107,8 @@ AgentsMod = {
 //		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 //		q.model('bpclight',q.sql('qget_thematique'),fn_cb);
 //		AgentsMod.using('db').model('bpclight', 'select id_thematique, nom_thematique from thematiques order by id_thematique asc', fn_cb);
-		AgentsMod.using('db').model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = 4 order by id_thematique asc', fn_cb);
+		AgentsMod.using('db').model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = in1.id_domaine order by id_thematique asc', fn_cb);
+//		AgentsMod.using('db').model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = 4 order by id_thematique asc', fn_cb);
 	},	
 
 	get_type_contrat: function(in1,fn_cb) {

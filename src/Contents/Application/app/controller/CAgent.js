@@ -61,12 +61,12 @@ alert('CAgent.init()');
 	{
 		alert('select sur cboAgentDomaine interv');
 		
-		var id_domaine = App.get('combo#cboAgentDomaine').getValue();
+		var id_domaine2 = App.get('combo#cboAgentDomaine').getValue();
 		console.log(App.get('combo#cboAgentDomaine').getValue());
 		//Efface les infos montrées (displayField) sur les 2 combos
 		App.get('combo#cboAgentThematique').setValue('');
 	//	App.get('combo#cboMainService').setValue('');
-		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_Etablis = id_domaine;
+		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_domaine = id_domaine2;
 		App.get('combo#cboAgentThematique').getStore().load();
 //	},
 	},
