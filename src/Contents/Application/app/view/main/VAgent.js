@@ -183,14 +183,12 @@ App.view.define('main.VAgent',
 					margin: {
 							top: 10,
 							left:10								
-					}, 
-/* lalelWidth: label_width,
-width: width_, */					
-					labelWidth: 300,
-					width: 300,
+					}, 					
+					labelWidth: VAgent_label_width,
+					width: VAgent_width,
+//					labelWidth: 300,
+//					width: 300,
 					displayField: "rue_ville_residence",
-	//				displayField: "ville_residence",			
-	//				valueField: "rue_residence",
 					valueField: "id_residence",	
 					store: App.store.create("App.AgentsMod.get_residence_admin", {
 													autoLoad: true
