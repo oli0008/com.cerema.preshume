@@ -7,6 +7,8 @@ App.controller.define('CAgent', {
 	init: function()
 	{
 alert('CAgent.init()');
+		
+		//declaration des évenements
 		this.control({
 			"combo#cboMainEtablis": {
 				select: "valider_cboMainUnite"
@@ -14,14 +16,17 @@ alert('CAgent.init()');
 			"combo#cboMainUnite": {
 				select: "valider_cboMainService"
 			},
-/* 			
-			
+ 			
+			"combo#cboAgentDomaine": {
+				select: "valider_cboAgentThematique"
+			},
+/*			
 			"button#btnMainOk": {
 				click: "clickme_onclick"
 			},			
 			
-			"combo#cboAgentThematique": {
-				select: "valider_cboAgentThematique"
+		//	"combo#cboAgentThematique": {
+		//		select: "valider_cboAgentThematique"
 			},
 			
 			
@@ -52,7 +57,7 @@ alert('CAgent.init()');
 	//----------------------------------------------
 	valider_cboAgentThematique: function()
 	{
-		alert('select sur cboAgentThematique');
+		alert('select sur cboAgentDomaine interv');
 	},
 	
 	//---------------------------------------------
