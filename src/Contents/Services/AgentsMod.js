@@ -65,7 +65,7 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.get_residence_admin()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin order by id_residence asc', fn_cb);
 	},		 
@@ -75,8 +75,9 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.get_metier()');
-		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+//		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb);
 	},	
 
 //Hard coded query
