@@ -51,30 +51,28 @@ alert('CAgent.init()');
 	},
 	btnAgentEnregistrer_onclick: function()
 	{
-		var errors=[];
-		if (!App.get('agent combo#Etablissement').getValue()) {
-			
-			errors.push("sdfsdfksklflk");
+		var errors = [];
+		if (!App.get('agent combo#Etablissement').getValue()) {			
+			errors.push("combo Etablissement est vide");
 		};
-			if (!App.get('agent combo#Etablissement').getValue()) {
-			
-			errors.push("sdfsdfksklflk");
+			if (!App.get('agent combo#Unite').getValue()) {			
+			errors.push("combo Unité est vide");
 		};
-			if (!App.get('agent combo#Etablissement').getValue()) {
-			
-			errors.push("sdfsdfksklflk");
+			if (!App.get('agent combo#Service').getValue()) {			
+			errors.push("combo Service est vide");
 		};
-		if (errors.length>0) {
+		if (errors.length > 0) {
 			alert('vous avez fait des erreurs: '+errors.join('\n'))
 			return;
 		}
-		var quest={
+		var quest = {
 			etablissement: App.get('agent combo#Etablissement').getValue(),
 			unite: App.get('agent combo#Etablissement').getValue(),
 			service: App.get('agent combo#Etablissement').getValue()			
 		};
 		App.mon_web_service.insert(quest,function(err,response) {
-			if (err) alert('ca c mal passe'); else App.get('agent').close();
+			if (err) alert('ca c mal passe'); 
+			else App.get('agent').close();
 			
 		})
 	},
