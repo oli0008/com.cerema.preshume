@@ -10,13 +10,12 @@ alert('CAgent.init()');
 		
 		//declaration des évenements
 		this.control({
-			"combo#cboMainEtablis": {
-				select: "valider_cboMainUnite"
+			"combo#cboAgentEtablis": {
+				select: "valider_cboAgentUnite"
 			},
-			"combo#cboMainUnite": {
-				select: "valider_cboMainService"
-			},
- 			
+			"combo#cboAgentUnite": {
+				select: "valider_cboAgentService"
+			},			
 			"combo#cboAgentDomaine": {
 				select: "valider_cboAgentThematique"
 			},
@@ -45,7 +44,30 @@ alert('CAgent.init()');
 		});				
 	},
 	
+	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
+	valider_cboAgentUnite: function(p, record) 
+//	valider_cboMainUnite: function(p, record) 
+	{
+		var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
+		console.log(App.get('combo#cboAgentEtablis').getValue());
+		//Efface les infos montrées (displayField) sur les 2 combos esclaves
+		App.get('combo#cboAgentUnite').setValue('');
+		App.get('combo#cboAgentService').setValue('');
+		App.get('combo#cboAgentUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
+		App.get('combo#cboAgentUnite').getStore().load();
+	},
 	
+	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
+	valider_cboAgentService: function(p, record) 
+	{
+		var KuniTemp = App.get('combo#cboAgentUnite').getValue();
+		console.log(App.get('combo#cboAgentUnite').getValue());
+		//Efface l'info montrée (displayField) sur le combo
+		App.get('combo#cboAgentService').setValue('');
+		App.get('combo#cboAgentService').getStore().getProxy().extraParams.id_Service = KuniTemp;
+		App.get('combo#cboAgentService').getStore().load();
+	},
+		
 	
 	
 	
