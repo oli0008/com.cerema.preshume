@@ -115,7 +115,7 @@ App.view.define('main.VAgent',
 		itemId	: "gridAgents",
 		border: false,
 		width: "100%",
-		height: 100,
+		height: 130,
 		columns: [
 			{	text: "Nom",		dataIndex: "Nom"	},
 			{	text: "Prénom",		dataIndex: "Prenom"	},
