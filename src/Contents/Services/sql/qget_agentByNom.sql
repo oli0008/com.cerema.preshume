@@ -1,5 +1,5 @@
 select 
-	nom,prenom 
+	nom, prenom 
 from 
 	agents 
 where 

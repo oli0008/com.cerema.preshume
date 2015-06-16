@@ -7,8 +7,8 @@ Agents = {
 		var q = Agents.using('db');  
 
 		console.log('>>Agents.cherche()');
-		console.log(q.sql('qget_agent',{RECHERCHE:'%' + in1.recherche + '%'}));			//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_agent',{RECHERCHE:'%' + in1.recherche + '%'}),fn_cb);
+		console.log(q.sql('qget_agentByNom',{RECHERCHE:'%' + in1.recherche + '%'}));			//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agentByNom',{RECHERCHE:'%' + in1.recherche + '%'}),fn_cb);
 		//q.model('bpclight','select nom,prenom from agents',fn_cb);
 	}
 	
