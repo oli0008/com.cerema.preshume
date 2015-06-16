@@ -51,21 +51,21 @@ AgentsMod = {
 	
 	readAgentsByEtablis: function(o,cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.get_agent()');
+		console.log('>>AgentsMod.readAgentsByEtablis()');
 		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},
 	
 	readAgentsByUnite: function(o,cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.get_agent()');
+		console.log('>>AgentsMod.readAgentsByUnite()');
 		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},
 	
 	readAgentsByService: function(o,cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.get_agent()');
+		console.log('>>AgentsMod.readAgentsByService()');
 		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},
