@@ -331,7 +331,8 @@ width: width_, */
 					itemId: "datDateArrivee",
 					margin: {
 							top: 10,
-							left: 20								
+							left: 20,
+							bottom: 10
 							},
 					labelWidth: 300,
 					width:300,
