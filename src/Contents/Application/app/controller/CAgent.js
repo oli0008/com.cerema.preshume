@@ -57,7 +57,7 @@ alert('CAgent.init()');
 	//----------------------------------------------
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 //	valider_cboMainUnite: function(p, record) {
-	valider_cboAgentThematique: functionp, record) 
+	valider_cboAgentThematique: function(p, record) 
 	{
 		alert('select sur cboAgentDomaine interv');
 		
