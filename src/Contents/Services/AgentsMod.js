@@ -21,6 +21,7 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 
 		console.log('>>AgentsMod.get_unite()');
+		console.log('in1= '+ JSON.stringify(in1));
 		console.log(q.sql( 'qget_unite' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
 	},	
