@@ -1,5 +1,5 @@
 select 
-	a.nom, a.prenom, a.matri, 
+	a.Nom, a.Prenom, a.Matri, 
 	e.Kets, e.LibEts, 
 	u.Kuni, u.LibUnic, 
 	s.Ksub, s.LibSubC
