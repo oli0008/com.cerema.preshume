@@ -25,12 +25,19 @@ App.controller.define('CMain', {
 			},
 			"button#btnMainOk": {
 				click: "clickme_onclick"
+			},
+			"agent": {
+				show: "agent_onshow"
 			}
 		});
 		
 		App.init('VMain',this.onLoad);
 		
 	},
+	agent_onshow: function()
+	{
+		alert('la fenetre s\'est ouverte sans probleme');
+	}
 	Menu_onClick: function(p)
 	{
 		if (p.itemId) {

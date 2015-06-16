@@ -1,12 +1,55 @@
-/* Effectifs physiques à l'instant présent */
-/* groupés par Unité & par grades */
+select 
+	a.nom, a.prenom, a.matri, 
+	e.Kets, e.LibEts, 
+	u.Kuni, u.LibUnic, 
+	s.Ksub, s.LibSubC
+from 
+	agents a
+	join unites u
+			on u.Kuni = a.Kuni 
+	join subdis s
+			on s.Ksub = a.Ksub 	
+	join etablissements e
+			on e.Kets = u.Kets
+where 
+	a.actif = 1 
+	and 
+	a.kgra <> 66 		/* stagiaire */
+	and 
+	a.kgra <> 67 		/* vacataire */
+	and
+	e.archive = 0
+	and
+	u.archive = 0
+	and
+	s.archive = 0
+	and 
+	e.Kets = 1		/* e.Kets = 1 == DTerMed */
+	and
+	u.Kuni = 5		/* u.Kuni = 5 == LAP */
+	and
+	s.Ksub = 47 	/* s.Ksub = 47 == SGRN */
+	
+/*	
+	and
+	e.Kets = {P_ETABLIS}		
+	and
+	u.Kuni = {P_UNITE}			
+	and
+	s.Ksub = {P_SERVICE}		
+*/
 
-/* NOTE: la table agents représente les éffectifs à l'instant T. */
+/* e.Kets = 1 == DTerMed */
+/* u.Kuni = 5 == LAP */
+/* s.Ksub = 47 == SGRN */
 
-
+/* ***************** */
 
 select 
-	agents.nom, agents.prenom, agents.matri, etablissements.Kets, etablissements.LibSubC, unites.Kuni, unites.LibSubC, subdis.Ksub, subdis.LibSubC
+	agents.nom, agents.prenom, agents.matri, 
+	etablissements.Kets, etablissements.LibEts, 
+	unites.Kuni, unites.LibUnic, 
+	subdis.Ksub, subdis.LibSubC
 from 
 	agents 
 	join unites 
@@ -30,16 +73,13 @@ where
 	unites.archive = 0
 	and
 	subdis.archive = 0
-/*	and 
-	etablissements.Kets = 1	*/ /* LibEtsC est NULL pour Kets = 6, Kets = 1 == DTerMed */
-/*	and
-	unites.Kuni = 11 */ 	/*selecteur d'unité */
+	and 
+	etablissements.Kets = 1		/* 1 == DTerMed */
 	and
-	subdis.Ksub = 333	/* xxx */
+	unites.Kuni = 5				/* 5 == LAP */
+	and
+	subdis.Ksub = 47 			/* 47 == SGRN */
+/*	
 	and
 	unites.Kuni = 	{RECHERCHE}	
-/*	
-group by 
-	unites.LibUnic,
-	grades.kcgr
 */
