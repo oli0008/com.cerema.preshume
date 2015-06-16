@@ -22,6 +22,9 @@ alert('CAgent.init()');
 			"agent combo#cboAgentDomaine": {
 				select: "valider_cboAgentThematique"
 			},
+			"agent button#btnAgentEnregistrer": {
+				click: "btnAgentEnregistrer_onclick"
+			}
 /*			
 			"button#btnMainOk": {
 				click: "clickme_onclick"
@@ -45,6 +48,35 @@ alert('CAgent.init()');
 				itemclick: "gridAgents_onclick"
 			}, */
 		});				
+	},
+	btnAgentEnregistrer_onclick: function()
+	{
+		var errors=[];
+		if (!App.get('agent combo#Etablissement').getValue()) {
+			
+			errors.push("sdfsdfksklflk");
+		};
+			if (!App.get('agent combo#Etablissement').getValue()) {
+			
+			errors.push("sdfsdfksklflk");
+		};
+			if (!App.get('agent combo#Etablissement').getValue()) {
+			
+			errors.push("sdfsdfksklflk");
+		};
+		if (errors.length>0) {
+			alert('vous avez fait des erreurs: '+errors.join('\n'))
+			return;
+		}
+		var quest={
+			etablissement: App.get('agent combo#Etablissement').getValue(),
+			unite: App.get('agent combo#Etablissement').getValue(),
+			service: App.get('agent combo#Etablissement').getValue()			
+		};
+		App.mon_web_service.insert(quest,function(err,response) {
+			if (err) alert('ca c mal passe'); else App.get('agent').close();
+			
+		})
 	},
 	agent_onshow: function(item)
 	{
