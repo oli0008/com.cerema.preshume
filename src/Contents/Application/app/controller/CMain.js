@@ -37,7 +37,7 @@ App.controller.define('CMain', {
 	agent_onshow: function()
 	{
 		alert('la fenetre s\'est ouverte sans probleme');
-	}
+	},
 	Menu_onClick: function(p)
 	{
 		if (p.itemId) {
