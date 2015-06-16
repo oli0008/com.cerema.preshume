@@ -4,8 +4,9 @@ var with_ = 350;
 App.controller.define('CMain', {
 
 	views: [
-		"VMain",
-		"main.VAgent"
+		"VMain"
+/* 		,
+		"main.VAgent" */
 /* 		,
 		"main.VContratTravail" */
 	],
