@@ -378,11 +378,11 @@ width: width_, */
 /* 					width: "100%",
 		flex: 1 */
 		margin: {
-			top: 10,
-			left: 20								
+			top: 5,
+			left: 5								
 		},
 		labelWidth: 300,
-		width:300,
+		width:"100%",
 		allowBlank: false,
 	}
 
