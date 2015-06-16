@@ -55,9 +55,20 @@ alert('CAgent.init()');
 	//----------------------------------------------	
 	// OLD stuff
 	//----------------------------------------------
-	valider_cboAgentThematique: function()
+	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
+//	valider_cboMainUnite: function(p, record) {
+	valider_cboAgentThematique: functionp, record) 
 	{
 		alert('select sur cboAgentDomaine interv');
+		
+		var id_domaine = App.get('combo#cboAgentDomaine').getValue();
+		console.log(App.get('combo#cboAgentDomaine').getValue());
+		//Efface les infos montrées (displayField) sur les 2 combos
+		App.get('combo#cboAgentThematique').setValue('');
+	//	App.get('combo#cboMainService').setValue('');
+		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_Etablis = id_domaine;
+		App.get('combo#cboAgentThematique').getStore().load();
+	},
 	},
 	
 	//---------------------------------------------
