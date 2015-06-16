@@ -46,7 +46,6 @@ alert('CAgent.init()');
 	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboAgentUnite: function(p, record) 
-//	valider_cboMainUnite: function(p, record) 
 	{
 		var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
 		console.log(App.get('combo#cboAgentEtablis').getValue());
@@ -67,13 +66,6 @@ alert('CAgent.init()');
 		App.get('combo#cboAgentService').getStore().getProxy().extraParams.id_Service = KuniTemp;
 		App.get('combo#cboAgentService').getStore().load();
 	},
-		
-	
-	
-	
-	
-	
-	
 
 	//Sélectionner un domaine d'intervention affiche la thématique correspondante (cela active le store de l'unité)
 	valider_cboAgentThematique: function(p, record) 
