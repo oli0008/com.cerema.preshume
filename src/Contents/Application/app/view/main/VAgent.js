@@ -379,7 +379,8 @@ width: width_, */
 		flex: 1 */
 		margin: {
 			top: 5,
-			left: 5								
+			left: 5,
+			right: 5			
 		},
 		labelWidth: 300,
 		width:"100%",
