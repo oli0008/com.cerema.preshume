@@ -63,7 +63,7 @@ App.controller.define('CAgent', {
 			errors.push("combo Service est vide");
 		};
 		if (errors.length > 0) {
-			alert('vous avez fait des erreurs: '+errors.join('\n'))
+			alert('vous avez fait des erreurs:\n '+errors.join('\n'))
 			return;
 		}
 		var quest = {
