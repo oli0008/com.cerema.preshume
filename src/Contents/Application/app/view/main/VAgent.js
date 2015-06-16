@@ -123,10 +123,8 @@ App.view.define('main.VAgent',
 			{	text: "Etablissement",	dataIndex: "LibEts"		},
 			{	text: "Unité",			dataIndex: "LibUnic"	},
 			{	text: "Service", 		dataIndex: "LibSubC"	}
-		],
-		
+		],		
  		store: App.store.create('App.AgentsMod.get_AllAgents',{
- //		store: App.store.create('App.AgentsMod.readAllAgents',{
 				autoLoad: true
 			})	 
 	},  

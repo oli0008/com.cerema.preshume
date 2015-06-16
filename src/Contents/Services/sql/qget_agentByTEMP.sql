@@ -38,6 +38,7 @@ where
 	and
 	s.Ksub = {P_SERVICE}		
 */
+order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub
 
 /* e.Kets = 1 == DTerMed */
 /* u.Kuni = 5 == LAP */

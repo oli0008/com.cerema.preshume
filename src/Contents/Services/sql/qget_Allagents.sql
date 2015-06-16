@@ -25,3 +25,4 @@ where
 	u.archive = 0
 	and
 	s.archive = 0
+order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub
