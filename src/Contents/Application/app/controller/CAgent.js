@@ -6,7 +6,7 @@ App.controller.define('CAgent', {
 	],	
 	init: function()
 	{
-alert('CAgent.init()');
+//	alert('CAgent.init()');
 		
 		//declaration des évenements
 		this.control({
@@ -78,6 +78,7 @@ alert('CAgent.init()');
 	},
 	agent_onshow: function(item)
 	{
+		//affiche valeur dans combo aprés sa création
 		App.get('agent combo#cboAgentEtablis').setValue('007');		
 	},	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
