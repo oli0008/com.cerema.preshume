@@ -125,9 +125,7 @@ App.controller.define('CAgent', {
 
 	//Sélectionner un domaine d'intervention affiche la thématique correspondante (cela active le store de l'unité)
 	valider_cboAgentThematique: function(p, record) 
-	{
-//		alert('select sur cboAgentDomaine interv');
-		
+	{	
 		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
 //		console.log(App.get('combo#cboAgentDomaine').getValue());
 		//Efface les infos montrées (displayField) sur le combo esclave
@@ -169,13 +167,11 @@ App.controller.define('CAgent', {
 			desc_posteTemp : 'Description du poste',			
 		};
 		
-		/* App.monwebservice.insert(req,function(err,response) {
-			
-			
+		/* App.monwebservice.insert(req,function(err,response) {		
 			
 		}) */
-		App.AgentsMod.get_desc_poste(req,function(err,response) {
-			
+		App.AgentsMod.get_desc_poste(KageTemp,function(err,response) {
+			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(result); 	
 			
 		})
 		
@@ -194,7 +190,7 @@ App.controller.define('CAgent', {
 		App.get('agent textfield#txtNumeroContrat').setValue(numeo_contratTemp); 		
 		App.get('agent textfield#txtSalaire').setValue(salaireTemp); 
 		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
-		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(desc_posteTemp); 
+// temp		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(desc_posteTemp); 
 	},
 	//---------------------------------------------
 	itemclick_AgentsDetails: function(item1, record, item, index, e, eOpts )
