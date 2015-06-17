@@ -139,10 +139,9 @@ App.controller.define('CAgent', {
 	{
 		alert('display_AgentsDetails');
 		//Récupére l'identifiant de l'agent sélectionné
-//		var agent_id = App.get('agent grid#gridAgents').getValue(record.data.Nom);
-		var agent_idTemp = 2641;
-		alert('agent_idTemp = ' + agent_idTemp ); 
-//		console.log(agent_idTemp);
+		var agent_nom = App.get('agent grid#gridAgents').getValue(record.data.Nom);
+//		var agent_nom = 3;
+		alert('agent_nom = ' + agent_nom ); 
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
  
 /* 		if (id) {
@@ -155,9 +154,9 @@ App.controller.define('CAgent', {
 				App.get('grid#gridAgents').getStore().load();
 			});		 */
 		//rempli tous les champs de l'agent séléctionné
-//		App.get('agent combo#cboAgentResAdmin').setValue('AAAA'); 
-		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
-		App.get('agent combo#cboAgentResAdmin').getStore().load();
+		App.get('agent combo#cboAgentResAdmin').setValue('AAAA'); 
+//		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
+//		App.get('agent combo#cboAgentResAdmin').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
 		App.get('textfield#prenomAgent').setValue(record.data.prenom);
 		App.get('textfield#idAgent').setValue(record.data.kage); */
