@@ -136,12 +136,59 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
 	//---------------------------------------------
-	display_AgentsDetails: function(a,b,c,d,e,f,g,h)
+	display_AgentsDetails: function(item, record, index, eOpts )
 	{
-		console.log(a);
-		console.log(b);
-		console.log(c);
-		console.log(d);
+		console.log(record);
+		//Récupére les données de l'agent sélectionné
+		var id_residenceTemp = record.data.Nom; //id_residence);	
+
+/* ------------------------ SIMULATION ----------------------- */
+		
+		var id_residenceTemp = 3;
+//		alert('id_residenceTemp = ' + id_residenceTemp ); 
+		var id_metierTemp = 3;
+		var id_domaineTemp = 4;
+		var id_thematiqueTemp = 14;
+		var id_type_contratTemp = 1;		
+		
+		var numeo_contratTemp = '12345';	
+		var salaireTemp = '52.000';	
+		var date_debut_contratTemp = '2015-03-02';	
+		var desc_posteTemp = 'Description du poste';		
+		
+		var req={
+			id_metierTemp : 3,
+			id_domaineTemp : 4,
+			id_thematiqueTemp : 14,
+			id_type_contratTemp : 1,
+			numeo_contratTemp : '12345',
+			salaireTemp : '52.000',
+			date_debut_contratTemp : '2015-03-02',
+			desc_posteTemp : 'Description du poste',			
+		};
+		
+		App.monwebservice.insert(req,function(err,response) {
+			
+			
+			
+		})
+		
+/* ------------------------ SIMULATION ----------------------- */		
+
+		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
+		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
+
+/* necessite requette sur table domaine et thematique	*/		
+		App.get('agent combo#cboAgentDomaine').setValue(id_domaineTemp); 
+	//	App.get('agent combo#cboAgentThematique').setValue(id_thematiqueTemp); 
+	
+		App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
+		
+/* necessite requette sur table contrat_travail	*/
+		App.get('agent textfield#txtNumeroContrat').setValue(numeo_contratTemp); 		
+		App.get('agent textfield#txtSalaire').setValue(salaireTemp); 
+		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
+		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(desc_posteTemp); 
 	},
 	//---------------------------------------------
 	itemclick_AgentsDetails: function(item1, record, item, index, e, eOpts )
