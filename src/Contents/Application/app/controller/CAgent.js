@@ -138,9 +138,9 @@ App.controller.define('CAgent', {
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 		alert('display_AgentsDetails');
-//		var id_residenceTemp = App.get('agent grid#gridAgents').getValue(record.data.Nom);
+		var id_residenceTemp = App.get('agent grid#gridAgents').getValue(record.data.id_residence);
 		//Récupére l'identifiant de l'agent sélectionné
-		var id_residenceTemp = 3;
+//		var id_residenceTemp = 3;
 		alert('id_residenceTemp = ' + id_residenceTemp ); 
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
  
