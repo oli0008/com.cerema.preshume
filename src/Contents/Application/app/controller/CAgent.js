@@ -141,7 +141,7 @@ App.controller.define('CAgent', {
 		var KageTemp = record.data.Kage; 
 		var id_residenceTemp = record.data.id_residence;		
 		 
-	alert('id_residenceTemp = ' + id_residenceTemp ); 
+	alert('KageTemp  = ' + KageTemp  ); 
 		
 		var id_metierTemp = record.data.id_metier;
 		var id_contrat_travailTemp = record.data.id_contrat_travail;
