@@ -147,6 +147,7 @@ App.controller.define('CAgent', {
 //		alert('id_residenceTemp = ' + id_residenceTemp ); 
 		var id_metierTemp = 3;
 		var id_domaineTemp = 4;
+		var id_thematiqueTemp = 14;
 /* ------------------------ SIMULATION ----------------------- */		
 
 		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
