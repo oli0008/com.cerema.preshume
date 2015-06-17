@@ -139,8 +139,8 @@ App.controller.define('CAgent', {
 	{
 		alert('display_AgentsDetails');
 		//Récupére l'identifiant de l'agent sélectionné
-		var agent_nom = App.get('agent grid#gridAgents').getValue(record.data.Nom);
-//		var agent_nom = 3;
+//		var agent_nom = App.get('agent grid#gridAgents').getValue(record.data.Nom);
+		var agent_nom = 3;
 		alert('agent_nom = ' + agent_nom ); 
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
  
