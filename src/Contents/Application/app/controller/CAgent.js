@@ -160,8 +160,11 @@ App.controller.define('CAgent', {
 
 		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
 		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
+
+/* necessite requette sur table domaine et thematique	*/		
 		App.get('agent combo#cboAgentDomaine').setValue(id_domaineTemp); 
 	//	App.get('agent combo#cboAgentThematique').setValue(id_thematiqueTemp); 
+	
 		App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
 		
 /* necessite requette sur table contrat_travail	*/
