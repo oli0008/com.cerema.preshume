@@ -140,7 +140,7 @@ App.controller.define('CAgent', {
 		alert('display_AgentsDetails');
 		//Récupére l'identifiant de l'agent sélectionné
 //		var agent_id = App.get('agent grid#gridAgents').getValue(record.data.Nom);
-		var agent_id = 333;
+		var agent_id = 614;
 		alert('agent_id = ' + agent_id );
 		console.log(agent_id);
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
@@ -156,7 +156,7 @@ App.controller.define('CAgent', {
 			});		 */
 		//rempli tous les champs de l'agent séléctionné
 		App.get('agent combo#cboAgentResAdmin').setValue('AAAA');
-//		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
+		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.id_Etablis = agent_id;
 //		App.get('combo#cboMainUnite').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
 		App.get('textfield#prenomAgent').setValue(record.data.prenom);
