@@ -137,12 +137,13 @@ App.controller.define('CAgent', {
 	//---------------------------------------------
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
-		alert('selectAgentsDetails XXX');
+		alert('display_AgentsDetails');
 		//Récupére l'identifiant de l'agent sélectionné
-		var agent_id = App.get('agent grid#gridAgents').getValue(record.data.Nom);
+//		var agent_id = App.get('agent grid#gridAgents').getValue(record.data.Nom);
+		var agent_id = 333;
 //		console.log(agent_id);
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
-		alert('agent_id = '); // + agent_id.join ); 
+//		alert('agent_id = ' + agent_id.join ); 
 				alert(agent_id );
 /* 		if (id) {
 			var obj = {
