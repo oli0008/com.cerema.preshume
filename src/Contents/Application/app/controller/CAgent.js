@@ -138,10 +138,10 @@ App.controller.define('CAgent', {
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 		alert('display_AgentsDetails');
+//		var id_residenceTemp = App.get('agent grid#gridAgents').getValue(record.data.Nom);
 		//Récupére l'identifiant de l'agent sélectionné
-//		var agent_nom = App.get('agent grid#gridAgents').getValue(record.data.Nom);
-		var agent_nom = 3;
-		alert('agent_nom = ' + agent_nom ); 
+		var id_residenceTemp = 3;
+		alert('id_residenceTemp = ' + id_residenceTemp ); 
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
  
 /* 		if (id) {
@@ -155,7 +155,7 @@ App.controller.define('CAgent', {
 			});		 */
 		//rempli tous les champs de l'agent séléctionné
 //		App.get('agent combo#cboAgentResAdmin').setValue('AAAA'); 
-		App.get('agent combo#cboAgentResAdmin').setValue(3); 
+		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
 //		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
 //		App.get('agent combo#cboAgentResAdmin').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
