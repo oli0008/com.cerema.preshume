@@ -140,7 +140,7 @@ App.controller.define('CAgent', {
 	{
 		console.log(record);
 		//Récupére les données de l'agent sélectionné
-//		var id_residenceTemp = App.get('agent textfield#txtNumeroContrat').setValue(record.data.Nom); //id_residence);	
+		var id_residenceTemp = record.data.Nom; //id_residence);	
 
 /* ------------------------ SIMULATION ----------------------- */
 		
