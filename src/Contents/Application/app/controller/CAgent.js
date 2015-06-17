@@ -171,7 +171,7 @@ App.controller.define('CAgent', {
 			
 		}) */
 		App.AgentsMod.get_desc_poste(KageTemp,function(err,response) {
-			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(result); 	
+			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response); 	
 			
 		})
 		
