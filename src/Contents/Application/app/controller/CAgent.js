@@ -157,7 +157,7 @@ App.controller.define('CAgent', {
 		//rempli tous les champs de l'agent séléctionné
 		App.get('agent combo#cboAgentResAdmin').setValue('AAAA');
 		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
-//		App.get('combo#cboMainUnite').getStore().load();
+		App.get('agent combo#cboAgentResAdmin').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
 		App.get('textfield#prenomAgent').setValue(record.data.prenom);
 		App.get('textfield#idAgent').setValue(record.data.kage); */
