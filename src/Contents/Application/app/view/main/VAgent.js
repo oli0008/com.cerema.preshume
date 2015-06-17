@@ -127,7 +127,7 @@ App.view.define('main.VAgent',
 				dataIndex: "id_residence", 
 				hidden	: true		
 			},
-						{	
+			{	
 				text: "id_metier",				
 				dataIndex: "id_metier", 
 				hidden	: true		
