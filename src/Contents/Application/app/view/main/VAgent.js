@@ -117,13 +117,50 @@ App.view.define('main.VAgent',
 		width: "100%",
 		height: 130,
 		columns: [ 
-//			{	text: "Id",				dataIndex: "Kage"		},
-			{	text: "Nom",			dataIndex: "Nom"		},
-			{	text: "Prénom",			dataIndex: "Prenom"		},
-			{	text: "Matricule", 		dataIndex: "Matri"		},
-			{	text: "Etablissement",	dataIndex: "LibEts"		},
-			{	text: "Unité",			dataIndex: "LibUnic"	},
-			{	text: "Service", 		dataIndex: "LibSubC"	}
+			{	
+				text: "Kage",				
+				dataIndex: "Kage", 
+				hidden	: true		
+			},
+			{	
+				text: "id_residence",				
+				dataIndex: "id_residence", 
+				hidden	: true		
+			},
+						{	
+				text: "id_metier",				
+				dataIndex: "id_metier", 
+				hidden	: true		
+			},
+			{	
+				text: "id_contrat_travail",				
+				dataIndex: "id_contrat_travail", 
+				hidden	: true		
+			},
+//	 a.id_residence, a.id_metier, a.id_contrat_travail */
+			{	
+				text: "Nom",
+				dataIndex: "Nom"		
+			},
+			{	
+				text: "Prénom",			
+				dataIndex: "Prenom"		
+			},
+			{	
+				text: "Matricule", 		
+				dataIndex: "Matri"		
+			},
+			{	
+				text: "Etablissement",	
+				dataIndex: "LibEts"		
+			},
+			{	text: "Unité",			
+				dataIndex: "LibUnic"	
+			},
+			{	
+				text: "Service", 		
+				dataIndex: "LibSubC"	
+			}
 		],	
 //		store: App.store.create("App.AgentsMod.get_agentsByEtablis",{		
  		store: App.store.create("App.AgentsMod.get_allAgents",{
