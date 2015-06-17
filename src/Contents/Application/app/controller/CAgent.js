@@ -144,6 +144,7 @@ App.controller.define('CAgent', {
 //		console.log(agent_id);
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
 		alert('agent_id = ' + agent_id.join ); 
+			alert('agent_id = ' + agent_id ); 
 //				alert(agent_id );
 /* 		if (id) {
 			var obj = {
