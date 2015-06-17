@@ -140,9 +140,10 @@ App.controller.define('CAgent', {
 		alert('selectAgentsDetails XXX');
 		//Récupére l'identifiant de l'agent sélectionné
 //		var agent_id = App.get('agent grid#gridAgents').getValue();
+		var agent_id = App.get('agent grid#gridAgents').getValue(record.data.Kage);
 //		console.log(agent_id);
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
-		alert('agent_id = ');// + agent_id.join );
+		alert('agent_id = ' + agent_id.join );
 /* 		if (id) {
 			var obj = {
 				matri 	: id,
