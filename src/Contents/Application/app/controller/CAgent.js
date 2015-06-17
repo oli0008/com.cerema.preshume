@@ -143,7 +143,7 @@ App.controller.define('CAgent', {
 		var id_residenceTemp = record.data.Nom; //id_residence);	
 
 /* ------------------------ SIMULATION ----------------------- */
-		
+		 
 		var id_residenceTemp = 3;
 //		alert('id_residenceTemp = ' + id_residenceTemp ); 
 		var id_metierTemp = 3;
