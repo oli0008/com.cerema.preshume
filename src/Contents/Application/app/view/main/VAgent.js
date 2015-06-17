@@ -117,6 +117,7 @@ App.view.define('main.VAgent',
 		width: "100%",
 		height: 130,
 		columns: [ 
+//			{	text: "Id",				dataIndex: "Kage"		},
 			{	text: "Nom",			dataIndex: "Nom"		},
 			{	text: "Prénom",			dataIndex: "Prenom"		},
 			{	text: "Matricule", 		dataIndex: "Matri"		},
