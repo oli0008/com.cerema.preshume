@@ -23,7 +23,8 @@ App.controller.define('CAgent', {
 				select: "valider_cboAgentThematique"
 			},
 			"agent grid#gridAgents": {
-				select: "display_AgentsDetails"
+		//		select: "display_AgentsDetails"
+					itemclick: "display_AgentsDetails"
 			}, 
 /* 			"agent grid#gridAgents": {
 				itemclick: "itemclick_AgentsDetails"
