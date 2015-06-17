@@ -140,7 +140,7 @@ App.controller.define('CAgent', {
 	{
 		alert('display_AgentsDetails');
 //		var id_residenceTemp = App.get('agent grid#gridAgents').getValue(record.data.Nom); //id_residence);	txtNumeroContrat
-		var id_residenceTemp = App.get('agent textfield#txtNumeroContrat').getValue(record.data.Nom); //id_residence);	
+		var id_residenceTemp = App.get('agent textfield#txtNumeroContrat').setValue(record.data.Nom); //id_residence);	
 		//Récupére l'identifiant de l'agent sélectionné
 //		var id_residenceTemp = 3;
 		alert('id_residenceTemp = ' + id_residenceTemp ); 
