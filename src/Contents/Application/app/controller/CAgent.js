@@ -167,11 +167,15 @@ App.controller.define('CAgent', {
 			desc_posteTemp : 'Description du poste',			
 		};
 		
-		/*App.monwebservice.insert(req,function(err,response) {
+		/* App.monwebservice.insert(req,function(err,response) {
 			
 			
 			
-		})*/
+		}) */
+		App.AgentsMod.get_desc_poste(req,function(err,response) {
+			
+			
+		})
 		
 /* ------------------------ SIMULATION ----------------------- */		
 
