@@ -154,7 +154,8 @@ App.controller.define('CAgent', {
 				App.get('grid#gridAgents').getStore().load();
 			});		 */
 		//rempli tous les champs de l'agent séléctionné
-		App.get('agent combo#cboAgentResAdmin').setValue('AAAA'); 
+//		App.get('agent combo#cboAgentResAdmin').setValue('AAAA'); 
+		App.get('agent combo#cboAgentResAdmin').setValue(3); 
 //		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
 //		App.get('agent combo#cboAgentResAdmin').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
