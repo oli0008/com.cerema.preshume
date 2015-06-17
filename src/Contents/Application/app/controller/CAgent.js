@@ -143,7 +143,8 @@ App.controller.define('CAgent', {
 		var agent_id = App.get('agent grid#gridAgents').getValue(record.data.Kage);
 //		console.log(agent_id);
 	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
-		alert('agent_id = ' + agent_id.join );
+		alert('agent_id = '); // + agent_id.join ); 
+				alert(agent_id );
 /* 		if (id) {
 			var obj = {
 				matri 	: id,
