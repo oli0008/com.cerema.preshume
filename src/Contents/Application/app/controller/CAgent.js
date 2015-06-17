@@ -153,7 +153,7 @@ App.controller.define('CAgent', {
 				App.get('grid#gridAgents').getStore().load();
 			});		 */
 		//rempli tous les champs de l'agent séléctionné
-		App.get('agent cboAgentResAdmin').setValue('AAAA');
+		App.get('agent combo#cboAgentResAdmin').setValue('AAAA');
 //		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
 //		App.get('combo#cboMainUnite').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
