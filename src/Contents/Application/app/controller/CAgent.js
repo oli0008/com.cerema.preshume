@@ -133,7 +133,7 @@ App.controller.define('CAgent', {
 	selectAgentsDetails: function()
 	{
 		alert('selectAgentsDetails');
-	}
+	},
 	
 	//----------------------------------------------	
 	// OLD stuff
