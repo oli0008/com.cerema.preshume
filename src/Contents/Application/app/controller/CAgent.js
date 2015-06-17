@@ -130,9 +130,22 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_domaine = id_domaineTemp;
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
+	//---------------------------------------------
 	selectAgentsDetails: function()
 	{
 		alert('selectAgentsDetails');
+		//Récupére l'identifiant de l'agent sélectionné
+		var agent_id = App.get('agent grid#gridAgents').getValue();
+		alert('agent_id = ' + agent_id );
+/* 		if (id) {
+			var obj = {
+				matri 	: id,
+				nom		: App.get('textfield#nomAgent').getValue(),
+				prenom	: App.get('textfield#prenomAgent').getValue(),
+			};
+			App.Agents.update(obj, function(result) {
+				App.get('grid#gridAgents').getStore().load();
+			});		 */
 	},
 	
 	//----------------------------------------------	
