@@ -164,16 +164,11 @@ App.controller.define('CAgent', {
 	//	App.get('agent combo#cboAgentThematique').setValue(id_thematiqueTemp); 
 		App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
 		
+/* necessite requette sur table contrat_travail	*/
 		App.get('agent textfield#txtNumeroContrat').setValue(numeo_contratTemp); 		
 		App.get('agent textfield#txtSalaire').setValue(salaireTemp); 
 		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(desc_posteTemp); 
-		
-//		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
-//		App.get('agent combo#cboAgentResAdmin').getStore().load();
-/* 		App.get('textfield#nomAgent').setValue(record.data.nom);
-		App.get('textfield#prenomAgent').setValue(record.data.prenom);
-		App.get('textfield#idAgent').setValue(record.data.kage); */
 	},
 	//---------------------------------------------
 	itemclick_AgentsDetails: function(item1, record, item, index, e, eOpts )
