@@ -88,10 +88,10 @@ AgentsMod = {
 	get_residence_admin: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_residence_admin()');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('qget_agentResAdmin',{RECHERCHE: in1.id_Service}),fn_cb);
+//		console.log(q.sql( 'qget_service' + {ID_AGENT: in1.Kage} ) );		//log apparait dans DOS box
+//		q.model('bpclight',q.sql('qget_agentResAdmin',{ID_AGENT: in1.Kage}),fn_cb);
 		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin order by id_residence asc', fn_cb);
-//		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin r join agents a on r.id_residence = a.id_residence', fn_cb);
+//		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin r join agents a on r.id_residence = a.id_residence where a.Kage = '+ in1.Kage, fn_cb);
 		},		 
 
 	get_metier: function(in1,fn_cb) {		
