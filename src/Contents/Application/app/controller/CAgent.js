@@ -148,7 +148,7 @@ App.controller.define('CAgent', {
 //		var id_residenceTemp = 3;
 		alert('id_residenceTemp = ' + id_residenceTemp ); 
 		
-		var id_metierTemp = record.data.id_metier);
+//		var id_metierTemp = record.data.id_metier);
 		var id_contrat_travailTemp = record.data.id_contrat_travail);
 ///////////////		
 		var id_domaineTemp = 4;
