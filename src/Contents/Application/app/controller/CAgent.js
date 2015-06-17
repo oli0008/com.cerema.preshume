@@ -22,9 +22,9 @@ App.controller.define('CAgent', {
 			"agent combo#cboAgentDomaine": {
 				select: "valider_cboAgentThematique"
 			},
-			"agent button#btnAgentEnregistrer": {
-				click: "btnAgentEnregistrer_onclick"
-			} 
+			"agent grid#gridAgents": {
+				select: "selectAgentsDetails"
+			}, 
 /*			
 			"button#btnMainOk": {
 				click: "clickme_onclick"
@@ -47,6 +47,12 @@ App.controller.define('CAgent', {
 			"grid#gridAgents": {
 				itemclick: "gridAgents_onclick"
 			}, */
+			"agent button#btnAgentEnregistrer": {
+				click: "btnAgentEnregistrer_onclick"
+			}, 
+			"agent button#btnAgentAnuler": {
+				click: "XXXbtnAgentEnregistrer_onclick"
+			} 
 		});				
 	},
 	btnAgentEnregistrer_onclick: function()
@@ -124,7 +130,10 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_domaine = id_domaineTemp;
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
-
+	selectAgentsDetails: function()
+	{
+		alert('selectAgentsDetails');
+	}
 	
 	//----------------------------------------------	
 	// OLD stuff
