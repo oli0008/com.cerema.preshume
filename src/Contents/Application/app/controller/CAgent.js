@@ -140,12 +140,12 @@ App.controller.define('CAgent', {
 	{
 		console.log(record); 
 		//Récupére les données de l'agent sélectionné
-		var id_residenceTemp = record.data.Nom; //id_residence);	
+		var id_residenceTemp = record.data.Kage; //id_residence);	
 
 /* ------------------------ SIMULATION ----------------------- */
 		 
-		var id_residenceTemp = 3;
-//		alert('id_residenceTemp = ' + id_residenceTemp ); 
+//		var id_residenceTemp = 3;
+		alert('id_residenceTemp = ' + id_residenceTemp ); 
 		var id_metierTemp = 3;
 		var id_domaineTemp = 4;
 		var id_thematiqueTemp = 14;
