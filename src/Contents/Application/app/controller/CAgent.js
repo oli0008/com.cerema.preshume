@@ -148,12 +148,26 @@ App.controller.define('CAgent', {
 		var id_metierTemp = 3;
 		var id_domaineTemp = 4;
 		var id_thematiqueTemp = 14;
+		var id_type_contratTemp = 1;		
+		
+		var numeo_contratTemp = '12345';	
+		var salaireTemp = '52.000';	
+		var date_debut_contratTemp = '2015-03-02';	
+		var desc_posteTemp = 'Description du poste';		
+		
+		
 /* ------------------------ SIMULATION ----------------------- */		
 
 		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
 		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
 		App.get('agent combo#cboAgentDomaine').setValue(id_domaineTemp); 
+		App.get('agent combo#cboAgentThematique').setValue(id_thematiqueTemp); 
+		App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
 		
+		App.get('agent textfield#txtNumeroContrat').setValue(numeo_contratTemp); 		
+		App.get('agent textfield#txtSalaire').setValue(salaireTemp); 
+		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
+		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(desc_posteTemp); 
 		
 //		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
 //		App.get('agent combo#cboAgentResAdmin').getStore().load();
