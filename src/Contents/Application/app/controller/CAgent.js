@@ -23,8 +23,8 @@ App.controller.define('CAgent', {
 				select: "valider_cboAgentThematique"
 			},
 			"agent grid#gridAgents": {
-				select: "display_AgentsDetails"
-		//			itemclick: "display_AgentsDetails"
+	//			select: "display_AgentsDetails"
+					itemclick: "display_AgentsDetails"
 			}, 
 /* 			"agent grid#gridAgents": {
 				itemclick: "itemclick_AgentsDetails"
@@ -138,6 +138,7 @@ App.controller.define('CAgent', {
 	//---------------------------------------------
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
+		console.log(record);
 		//Récupére les données de l'agent sélectionné
 //		var id_residenceTemp = App.get('agent textfield#txtNumeroContrat').setValue(record.data.Nom); //id_residence);	
 
