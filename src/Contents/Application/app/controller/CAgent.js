@@ -23,8 +23,12 @@ App.controller.define('CAgent', {
 				select: "valider_cboAgentThematique"
 			},
 			"agent grid#gridAgents": {
-				select: "selectAgentsDetails"
+				select: "select_AgentsDetails"
 			}, 
+			"agent grid#gridAgents": {
+				itemclick: "itemclick_AgentsDetails"
+			}, 
+			
 /*			
 			"button#btnMainOk": {
 				click: "clickme_onclick"
@@ -131,9 +135,28 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
 	//---------------------------------------------
-	selectAgentsDetails: function()
+	select_AgentsDetails: function()
 	{
 		alert('selectAgentsDetails XXX');
+		//Récupére l'identifiant de l'agent sélectionné
+		var agent_id = App.get('agent grid#gridAgents').getValue();
+		console.log(agent_id);
+	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
+		alert('agent_id = ');// + agent_id.join );
+/* 		if (id) {
+			var obj = {
+				matri 	: id,
+				nom		: App.get('textfield#nomAgent').getValue(),
+				prenom	: App.get('textfield#prenomAgent').getValue(),
+			};
+			App.Agents.update(obj, function(result) {
+				App.get('grid#gridAgents').getStore().load();
+			});		 */
+	},
+	//---------------------------------------------
+	itemclick_AgentsDetails: function()
+	{
+		alert('itemclick_AgentsDetails XXX');
 		//Récupére l'identifiant de l'agent sélectionné
 		var agent_id = App.get('agent grid#gridAgents').getValue();
 		console.log(agent_id);
