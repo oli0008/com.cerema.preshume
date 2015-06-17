@@ -138,26 +138,12 @@ App.controller.define('CAgent', {
 	//---------------------------------------------
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
-		alert('display_AgentsDetails');
-		var id_residenceTemp = App.get().setValue(record.data.Nom); //id_residence);	txtNumeroContrat
+		//Récupére les données de l'agent sélectionné
 //		var id_residenceTemp = App.get('agent textfield#txtNumeroContrat').setValue(record.data.Nom); //id_residence);	
-//		var id_residenceTemp = App.get('textfield#txtNumeroContrat').setValue(record.data.Nom); //id_residence);	
-		//Récupére l'identifiant de l'agent sélectionné
-//		var id_residenceTemp = 3;
+		
+		var id_residenceTemp = 3;
 		alert('id_residenceTemp = ' + id_residenceTemp ); 
-	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
- 
-/* 		if (id) {
-			var obj = {
-				matri 	: id,
-				nom		: App.get('textfield#nomAgent').getValue(),
-				prenom	: App.get('textfield#prenomAgent').getValue(),
-			};
-			App.Agents.update(obj, function(result) {
-				App.get('grid#gridAgents').getStore().load();
-			});		 */
-		//rempli tous les champs de l'agent séléctionné
-//		App.get('agent combo#cboAgentResAdmin').setValue('AAAA'); 
+
 		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
 //		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
 //		App.get('agent combo#cboAgentResAdmin').getStore().load();
