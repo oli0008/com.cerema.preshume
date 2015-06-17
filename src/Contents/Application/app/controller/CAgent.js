@@ -140,11 +140,20 @@ App.controller.define('CAgent', {
 	{
 		//Récupére les données de l'agent sélectionné
 //		var id_residenceTemp = App.get('agent textfield#txtNumeroContrat').setValue(record.data.Nom); //id_residence);	
+
+/* ------------------------ SIMULATION ----------------------- */
 		
 		var id_residenceTemp = 3;
-		alert('id_residenceTemp = ' + id_residenceTemp ); 
+//		alert('id_residenceTemp = ' + id_residenceTemp ); 
+		var id_metierTemp = 3;
+		var id_domaineTemp = 4;
+/* ------------------------ SIMULATION ----------------------- */		
 
 		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
+		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
+		App.get('agent combo#cboAgentDomaine').setValue(id_domaineTemp); 
+		
+		
 //		App.get('agent combo#cboAgentResAdmin').getStore().getProxy().extraParams.Kage = agent_idTemp;
 //		App.get('agent combo#cboAgentResAdmin').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
