@@ -138,7 +138,7 @@ App.controller.define('CAgent', {
 	//---------------------------------------------
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
-		console.log(record);
+		console.log(record); 
 		//Récupére les données de l'agent sélectionné
 		var id_residenceTemp = record.data.Nom; //id_residence);	
 

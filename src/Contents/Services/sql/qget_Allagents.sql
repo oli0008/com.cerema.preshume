@@ -1,7 +1,7 @@
 /* selectionne tous les agents en fonction qui ne sont ni vacataires ni stagiaires */
 
 select 
-	a.Nom, a.Prenom, a.Matri, 
+	a.Nom, a.Prenom, a.Matri, a.id_residence, a.id_metier, a.id_contrat_travail
 	e.Kets, e.LibEts, 
 	u.Kuni, u.LibUnic, 
 	s.Ksub, s.LibSubC
