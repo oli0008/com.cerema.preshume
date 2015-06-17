@@ -136,6 +136,13 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
 	//---------------------------------------------
+	display_AgentsDetails: function(a,b,c,d,e,f,g,h)
+	{
+		console.log(a);
+		console.log(b);
+		console.log(c);
+		console.log(d);
+	},
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 		console.log(record);
@@ -156,6 +163,22 @@ App.controller.define('CAgent', {
 		var date_debut_contratTemp = '2015-03-02';	
 		var desc_posteTemp = 'Description du poste';		
 		
+		var req={
+			id_metierTemp : 3,
+			id_domaineTemp : 4,
+			id_thematiqueTemp : 14,
+			id_type_contratTemp : 1,
+			numeo_contratTemp : '12345',
+			salaireTemp : '52.000',
+			date_debut_contratTemp : '2015-03-02',
+			desc_posteTemp : 'Description du poste',			
+		};
+		
+		App.monwebservice.insert(req,function(err,response) {
+			
+			
+			
+		})
 		
 /* ------------------------ SIMULATION ----------------------- */		
 
