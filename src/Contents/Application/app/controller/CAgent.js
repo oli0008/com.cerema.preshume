@@ -135,7 +135,7 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
 	//---------------------------------------------
-	select_AgentsDetails: function()
+	select_AgentsDetails: function(this, record)
 	{
 		alert('selectAgentsDetails XXX');
 		//Récupére l'identifiant de l'agent sélectionné
@@ -152,9 +152,13 @@ App.controller.define('CAgent', {
 			App.Agents.update(obj, function(result) {
 				App.get('grid#gridAgents').getStore().load();
 			});		 */
+		//rempli tous les champs de l'agent séléctionné
+/* 		App.get('textfield#nomAgent').setValue(record.data.nom);
+		App.get('textfield#prenomAgent').setValue(record.data.prenom);
+		App.get('textfield#idAgent').setValue(record.data.kage); */
 	},
 	//---------------------------------------------
-	itemclick_AgentsDetails: function()
+	itemclick_AgentsDetails: function(this, record)
 	{
 		alert('itemclick_AgentsDetails XXX');
 		//Récupére l'identifiant de l'agent sélectionné
