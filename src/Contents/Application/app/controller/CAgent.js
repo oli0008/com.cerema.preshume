@@ -23,11 +23,11 @@ App.controller.define('CAgent', {
 				select: "valider_cboAgentThematique"
 			},
 			"agent grid#gridAgents": {
-				select: "select_AgentsDetails"
+				select: "display_AgentsDetails"
 			}, 
-			"agent grid#gridAgents": {
+/* 			"agent grid#gridAgents": {
 				itemclick: "itemclick_AgentsDetails"
-			}, 
+			},  */
 			
 /*			
 			"button#btnMainOk": {
@@ -135,7 +135,7 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
 	//---------------------------------------------
-	select_AgentsDetails: function(item, record, index, eOpts )
+	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 		alert('selectAgentsDetails XXX');
 		//Récupére l'identifiant de l'agent sélectionné
@@ -153,6 +153,9 @@ App.controller.define('CAgent', {
 				App.get('grid#gridAgents').getStore().load();
 			});		 */
 		//rempli tous les champs de l'agent séléctionné
+		App.get('agent cboAgentResAdmin').setValue('AAAA');
+//		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
+//		App.get('combo#cboMainUnite').getStore().load();
 /* 		App.get('textfield#nomAgent').setValue(record.data.nom);
 		App.get('textfield#prenomAgent').setValue(record.data.prenom);
 		App.get('textfield#idAgent').setValue(record.data.kage); */
