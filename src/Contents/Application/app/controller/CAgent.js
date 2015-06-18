@@ -173,7 +173,8 @@ App.controller.define('CAgent', {
 		}) */
 //		console.log(req);
 		App.AgentsMod.get_desc_poste(req,function(err,response) {
-			console.log(response.result); 
+//			console.log(response.result); 
+			console.log(response); 
 			
 			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste); 	
 			
