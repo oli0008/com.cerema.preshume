@@ -115,7 +115,6 @@ App.controller.define('CMain', {
 	
 	open_window_agent: function()
 	{
-//		alert('clic sur mnuModAgent');
 		App.view.create('main.VAgent',{			
 			modal:true
 		}).show();
@@ -123,7 +122,6 @@ App.controller.define('CMain', {
 	
 	open_window_contrat_travail: function()
 	{
-		//alert('clic sur mnuModAgent');
 		App.view.create('main.VContratTravail',{			
 			modal:true
 		}).show();		
