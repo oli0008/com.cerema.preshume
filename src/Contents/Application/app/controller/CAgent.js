@@ -187,8 +187,8 @@ App.controller.define('CAgent', {
 
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(req,function(err,response) {
-//			console.log(response.result); 
-			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].XXdesc_poste);
+			console.log(response.result); 
+			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);
 		})	
 
 /* necessite requette sur table domaine et thematique	*/		
