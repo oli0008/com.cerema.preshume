@@ -339,7 +339,6 @@ App.view.define('main.VAgent',
 					fieldLabel: "Numéro de contrat",
 					labelAlign: "top",
 					itemId: "txtNumeroContrat", 
-	//				text: "Laitages",
 					margin: {
 							top : 10,
 					//		bottom : 20,
@@ -396,13 +395,7 @@ App.view.define('main.VAgent',
 				},	
 		 */	
 // HERE stop 2 //	
-/* 		
-				{
-					xtype: "datefield",
-					fieldLabel: "date dup",
-					width: "100%"
-					
-				}, */
+
 				]
 				
 			}
@@ -416,8 +409,8 @@ App.view.define('main.VAgent',
 		fieldLabel: "Description du poste",
 		labelAlign: "top",
 		itemId: "txthtmlDescriptionPoste", 
-/* 					width: "100%",
-		flex: 1 */
+// 		width: "100%",
+//		flex: 1 
 		margin: {
 			top: 5,
 			left: 5,
