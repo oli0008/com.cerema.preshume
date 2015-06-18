@@ -106,6 +106,12 @@ AgentsMod = {
 		q.model('bpclight', 'select r.id_residence from agents where Kage = '+ in1.Kage, fn_cb);
 		},				
 
+	get_listMetier: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+//		console.log('>>AgentsMod.get_listMetier()');
+		q.model('bpclight', 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb);
+	},	
+	
 	get_metier: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_metier()');
