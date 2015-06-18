@@ -54,6 +54,7 @@ App.controller.define('CAgent', {
 			} 
 		});				
 	},
+	
 	btnAgentEnregistrer_onclick: function()
 	{
 		alert('CAgent.btnAgentEnregistrer_onclick()');
@@ -101,6 +102,7 @@ App.controller.define('CAgent', {
 //		alert('CAgent.valider_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());
+
 		//Efface les infos montrées (displayField) sur les 2 combos esclaves
 		App.get('combo#cboAgentUnite').setValue('');
 		App.get('combo#cboAgentService').setValue('');
@@ -108,7 +110,6 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentUnite').getStore().load();
 		
 		//met à jour gridAgents pour cette valeur d'établissement
-//		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 //		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 //		App.get('grid#gridAgents').getStore().load();
 	},
@@ -134,6 +135,7 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().getProxy().extraParams.id_domaine = id_domaineTemp;
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
+	
 	//---------------------------------------------
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
@@ -159,7 +161,9 @@ App.controller.define('CAgent', {
 		
 		var req = {
 			KageTemp : record.data.Kage,
-			id_metierTemp : 3,
+			id_residenceTemp = record.data.id_residence,
+			id_metierTemp : record.data.id_metier,
+			id_contrat_travailTemp : record.data.id_contrat_travail,
 			id_domaineTemp : 4,
 			id_thematiqueTemp : 14,
 			id_type_contratTemp : 1,
