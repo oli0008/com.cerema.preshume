@@ -195,7 +195,7 @@ App.controller.define('CAgent', {
 		App.get('agent combo#cboAgentThematique').setValue(''); 
 		App.AgentsMod.get_thematique(req,function(err,response) {
 			console.log(response.result); 
-			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_domaine);
+			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
 		})	
  
 			
