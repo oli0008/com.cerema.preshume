@@ -181,28 +181,30 @@ App.controller.define('CAgent', {
 		App.get('agent combo#cboAgentMetier').setValue(''); 		
 		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
 
-		
-		
-// ****************** HERE //
-
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(req,function(err,response) {
 			console.log(response.result); 
 			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);
 		})	
 
-/* necessite requette sur table domaine et thematique	*/		
-		App.get('agent combo#cboAgentDomaine').setValue(id_domaineTemp); 
 		
-	//	App.get('agent combo#cboAgentThematique').setValue(''); 
-	//	App.get('agent combo#cboAgentThematique').setValue(id_thematiqueTemp); 
+// ****************** HERE //		
+		
+/* necessite requette sur table domaine et thematique	*/		
+		
+		App.get('agent combo#cboAgentThematique').setValue(''); 
+		App.AgentsMod.get_thematique(req,function(err,response) {
+			console.log(response.result); 
+			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_domaine);
+		})	
+ 
 			
 /* ------------------------ SIMULATION ----------------------- */
 
-		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
-		App.AgentsMod.get_desc_poste(req,function(err,response) {
+		App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue('');
+		App.AgentsMod.XXXget_desc_poste(req,function(err,response) {
 //			console.log(response.result); 
-			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
+			App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
 		})	
 
 		
