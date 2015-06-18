@@ -125,48 +125,20 @@ AgentsMod = {
 
 //Version with parameter
 //		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
-	
+
+	//Récupére la liste de tous les domaines d'interventions. 	
 	get_listDomaineIntervention: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_domaine_intervention()');
 		q.model('bpclight', 'select id_domaine, nom_domaine from domaine order by id_domaine asc', fn_cb);
 	},	
-
+	
+	//Récupére le domaine d'intervention d'un agent particulier.
 	get_domaineIntervention: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_domaineIntervention()');
 		q.model('bpclight', 'select d.id_domaine, d.nom_domaine from intervenir i join thematiques t on '
 				+ 'i.id_thematique = t.id_thematique join domaine d on t.id_domaine = d.id_domaine '
 				+ 'where i.Kage = ' + in1.KageTemp, fn_cb);	
 	},
-/* 	
-select d.id_domaine, d.nom_domaine 
-from intervenir i
-		join thematiques t
-			on i.id_thematique = t.id_thematique 
-		join domaine d
-			on t.id_domaine = d.id_domaine
-where i.Kage = 2641
-////////////////
-select d.id_domaine, d.nom_domaine, t.id_thematique, t.nom_thematique 
-from intervenir i
-		join thematiques t
-			on i.id_thematique = t.id_thematique 
-		join domaine d
-			on t.id_domaine = d.id_domaine
-where i.Kage = 2641
-//////////////
-
-	XXXXget_desc_poste: function(in1,fn_cb) {		
-  		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_desc_poste()');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.KageTemp} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.KageTemp}),fn_cb);
-		console.log('select desc_poste from contrat_travail where Kage = ' + in1.KageTemp);
-		q.model('bpclight', 'select desc_poste from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
-	},	
-/////////////
- */
  
 	//Récupére la liste de tous les thématiques. 	
 	get_listThematique: function(in1,fn_cb) {	
