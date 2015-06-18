@@ -153,11 +153,11 @@ App.controller.define('CAgent', {
 		var id_contrat_travailTemp = record.data.id_contrat_travail;
 
 /* ------------------------ SIMULATION ----------------------- */		
-		var id_domaineTemp = 4;
-		var id_thematiqueTemp = 14;
-		var id_type_contratTemp = 1;		
+	//	var id_domaineTemp = 4;
+	//	var id_thematiqueTemp = 14;
+	//	var id_type_contratTemp = 1;		
 		
-		var numeo_contratTemp = '12345';	
+		var numero_contratTemp = '12345';	
 		var salaireTemp = '52.000';	
 		var date_debut_contratTemp = '2015-03-02';	
 		var desc_posteTemp = 'Description du poste';		
@@ -167,13 +167,13 @@ App.controller.define('CAgent', {
 //			id_residenceTemp : 			record.data.id_residence,
 //			id_metierTemp : 			record.data.id_metier,
 			id_contrat_travailTemp : 	record.data.id_contrat_travail,
-			id_domaineTemp: 4,
-			id_thematiqueTemp : 14,
-			id_type_contratTemp : 1,
-			numeo_contratTemp : '12345',
-			salaireTemp : '52.000',
-			date_debut_contratTemp : '2015-03-02',
-			desc_posteTemp : 'Description du poste',			
+		//	id_domaineTemp: 4,
+		//	id_thematiqueTemp : 14,
+		//	id_type_contratTemp : 1,
+		//	numeo_contratTemp : '12345',
+		//	salaireTemp : '52.000',
+		//	date_debut_contratTemp : '2015-03-02',
+		//	desc_posteTemp : 'Description du poste',			
 		};
 		
 		//éfface les contenus avant les mise à jour
@@ -212,11 +212,8 @@ App.controller.define('CAgent', {
 		})	
  */
 		
-
-
-		
 /* necessite requette sur table contrat_travail	*/
-		App.get('agent textfield#txtNumeroContrat').setValue(numeo_contratTemp); 		
+		App.get('agent textfield#txtNumeroContrat').setValue(numero_contratTemp); 		
 		App.get('agent textfield#txtSalaire').setValue(salaireTemp); 
 		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
 
