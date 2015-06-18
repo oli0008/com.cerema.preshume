@@ -145,6 +145,14 @@ from intervenir i
 			on t.id_domaine = d.id_domaine
 where i.Kage = 2641
 ////////////////
+select d.id_domaine, d.nom_domaine, t.id_thematique, t.nom_thematique 
+from intervenir i
+		join thematiques t
+			on i.id_thematique = t.id_thematique 
+		join domaine d
+			on t.id_domaine = d.id_domaine
+where i.Kage = 2641
+//////////////
 
 	XXXXget_desc_poste: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
