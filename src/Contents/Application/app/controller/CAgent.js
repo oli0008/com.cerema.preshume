@@ -186,11 +186,6 @@ App.controller.define('CAgent', {
 			console.log(response.result); 
 			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);
 		})	
-
-		
-// ****************** HERE //		
-		
-/* necessite requette sur table domaine et thematique	*/		
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
 		App.AgentsMod.get_thematique(req,function(err,response) {
@@ -198,7 +193,9 @@ App.controller.define('CAgent', {
 			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
 		})	
  
-			
+// ****************** HERE //		
+		
+/* necessite requette sur table domaine et thematique	*/					
 /* ------------------------ SIMULATION ----------------------- */
 /* 
 		App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue('');
