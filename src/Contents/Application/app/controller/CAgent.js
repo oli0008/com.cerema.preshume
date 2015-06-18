@@ -17,10 +17,10 @@ App.controller.define('CAgent', {
 				select: "update_cboAgentUnite"
 			},
 			"agent combo#cboAgentUnite": {
-				select: "valider_cboAgentService"
+				select: "update_cboAgentService"
 			},			
 			"agent combo#cboAgentDomaine": {
-				select: "valider_cboAgentThematique"
+				select: "update_cboAgentThematique"
 			},
 			"agent grid#gridAgents": {
 				itemclick: "display_AgentsDetails"
@@ -29,7 +29,7 @@ App.controller.define('CAgent', {
 			
 /*			
 		//	"combo#cboAgentThematique": {
-		//		select: "valider_cboAgentThematiqueXXX"
+		//		select: "update_cboAgentThematiqueXXX"
 			},
 			
 			
@@ -115,7 +115,7 @@ App.controller.define('CAgent', {
 	},
 
 	//Quand une unité est sélectionné, la liste des services correspondants est mise à jour(cela active le store du service)	
-	valider_cboAgentService: function(p, record) 
+	update_cboAgentService: function(p, record) 
 	{
 		var KuniTemp = App.get('combo#cboAgentUnite').getValue();
 //		console.log(App.get('combo#cboAgentUnite').getValue());
@@ -126,7 +126,7 @@ App.controller.define('CAgent', {
 	},
 
 	//Quand un domaine d'intervention est sélectionné, la liste des thématiques correspondants est mise à jour (cela active le store du thématique)
-	valider_cboAgentThematique: function(p, record) 
+	update_cboAgentThematique: function(p, record) 
 	{	
 		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
 //		console.log(App.get('combo#cboAgentDomaine').getValue());
