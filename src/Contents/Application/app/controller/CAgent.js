@@ -137,7 +137,7 @@ App.controller.define('CAgent', {
 	},
 	
 	//---------------------------------------------
-	// _gridAgents_itemclick
+	// Cette méthode remplie tous les champs de cette fenêtre lors d'un événement itemclick sur le grid gridAgents.
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 	//	console.log(record); 
