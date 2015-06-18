@@ -119,12 +119,14 @@ AgentsMod = {
 		q.model('bpclight', 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb);
 	},	
  */
- 
+
+//*********************************************** 
 //Hard coded query
 //		Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', fn_cb); 
 
 //Version with parameter
 //		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
+//*********************************************** 
 
 	//Récupére la liste de tous les domaines d'interventions. 	
 	get_listDomaineIntervention: function(in1,fn_cb) {		
