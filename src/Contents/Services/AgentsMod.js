@@ -189,17 +189,11 @@ where i.Kage = 2641
 //				+ in1.id_domaine +  ' order by id_thematique asc', fn_cb);
 
 		q.model('bpclight', 'select t.id_thematique, t.nom_thematique from intervenir i join thematiques t '
-				+ 'on i.id_thematique = t.id_thematique where i.Kage = ' + in1.id_domaine, fn_cb);				
+				+ 'on i.id_thematique = t.id_thematique where i.Kage = ' + in1.KageTemp, fn_cb);				
 	},		
 /////////////////
-select t.id_thematique, t.nom_thematique from intervenir i join thematiques t on i.id_thematique = t.id_thematique where i.Kage = ' 
 
 
-select t.id_thematique, t.nom_thematique, a.nom from intervenir i join thematiques t on i.id_thematique = t.id_thematique 
-
-join agents a
-			on a.kage = i.kage
-where i.Kage = 2638
 ////////////////////	
 	
 	get_listTypeContrat: function(in1,fn_cb) {		
