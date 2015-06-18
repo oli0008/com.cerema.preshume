@@ -140,7 +140,6 @@ App.controller.define('CAgent', {
 	// Cette méthode remplie tous les champs de cette fenêtre lors d'un événement itemclick sur le grid gridAgents.
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
-	//	console.log(record); 
 		//Récupére les données de l'agent sélectionné
 	//	var KageTemp = record.data.Kage; 
 		var id_residenceTemp = record.data.id_residence;		
@@ -183,19 +182,24 @@ App.controller.define('CAgent', {
 
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(req,function(err,response) {
-			console.log(response.result); 
+//			console.log(response.result); 
 			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);
 		})	
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
 		App.AgentsMod.get_thematique(req,function(err,response) {
-			console.log(response.result); 
 			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
 		})	
+/* 		
+		App.get('agent combo#cboTypeContrat').setValue('');
+		App.AgentsMod.get_thematique(req,function(err,response) { 
+			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].Xnom_thematique);
+		})	 */
+//				App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
  
 // ****************** HERE //		
 		
-/* necessite requette sur table domaine et thematique	*/					
+					
 /* ------------------------ SIMULATION ----------------------- */
 /* 
 		App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue('');
@@ -206,7 +210,7 @@ App.controller.define('CAgent', {
  */
 		
 
-		App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
+
 		
 /* necessite requette sur table contrat_travail	*/
 		App.get('agent textfield#txtNumeroContrat').setValue(numeo_contratTemp); 		
