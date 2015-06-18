@@ -176,7 +176,7 @@ App.controller.define('CAgent', {
 			console.log(response.result); 
 //			console.log(response); 
 			if (response.result == null)
-				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('Vide');
+				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue("VIDE");
 			else
 				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
 	/* 		else
