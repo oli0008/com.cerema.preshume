@@ -302,8 +302,9 @@ App.view.define('main.VAgent',
 					labelWidth: 300,
 					width: 300,
 					displayField: "nom_thematique",
-					valueField: "id_thematique",
-					store: App.store.create("App.AgentsMod.get_thematique", {
+					valueField: "id_thematique",					
+			//		store: App.store.create("App.AgentsMod.get_thematique", {
+					store: App.store.create("App.AgentsMod.get_listThematique", {
 							autoLoad: true
 					})  	// Creation du store						
 				},				
