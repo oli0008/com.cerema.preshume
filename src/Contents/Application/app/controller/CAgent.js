@@ -150,17 +150,13 @@ App.controller.define('CAgent', {
 //	alert('KageTemp  = ' + KageTemp  ); 
 		
 //		var id_metierTemp = record.data.id_metier;
-//		var id_contrat_travailTemp = record.data.id_contrat_travail;
-
-/* ------------------------ SIMULATION ----------------------- */		
+//		var id_contrat_travailTemp = record.data.id_contrat_travail;	
 	//	var id_domaineTemp = 4;
 	//	var id_thematiqueTemp = 14;
-	//	var id_type_contratTemp = 1;		
-		
-		var numero_contratTemp = '12345';	
-		var salaireTemp = '52.000';	
-		var date_debut_contratTemp = '2015-03-02';	
-		var desc_posteTemp = 'Description du poste';		
+	//	var id_type_contratTemp = 1;				
+	//	var numero_contratTemp = '12345';	
+	//	var salaireTemp = '52.000';	
+	//	var desc_posteTemp = 'Description du poste';		
 		
 		var agentData = {
 			KageTemp : 					record.data.Kage,
@@ -214,7 +210,9 @@ App.controller.define('CAgent', {
 			console.log(response.result);
 			App.get('agent datefield#datDateArrivee').setValue(response.result.data[0].date_debut_contrat);
 		}) */
-//		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
+		
+		var date_debut_contratTemp = '2015-03-02';
+		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
 		
 /* ------------------------ SIMULATION ----------------------- */
 	
