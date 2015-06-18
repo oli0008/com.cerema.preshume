@@ -193,11 +193,11 @@ App.controller.define('CAgent', {
 		App.AgentsMod.get_thematique(agentData,function(err,response) {
 			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
 		})	
-/* 		
+ 		
 		App.get('agent combo#cboTypeContrat').setValue('');
-		App.AgentsMod.get_thematique(agentData,function(err,response) { 
-			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].Xnom_thematique);
-		})	 */
+		App.AgentsMod.get_typeContrat(agentData,function(err,response) { 
+			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].type_contrat);
+		})	 
 //				App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
  
 // ****************** HERE //		
