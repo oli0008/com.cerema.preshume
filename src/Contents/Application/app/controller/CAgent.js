@@ -172,6 +172,7 @@ App.controller.define('CAgent', {
 			
 		}) */
 //		console.log(req);
+App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('VideXXXX');
 		App.AgentsMod.get_desc_poste(req,function(err,response) {
 			console.log(response.result); 
 //			console.log(response); 
