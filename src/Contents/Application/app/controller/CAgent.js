@@ -186,7 +186,7 @@ App.controller.define('CAgent', {
 // ****************** HERE //
 
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
-		App.AgentsMod.get_metier(req,function(err,response) {
+		App.AgentsMod.XXget_metier(req,function(err,response) {
 //			console.log(response.result); 
 			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].desc_poste);
 		})	
