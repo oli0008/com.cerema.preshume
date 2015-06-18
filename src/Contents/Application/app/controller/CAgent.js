@@ -55,8 +55,8 @@ App.controller.define('CAgent', {
 			"agent button#btnAgentEnregistrer": {
 				click: "btnAgentEnregistrer_onclick"
 			}, 
-			"agent button#btnAgentAnuler": {
-				click: "XXXbtnAgentEnregistrer_onclick"
+			"agent button#btnAgentAnnuler": {
+				click: "btnAgentAnnuler_onclick"
 			} 
 		});				
 	},
@@ -88,6 +88,13 @@ App.controller.define('CAgent', {
 			
 		})
 	},
+	
+	btnAgentAnnuler_onclick: function()
+	{
+		alert('closing window "AgentsMod");
+		App.get('agent').close();
+	},
+	
 	agent_onshow: function(item)
 	{
 		//affiche valeur dans combo aprés sa création
