@@ -136,7 +136,7 @@ App.controller.define('CAgent', {
 	//---------------------------------------------
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
-		console.log(record); 
+	//	console.log(record); 
 		//Récupére les données de l'agent sélectionné
 		var KageTemp = record.data.Kage; 
 		var id_residenceTemp = record.data.id_residence;		
@@ -170,6 +170,7 @@ App.controller.define('CAgent', {
 		/* App.monwebservice.insert(req,function(err,response) {		
 			
 		}) */
+		console.log(KageTemp);
 		App.AgentsMod.get_desc_poste(KageTemp,function(err,response) {
 			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response); 	
 			
