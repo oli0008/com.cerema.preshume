@@ -162,7 +162,7 @@ App.controller.define('CAgent', {
 		var date_debut_contratTemp = '2015-03-02';	
 		var desc_posteTemp = 'Description du poste';		
 		
-		var req = {
+		var agentData = {
 			KageTemp : 					record.data.Kage,
 //			id_residenceTemp : 			record.data.id_residence,
 //			id_metierTemp : 			record.data.id_metier,
@@ -184,18 +184,18 @@ App.controller.define('CAgent', {
 		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
 
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
-		App.AgentsMod.get_domaineIntervention(req,function(err,response) {
+		App.AgentsMod.get_domaineIntervention(agentData,function(err,response) {
 //			console.log(response.result); 
 			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);
 		})	
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
-		App.AgentsMod.get_thematique(req,function(err,response) {
+		App.AgentsMod.get_thematique(agentData,function(err,response) {
 			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
 		})	
 /* 		
 		App.get('agent combo#cboTypeContrat').setValue('');
-		App.AgentsMod.get_thematique(req,function(err,response) { 
+		App.AgentsMod.get_thematique(agentData,function(err,response) { 
 			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].Xnom_thematique);
 		})	 */
 //				App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
@@ -206,7 +206,7 @@ App.controller.define('CAgent', {
 /* ------------------------ SIMULATION ----------------------- */
 /* 
 		App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue('');
-		App.AgentsMod.XXXget_desc_poste(req,function(err,response) {
+		App.AgentsMod.XXXget_desc_poste(agentData,function(err,response) {
 //			console.log(response.result); 
 			App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
 		})	
@@ -225,7 +225,7 @@ App.controller.define('CAgent', {
 	
 		//éfface le contenu avant mise à jour
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
-		App.AgentsMod.get_desc_poste(req,function(err,response) {
+		App.AgentsMod.get_desc_poste(agentData,function(err,response) {
 //			console.log(response.result); 
 			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
 		})	
