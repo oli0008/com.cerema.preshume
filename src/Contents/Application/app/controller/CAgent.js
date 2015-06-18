@@ -200,13 +200,13 @@ App.controller.define('CAgent', {
  
 			
 /* ------------------------ SIMULATION ----------------------- */
-
+/* 
 		App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue('');
 		App.AgentsMod.XXXget_desc_poste(req,function(err,response) {
 //			console.log(response.result); 
 			App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
 		})	
-
+ */
 		
 
 		App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);

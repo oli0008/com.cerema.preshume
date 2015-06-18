@@ -190,11 +190,17 @@ where i.Kage = 2641
 	},		
 /////////////////	
 	
-	get_type_contrat: function(in1,fn_cb) {		
+	get_listTypeContrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.type_contrat()');
 		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
 	},	
+	
+	get_typeContrat: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+//		console.log('>>AgentsMod.type_contrat()');
+		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
+	},		
 
 	get_numero_contrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
