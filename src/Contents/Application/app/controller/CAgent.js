@@ -200,8 +200,8 @@ App.controller.define('CAgent', {
 		})	 
 
 		App.get('agent textfield#txtNumeroContrat').setValue('');		
-		App.AgentsMod.XXget_typeContrat(agentData,function(err,response) { 
-			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].XXtype_contrat);
+		App.AgentsMod.get_numero_contrat(agentData,function(err,response) { 
+			App.get('agent combo#txtNumeroContrat').setValue(response.result.data[0].numero_contrat);
 		})	 
  
  //		App.get('agent textfield#txtNumeroContrat').setValue(numero_contratTemp);
@@ -209,26 +209,17 @@ App.controller.define('CAgent', {
 		
 		App.get('agent textfield#txtSalaire').setValue(''); 
 		App.AgentsMod.XXget_typeContrat(agentData,function(err,response) { 
-			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].XXtype_contrat);
+			App.get('agent combo#txtSalaire').setValue(response.result.data[0].salaire);
 		})	
 //		App.get('agent textfield#txtSalaire').setValue(salaireTemp); 	
 
 		App.get('agent datefield#datDateArrivee').setValue(''); 
 		App.AgentsMod.XXget_typeContrat(agentData,function(err,response) { 
-			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].XXtype_contrat);
+			App.get('agent combo#datDateArrivee').setValue(response.result.data[0].date_debut_contrat);
 		})
 //		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
 		
 /* ------------------------ SIMULATION ----------------------- */
-/* 
-		App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue('');
-		App.AgentsMod.XXXget_desc_poste(agentData,function(err,response) {
-//			console.log(response.result); 
-			App.get('agent XXXhtmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
-		})	
- */
-
-/////////////////////////////	
 	
 		//éfface le contenu avant mise à jour
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');

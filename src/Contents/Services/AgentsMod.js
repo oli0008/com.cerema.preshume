@@ -162,35 +162,30 @@ AgentsMod = {
 				+ 'on t.id_type_contrat = c.id_type_contrat where c.Kage = ' + in1.KageTemp, fn_cb);
 	},	
 
-////////////////	
-
+////////////////
+	
+	//Récupére le type de contrat d'un agent particulier.
 	get_numero_contrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_numero_contrat()');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select id_contrat_travail, numero_contrat from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
 	},	
-
+	
+	//Récupére le salaire annuel d'un agent particulier.	
 	get_salaire: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_salaire()');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select id_contrat_travail, salaire from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
 	},	
-
+	//Récupére ldate d'arrivée d'un agent particulier.
 	get_date_arrivee: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_date_arrivee()');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select id_contrat_travail, date_debut_contrat from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
 	},	
-
+	//Récupére la description de poste d'un agent particulier.
 	get_desc_poste: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_desc_poste()');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.KageTemp} ) );		//log apparait dans DOS box
+//		console.log(q.sql( 'XXX_qget_service' + {RECHERCHE: in1.KageTemp} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.KageTemp}),fn_cb);
-		console.log('select desc_poste from contrat_travail where Kage = ' + in1.KageTemp);
+//		console.log('select desc_poste from contrat_travail where Kage = ' + in1.KageTemp);
 		q.model('bpclight', 'select desc_poste from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
 	},	
 	
