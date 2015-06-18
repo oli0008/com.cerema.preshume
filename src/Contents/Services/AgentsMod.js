@@ -106,13 +106,6 @@ AgentsMod = {
 		q.model('bpclight', 'select r.id_residence from agents where Kage = '+ in1.Kage, fn_cb);
 		},				
 
-	//Récupére la liste de tous les métiers. 
-	get_listMetier: function(in1,fn_cb) {		
-  		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_listMetier()');
-		q.model('bpclight', 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb);
-	},	
-	
 
 //*********************************************** 
 //Hard coded query
@@ -120,7 +113,13 @@ AgentsMod = {
 
 //Version with parameter
 //		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
-//*********************************************** 
+//*********************************************** 		
+		
+	//Récupére la liste de tous les métiers. 
+	get_listMetier: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+		q.model('bpclight', 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb);
+	},	
 
 	//Récupére la liste de tous les domaines d'interventions. 	
 	get_listDomaineIntervention: function(in1,fn_cb) {		
