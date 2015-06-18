@@ -167,44 +167,30 @@ where i.Kage = 2641
 	},	
 /////////////
  */
-	
+ 
+	//Récupére la liste de tous les thématiques. 	
 	get_listThematique: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_thematique()');
-//		console.log('>>in1= ', in1);
-//		console.log(q.sql('qget_thematique + {RECHERCHE: in1.id_domaine} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('qget_thematique',{RECHERCHE: in1.id_domaine}),fn_cb);
 		q.model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = ' 
 				+ in1.id_domaine +  ' order by id_thematique asc', fn_cb);
-	},	
-
-////////////
+	},
+	
+	//Récupére la thématique d'un agent particulier.
 	get_thematique: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_thematique()');
-//		console.log('>>in1= ', in1);
-//		console.log(q.sql('qget_thematique + {RECHERCHE: in1.id_domaine} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('qget_thematique',{RECHERCHE: in1.id_domaine}),fn_cb);
-//		q.model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = ' 
-//				+ in1.id_domaine +  ' order by id_thematique asc', fn_cb);
-
 		q.model('bpclight', 'select t.id_thematique, t.nom_thematique from intervenir i join thematiques t '
 				+ 'on i.id_thematique = t.id_thematique where i.Kage = ' + in1.KageTemp, fn_cb);				
 	},		
-/////////////////
-
-
-////////////////////	
 	
+	//Récupére la liste de tous les type de contrats. 
 	get_listTypeContrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.type_contrat()');
 		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
 	},	
 	
+	//Récupére le type de contrat d'un agent particulier.
 	get_typeContrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.type_contrat()');
 		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
 	},		
 
