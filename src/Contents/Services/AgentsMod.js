@@ -187,6 +187,8 @@ where i.Kage = 2641
   		var q = AgentsMod.using('db');
 		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
 	},	
+
+/////////////////
 	
 	//Récupére le type de contrat d'un agent particulier.
 	get_typeContrat: function(in1,fn_cb) {		
