@@ -260,7 +260,7 @@ App.view.define('main.VAgent',
 					width: 300,
 					displayField: "nom_metier",
 					valueField: "id_metier",
-					store: App.store.create("App.AgentsMod.get_metier", {
+					store: App.store.create("App.AgentsMod.get_listMetier", {
 													autoLoad: true
 												})  	// Creation du store					
 //					store: App.store.create('MNomSource', // Creation du store
