@@ -137,7 +137,7 @@ AgentsMod = {
 //		console.log('>>AgentsMod.get_domaineIntervention()');
 		q.model('bpclight', 'select d.id_domaine, d.nom_domaine from intervenir i join thematiques t on i.id_thematique = t.id_thematique join domaine d on t.id_domaine = d.id_domaine where i.Kage = ' + in1.KageTemp, fn_cb);	
 	},
-	
+/* 	
 select d.id_domaine, d.nom_domaine 
 from intervenir i
 		join thematiques t
@@ -164,7 +164,7 @@ where i.Kage = 2641
 		q.model('bpclight', 'select desc_poste from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
 	},	
 /////////////
-
+ */
 	
 	get_thematique: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');
