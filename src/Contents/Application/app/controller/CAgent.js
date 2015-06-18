@@ -162,8 +162,8 @@ App.controller.define('CAgent', {
 		
 		var req = {
 			KageTemp : 					record.data.Kage,
-			id_residenceTemp : 			record.data.id_residence,
-			id_metierTemp : 			record.data.id_metier,
+//			id_residenceTemp : 			record.data.id_residence,
+//			id_metierTemp : 			record.data.id_metier,
 			id_contrat_travailTemp : 	record.data.id_contrat_travail,
 			id_domaineTemp: 4,
 			id_thematiqueTemp : 14,
@@ -174,34 +174,58 @@ App.controller.define('CAgent', {
 			desc_posteTemp : 'Description du poste',			
 		};
 		
-		/* App.monwebservice.insert(req,function(err,response) {		
-			
-		}) */
+		//éfface les contenus avant les mise à jour
+		App.get('agent combo#cboAgentResAdmin').setValue('');
+		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
 
-		//éfface le contenu avant mise à jour
+		App.get('agent combo#cboAgentMetier').setValue(''); 		
+		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
+
+		
+		
+// ****************** HERE //
+
+		App.get('agent combo#cboAgentDomaine').setValue(''); 
+		App.AgentsMod.get_desc_poste(req,function(err,response) {
+//			console.log(response.result); 
+			App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].desc_poste);
+		})	
+
+/* necessite requette sur table domaine et thematique	*/		
+		App.get('agent combo#cboAgentDomaine').setValue(id_domaineTemp); 
+		
+	//	App.get('agent combo#cboAgentThematique').setValue(''); 
+	//	App.get('agent combo#cboAgentThematique').setValue(id_thematiqueTemp); 
+			
+/* ------------------------ SIMULATION ----------------------- */
+
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
 		App.AgentsMod.get_desc_poste(req,function(err,response) {
 //			console.log(response.result); 
 			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
-		})
+		})	
+
 		
-/* ------------------------ SIMULATION ----------------------- */		
 
-		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
-		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
-
-/* necessite requette sur table domaine et thematique	*/		
-		App.get('agent combo#cboAgentDomaine').setValue(id_domaineTemp); 
-	//	App.get('agent combo#cboAgentThematique').setValue(id_thematiqueTemp); 
-	
 		App.get('agent combo#cboTypeContrat').setValue(id_type_contratTemp);
 		
 /* necessite requette sur table contrat_travail	*/
 		App.get('agent textfield#txtNumeroContrat').setValue(numeo_contratTemp); 		
 		App.get('agent textfield#txtSalaire').setValue(salaireTemp); 
 		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
-// temp		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(desc_posteTemp); 
+
+/////////////////////////////
+	
+	
+		//éfface le contenu avant mise à jour
+		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
+		App.AgentsMod.get_desc_poste(req,function(err,response) {
+//			console.log(response.result); 
+			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
+		})	
 	},
+	
+	
 	//---------------------------------------------
 	itemclick_AgentsDetails: function(item1, record, item, index, e, eOpts )
 	{
