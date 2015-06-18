@@ -108,7 +108,9 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentService').setValue('');
 		App.get('combo#cboAgentUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 		App.get('combo#cboAgentUnite').getStore().load();
-		
+
+//*************** TODO **************//	
+	
 		//met à jour gridAgents pour cette valeur d'établissement
 //		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 //		App.get('grid#gridAgents').getStore().load();
