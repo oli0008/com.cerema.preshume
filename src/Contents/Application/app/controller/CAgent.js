@@ -138,10 +138,10 @@ App.controller.define('CAgent', {
 	{
 	//	console.log(record); 
 		//Récupére les données de l'agent sélectionné
-		var KageTemp = record.data.Kage; 
+	//	var KageTemp = record.data.Kage; 
 		var id_residenceTemp = record.data.id_residence;		
 		 
-	alert('KageTemp  = ' + KageTemp  ); 
+//	alert('KageTemp  = ' + KageTemp  ); 
 		
 		var id_metierTemp = record.data.id_metier;
 		var id_contrat_travailTemp = record.data.id_contrat_travail;
@@ -157,6 +157,7 @@ App.controller.define('CAgent', {
 		var desc_posteTemp = 'Description du poste';		
 		
 		var req={
+			KageTemp : record.data.Kage,
 			id_metierTemp : 3,
 			id_domaineTemp : 4,
 			id_thematiqueTemp : 14,
@@ -171,7 +172,7 @@ App.controller.define('CAgent', {
 			
 		}) */
 		console.log(record);
-		App.AgentsMod.get_desc_poste(KageTemp,function(err,response) {
+		App.AgentsMod.get_desc_poste(req,function(err,response) {
 			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response); 	
 			
 		})
