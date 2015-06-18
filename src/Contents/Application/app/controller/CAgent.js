@@ -145,7 +145,7 @@ App.controller.define('CAgent', {
 	{
 		//Récupére les données de l'agent sélectionné
 	//	var KageTemp = record.data.Kage; 
-		var id_residenceTemp = record.data.id_residence;		
+//		var id_residenceTemp = record.data.id_residence;		
 		 
 //	alert('KageTemp  = ' + KageTemp  ); 
 		
@@ -164,7 +164,7 @@ App.controller.define('CAgent', {
 		
 		var agentData = {
 			KageTemp : 					record.data.Kage,
-//			id_residenceTemp : 			record.data.id_residence,
+			id_residenceTemp : 			record.data.id_residence,
 //			id_metierTemp : 			record.data.id_metier,
 			id_contrat_travailTemp : 	record.data.id_contrat_travail,
 		//	id_domaineTemp: 4,
@@ -178,7 +178,7 @@ App.controller.define('CAgent', {
 		
 		//éfface les contenus avant les mise à jour
 		App.get('agent combo#cboAgentResAdmin').setValue('');
-		App.get('agent combo#cboAgentResAdmin').setValue(id_residenceTemp); 
+		App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
 
 		App.get('agent combo#cboAgentMetier').setValue(''); 		
 		App.get('agent combo#cboAgentMetier').setValue(id_metierTemp); 
