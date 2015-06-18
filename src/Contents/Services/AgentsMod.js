@@ -168,16 +168,28 @@ where i.Kage = 2641
 /////////////
  */
 	
+	get_listThematique: function(in1,fn_cb) {	
+  		var q = AgentsMod.using('db');
+//		console.log('>>AgentsMod.get_thematique()');
+//		console.log('>>in1= ', in1);
+//		console.log(q.sql('qget_thematique + {RECHERCHE: in1.id_domaine} ) );		//log apparait dans DOS box
+//		q.model('bpclight',q.sql('qget_thematique',{RECHERCHE: in1.id_domaine}),fn_cb);
+		q.model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = ' 
+				+ in1.id_domaine +  ' order by id_thematique asc', fn_cb);
+	},	
+
+////////////
 	get_thematique: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_thematique()');
 //		console.log('>>in1= ', in1);
 //		console.log(q.sql('qget_thematique + {RECHERCHE: in1.id_domaine} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('qget_thematique',{RECHERCHE: in1.id_domaine}),fn_cb);
-		AgentsMod.using('db').model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = ' 
+		q.model('bpclight', 'select id_thematique, nom_thematique from thematiques where id_domaine = ' 
 				+ in1.id_domaine +  ' order by id_thematique asc', fn_cb);
-	},	
-
+	},		
+/////////////////	
+	
 	get_type_contrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.type_contrat()');
