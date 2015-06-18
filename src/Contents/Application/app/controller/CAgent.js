@@ -140,6 +140,7 @@ App.controller.define('CAgent', {
 	
 	//---------------------------------------------
 	// Cette méthode remplie tous les champs de cette fenêtre lors d'un événement itemclick sur le grid gridAgents.
+	// A chaque visite tous les données des champs sont éffacés avant de rafraichir pour éviter de montrer de vieilles données. 
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 		//Récupére les données de l'agent sélectionné
