@@ -136,7 +136,8 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_domaineIntervention()');
 		q.model('bpclight', 'select d.id_domaine, d.nom_domaine from intervenir i join thematiques t on '
-		+ 'i.id_thematique = t.id_thematique join domaine d on t.id_domaine = d.id_domaine where i.Kage = ' + in1.KageTemp, fn_cb);	
+				+ 'i.id_thematique = t.id_thematique join domaine d on t.id_domaine = d.id_domaine '
+				+ 'where i.Kage = ' + in1.KageTemp, fn_cb);	
 	},
 /* 	
 select d.id_domaine, d.nom_domaine 
