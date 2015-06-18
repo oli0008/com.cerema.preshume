@@ -166,7 +166,7 @@ AgentsMod = {
 //		console.log('>>AgentsMod.get_desc_poste()');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('XXX_qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
-console.log('select desc_poste from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
+console.log('select desc_poste from contrat_travail where Kage = ' + in1.KageTemp);
 		q.model('bpclight', 'select desc_poste from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
 	},	
 	
