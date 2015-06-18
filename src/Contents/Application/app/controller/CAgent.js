@@ -23,18 +23,11 @@ App.controller.define('CAgent', {
 				select: "valider_cboAgentThematique"
 			},
 			"agent grid#gridAgents": {
-	//			select: "display_AgentsDetails"
-					itemclick: "display_AgentsDetails"
+				itemclick: "display_AgentsDetails"
 			}, 
-/* 			"agent grid#gridAgents": {
-				itemclick: "itemclick_AgentsDetails"
-			},  */
+
 			
 /*			
-			"button#btnMainOk": {
-				click: "clickme_onclick"
-			},			
-			
 		//	"combo#cboAgentThematique": {
 		//		select: "valider_cboAgentThematiqueXXX"
 			},
@@ -51,7 +44,8 @@ App.controller.define('CAgent', {
 			},
 			"grid#gridAgents": {
 				itemclick: "gridAgents_onclick"
-			}, */
+			}, 
+*/
 			"agent button#btnAgentEnregistrer": {
 				click: "btnAgentEnregistrer_onclick"
 			}, 
@@ -99,6 +93,7 @@ App.controller.define('CAgent', {
 		//affiche valeur dans combo aprés sa création
 		App.get('agent combo#cboAgentEtablis').setValue('007');		
 	},	
+	
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboAgentUnite: function(p, record) 
 	{
