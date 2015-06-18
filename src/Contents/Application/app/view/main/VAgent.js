@@ -330,7 +330,7 @@ App.view.define('main.VAgent',
 					width: 300,
 					displayField: "type_contrat",
 					valueField: "id_type_contrat",
-					store: App.store.create('App.AgentsMod.get_type_contrat',{
+					store: App.store.create('App.AgentsMod.get_listTypeContrat',{
 							autoLoad: true
 					})	  						
 				},			
