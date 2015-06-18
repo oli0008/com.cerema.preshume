@@ -173,11 +173,13 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 		q.model('bpclight', 'select id_contrat_travail, salaire from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
 	},	
+	
 	//Récupére ldate d'arrivée d'un agent particulier.
 	get_date_arrivee: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 		q.model('bpclight', 'select id_contrat_travail, date_debut_contrat from contrat_travail where Kage = ' + in1.KageTemp, fn_cb);
-	},	
+	},
+	
 	//Récupére la description de poste d'un agent particulier.
 	get_desc_poste: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
