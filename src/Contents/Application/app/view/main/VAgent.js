@@ -283,7 +283,7 @@ App.view.define('main.VAgent',
 					width: 300,
 					displayField: "nom_domaine",
 					valueField: "id_domaine",
-					store: App.store.create('App.AgentsMod.get_domaine_intervention',{
+					store: App.store.create('App.AgentsMod.get_listDomaineIntervention',{
 							autoLoad: true
 					})						
 				},
