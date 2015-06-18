@@ -155,13 +155,14 @@ AgentsMod = {
 		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
 	},	
 
-/////////////////
-	
 	//Récupére le type de contrat d'un agent particulier.
 	get_typeContrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-		q.model('bpclight', 'select id_type_contrat, type_contrat from type_contrat order by id_type_contrat asc', fn_cb);
-	},		
+		q.model('bpclight', 'select t.id_type_contrat, t.type_contrat from type_contrat t join contrat_travail c '
+				+ 'on t.id_type_contrat = c.id_type_contrat where c.Kage = ' + in1.KageTemp, fn_cb);
+	},	
+
+////////////////	
 
 	get_numero_contrat: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
