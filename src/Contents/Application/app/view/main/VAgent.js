@@ -378,22 +378,7 @@ App.view.define('main.VAgent',
 					width:300,
 					allowBlank: false,
 				},	 
-/* 			
-				{
-					xtype: "textfield",
-					itemId: "txtDescriptionPoste", 
-	//				text: "Laitages",
-					margin: {
-						top : 10,
-					//	bottom : 20,
-						left : 20,
-					//	right : 20						
-						},
-					width:200,
-					fieldLabel: "Description du poste",
-					labelAlign: "top",
-				},	
-		 */	
+	
 // HERE stop 2 //	
 
 				]
