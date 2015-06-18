@@ -137,6 +137,7 @@ App.controller.define('CAgent', {
 	},
 	
 	//---------------------------------------------
+	// _gridAgents_itemclick
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 	//	console.log(record); 
@@ -160,11 +161,11 @@ App.controller.define('CAgent', {
 		var desc_posteTemp = 'Description du poste';		
 		
 		var req = {
-			KageTemp : record.data.Kage,
-			id_residenceTemp = record.data.id_residence,
-			id_metierTemp : record.data.id_metier,
-			id_contrat_travailTemp : record.data.id_contrat_travail,
-			id_domaineTemp : 4,
+			KageTemp : 					record.data.Kage,
+			id_residenceTemp : 			record.data.id_residence,
+			id_metierTemp : 			record.data.id_metier,
+			id_contrat_travailTemp : 	record.data.id_contrat_travail,
+			id_domaineTemp: 4,
 			id_thematiqueTemp : 14,
 			id_type_contratTemp : 1,
 			numeo_contratTemp : '12345',
