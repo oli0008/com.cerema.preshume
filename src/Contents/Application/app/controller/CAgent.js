@@ -91,7 +91,7 @@ App.controller.define('CAgent', {
 	
 	btnAgentAnnuler_onclick: function()
 	{
-		alert('closing window "AgentsMod");
+		alert('closing window "AgentsMod"');
 		App.get('agent').close();
 	},
 	
