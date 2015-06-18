@@ -206,14 +206,15 @@ App.controller.define('CAgent', {
 		})		
 
 		App.get('agent datefield#datDateArrivee').setValue(''); 
- 		App.AgentsMod.get_date_arrivee(agentData,function(err,response) { 
+/*  		App.AgentsMod.get_date_arrivee(agentData,function(err,response) { 
 			console.log(response.result);
 			App.get('agent datefield#datDateArrivee').setValue(response.result.data[0].date_debut_contrat);
 		}) 
-/* 		
+ */
+ 		
 		var date_debut_contratTemp = '2015-03-02';
 		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
-		 */
+		 
 /* ------------------------ SIMULATION ----------------------- */
 	
 		//éfface le contenu avant mise à jour
