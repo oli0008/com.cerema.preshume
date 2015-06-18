@@ -171,16 +171,12 @@ App.controller.define('CAgent', {
 		/* App.monwebservice.insert(req,function(err,response) {		
 			
 		}) */
-//		console.log(req);
-App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('VideXXXX');
+
+		//éfface le contenu avant mise à jour
+		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
 		App.AgentsMod.get_desc_poste(req,function(err,response) {
-			console.log(response.result); 
-//			console.log(response); 
-			if (response.result != null)
-				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
-	 		else
-				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('Vide');	
-			 
+//			console.log(response.result); 
+			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
 		})
 		
 /* ------------------------ SIMULATION ----------------------- */		
