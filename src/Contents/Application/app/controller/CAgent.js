@@ -156,7 +156,7 @@ App.controller.define('CAgent', {
 		var date_debut_contratTemp = '2015-03-02';	
 		var desc_posteTemp = 'Description du poste';		
 		
-		var req={
+		var req = {
 			KageTemp : record.data.Kage,
 			id_metierTemp : 3,
 			id_domaineTemp : 4,
@@ -175,7 +175,7 @@ App.controller.define('CAgent', {
 		App.AgentsMod.get_desc_poste(req,function(err,response) {
 			console.log(response.result); 
 //			console.log(response); 
-			if (response.result == null)
+			if (response.result != null)
 				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue("VIDE");
 			else
 				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
