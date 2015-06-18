@@ -14,7 +14,7 @@ App.controller.define('CAgent', {
 				show: "agent_onshow"
 			},
 			"agent combo#cboAgentEtablis": {
-				select: "valider_cboAgentUnite"
+				select: "update_cboAgentUnite"
 			},
 			"agent combo#cboAgentUnite": {
 				select: "valider_cboAgentService"
@@ -91,15 +91,15 @@ App.controller.define('CAgent', {
 	
 	agent_onshow: function(item)
 	{
-		//affiche valeur dans combo aprés sa création
+		//DEBUG INFO *** affiche valeur dans combo aprés sa création
 		App.get('agent combo#cboAgentEtablis').setValue('007');		
 	},	
 	
-	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
-	valider_cboAgentUnite: function(p, record) 
+	//Quand un établissement est sélectionné, la liste des unités correspondantes est mise à jour(cela active le store de l'unité)
+	update_cboAgentUnite: function(p, record) 
 	{
 		var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
-//		alert('CAgent.valider_cboAgentUnite() KetsTemp = ' + KetsTemp);
+//		alert('CAgent.update_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());
 
@@ -113,8 +113,8 @@ App.controller.define('CAgent', {
 //		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 //		App.get('grid#gridAgents').getStore().load();
 	},
-	
-	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
+
+	//Quand une unité est sélectionné, la liste des services correspondants est mise à jour(cela active le store du service)	
 	valider_cboAgentService: function(p, record) 
 	{
 		var KuniTemp = App.get('combo#cboAgentUnite').getValue();
@@ -125,7 +125,7 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentService').getStore().load();
 	},
 
-	//Sélectionner un domaine d'intervention affiche la thématique correspondante (cela active le store de l'unité)
+	//Quand un domaine d'intervention est sélectionné, la liste des thématiques correspondants est mise à jour (cela active le store du thématique)
 	valider_cboAgentThematique: function(p, record) 
 	{	
 		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
