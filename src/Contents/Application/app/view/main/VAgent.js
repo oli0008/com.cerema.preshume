@@ -168,7 +168,7 @@ App.view.define('main.VAgent',
 			})	 
  	}, 
 		//*************************
-/*				{
+				{
 					xtype: "textfield",
 					fieldLabel: "Agent",
 					labelAlign: "top",
@@ -182,7 +182,7 @@ App.view.define('main.VAgent',
 					labelWidth: 300,
 					width:300,
 					allowBlank: false,
-				},		 */	
+				},		 	
 //---------------------	
 
 	{
@@ -221,9 +221,7 @@ App.view.define('main.VAgent',
 					valueField: "id_residence",	
 					store: App.store.create("App.AgentsMod.get_residence_admin", {
 													autoLoad: true
-												})  	// Creation du store					
-
-
+					})  	// Creation du store					
 				},
 				{
 					xtype: "combo",
@@ -242,7 +240,7 @@ App.view.define('main.VAgent',
 					valueField: "id_metier",
 					store: App.store.create("App.AgentsMod.get_listMetier", {
 													autoLoad: true
-												})  	// Creation du store					
+					})  	// Creation du store					
 //					store: App.store.create('MNomSource', // Creation du store
 //												{
 //													autoLoad: true
