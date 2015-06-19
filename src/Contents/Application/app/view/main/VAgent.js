@@ -72,8 +72,9 @@ App.view.define('main.VAgent',
 			displayField: "LibEts",
 			valueField: "Kets",								
 			store: App.store.create("App.Etablis.get_etablis", {
-												autoLoad: true
-									}) 		// Creation du store				
+									autoLoad: true
+			}) 		// Creation du store
+			disabled: true,			
 		},
 		//*************************
 		{
@@ -88,8 +89,8 @@ App.view.define('main.VAgent',
 			displayField: "LibUni",		//Alt use: LibUnic
 			valueField: "Kuni",			
 			store: App.store.create("App.Unite.get_unite", {
-												autoLoad: true
-									})  	// Creation du store
+									autoLoad: true
+			})  	// Creation du store
 		},
 		//*************************
 		{
@@ -104,8 +105,8 @@ App.view.define('main.VAgent',
  			displayField: "LibSubc",
 			valueField: "Ksub",				
 			store: App.store.create("App.Service.get_service", {
-													autoLoad: true
-									})  // Creation du store			
+									autoLoad: true
+			})  // Creation du store			
 		}
 		]
 	},
@@ -179,7 +180,7 @@ App.view.define('main.VAgent',
 //		labelWidth: 300,
 		width:300,
 //		allowBlank: false,
-		disabled: true,
+		disabled: true,	//empéche de changer la valeur
 	},		 	
 	//---------------------	
 	{
