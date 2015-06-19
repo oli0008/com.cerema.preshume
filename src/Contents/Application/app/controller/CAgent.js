@@ -144,34 +144,13 @@ App.controller.define('CAgent', {
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 		//Récupére les données de l'agent sélectionné
-	//	var KageTemp = record.data.Kage; 
-//		var id_residenceTemp = record.data.id_residence;		
-		 
-//	alert('KageTemp  = ' + KageTemp  ); 
-		
-//		var id_metierTemp = record.data.id_metier;
-//		var id_contrat_travailTemp = record.data.id_contrat_travail;	
-	//	var id_domaineTemp = 4;
-	//	var id_thematiqueTemp = 14;
-	//	var id_type_contratTemp = 1;				
-	//	var numero_contratTemp = '12345';	
-	//	var salaireTemp = '52.000';	
-	//	var desc_posteTemp = 'Description du poste';		
-		
 		var agentData = {
 			KageTemp : 					record.data.Kage,
 			Nom:						record.data.Nom,
 			Prenom:						record.data.Prenom,
 			id_residenceTemp : 			record.data.id_residence,
 			id_metierTemp : 			record.data.id_metier,
-			id_contrat_travailTemp : 	record.data.id_contrat_travail,
-		//	id_domaineTemp: 4,
-		//	id_thematiqueTemp : 14,
-		//	id_type_contratTemp : 1,
-		//	numeo_contratTemp : '12345',
-		//	salaireTemp : '52.000',
-		//	date_debut_contratTemp : '2015-03-02',
-		//	desc_posteTemp : 'Description du poste',			
+			id_contrat_travailTemp : 	record.data.id_contrat_travail,			
 		};
 		
 		//éfface les contenus avant les mise à jour
