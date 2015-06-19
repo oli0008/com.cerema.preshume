@@ -173,9 +173,12 @@ App.controller.define('CAgent', {
 		};
 		
 		//éfface les contenus avant les mise à jour
+		App.get('agent textfield#txtAgent').setValue('');
+		App.get('agent textfield#txtAgent').setValue(agentData.xxxid_residenceTemp); 
+
 		App.get('agent combo#cboAgentResAdmin').setValue('');
 		App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
-
+		
 		App.get('agent combo#cboAgentMetier').setValue(''); 		
 		App.get('agent combo#cboAgentMetier').setValue(agentData.id_metierTemp); 
 
