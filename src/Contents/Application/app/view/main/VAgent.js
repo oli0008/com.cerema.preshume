@@ -372,8 +372,8 @@ App.view.define('main.VAgent',
 					fieldLabel: "Date d'arrivée",
 					labelAlign: "top",
 //renderer DOES NOT WORK!!
-//					renderer: Ext.util.Format.dateRenderer('dd/mm/YYYY'),
-					renderer: Ext.util.Format.dateRenderer("Y-m-d"), //('m/d/Y'),
+					renderer: Ext.util.Format.dateRenderer('dd/mm/YYYY'),
+//					renderer: Ext.util.Format.dateRenderer("Y-m-d"), //('m/d/Y'),
 //					renderer: Ext.util.Format.dateRenderer('d/m/Y'),					
 					itemId: "datDateArrivee",
 					margin: {
