@@ -177,7 +177,7 @@ App.view.define('main.VAgent',
 					margin: {
 					//		top : 10,
 					//		bottom : 20,
-							left : 20
+							left : 200
 					//		right : 20						
 					},
 			//		labelWidth: 300,
