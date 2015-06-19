@@ -171,7 +171,8 @@ App.view.define('main.VAgent',
 				{
 					xtype: "textfield",
 					fieldLabel: "Agent",
-					labelAlign: "left",	// "top",
+					labelAlign:  "top",
+			//		labelAlign: "left",	
 					itemId: "txtAgent", 
 					margin: {
 							top : 10,
