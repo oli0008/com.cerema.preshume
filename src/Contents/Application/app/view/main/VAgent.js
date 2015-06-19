@@ -178,7 +178,7 @@ App.view.define('main.VAgent',
 				left : 170
 		},
 //		labelWidth: 300,
-		width:300,
+		width:350,
 //		allowBlank: false,
 		disabled: true,		//empéche de changer la valeur
 	},		 	
