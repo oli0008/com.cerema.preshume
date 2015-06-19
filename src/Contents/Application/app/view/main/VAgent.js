@@ -166,8 +166,8 @@ App.view.define('main.VAgent',
  		store: App.store.create("App.AgentsMod.get_allAgents",{
 				autoLoad: true
 			})	 
-/* 	}, 
-				{
+ 	}, 
+/*				{
 					xtype: "textfield",
 					fieldLabel: "Agent",
 					labelAlign: "top",
