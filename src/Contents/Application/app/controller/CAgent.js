@@ -207,7 +207,7 @@ App.controller.define('CAgent', {
 
 		App.get('agent datefield#datDateArrivee').setValue(''); 
   		App.AgentsMod.get_date_arrivee(agentData,function(err,response) { 
-			console.log(response.result);
+//			console.log(response.result);
 			App.get('agent datefield#datDateArrivee').setValue(response.result.data[0].date_debut_contrat.toDate());
 		}) 
  
@@ -220,6 +220,7 @@ App.controller.define('CAgent', {
 		//éfface le contenu avant mise à jour
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
 		App.AgentsMod.get_desc_poste(agentData,function(err,response) { 
+			console.log(response.result);
 			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
 		})	
 	},
