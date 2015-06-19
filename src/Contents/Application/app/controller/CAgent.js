@@ -208,7 +208,7 @@ App.controller.define('CAgent', {
 		App.get('agent datefield#datDateArrivee').setValue(''); 
   		App.AgentsMod.get_date_arrivee(agentData,function(err,response) { 
 			console.log(response.result);
-			App.get('agent datefield#datDateArrivee').setValue(response.result.data[0].date_debut_contrat);
+			App.get('agent datefield#datDateArrivee').setValue(new Date.now());
 		}) 
  
 /*  		
