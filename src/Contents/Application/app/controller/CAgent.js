@@ -221,7 +221,7 @@ App.controller.define('CAgent', {
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
 		App.AgentsMod.get_desc_poste(agentData,function(err,response) { 
 			console.log(response.result);
-			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].desc_poste);
+			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].libelle_poste);
 		})	
 	},
 	
