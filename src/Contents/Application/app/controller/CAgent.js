@@ -173,7 +173,7 @@ App.controller.define('CAgent', {
 		};
 		
 		//éfface les contenus avant les mise à jour
-		App.get('agent textfield#txtAgent').setValue('');
+		App.get('agent textfield#txtAgent').setValue('QQQ');
 		App.get('agent textfield#txtAgent').setValue(agentData.xxxid_residenceTemp); 
 
 		App.get('agent combo#cboAgentResAdmin').setValue('');
