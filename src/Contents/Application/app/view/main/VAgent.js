@@ -166,7 +166,22 @@ App.view.define('main.VAgent',
  		store: App.store.create("App.AgentsMod.get_allAgents",{
 				autoLoad: true
 			})	 
-	},  
+	}, 
+				{
+					xtype: "textfield",
+					fieldLabel: "Agent",
+					labelAlign: "top",
+					itemId: "txtAgent", 
+					margin: {
+							top : 10,
+					//		bottom : 20,
+							left : 20,
+					//		right : 20						
+					},
+					labelWidth: 300,
+					width:300,
+					allowBlank: false,
+				},			
 //---------------------	
  /* 	{
 		xtype: "grid",
