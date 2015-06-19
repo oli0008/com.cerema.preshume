@@ -167,6 +167,7 @@ App.view.define('main.VAgent',
 				autoLoad: true
 			})	 
  	}, 
+		//*************************
 /*				{
 					xtype: "textfield",
 					fieldLabel: "Agent",
@@ -331,9 +332,7 @@ App.view.define('main.VAgent',
 					itemId: "txtNumeroContrat", 
 					margin: {
 							top : 10,
-					//		bottom : 20,
-							left : 20,
-					//		right : 20						
+							left : 20					
 					},
 					labelWidth: 300,
 					width:300,
