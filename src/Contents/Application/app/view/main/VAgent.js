@@ -180,8 +180,9 @@ App.view.define('main.VAgent',
 							left : 20
 					//		right : 20						
 					},
-					labelWidth: 300,
+			//		labelWidth: 300,
 					width:300,
+			//				width: "100%",
 					allowBlank: false,
 				},		 	
 //---------------------	
