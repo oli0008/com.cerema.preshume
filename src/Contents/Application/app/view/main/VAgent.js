@@ -117,6 +117,7 @@ App.view.define('main.VAgent',
 		width: "100%",
 		height: 130,
 		columns: [ 
+			// Certaines colonnes sont cachées pour permettre leur utilisation dans les requettes.
 			{	
 				text: "Kage",				
 				dataIndex: "Kage", 
@@ -137,7 +138,6 @@ App.view.define('main.VAgent',
 				dataIndex: "id_contrat_travail", 
 				hidden	: true		
 			},
-//	 a.id_residence, a.id_metier, a.id_contrat_travail */
 			{	
 				text: "Nom",
 				dataIndex: "Nom"		
@@ -354,7 +354,6 @@ App.view.define('main.VAgent',
 					fieldLabel: "Salaire",
 					labelAlign: "top",
 					itemId: "txtSalaire", 
-	//				text: "Laitages",
 					margin: {
 							top : 10,
 							left : 20,					
@@ -362,7 +361,7 @@ App.view.define('main.VAgent',
 					labelWidth: 300,
 					width:300,
 					renderer: function(value) {
-						var new_value=value.replace(',','.');
+						var new_value = value.replace(',','.');
 						return new_value;
 					},
 					allowBlank: false,
