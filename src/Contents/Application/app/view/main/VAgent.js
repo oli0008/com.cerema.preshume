@@ -361,6 +361,10 @@ App.view.define('main.VAgent',
 							},
 					labelWidth: 300,
 					width:300,
+					renderer: function(value) {
+						var new_value=value.replace(',','.');
+						return new_value;
+					},
 					allowBlank: false,
 				},					
 				{
