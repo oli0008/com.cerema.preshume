@@ -160,6 +160,8 @@ App.controller.define('CAgent', {
 		
 		var agentData = {
 			KageTemp : 					record.data.Kage,
+			Nom:						record.data.Nom,
+			Prenom:						record.data.Prenom,
 			id_residenceTemp : 			record.data.id_residence,
 			id_metierTemp : 			record.data.id_metier,
 			id_contrat_travailTemp : 	record.data.id_contrat_travail,
@@ -174,10 +176,10 @@ App.controller.define('CAgent', {
 		
 		//éfface les contenus avant les mise à jour
 		App.get('agent textfield#txtAgent').setValue('QQQ');
-//		App.get('agent textfield#txtAgent').setValue(agentData.xxxid_residenceTemp); 
-		App.AgentsMod.get_agent(agentData,function(err,response) { 
-			App.get('agent textfield#txtAgent').setValue(response.result.data[0].nom_prenom);
-		})
+		App.get('agent textfield#txtAgent').setValue(agentData.Nom); 
+//		App.AgentsMod.get_agent(agentData,function(err,response) { 
+//			App.get('agent textfield#txtAgent').setValue(response.result.data[0].nom_prenom);
+//		})
 
 		App.get('agent combo#cboAgentResAdmin').setValue('');
 		App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
