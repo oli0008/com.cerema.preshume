@@ -67,14 +67,14 @@ App.view.define('main.VAgent',
 			itemId: "cboAgentEtablis",
 		//	allowBlank: false,		//false = mandatory filling
 			editable: false,
+			disabled: true,			//empéche de changer la valeur
 			flex: 1,
 			margin: 5,
 			displayField: "LibEts",
 			valueField: "Kets",								
 			store: App.store.create("App.Etablis.get_etablis", {
 									autoLoad: true
-			}) 		// Creation du store
-			disabled: true,			
+			}) 		// Creation du store			
 		},
 		//*************************
 		{
@@ -180,7 +180,7 @@ App.view.define('main.VAgent',
 //		labelWidth: 300,
 		width:300,
 //		allowBlank: false,
-		disabled: true,	//empéche de changer la valeur
+		disabled: true,		//empéche de changer la valeur
 	},		 	
 	//---------------------	
 	{
