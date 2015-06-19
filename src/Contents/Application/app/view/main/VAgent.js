@@ -222,19 +222,8 @@ App.view.define('main.VAgent',
 					store: App.store.create("App.AgentsMod.get_residence_admin", {
 													autoLoad: true
 												})  	// Creation du store					
-/* 					store: App.store.create("App.XXX__Unite.get_unite", {
-												autoLoad: true
-									})  	// Creation du store */
-/* 					store: App.store.create({
-					fields: [
-							"rue_residence",
-							"ville_residence"
-					],
-					data: [
-							{	rue_residence: "rue_1", ville_residence: "ville_1"},
-							{	rue_residence: "rue_2", ville_residence: "ville_2"}
-					]			
-					}) */
+
+
 				},
 				{
 					xtype: "combo",
