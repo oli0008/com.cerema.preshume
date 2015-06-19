@@ -183,32 +183,7 @@ App.view.define('main.VAgent',
 					allowBlank: false,
 				},		 */	
 //---------------------	
- /* 	{
-		xtype: "grid",
-		columns: [		
-		{
-			text: "Nom",	dataIndex: "Lastname"
-		},
-		{
-			text: "Prénom",	dataIndex: "Firstname"
-		}
-		],
-		border: false,
-		width: "100%",
-		height: 100,
-		store: App.store.create({
-			fields: [
-				"Lastname",
-				"Firstname"
-			],
-			data: [
-			{
-				Lastname: "Too",
-				Firstname: "fslkdfkklj"
-			}
-			]			
-		})
-	},  */
+
 	{
 		height: 250,
 		width: "100%",
