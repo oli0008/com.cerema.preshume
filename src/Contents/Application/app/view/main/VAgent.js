@@ -167,26 +167,21 @@ App.view.define('main.VAgent',
 				autoLoad: true
 			})	 
  	}, 
-		//*************************
-				{
-					xtype: "textfield",
-					fieldLabel: "Agent",
-			//		labelAlign:  "top",
-					labelAlign: "right",	
-					itemId: "txtAgent", 
-					margin: {
-					//		top : 10,
-					//		bottom : 20,
-							left : 170
-					//		right : 20						
-					},
-			//		labelWidth: 300,
-					width:300,
-			//				width: "100%",
-					allowBlank: false,
-				},		 	
-//---------------------	
-
+	//*************************
+	{
+		xtype: "textfield",
+		fieldLabel: "Agent",
+		labelAlign: "right",	
+		itemId: "txtAgent", 
+		margin: {
+				left : 170
+		},
+//		labelWidth: 300,
+		width:300,
+//		allowBlank: false,
+		disabled: true,
+	},		 	
+	//---------------------	
 	{
 		height: 250,
 		width: "100%",
