@@ -358,11 +358,7 @@ App.view.define('main.VAgent',
 					width:300,
 					allowBlank: false,
 				},	 
-	
-// HERE stop 2 //	
-
-				]
-				
+				]				
 			}
 			]
 		}
