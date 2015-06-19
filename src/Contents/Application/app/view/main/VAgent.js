@@ -345,7 +345,7 @@ App.view.define('main.VAgent',
 					itemId: "txtSalaire", 
 					margin: {
 							top : 10,
-							left : 20,					
+							left : 20					
 							},
 					labelWidth: 300,
 					width:300,
