@@ -175,7 +175,7 @@ App.view.define('main.VAgent',
 		labelAlign: "right",	
 		itemId: "txtAgent", 
 		margin: {
-				left : 170
+				left : 150
 		},
 //		labelWidth: 300,
 		width:350,
