@@ -1,6 +1,7 @@
 // Déclaration des variables globales
 var VAgent_label_width = 	350;
 var VAgent_width = 			350;
+var re = new RegExp ("#[0-9]{5}#");
 
 App.controller.define('CMain', {
 
