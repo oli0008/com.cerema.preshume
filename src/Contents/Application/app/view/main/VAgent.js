@@ -359,7 +359,7 @@ App.view.define('main.VAgent',
 					itemId: "txtSalaire", 
 					margin: {
 							top : 10,
-							left : 20					
+							left : 10					
 					},
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,
@@ -393,7 +393,7 @@ App.view.define('main.VAgent',
 					itemId: "datDateArrivee",
 					margin: {
 							top: 10,
-							left: 20,
+							left: 10,
 							bottom: 10
 					},
 					labelWidth: VAgent_label_width,
