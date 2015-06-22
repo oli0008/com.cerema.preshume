@@ -173,7 +173,7 @@ App.controller.define('CAgent', {
 
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(agentData,function(err,response){
-			console.log(response.result); 
+//			console.log(response.result); 
 			if (response == null)
 				App.get('agent combo#cboAgentDomaine').setValue('');
 			else {
@@ -183,9 +183,14 @@ App.controller.define('CAgent', {
 		})	
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
-		App.AgentsMod.get_thematique(agentData,function(err,response) {
-			App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
-		})	
+		try {
+			App.AgentsMod.get_thematique(agentData,function(err,response) {
+			
+				App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
+			})	
+		} catch (exception){
+			alert ('nom_thematique n'est pas définit');
+			}
  		
 		App.get('agent combo#cboTypeContrat').setValue('');
 		App.AgentsMod.get_typeContrat(agentData,function(err,response) { 
