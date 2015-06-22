@@ -351,7 +351,13 @@ App.view.define('main.VAgent',
 							},
 					labelWidth: 300,
 					width:300,
-
+					        // Set step so it skips every other number
+        step: 1000,
+        value: 55500,
+			/* 		renderer: function(value) {
+						var new_value = value.replace(',','.');
+						return new_value;
+					}, */
 					decimalPrecision : 2,
 					decimalSeparator : ',',
 					allowBlank: false,
@@ -362,11 +368,6 @@ App.view.define('main.VAgent',
 		/* 			hideTrigger: true,
 					keyNavEnabled: false,
 					mouseWheelEnabled: false */
-					
-						renderer: function(value) {
-						var new_value = value.replace(',','BBB');
-						return new_value;
-					}, 
 				},						
 				{
 					xtype: "datefield",
