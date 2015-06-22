@@ -325,10 +325,12 @@ App.view.define('main.VAgent',
 					itemId: "txtNumeroContrat", 
 					margin: {
 							top : 10,
-							left : 20					
+							left : 10					
 					},
-					labelWidth: 300,
-					width:300,
+					labelWidth: VAgent_label_width,
+					width: 		VAgent_width,
+//					labelWidth: 300,
+//					width:300,
 					allowBlank: false,
 //					var re = new RegExp ("#[0-9]{5}#");
 					regex: re,
@@ -358,9 +360,11 @@ App.view.define('main.VAgent',
 					margin: {
 							top : 10,
 							left : 20					
-							},
-					labelWidth: 300,
-					width:300,					  
+					},
+					labelWidth: VAgent_label_width,
+					width: 		VAgent_width,
+//					labelWidth: 300,
+//					width:300,					  
 					step: 1000,			// Set step so it skips every other number
 				//	value: 555.12,		//initial value of field
 			 /* 	renderer: function(value) {
@@ -391,9 +395,11 @@ App.view.define('main.VAgent',
 							top: 10,
 							left: 20,
 							bottom: 10
-							},
-					labelWidth: 300,
-					width:300,
+					},
+					labelWidth: VAgent_label_width,
+					width: 		VAgent_width,
+//					labelWidth: 300,
+//					width:300,
 					allowBlank: false,
 				},	 
 				]				
