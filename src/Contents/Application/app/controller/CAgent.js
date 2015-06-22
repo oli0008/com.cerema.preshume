@@ -168,8 +168,11 @@ App.controller.define('CAgent', {
 		else
 			App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
 		
-		App.get('agent combo#cboAgentMetier').setValue(''); 		
-		App.get('agent combo#cboAgentMetier').setValue(agentData.id_metierTemp); 
+		App.get('agent combo#cboAgentMetier').setValue(''); 
+		if ((agentData.id_metierTemp == null) || (agentData.id_metierTemp == 0))
+			App.get('agent combo#cboAgentMetier').setValue('');
+		else
+			App.get('agent combo#cboAgentMetier').setValue(agentData.id_metierTemp); 
 
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(agentData,function(err,response){
