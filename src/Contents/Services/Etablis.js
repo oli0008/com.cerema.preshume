@@ -6,7 +6,8 @@ Etablis = {
 		// 2eme argument = response
 		
   		var q = Etablis.using('db');
-		
+		alert('get_etablis: function(in1,fn_cb) ORIGINAL');
+		console.log('>>AgentsMod.get_etablis()OLLLLIXXX');		
 //		console.log('>>Etablis.get_etablis()');
 //		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
