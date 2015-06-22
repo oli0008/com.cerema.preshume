@@ -302,7 +302,7 @@ App.view.define('main.VAgent',
 					itemId: "cboTypeContrat",
 					margin: {
 							top: 10,
-							left:20							
+							left:10							
 					},
 					fieldLabel: "Type de contrat",
 					allowBlank: false,
