@@ -183,6 +183,7 @@ App.controller.define('CAgent', {
 		})	
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
+		console.log(response.result); 
 		try {
 			App.AgentsMod.get_thematique(agentData,function(err,response) {
 			
