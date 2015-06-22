@@ -189,7 +189,7 @@ App.controller.define('CAgent', {
 				App.get('agent combo#cboAgentThematique').setValue(response.result.data[0].nom_thematique);
 			})	
 		} catch (exception){
-			alert ('nom_thematique n'est pas définit');
+			alert ('nom_thematique n\'est pas définit');
 			}
  		
 		App.get('agent combo#cboTypeContrat').setValue('');
