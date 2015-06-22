@@ -163,7 +163,7 @@ App.controller.define('CAgent', {
 		})
 
 		App.get('agent combo#cboAgentResAdmin').setValue('');
-		if (agentData.id_residenceTemp == null)
+		if (agentData.id_residenceTemp == 0)
 			App.get('agent combo#cboAgentResAdmin').setValue('XX');
 		else
 			App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
