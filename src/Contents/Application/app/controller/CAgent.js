@@ -100,7 +100,7 @@ App.controller.define('CAgent', {
 	agent_onshow: function(item)
 	{
 		//DEBUG INFO *** affiche valeur dans combo aprés sa création
-		App.get('agent combo#cboAgentEtablis').setValue('007');		
+	//	App.get('agent combo#cboAgentEtablis').setValue('007');		
 	},	
 	
 	//Quand un établissement est sélectionné, la liste des unités correspondantes est mise à jour(cela active le store de l'unité)
