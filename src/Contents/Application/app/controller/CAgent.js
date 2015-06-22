@@ -156,6 +156,10 @@ App.controller.define('CAgent', {
 		//éfface les contenus avant les mise à jour
 		App.get('agent textfield#txtAgent').setValue('*******************************');
 //		App.get('agent textfield#txtAgent').setValue(agentData.Nom); 
+var obj1;
+	obj1.concat(agentData.Nom, " - ", agentData.Prenom);
+	alert(obj1);
+
 //		App.get('agent textfield#txtAgent').setValue(concat(agentData.Nom, " - ", agentData.Prenom); 
 
 		App.AgentsMod.get_agent(agentData,function(err,response) { 
