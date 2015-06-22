@@ -173,7 +173,7 @@ App.controller.define('CAgent', {
 
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(agentData,function(err,response){
-//			console.log(response.result); 
+			console.log(response.result); 
 			if (response == null)
 				App.get('agent combo#cboAgentDomaine').setValue('');
 			else
