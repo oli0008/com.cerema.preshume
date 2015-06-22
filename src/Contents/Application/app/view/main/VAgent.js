@@ -213,8 +213,6 @@ App.view.define('main.VAgent',
 					}, 					
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,
-//					labelWidth: 300,
-//					width: 300,
 					displayField: "rue_ville_residence",
 					valueField: "id_residence",	
 					store: App.store.create("App.AgentsMod.get_residence_admin", {
@@ -234,17 +232,11 @@ App.view.define('main.VAgent',
 					},  
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,
-//					labelWidth: 300,
-//					width: 300,
 					displayField: "nom_metier",
 					valueField: "id_metier",
 					store: App.store.create("App.AgentsMod.get_listMetier", {
 													autoLoad: true
-					})  	// Creation du store					
-//					store: App.store.create('MNomSource', // Creation du store
-//												{
-//													autoLoad: true
-//												})  	
+					})  	// Creation du store						
 				},
 				{
 					xtype: "combo",
@@ -259,8 +251,6 @@ App.view.define('main.VAgent',
 					},
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,					
-//					labelWidth: 300,
-//					width: 300,
 					displayField: "nom_domaine",
 					valueField: "id_domaine",
 					store: App.store.create('App.AgentsMod.get_listDomaineIntervention',{
@@ -281,8 +271,6 @@ App.view.define('main.VAgent',
 					},	
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,					
-//					labelWidth: 300,
-//					width: 300,
 					displayField: "nom_thematique",
 					valueField: "id_thematique",					
 			//		store: App.store.create("App.AgentsMod.get_thematique", {
@@ -310,8 +298,6 @@ App.view.define('main.VAgent',
 					labelAlign: "top",
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,
-//					labelWidth: 300,
-//					width: 300,
 					displayField: "type_contrat",
 					valueField: "id_type_contrat",
 					store: App.store.create('App.AgentsMod.get_listTypeContrat',{
@@ -329,8 +315,6 @@ App.view.define('main.VAgent',
 					},
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,
-//					labelWidth: 300,
-//					width:300,
 					allowBlank: false,
 //					var re = new RegExp ("#[0-9]{5}#");
 					regex: re,
@@ -343,9 +327,9 @@ App.view.define('main.VAgent',
 					margin: {
 							top : 10,
 							left : 20					
-							},
-					labelWidth: 300,
-					width:300,
+					},
+					labelWidth: VAgent_label_width,
+					width: 		VAgent_width,
 					renderer: function(value) {
 						var new_value = value.replace(',','.');
 						return new_value;
@@ -362,9 +346,7 @@ App.view.define('main.VAgent',
 							left : 10					
 					},
 					labelWidth: VAgent_label_width,
-					width: 		VAgent_width,
-//					labelWidth: 300,
-//					width:300,					  
+					width: 		VAgent_width,					  
 					step: 1000,			// Set step so it skips every other number
 				//	value: 555.12,		//initial value of field
 			 /* 	renderer: function(value) {
@@ -398,8 +380,6 @@ App.view.define('main.VAgent',
 					},
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,
-//					labelWidth: 300,
-//					width:300,
 					allowBlank: false,
 				},	 
 				]				
