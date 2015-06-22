@@ -194,23 +194,43 @@ App.controller.define('CAgent', {
  		
 		App.get('agent combo#cboTypeContrat').setValue('');
 		App.AgentsMod.get_typeContrat(agentData,function(err,response) { 
-			App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].type_contrat);
+			if (response == null)
+				App.get('agent combo#cboTypeContrat').setValue('');
+			else {
+					if (response.result.data.length > 0) 
+						App.get('agent combo#cboTypeContrat').setValue(response.result.data[0].type_contrat);
+			}
 		})	 
 
 		App.get('agent textfield#txtNumeroContrat').setValue('');		
 		App.AgentsMod.get_numero_contrat(agentData,function(err,response) { 
-			App.get('agent textfield#txtNumeroContrat').setValue(response.result.data[0].numero_contrat);
+			if (response == null)
+				App.get('agent textfield#txtNumeroContrat').setValue('');
+			else {
+					if (response.result.data.length > 0) 			
+						App.get('agent textfield#txtNumeroContrat').setValue(response.result.data[0].numero_contrat);
+			}
 		})	 
 		
 		App.get('agent textfield#txtSalaire').setValue(''); 
 		App.AgentsMod.get_salaire(agentData,function(err,response) { 
-			App.get('agent textfield#txtSalaire').setValue(response.result.data[0].salaire);
+			if (response == null)
+				App.get('agent textfield#txtSalaire').setValue('');
+			else {
+					if (response.result.data.length > 0) 
+						App.get('agent textfield#txtSalaire').setValue(response.result.data[0].salaire);
+			}
 		})		
 
 		App.get('agent datefield#datDateArrivee').setValue(''); 
   		App.AgentsMod.get_date_arrivee(agentData,function(err,response) { 
+			if (response == null)
+				App.get('agent datefield#datDateArrivee').setValue('');
 //			console.log(response.result);
-			App.get('agent datefield#datDateArrivee').setValue(response.result.data[0].date_debut_contrat.toDate());
+			else {
+					if (response.result.data.length > 0) 
+						App.get('agent datefield#datDateArrivee').setValue(response.result.data[0].date_debut_contrat.toDate());
+			}
 		}) 
  
 /*  		
@@ -222,8 +242,13 @@ App.controller.define('CAgent', {
 		//éfface le contenu avant mise à jour
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
 		App.AgentsMod.get_desc_poste(agentData,function(err,response) { 
-			console.log(response.result);
+			if (response == null)
+				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
+//			console.log(response.result);
+			else {
+					if (response.result.data.length > 0) 
 			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].libelle_poste);
+			}
 		})	
 	},
 	
