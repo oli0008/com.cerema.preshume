@@ -3,7 +3,7 @@
 AgentsMod = {
 
 // ---------------------------------------- Lecture des données ------------------------------------------//
-	 	 
+	 //Récupére 1 établissement prédéfinit. 	 
 	get_etablis1: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response		
@@ -13,7 +13,8 @@ AgentsMod = {
 		q.model('bpclight', 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ', fn_cb);
 //		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
 	},
-
+	
+	//Retourne une sélection d'Unités.
 	get_uniteSel: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_unite()');
@@ -22,6 +23,7 @@ AgentsMod = {
 		q.model('bpclight',q.sql('qget_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
 	},	
 
+	//Retourne une sélection de Services.
 	get_serviceSel: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_service()');
