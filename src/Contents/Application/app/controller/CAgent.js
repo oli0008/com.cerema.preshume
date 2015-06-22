@@ -1,3 +1,6 @@
+// Déclaration des variables globales
+var re = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
+
 App.controller.define('CAgent', {
 	views: [		
 		"main.VAgent",
