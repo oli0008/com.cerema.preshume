@@ -163,8 +163,8 @@ App.controller.define('CAgent', {
 		})
 
 		App.get('agent combo#cboAgentResAdmin').setValue('');
-		if (agentData.id_residenceTemp === null)
-			App.get('agent combo#cboAgentResAdmin').setValue('');
+		if (agentData.id_residenceTemp == null)
+			App.get('agent combo#cboAgentResAdmin').setValue('XX');
 		else
 			App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
 		
@@ -177,10 +177,9 @@ App.controller.define('CAgent', {
 			if (response == null)
 				App.get('agent combo#cboAgentDomaine').setValue('');
 			else {
-					if (response.result.data.length>0) App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);	
-				
-			}
-				
+					if (response.result.data.length > 0) 
+						App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);		
+			}			
 		})	
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
