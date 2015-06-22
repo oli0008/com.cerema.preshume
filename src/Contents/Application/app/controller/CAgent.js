@@ -159,7 +159,7 @@ App.controller.define('CAgent', {
 var obj1, obj2, obj3;
 obj1 = agentData.Nom;
 //	obj2 = obj1.concat(agentData.Nom, " - ");
-		obj2 = obj1.concat( " - ", agentData.Prenom);
+		obj2 = obj1.concat( "XXXX - ", agentData.Prenom);
 	alert(obj2);
 
 //		App.get('agent textfield#txtAgent').setValue(concat(agentData.Nom, " - ", agentData.Prenom); 
