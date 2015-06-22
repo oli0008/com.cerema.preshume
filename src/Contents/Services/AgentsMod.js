@@ -9,7 +9,7 @@ AgentsMod = {
 		// 2eme argument = response		
   		var q = AgentsMod.using('db');	
 		alert('get_etablis: function(in1,fn_cb)');
-//		console.log('>>AgentsMod.get_etablis()');
+		console.log('>>AgentsMod.get_etablis()OLLLLI');
 //		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
 	},
