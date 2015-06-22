@@ -107,7 +107,9 @@ App.controller.define('CAgent', {
 	update_cboAgentUnite: function(p, record) 
 	{
 	//	var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
-		var KetsTemp = 1;		//Vérouille le combo sur D.TerMed
+		
+		var KetsTemp = 1;		
+		App.get('combo#cboAgentEtablis').setValue(KetsTemp);	//Vérouille le combo sur D.TerMed
 //		alert('CAgent.update_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());
