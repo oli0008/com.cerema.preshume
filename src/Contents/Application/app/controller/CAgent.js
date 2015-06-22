@@ -96,15 +96,21 @@ App.controller.define('CAgent', {
 	{
 		App.get('agent').close();
 	},
-	
+/* 	
+	//TEMP FIX
 	agent_onshow: function(item)
 	{
 		//DEBUG INFO *** affiche valeur dans combo aprés sa création
 	//	App.get('agent combo#cboAgentEtablis').setValue('007');		
 	},	
-	
+	 */
 	//Quand un établissement est sélectionné, la liste des unités correspondantes est mise à jour(cela active le store de l'unité)
 	update_cboAgentUnite: function(p, record) 
+	{
+		alert('update_cboAgentUnite: function(p, record) -- INVOKED');
+	}
+	
+		agent_onshow: function(item)
 	{
 	//	var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
 		
