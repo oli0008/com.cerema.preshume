@@ -24,5 +24,5 @@ where
 	and
 	u.archive = 0
 	and
-	s.archive = 0 and u.Kets =1
+	s.archive = 0
 order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub
