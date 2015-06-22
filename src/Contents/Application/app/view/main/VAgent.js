@@ -164,7 +164,7 @@ App.view.define('main.VAgent',
 			}
 		],	
 		// Temp fix: have set Kets = 1
-//		store: App.store.create("App.AgentsMod.get_agentsByEtablis",{		
+//		store: App.store.create("App.AgentsMod.get_agentsByEtablis",{ 	
  		store: App.store.create("App.AgentsMod.get_allAgents",{
 				autoLoad: true
 			})	 
