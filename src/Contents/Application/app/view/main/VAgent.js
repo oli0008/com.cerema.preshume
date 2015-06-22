@@ -309,7 +309,8 @@ App.view.define('main.VAgent',
 					store: App.store.create('App.AgentsMod.get_listTypeContrat',{
 							autoLoad: true
 					})	  						
-				},			
+				},		
+var re = new RegExp ("#[0-9]{5}#");				
 				{
 					xtype: "textfield",
 					fieldLabel: "Numéro de contrat",
@@ -322,7 +323,7 @@ App.view.define('main.VAgent',
 					labelWidth: 300,
 					width:300,
 					allowBlank: false,
-					var re = new RegExp ("#[0-9]{5}#");
+//					var re = new RegExp ("#[0-9]{5}#");
 					regex: re,
 				},			
 /* 				{
