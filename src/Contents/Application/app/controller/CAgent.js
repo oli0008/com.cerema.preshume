@@ -174,7 +174,7 @@ App.controller.define('CAgent', {
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(agentData,function(err,response){
 //			console.log(response.result); 
-			if (response === null)
+			if (response == null)
 				App.get('agent combo#cboAgentDomaine').setValue('');
 			else
 				App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);
