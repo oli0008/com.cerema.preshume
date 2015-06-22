@@ -8,8 +8,8 @@ AgentsMod = {
 		// 1er argument = error
 		// 2eme argument = response		
   		var q = AgentsMod.using('db');	
-//		console.log('>>AgentsMod.get_etablis()');
-//		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
+		console.log('>>AgentsMod.get_etablis() UUU');
+		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
 		q.model('bpclight', 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ', fn_cb);
 //		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
 	},
