@@ -72,7 +72,7 @@ App.view.define('main.VAgent',
 			margin: 5,
 			displayField: "LibEts",
 			valueField: "Kets",
-//			store: App.store.create("App.Etablis.get_etablis1", {
+//			store: App.store.create("App.Etablis.get_etablis", {
 			store: App.store.create("App.AgentsMod.get_etablis1", {
 									autoLoad: true
 			}) 		// Creation du store			
