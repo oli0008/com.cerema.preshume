@@ -67,7 +67,7 @@ App.view.define('main.VAgent',
 			itemId: "cboAgentEtablis",
 		//	allowBlank: false,		//false = mandatory filling
 			editable: false,
-			disabled: true,			//empéche de changer la valeur
+//			disabled: true,			//empéche de changer la valeur
 			flex: 1,
 			margin: 5,
 			displayField: "LibEts",
