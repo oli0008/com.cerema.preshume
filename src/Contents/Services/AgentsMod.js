@@ -4,16 +4,17 @@ AgentsMod = {
 
 // ---------------------------------------- Lecture des données ------------------------------------------//
 	 	 
-	get_etablis: function(in1,fn_cb) {
+	get_etablis1: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response		
   		var q = AgentsMod.using('db');	
 //		console.log('>>AgentsMod.get_etablis()');
 //		console.log(q.sql('qget_etablis'));		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
+		q.model('bpclight', 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ', fn_cb);
+//		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
 	},
 
-	get_unite: function(in1,fn_cb) {		
+	get_uniteSel: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_unite()');
 		console.log('in1= '+ JSON.stringify(in1));
@@ -21,7 +22,7 @@ AgentsMod = {
 		q.model('bpclight',q.sql('qget_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
 	},	
 
-	get_service: function(in1,fn_cb) {		
+	get_serviceSel: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log('>>AgentsMod.get_service()');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
