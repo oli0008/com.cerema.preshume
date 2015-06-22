@@ -108,7 +108,7 @@ App.controller.define('CAgent', {
 	update_cboAgentUnite: function(p, record) 
 	{
 		alert('update_cboAgentUnite: function(p, record) -- INVOKED');
-	}
+	},
 	
 		agent_onshow: function(item)
 	{
