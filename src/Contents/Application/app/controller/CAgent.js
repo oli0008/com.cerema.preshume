@@ -106,7 +106,8 @@ App.controller.define('CAgent', {
 	//Quand un établissement est sélectionné, la liste des unités correspondantes est mise à jour(cela active le store de l'unité)
 	update_cboAgentUnite: function(p, record) 
 	{
-		var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
+	//	var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
+		var KetsTemp = 1;		//Vérouille le combo sur D.TerMed
 //		alert('CAgent.update_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());
