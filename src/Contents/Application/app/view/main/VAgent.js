@@ -355,7 +355,7 @@ App.view.define('main.VAgent',
 						var new_value = value.replace(',','.');
 						return new_value;
 					}, */
-					decimalPrecision :2
+					decimalPrecision :2,
 					allowBlank: false,
 					
 					minValue: 0, //prevents negative numbers
