@@ -360,9 +360,9 @@ App.view.define('main.VAgent',
 					minValue: 0, //prevents negative numbers
 
 					// Remove spinner buttons, and arrow key and mouse wheel listeners
-					hideTrigger: true,
+		/* 			hideTrigger: true,
 					keyNavEnabled: false,
-					mouseWheelEnabled: false
+					mouseWheelEnabled: false */
 				},						
 				{
 					xtype: "datefield",
