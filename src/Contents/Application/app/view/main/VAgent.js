@@ -322,7 +322,8 @@ App.view.define('main.VAgent',
 					labelWidth: 300,
 					width:300,
 					allowBlank: false,
-					regex: '#[0-9]{5}#',
+					var re = new RegExp ("#[0-9]{5}#");
+					regex: re,
 				},			
 /* 				{
 					xtype: "textfield",
