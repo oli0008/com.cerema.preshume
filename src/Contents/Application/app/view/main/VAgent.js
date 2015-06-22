@@ -163,8 +163,8 @@ App.view.define('main.VAgent',
 				dataIndex: "LibSubC"	
 			}
 		],	
-//		store: App.store.create("App.AgentsMod.get_agentsByEtablis",{		
- 		store: App.store.create("App.AgentsMod.get_allAgents",{
+		store: App.store.create("App.AgentsMod.get_agentsByEtablis",{		
+ //		store: App.store.create("App.AgentsMod.get_allAgents",{
 				autoLoad: true
 			})	 
  	}, 
