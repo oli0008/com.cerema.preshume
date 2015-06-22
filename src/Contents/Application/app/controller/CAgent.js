@@ -129,11 +129,11 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 		App.get('combo#cboAgentUnite').getStore().load();
 
-//*************** TODO **************//	
+//*************** TODO ************** Find out how to change store //	
 	
 		//met à jour gridAgents pour cette valeur d'établissement
-		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
-		App.get('grid#gridAgents').getStore().load();
+//		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
+//		App.get('grid#gridAgents').getStore().load();
 	},
 
 	//Quand une unité est sélectionné, la liste des services correspondants est mise à jour(cela active le store du service)	
