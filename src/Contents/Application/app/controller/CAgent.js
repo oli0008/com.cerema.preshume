@@ -156,18 +156,17 @@ App.controller.define('CAgent', {
 		//éfface les contenus avant les mise à jour
 		App.get('agent textfield#txtAgent').setValue('*******************************');
 //		App.get('agent textfield#txtAgent').setValue(agentData.Nom); 
-var obj1, obj2, obj3;
-obj1 = agentData.Nom;
-//	obj2 = obj1.concat(agentData.Nom, " - ");
-		obj2 = obj1.concat( "XXXX - ", agentData.Prenom);
-	alert(obj2);
-
+		var obj1, obj2;
+		obj1 = agentData.Nom;
+		obj2 = obj1.concat( " - ", agentData.Prenom);
+		alert(obj2);
+		App.get('agent textfield#txtAgent').setValue(obj2);
 //		App.get('agent textfield#txtAgent').setValue(concat(agentData.Nom, " - ", agentData.Prenom); 
-
+/* 
 		App.AgentsMod.get_agent(agentData,function(err,response) { 
 			App.get('agent textfield#txtAgent').setValue(response.result.data[0].nom_prenom);
 		})
-
+ */
 		App.get('agent combo#cboAgentResAdmin').setValue('');
 		if ((agentData.id_residenceTemp == null) || (agentData.id_residenceTemp == 0))
 			App.get('agent combo#cboAgentResAdmin').setValue('');
