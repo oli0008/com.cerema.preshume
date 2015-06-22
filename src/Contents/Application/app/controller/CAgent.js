@@ -105,17 +105,19 @@ App.controller.define('CAgent', {
 	},	
 	 */
 	//Quand un établissement est sélectionné, la liste des unités correspondantes est mise à jour(cela active le store de l'unité)
-	update_cboAgentUnite: function(p, record) 
+	update_cboAgentUnite2: function(p, record) 
 	{
 		alert('update_cboAgentUnite: function(p, record) -- INVOKED');
 	},
-	
-		agent_onshow: function(item)
+	update_cboAgentUnite: function(p, record) 	
+//	agent_onshow: function(item)
 	{
 	//	var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
-		
+		//Vérouille le combo cboAgentEtablis sur D.TerMed
+/* 		
 		var KetsTemp = 1;		 
-		App.get('combo#cboAgentEtablis').setValue(KetsTemp);	//Vérouille le combo sur D.TerMed
+		App.get('combo#cboAgentEtablis').setValue(KetsTemp);	
+		 */
 //		alert('CAgent.update_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());
