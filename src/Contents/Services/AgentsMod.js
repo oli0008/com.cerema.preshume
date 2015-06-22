@@ -55,7 +55,7 @@ AgentsMod = {
 	get_agentsByEtablis: function(in1, fn_cb) {	
 	  	var q = AgentsMod.using('db');
 		console.log('>>AgentsMod.get_agentsByEtablis()HHH');
-//	XXX	alert('AgentsMod.get_agentsByEtablis');
+	alert('AgentsMod.get_agentsByEtablis');
 	//	alert('AgentsMod.get_agentsByEtablis() in1.id_Etablis = ' + in1.id_Etablis);
 //		console.log(q.sql( 'qget_agentsByEtablis' + {P_ETABLIS: in1.id_Etablis} ) );		//log apparait dans DOS box
 		// Temp fix: have set Kets = 1
