@@ -53,7 +53,7 @@ AgentsMod = {
 	
 	get_agentsByEtablis: function(in1, fn_cb) {	
 	  	var q = AgentsMod.using('db');
-		console.log('>>AgentsMod.get_agentsByEtablis()');
+		console.log('>>AgentsMod.get_agentsByEtablis() VVVV');
 //		console.log(q.sql( 'qget_agentsByEtablis' + {P_ETABLIS: in1.id_Etablis} ) );		//log apparait dans DOS box
 		// Temp fix: have set Kets = 1
 		q.model('bpclight',q.sql('qget_agentsByEtablis',{P_ETABLIS: 1}),fn_cb);		
