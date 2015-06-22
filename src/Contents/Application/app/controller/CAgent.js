@@ -1,5 +1,10 @@
 // Déclaration des variables globales
-var re = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
+//Dimmentionnement des objets d'interface
+var VAgent_label_width = 	350;
+var VAgent_width = 			350;
+
+//
+var validation_txtNumeroContrat = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
 
 App.controller.define('CAgent', {
 	views: [		
