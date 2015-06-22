@@ -356,7 +356,7 @@ App.view.define('main.VAgent',
 						return new_value;
 					}, */
 					decimalPrecision : 2,
-					decimalSeparator : ',';
+					decimalSeparator : ',',
 					allowBlank: false,
 					
 					minValue: 0, //prevents negative numbers
