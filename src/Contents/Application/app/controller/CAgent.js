@@ -177,11 +177,7 @@ App.controller.define('CAgent', {
 			if (response == null)
 				App.get('agent combo#cboAgentDomaine').setValue('');
 			else {
-				try {					
-					App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);	
-				} catch(e) {
-					App.get('agent combo#cboAgentDomaine').setValue('');
-				}
+					if (response.result.data.length>0) App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);	
 				
 			}
 				
