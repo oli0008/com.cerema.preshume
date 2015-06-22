@@ -58,7 +58,9 @@ AgentsMod = {
 		alert('AgentsMod.get_agentsByEtablis');
 	//	alert('AgentsMod.get_agentsByEtablis() in1.id_Etablis = ' + in1.id_Etablis);
 //		console.log(q.sql( 'qget_agentsByEtablis' + {P_ETABLIS: in1.id_Etablis} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_agentsByEtablis',{P_ETABLIS: in1.id_Etablis}),fn_cb);
+		// Temp fix: have set Kets = 1
+		q.model('bpclight',q.sql('qget_agentsByEtablis',{P_ETABLIS: 1}),fn_cb);		
+//		q.model('bpclight',q.sql('qget_agentsByEtablis',{P_ETABLIS: in1.id_Etablis}),fn_cb);
 	},
 	
 	get_agentsByUnite: function(in1, in2, fn_cb) {	
