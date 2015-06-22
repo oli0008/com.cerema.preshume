@@ -156,11 +156,12 @@ App.controller.define('CAgent', {
 		//éfface les contenus avant les mise à jour
 		App.get('agent textfield#txtAgent').setValue('*******************************');
 //		App.get('agent textfield#txtAgent').setValue(agentData.Nom); 
-		var obj1, obj2;
-		obj1 = agentData.Nom;
-		obj2 = obj1.concat( " - ", agentData.Prenom);
-		alert(obj2);
-		App.get('agent textfield#txtAgent').setValue(obj2);
+//		var obj1, obj2;
+		var obj1 = agentData.Nom;
+//		obj2 = obj1.concat( " - ", agentData.Prenom);
+//		alert(obj2);
+//		App.get('agent textfield#txtAgent').setValue(obj2);
+				App.get('agent textfield#txtAgent').setValue(obj1.concat( " - ", agentData.Prenom));
 //		App.get('agent textfield#txtAgent').setValue(concat(agentData.Nom, " - ", agentData.Prenom); 
 /* 
 		App.AgentsMod.get_agent(agentData,function(err,response) { 
