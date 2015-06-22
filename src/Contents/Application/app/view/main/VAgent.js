@@ -323,7 +323,7 @@ App.view.define('main.VAgent',
 					width:300,
 					allowBlank: false,
 				},			
-				{
+/* 				{
 					xtype: "textfield",
 					fieldLabel: "Salaire",
 					labelAlign: "top",
@@ -339,7 +339,31 @@ App.view.define('main.VAgent',
 						return new_value;
 					},
 					allowBlank: false,
-				},					
+				},	 */
+				{
+					xtype: "numberfield",
+					fieldLabel: "Salaire",
+					labelAlign: "top",
+					itemId: "txtSalaire", 
+					margin: {
+							top : 10,
+							left : 20					
+							},
+					labelWidth: 300,
+					width:300,
+			/* 		renderer: function(value) {
+						var new_value = value.replace(',','.');
+						return new_value;
+					}, */
+					allowBlank: false,
+					
+					minValue: 0, //prevents negative numbers
+
+					// Remove spinner buttons, and arrow key and mouse wheel listeners
+					hideTrigger: true,
+					keyNavEnabled: false,
+					mouseWheelEnabled: false
+				},						
 				{
 					xtype: "datefield",
 					fieldLabel: "Date d'arrivée",
