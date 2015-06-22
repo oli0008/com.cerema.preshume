@@ -353,9 +353,9 @@ App.view.define('main.VAgent',
 					width:300,
 					        // Set step so it skips every other number
         step: 1000,
-        value: 555,00,
+        value: 555.12,
 			 		renderer: function(value) {
-						var new_value = value.replace(',','BB');
+						var new_value = value.replace('.','BB');
 						return new_value;
 					}, 
 					decimalPrecision : 2,
