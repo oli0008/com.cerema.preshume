@@ -157,7 +157,7 @@ App.controller.define('CAgent', {
 		};
 		
 		//éfface les contenus avant les mise à jour
-//		App.get('agent textfield#txtAgent').setValue('*******************************');
+		App.get('agent textfield#txtAgent').setValue('');
 		var obj1 = agentData.Nom;
 		App.get('agent textfield#txtAgent').setValue(obj1.concat( " - ", agentData.Prenom));
 /* 
@@ -239,12 +239,6 @@ App.controller.define('CAgent', {
 			}
 		}) 
  
-/*  		
-		var date_debut_contratTemp = '2015-03-02';
-		App.get('agent datefield#datDateArrivee').setValue(date_debut_contratTemp); 
-	 */	 
-/* ------------------------ SIMULATION ----------------------- */
-	
 		//éfface le contenu avant mise à jour
 		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
 		App.AgentsMod.get_desc_poste(agentData,function(err,response) { 
