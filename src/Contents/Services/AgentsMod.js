@@ -215,9 +215,26 @@ AgentsMod = {
 	update_agents: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+//		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
 	},	
 
+//xxx
+	update_metier: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+//		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
+	},
+
+//xxx
+//update_contrat_travail:
+	update_contrat_travail: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+//		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
+	},
 
 /* 	
 ///////////////////////////////
