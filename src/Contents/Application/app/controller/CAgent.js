@@ -1,16 +1,21 @@
-/*
+/***********************************************************
+*
 *	Controlleur secondaire
 *
 *	Fonction: Gérer la fenêtre de modification des agents.
-*/
+*
+************************************************************/
 
-// Déclaration des variables globales
-//Dimmentionnement des objets d'interface
+/*****************
+* Déclaration des variables globales
+******************/
+// Dimmentionnement des objets d'interface
 var VAgent_label_width = 	350;
 var VAgent_width = 			350;
 
-//
+// Variable de validation
 var validation_txtNumeroContrat = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
+
 
 App.controller.define('CAgent', {
 	views: [		
@@ -67,10 +72,12 @@ App.controller.define('CAgent', {
 		});				
 	},
 	
-	/*
+	/**************************************************************
+	*
 	*	Méthode de sauvegarde des données de modification d'un agent.
 	*	Cette méthode eregistre toutes les saisie qui apparaissent à l'écran, puis elle detruit cette fenêtre.	
-	*/
+	*
+	***************************************************************/
 	btnAgentEnregistrer_onclick: function()
 	{
 		var errors = [];
@@ -151,10 +158,12 @@ App.controller.define('CAgent', {
 		})
 	},
 	
-	/*
+	/***********************************************************
+	*
 	*	Méthode d'annulation des modifications faites sur un agent.
 	*	Cette méthode abandonne toutes les saisies qui apparaissent à l'écran en fermant la fenêtre. 	
-	*/
+	*
+	***********************************************************/
 	btnAgentAnnuler_onclick: function()
 	{
 		App.get('agent').close();
@@ -175,10 +184,12 @@ App.controller.define('CAgent', {
 		alert('update_cboAgentUnite: function(p, record) -- INVOKED');
 	},
 
-	/*
+	/*****************************************************
+	*
 	*	Cette méthode est le point d'entrée de la fenêtre de modification d'un agent.
 	*	Elle est invoquée avant tous les événements agissant sur les composants graphiques.	
-	*/
+	*
+	****************************************************/
 	agent_onshow: function(item)
 	{
 	//	var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
@@ -204,10 +215,12 @@ App.controller.define('CAgent', {
 //		App.get('grid#gridAgents').getStore().load();
 	},
 
-	/*
+	/************************************************
+	*
 	*	Cette méthode est invoquée quand une unité est sélectionné. Quand cela arrive, la liste des 
 	*	services correspondants est mise à jour(cela active le store du service).
-	*/
+	*
+	***********************************************/
 	update_cboAgentService: function(p, record) 
 	{
 		var KuniTemp = App.get('combo#cboAgentUnite').getValue();
@@ -218,10 +231,12 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentService').getStore().load();
 	},
 
-	/*
+	/************************************************
+	*
 	*	Cette méthode est invoquée quand un domaine d'intervention est sélectionné. Quand cela arrive, la liste des 
 	*	thématiques correspondants est mise à jour (cela active le store du thématique).
-	*/
+	*
+	***********************************************/
 	update_cboAgentThematique: function(p, record) 
 	{	
 		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
