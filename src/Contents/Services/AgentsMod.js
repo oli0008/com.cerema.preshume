@@ -54,6 +54,15 @@ AgentsMod = {
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},	
+
+
+
+	//Récupére les détails d'un agent particulier.
+	get_agentFName: function(in1,fn_cb) {
+	get_agent: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+		q.model('bpclight', 'select Kage, concat(Nom, \' - \', Prenom) as nom_prenom from agents where Kage = ' + in1.KageTemp, fn_cb);
+		},	
 	
 	get_agent: function(in1,fn_cb) {
   		var q = AgentsMod.using('db');
@@ -101,13 +110,6 @@ AgentsMod = {
 //		console.log(q.sql( 'qget_agentsByService' + {P_ETABLIS: in1.id_Etablis} + {P_UNITE: in2.id_Unite} + {P_SERVICE: in2.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_agentsByService',{P_ETABLIS: in1.id_Etablis} + {P_UNITE: in2.id_Unite} + {P_SERVICE: in2.id_Service} ),fn_cb);
 	},
-
-
-	//Récupére les détails d'un agent particulier.
-	get_agent: function(in1,fn_cb) {		
-  		var q = AgentsMod.using('db');
-		q.model('bpclight', 'select Kage, concat(Nom, \' - \', Prenom) as nom_prenom from agents where Kage = ' + in1.KageTemp, fn_cb);
-		},	
 	 
 	//Récupére la liste des résidences administratives. 
 	get_listResidence_admin: function(in1,fn_cb) {		
