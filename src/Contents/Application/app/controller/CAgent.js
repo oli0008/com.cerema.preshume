@@ -293,7 +293,7 @@ App.controller.define('CAgent', {
 				App.get('agent combo#cboAgentResAdmin').setValue('');
 			else {
 					if (response.result.data.length > 0) 
-						App.get('agent combo#cboAgentResAdmin').setValue(response.result.data[0].nom_metier);		
+						App.get('agent combo#cboAgentResAdmin').setValue(response.result.data[0].rue_ville_residence);		
 			}			
 		})	
 
