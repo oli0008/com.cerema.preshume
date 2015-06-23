@@ -61,11 +61,11 @@
         "AgentsMod",
         "EffectifPhysique",
         "Etablis",
-        "Etablis",
         "GTotalEffectifPhysique",
         "MyService",
         "Service",
         "Unite",
+        "Etablis",
         "Unite"
     ],
     "db": [
