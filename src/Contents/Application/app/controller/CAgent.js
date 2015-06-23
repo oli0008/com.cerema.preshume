@@ -118,20 +118,14 @@ App.controller.define('CAgent', {
 			alert('Il faut corriger les erreurs suivantes:\n '+errors.join('\n'))
 			return;
 		}
-		var quest = {
-/*			
-			etablissement: 	App.get('agent combo#cboAgentEtablis').getValue(),
-			unite: 			App.get('agent combo#cboAgentUnite').getValue(),
-			service: 		App.get('agent combo#cboAgentService').getValue(),	
-*/	
+		var agentDetails = {
 			res_admin: 		App.get('agent combo#cboAgentResAdmin').getValue(),
 			metier: 		App.get('agent combo#cboAgentMetier').getValue(),			
 			domaine_interv: App.get('agent combo#cboAgentDomaine').getValue(),			
 			thematique: 	App.get('agent combo#cboAgentThematique').getValue(),			
 			type_contrat: 	App.get('agent combo#cboTypeContrat').getValue(),			
 			num_contrat: 	App.get('agent textfield#txtNumeroContrat').getValue(),			
-			salaire: 		App.get('agent numberfield#numSalaire').getValue(),
-			
+			salaire: 		App.get('agent numberfield#numSalaire').getValue(),			
 			date_arrivee: 	App.get('agent datefield#datDateArrivee').getValue(),
 			desc_poste: 	App.get('agent htmleditor#htmlDescriptionPoste').getValue()			
 		};
@@ -140,11 +134,11 @@ App.controller.define('CAgent', {
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());		
 		
-		alert ('res_admin= ' + quest.res_admin + '\n metier= ' + quest.metier + '\n domaine= ' + quest.domaine_interv 
-			+ '\n thematique= ' + quest.thematique  + '\n type_contrat= ' + quest.type_contrat + '\n num_contrat= ' + quest.num_contrat 
-			+ '\n salaire= ' + quest.salaire + '\n date_arrivee= ' + quest.date_arrivee + '\n desc_poste= ' + quest.desc_poste  );
+		alert ('res_admin= ' + agentDetails.res_admin + '\n metier= ' + agentDetails.metier + '\n domaine= ' + agentDetails.domaine_interv 
+			+ '\n thematique= ' + agentDetails.thematique  + '\n type_contrat= ' + agentDetails.type_contrat + '\n num_contrat= ' + agentDetails.num_contrat 
+			+ '\n salaire= ' + agentDetails.salaire + '\n date_arrivee= ' + agentDetails.date_arrivee + '\n desc_poste= ' + agentDetails.desc_poste  );
 		
-		App.mon_web_service.insert(quest,function(err,response) {
+		App.mon_web_service.insert(agentDetails,function(err,response) {
 			if (err) 
 				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
 			else 
