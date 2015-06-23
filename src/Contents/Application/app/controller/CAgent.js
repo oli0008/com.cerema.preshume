@@ -139,13 +139,14 @@ App.controller.define('CAgent', {
 		alert ('res_admin= ' + agentDetails.res_admin + '\n metier= ' + agentDetails.metier + '\n domaine= ' + agentDetails.domaine_interv 
 			+ '\n thematique= ' + agentDetails.thematique  + '\n type_contrat= ' + agentDetails.type_contrat + '\n num_contrat= ' + agentDetails.num_contrat 
 			+ '\n salaire= ' + agentDetails.salaire + '\n date_arrivee= ' + agentDetails.date_arrivee + '\n desc_poste= ' + agentDetails.desc_poste  );
-		
+/* 		
 		App.mon_web_service.insert(agentDetails,function(err,response) {
 			if (err) 
 				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
 			else 
 				App.get('agent').close();			
-		})
+		}) 
+*/
 	},
 	
 	/***********************************************************
