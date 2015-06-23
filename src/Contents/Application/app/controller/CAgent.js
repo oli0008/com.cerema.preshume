@@ -81,18 +81,11 @@ App.controller.define('CAgent', {
 	btnAgentEnregistrer_onclick: function()
 	{
 		var errors = [];
-/* 		
-		if (!App.get('agent combo#cboAgentEtablis').getValue()) {			
-			errors.push("Le combo Etablissement est vide.");
-		};
-		if (!App.get('agent combo#cboAgentUnite').getValue()) {			
-			errors.push("Le combo Unité est vide.");
-		};
-		if (!App.get('agent combo#cboAgentService').getValue()) {			
-			errors.push("Le combo Service est vide.");
-		};
-	 */	
-		if (!App.get('agent combo#cboAgentResAdmin').getValue()) {
+
+		if (!App.get('agent textfield#txtAgent').getValue()) 
+			errors.push("Il faut sélectionner un agent.");
+		else {
+				if (!App.get('agent combo#cboAgentResAdmin').getValue()) {
 			errors.push("Le champ Résidence administrative est vide.");
 		};		
 		if (!App.get('agent combo#cboAgentMetier').getValue()) {
@@ -118,7 +111,15 @@ App.controller.define('CAgent', {
 		};		
 		if (!App.get('agent htmleditor#htmlDescriptionPoste').getValue()) {
 			errors.push("Le champ Description du poste est vide.");
-		};		
+		};			
+		
+		
+		}
+		
+
+
+		
+
 		
 		if (errors.length > 0) {
 			alert('vous avez fait des erreurs:\n '+errors.join('\n'))
