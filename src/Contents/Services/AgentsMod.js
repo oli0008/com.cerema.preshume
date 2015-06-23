@@ -119,20 +119,20 @@ AgentsMod = {
 		},	
 
 	//Récupére la résidence administrative d'un agent particulier.
-	get_residence_admin2: function(in1,fn_cb) {		
+	get_residence_admin: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 
 //		console.log(q.sql( 'qget_service' + {ID_AGENT: in1.Kage} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('qget_agentResAdmin',{ID_AGENT: in1.Kage}),fn_cb);
 //		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin order by id_residence asc', fn_cb);
 //		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin r join agents a on r.id_residence = a.id_residence where a.Kage = '+ in1.Kage, fn_cb);
+/*
 		q.model('bpclight', 'select r.id_residence from agents where Kage = '+ in1.Kage, fn_cb);
 		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
 				+ 'from residence_admin order by id_residence asc', fn_cb);
-				
+*/				
 		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
 				+ 'from residence_admin r join agents a on r.id_residence = a.id_residence where Kage = ' + in1.Kage, fn_cb);
-
 		},				
 
 		//**********get_residence
