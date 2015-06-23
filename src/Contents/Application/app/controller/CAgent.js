@@ -73,7 +73,6 @@ App.controller.define('CAgent', {
 	*/
 	btnAgentEnregistrer_onclick: function()
 	{
-		alert('HERE = CAgent.btnAgentEnregistrer_onclick()' + '---OLI');
 		var errors = [];
 /* 		
 		if (!App.get('agent combo#cboAgentEtablis').getValue()) {			
@@ -140,8 +139,8 @@ App.controller.define('CAgent', {
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());		
 		
-		alert ('btnAgentEnregistrer_onclick() ' + '---OLLIII---');
-		alert ('btnAgentEnregistrer_onclick() ' + ' XXXXX---res_admin= ' + quest.res_admin );
+
+		alert ('btnAgentEnregistrer_onclick() ' + ' XXXXX---num_contrat= ' + quest.num_contrat );
 		App.mon_web_service.insert(quest,function(err,response) {
 			if (err) 
 				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
