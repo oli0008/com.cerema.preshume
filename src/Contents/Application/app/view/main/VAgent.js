@@ -217,9 +217,10 @@ App.view.define('main.VAgent',
 					labelWidth: VAgent_label_width,
 					width: 		VAgent_width,
 					displayField: "rue_ville_residence",
-					valueField: "id_residence",						
+					valueField: "id_residence",		
+//	store: App.store.create("App.AgentsMod.get_residence_admin", { 					
 					store: App.store.create("App.AgentsMod.get_listResidence_admin", {
-				//	store: App.store.create("App.AgentsMod.get_residence_admin", {   
+				  
 													autoLoad: true
 					})  	// Creation du store					
 				},
