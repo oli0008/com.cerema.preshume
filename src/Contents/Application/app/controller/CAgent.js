@@ -141,7 +141,7 @@ App.controller.define('CAgent', {
 //		console.log(App.get('combo#cboAgentEtablis').getValue());		
 		
 		alert ('btnAgentEnregistrer_onclick() ' + '---OLLIII---');
-		alert ('btnAgentEnregistrer_onclick() ' + 'res_admin= ' + quest.res_admin );
+		alert ('btnAgentEnregistrer_onclick() ' + ' XXXXX---res_admin= ' + quest.res_admin );
 		App.mon_web_service.insert(quest,function(err,response) {
 			if (err) 
 				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
