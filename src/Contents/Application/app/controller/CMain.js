@@ -7,7 +7,7 @@
 **************************************************/
 
 /******************
-* Déclaration des variables globales
+* Déclaration des variables globales à l'application
 ******************/
 // var VAgent_label_width = 	350;
 // var VAgent_width = 			350;
