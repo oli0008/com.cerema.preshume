@@ -132,7 +132,7 @@ AgentsMod = {
 				+ 'from residence_admin order by id_residence asc', fn_cb);
 */				
 		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
-				+ 'from residence_admin r join agents a on r.id_residence = a.id_residence where Kage = ' + in1.Kage, fn_cb);
+				+ 'from residence_admin r join agents a on r.id_residence = a.id_residence where Kage = ' + in1.KageTemp, fn_cb);
 		},				
 
 		//**********get_residence
