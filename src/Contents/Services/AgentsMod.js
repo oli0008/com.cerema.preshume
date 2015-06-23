@@ -59,14 +59,13 @@ AgentsMod = {
 
 	//Récupére les détails d'un agent particulier.
 	get_agentFName: function(in1,fn_cb) {
-	get_agent: function(in1,fn_cb) {		
+//xx	get_agent: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 		q.model('bpclight', 'select Kage, concat(Nom, \' - \', Prenom) as nom_prenom from agents where Kage = ' + in1.KageTemp, fn_cb);
 		},	
 	
 	get_agent: function(in1,fn_cb) {
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_agent()');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},	
