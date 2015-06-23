@@ -257,6 +257,11 @@ App.controller.define('CAgent', {
 			App.get('agent textfield#txtAgent').setValue(response.result.data[0].nom_prenom);
 		})
  */
+ 
+ 
+ 		alert ('display_AgentsDetails() BEFORE domaine' + '\n id_residenceTemp= ' + agentData.id_residenceTemp 
+			+ '\n id_metierTemp= ' + agentData.id_metierTemp  + '\n id_contrat_travailTemp= ' + agentData.id_contrat_travailTemp  );
+ 
 		//Efface ce champs s'il n'y a pas de données pour cet agent, sinon, affiche les données de cet agent. 
 		App.get('agent combo#cboAgentResAdmin').setValue('');
 		if ((agentData.id_residenceTemp == null) || (agentData.id_residenceTemp == 0))
@@ -280,6 +285,11 @@ App.controller.define('CAgent', {
 						App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);		
 			}			
 		})	
+
+		alert ('display_AgentsDetails() AFTER domaine' + '\n id_residenceTemp= ' + agentData.id_residenceTemp 
+			+ '\n id_metierTemp= ' + agentData.id_metierTemp  + '\n id_contrat_travailTemp= ' + agentData.id_contrat_travailTemp 
+			+ '\n Domaine= ' + agentData.id_contrat_travailTemp );
+ 
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
 		App.AgentsMod.get_thematique(agentData,function(err,response) {
