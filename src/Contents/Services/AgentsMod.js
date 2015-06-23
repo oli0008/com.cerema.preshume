@@ -211,6 +211,14 @@ AgentsMod = {
 	
 // ---------------------------------------- Sauvegarde des données -----------------------------------------------//
 
+	//Retourne une sélection de Services.
+	update_agents: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+	},	
+
+
 /* 	
 ///////////////////////////////
 	 
