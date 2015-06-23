@@ -140,7 +140,7 @@ App.controller.define('CAgent', {
 //		console.log(App.get('combo#cboAgentEtablis').getValue());		
 		
 
-		alert ('btnAgentEnregistrer_onclick() ' + ' XXXXX---type_contrat= ' + quest.type_contrat );
+		alert ('btnAgentEnregistrer_onclick() ' + ' XXXXX---metier= ' + quest.metier );
 		App.mon_web_service.insert(quest,function(err,response) {
 			if (err) 
 				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
