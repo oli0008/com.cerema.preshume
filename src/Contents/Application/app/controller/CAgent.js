@@ -298,6 +298,20 @@ App.controller.define('CAgent', {
 		else
 			App.get('agent combo#cboAgentMetier').setValue(agentData.id_metierTemp); 
 
+
+//get_metier		
+
+		App.get('agent combo#cboAgentMetier').setValue(''); 
+		App.AgentsMod.get_metier(agentData,function(err,response){
+//			console.log(response.result); 
+			if (response == null)
+				App.get('agent combo#cboAgentMetier').setValue('');
+			else {
+					if (response.result.data.length > 0) 
+						App.get('agent combo#cboAgentMetier').setValue(response.result.data[0].nom_metier);		
+			}			
+		})	
+		
 		App.get('agent combo#cboAgentDomaine').setValue(''); 
 		App.AgentsMod.get_domaineIntervention(agentData,function(err,response){
 //			console.log(response.result); 
