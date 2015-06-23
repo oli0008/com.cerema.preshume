@@ -275,14 +275,29 @@ App.controller.define('CAgent', {
 		})
  */
  
-
- 
 		//Efface ce champs s'il n'y a pas de données pour cet agent, sinon, affiche les données de cet agent. 
+		
+/* 		
 		App.get('agent combo#cboAgentResAdmin').setValue('');
 		if ((agentData.id_residenceTemp == null) || (agentData.id_residenceTemp == 0))
 			App.get('agent combo#cboAgentResAdmin').setValue('');
 		else
 			App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
+ */
+//get_residence		
+
+		App.get('agent combo#cboAgentResAdmin').setValue(''); 
+		App.AgentsMod.get_residence(agentData,function(err,response){
+//			console.log(response.result); 
+			if (response == null)
+				App.get('agent combo#cboAgentResAdmin').setValue('');
+			else {
+					if (response.result.data.length > 0) 
+						App.get('agent combo#cboAgentResAdmin').setValue(response.result.data[0].nom_metier);		
+			}			
+		})	
+
+
 		
 /* 		
 		App.get('agent combo#cboAgentMetier').setValue(''); 
