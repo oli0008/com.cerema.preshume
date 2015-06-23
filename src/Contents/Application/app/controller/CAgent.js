@@ -73,7 +73,7 @@ App.controller.define('CAgent', {
 	*/
 	btnAgentEnregistrer_onclick: function()
 	{
-		alert('HERE = CAgent.btnAgentEnregistrer_onclick()');
+		alert('HERE = CAgent.btnAgentEnregistrer_onclick()' + '---OLI');
 		var errors = [];
 /* 		
 		if (!App.get('agent combo#cboAgentEtablis').getValue()) {			
