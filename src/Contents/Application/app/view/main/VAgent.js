@@ -342,7 +342,7 @@ App.view.define('main.VAgent',
 					xtype: "numberfield",
 					fieldLabel: "Salaire",
 					labelAlign: "top",
-					itemId: "txtSalaire", 
+					itemId: "numSalaire", 
 					margin: {
 							top : 10,
 							left : 10					
@@ -395,7 +395,7 @@ App.view.define('main.VAgent',
 		flex: 1,
 		fieldLabel: "Description du poste",
 		labelAlign: "top",
-		itemId: "txthtmlDescriptionPoste", 
+		itemId: "htmlDescriptionPoste", 
 // 		width: "100%",
 //		flex: 1 
 		margin: {

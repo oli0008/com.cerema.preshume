@@ -1,3 +1,9 @@
+/*
+*	Controlleur secondaire
+*
+*	Fonction: Gérer la fenêtre de modification des agents.
+*/
+
 // Déclaration des variables globales
 //Dimmentionnement des objets d'interface
 var VAgent_label_width = 	350;
@@ -35,12 +41,8 @@ App.controller.define('CAgent', {
 			}, 
 
 			
-/*			
-		//	"combo#cboAgentThematique": {
-		//		select: "update_cboAgentThematiqueXXX"
-			},
-			
-			
+/*	 NOT USED ***	
+		
 			"button#btnSupprAgent": {
 				click: "btnSupprAgent_onclick"
 			},
@@ -53,7 +55,9 @@ App.controller.define('CAgent', {
 			"grid#gridAgents": {
 				itemclick: "gridAgents_onclick"
 			}, 
-*/
+
+ NOT USED *** */
+ 
 			"agent button#btnAgentEnregistrer": {
 				click: "btnAgentEnregistrer_onclick"
 			}, 
@@ -63,39 +67,97 @@ App.controller.define('CAgent', {
 		});				
 	},
 	
+	/*
+	*	Méthode de sauvegarde des données de modification d'un agent.
+	*	Cette méthode eregistre toutes les saisie qui apparaissent à l'écran, puis elle detruit cette fenêtre.	
+	*/
 	btnAgentEnregistrer_onclick: function()
 	{
-		alert('CAgent.btnAgentEnregistrer_onclick()');
+		alert('HERE = CAgent.btnAgentEnregistrer_onclick()');
 		var errors = [];
+/* 		
 		if (!App.get('agent combo#cboAgentEtablis').getValue()) {			
-			errors.push("combo Etablissement est vide");
+			errors.push("Le combo Etablissement est vide.");
 		};
-			if (!App.get('agent combo#cboAgentUnite').getValue()) {			
-			errors.push("combo Unité est vide");
+		if (!App.get('agent combo#cboAgentUnite').getValue()) {			
+			errors.push("Le combo Unité est vide.");
 		};
-			if (!App.get('agent combo#cboAgentService').getValue()) {			
-			errors.push("combo Service est vide");
+		if (!App.get('agent combo#cboAgentService').getValue()) {			
+			errors.push("Le combo Service est vide.");
 		};
+	 */	
+		if App.get('agent combo#cboAgentResAdmin').getValue() {
+			errors.push("Le champ Résidence administrative est vide.");
+		};		
+		if App.get('agent combo#cboAgentMetier').getValue() {
+			errors.push("Le champ Metier est vide.");
+		};		
+		if App.get('agent combo#cboAgentDomaine').getValue() {
+			errors.push("Le champ Domaine d'intervention est vide.");
+		};		
+		if App.get('agent combo#cboAgentThematique').getValue() {
+			errors.push("Le champ Thématique est vide.");
+		};		
+		if App.get('agent combo#cboTypeContrat').getValue() {
+			errors.push("Le champ Type de contrat est vide.");
+		};			
+		if App.get('agent textfield#txtNumeroContrat').getValue() {
+			errors.push("Le champ  Numéro de contrat est vide.");
+		};		
+		if App.get('agent numberfield#numSalaire').getValue() {
+			errors.push("Le champ Salaire est vide.");
+		};		
+		if App.get('agent datefield#datDateArrivee').getValue() {
+			errors.push("Le champ Date d'arrivée est vide.");
+		};		
+		if App.get('agent htmleditor#htmlDescriptionPoste').getValue() {
+			errors.push("Le champ Description du poste est vide.");
+		};		
+		
 		if (errors.length > 0) {
 			alert('vous avez fait des erreurs:\n '+errors.join('\n'))
 			return;
 		}
 		var quest = {
-			etablissement: App.get('agent combo#Etablissement').getValue(),
-			unite: App.get('agent combo#Etablissement').getValue(),
-			service: App.get('agent combo#Etablissement').getValue()			
-		};
-		App.mon_web_service.insert(quest,function(err,response) {
-			if (err) alert('ca c mal passe'); 
-			else App.get('agent').close();
+/*			
+			etablissement: 	App.get('agent combo#cboAgentEtablis').getValue(),
+			unite: 			App.get('agent combo#cboAgentUnite').getValue(),
+			service: 		App.get('agent combo#cboAgentService').getValue(),	
+*/	
+			res_admin: 		App.get('agent combo#cboAgentResAdmin').getValue(),
+			metier: 		App.get('agent combo#cboAgentMetier').getValue(),			
+			domaine_interv: App.get('agent combo#cboAgentDomaine').getValue(),			
+			thematique: 	App.get('agent combo#cboAgentThematique').getValue(),			
+			type_contrat: 	App.get('agent combo#cboTypeContrat').getValue(),			
+			num_contrat: 	App.get('agent textfield#txtNumeroContrat').getValue(),			
+			salaire: 		App.get('agent numberfield#numSalaire').getValue(),
 			
+			date_arrivee: 	App.get('agent datefield#datDateArrivee').getValue(),
+			desc_poste: 	App.get('agent htmleditor#htmlDescriptionPoste').getValue()			
+		};
+		
+//		alert('CAgent.update_cboAgentUnite() KetsTemp = ' + KetsTemp);
+//		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
+//		console.log(App.get('combo#cboAgentEtablis').getValue());		
+		
+		alert ('btnAgentEnregistrer_onclick() ' + 'res_admin= ' + res_admin )
+		App.mon_web_service.insert(quest,function(err,response) {
+			if (err) 
+				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
+			else 
+				App.get('agent').close();			
 		})
 	},
 	
+	/*
+	*	Méthode d'annulation des modifications faites sur un agent.
+	*	Cette méthode abandonne toutes les saisies qui apparaissent à l'écran en fermant la fenêtre. 	
+	*/
 	btnAgentAnnuler_onclick: function()
 	{
 		App.get('agent').close();
 	},
+	
 /* 	
 	//TEMP FIX
 	agent_onshow: function(item)
@@ -103,14 +165,18 @@ App.controller.define('CAgent', {
 		//DEBUG INFO *** affiche valeur dans combo aprés sa création
 	//	App.get('agent combo#cboAgentEtablis').setValue('007');		
 	},	
-	 */
+*/
+	 
 	//Quand un établissement est sélectionné, la liste des unités correspondantes est mise à jour(cela active le store de l'unité)
 	update_cboAgentUnite2: function(p, record) 
 	{
 		alert('update_cboAgentUnite: function(p, record) -- INVOKED');
 	},
 
-
+	/*
+	*	Cette méthode est le point d'entrée de la fenêtre de modification d'un agent.
+	*	Elle est invoquée avant tous les événements agissant sur les composants graphiques.	
+	*/
 	agent_onshow: function(item)
 	{
 	//	var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
@@ -129,14 +195,17 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 		App.get('combo#cboAgentUnite').getStore().load();
 
-//*************** TODO ************** Find out how to change store //	
+//*** TODO ************** Find out how to change store //	
 	
 		//met à jour gridAgents pour cette valeur d'établissement
 //		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
 //		App.get('grid#gridAgents').getStore().load();
 	},
 
-	//Quand une unité est sélectionné, la liste des services correspondants est mise à jour(cela active le store du service)	
+	/*
+	*	Cette méthode est invoquée quand une unité est sélectionné. Quand cela arrive, la liste des 
+	*	services correspondants est mise à jour(cela active le store du service).
+	*/
 	update_cboAgentService: function(p, record) 
 	{
 		var KuniTemp = App.get('combo#cboAgentUnite').getValue();
@@ -147,7 +216,10 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentService').getStore().load();
 	},
 
-	//Quand un domaine d'intervention est sélectionné, la liste des thématiques correspondants est mise à jour (cela active le store du thématique)
+	/*
+	*	Cette méthode est invoquée quand un domaine d'intervention est sélectionné. Quand cela arrive, la liste des 
+	*	thématiques correspondants est mise à jour (cela active le store du thématique).
+	*/
 	update_cboAgentThematique: function(p, record) 
 	{	
 		var id_domaineTemp = App.get('combo#cboAgentDomaine').getValue();
@@ -158,19 +230,20 @@ App.controller.define('CAgent', {
 		App.get('combo#cboAgentThematique').getStore().load();
 	},
 	
-	//---------------------------------------------
-	// Cette méthode remplie tous les champs de cette fenêtre lors d'un événement itemclick sur le grid gridAgents.
-	// A chaque visite tous les données des champs sont éffacés avant de rafraichir pour éviter de montrer de vieilles données. 
+	/*
+	*	Cette méthode remplie tous les champs de cette fenêtre lors d'un événement itemclick sur le grid gridAgents.
+	*	A chaque visite tous les données des champs sont éffacés avant d'être rafraichies. 
+	*/
 	display_AgentsDetails: function(item, record, index, eOpts )
 	{
 		//Récupére les données de l'agent sélectionné
 		var agentData = {
-			KageTemp : 					record.data.Kage,
-			Nom:						record.data.Nom,
-			Prenom:						record.data.Prenom,
-			id_residenceTemp : 			record.data.id_residence,
-			id_metierTemp : 			record.data.id_metier,
-			id_contrat_travailTemp : 	record.data.id_contrat_travail,			
+			KageTemp: 				record.data.Kage,
+			Nom:					record.data.Nom,
+			Prenom:					record.data.Prenom,
+			id_residenceTemp: 		record.data.id_residence,
+			id_metierTemp: 			record.data.id_metier,
+			id_contrat_travailTemp: record.data.id_contrat_travail			
 		};
 		
 		//éfface les contenus avant les mise à jour
@@ -182,6 +255,7 @@ App.controller.define('CAgent', {
 			App.get('agent textfield#txtAgent').setValue(response.result.data[0].nom_prenom);
 		})
  */
+		//Efface ce champs s'il n'y a pas de données pour cet agent, sinon, affiche les données de cet agent. 
 		App.get('agent combo#cboAgentResAdmin').setValue('');
 		if ((agentData.id_residenceTemp == null) || (agentData.id_residenceTemp == 0))
 			App.get('agent combo#cboAgentResAdmin').setValue('');
@@ -249,7 +323,6 @@ App.controller.define('CAgent', {
   		App.AgentsMod.get_date_arrivee(agentData,function(err,response) { 
 			if (response == null)
 				App.get('agent datefield#datDateArrivee').setValue('');
-//			console.log(response.result);
 			else {
 					if (response.result.data.length > 0) 
 						App.get('agent datefield#datDateArrivee').setValue(response.result.data[0].date_debut_contrat.toDate());
@@ -257,20 +330,23 @@ App.controller.define('CAgent', {
 		}) 
  
 		//éfface le contenu avant mise à jour
-		App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
+		App.get('agent htmleditor#htmlDescriptionPoste').setValue('');
 		App.AgentsMod.get_desc_poste(agentData,function(err,response) { 
 			if (response == null)
-				App.get('agent htmleditor#txthtmlDescriptionPoste').setValue('');
+				App.get('agent htmleditor#htmlDescriptionPoste').setValue('');
 //			console.log(response.result);
 			else {
 					if (response.result.data.length > 0) 
-			App.get('agent htmleditor#txthtmlDescriptionPoste').setValue(response.result.data[0].libelle_poste);
+			App.get('agent htmleditor#htmlDescriptionPoste').setValue(response.result.data[0].libelle_poste);
 			}
 		})	
 	},
 	
+
+
+
 	
-	//---------------------------------------------
+//----- NOT USED ----------------------------------------
 	itemclick_AgentsDetails: function(item1, record, item, index, e, eOpts )
 	{
 		alert('itemclick_AgentsDetails XXX');
@@ -349,9 +425,9 @@ App.controller.define('CAgent', {
 	//---------------------------------------------
 	onLoad: function()
 	{
-				alert('CAgent.onLoad()');
+		alert('CAgent.onLoad()');
 		// form loaded	
-		Ext.tip.QuickTipManager.init(); // lance de quicktip manager (pour les bulles d'aide)
+	//	Ext.tip.QuickTipManager.init(); // lance de quicktip manager (pour les bulles d'aide)
 	}
 	
 	

@@ -1,5 +1,7 @@
 // class AgentsMod
 // class omneedia db = classe moteur d'abstraction de base de données
+
+
 AgentsMod = {
 
 // ---------------------------------------- Lecture des données ------------------------------------------//

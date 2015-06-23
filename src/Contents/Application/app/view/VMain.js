@@ -1,3 +1,9 @@
+/*
+*	Vue principale appartenant au controlleur principal.
+*
+*	Fonction: Afficher les composants graphiques de la fenêtre ( menu principale & composants de la fenêtre principale).
+*/
+
 App.view.define('VMain', {
 
     extend: 'Ext.Panel',
