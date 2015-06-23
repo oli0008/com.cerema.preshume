@@ -152,6 +152,30 @@ App.controller.define('CAgent', {
 				App.get('agent').close();			
 		}) 
 */
+var errCount = 0;
+
+		App.AgentsMod.update_agent(agentDetails,function(err,response){
+//			console.log(response.result); 
+			if (err)
+				errCount++;
+		})
+//update_metier
+		App.AgentsMod.update_metier(agentDetails,function(err,response){
+//			console.log(response.result); 
+			if (err)
+				errCount++;
+
+//update_contrat_travail
+		App.AgentsMod.update_contrat_travail(agentDetails,function(err,response){
+//			console.log(response.result); 
+			if (err)
+				errCount++;	
+
+			if (errCount > 0) 
+				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
+			else 
+				App.get('agent').close();
+	
 	},
 	
 	/***********************************************************
