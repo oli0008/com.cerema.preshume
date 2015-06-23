@@ -11,14 +11,31 @@
 
 AgentsMod = {
 
+//*********************************************** 
+//Hard coded query
+//		Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', fn_cb); 
+
+//Version with parameter
+//		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
+//*********************************************** 
+/* 
+	cherche: function(in1,fn_cb) {
+		// 1er argument = error
+		// 2eme argument = response	
+  		var q = Agents.using('db');
+//		console.log('>>Agents.cherche()');
+//		console.log(q.sql('qget_agent' + {RECHERCHE: in1.recherche} ) );		//log apparait dans DOS box
+		q.model('bpclight',q.sql('qget_agent',{RECHERCHE: in1.recherche}),fn_cb);
+	}
+*/	
+
 // ---------------------------------------- Lecture des données ------------------------------------------//
 	 //Récupére 1 établissement prédéfinit. 	 
 	get_etablis1: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response		
   		var q = AgentsMod.using('db');	
-		console.log('>>AgentsMod.get_etablis() UUU');
-		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
+//		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
 		q.model('bpclight', 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ', fn_cb);
 //		q.model('bpclight',q.sql('qget_etablis'),fn_cb);  
 	},
@@ -26,8 +43,7 @@ AgentsMod = {
 	//Retourne une sélection d'Unités.
 	get_uniteSel: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_unite()');
-		console.log('in1= '+ JSON.stringify(in1));
+//		console.log('in1= '+ JSON.stringify(in1));
 //		console.log(q.sql( 'qget_unite' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
 	},	
@@ -35,7 +51,6 @@ AgentsMod = {
 	//Retourne une sélection de Services.
 	get_serviceSel: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_service()');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},	
@@ -88,19 +103,6 @@ AgentsMod = {
 	},
 
 
-	
-/* 
-	cherche: function(in1,fn_cb) {
-		// 1er argument = error
-		// 2eme argument = response	
-  		var q = Agents.using('db');
-//		console.log('>>Agents.cherche()');
-//		console.log(q.sql('qget_agent' + {RECHERCHE: in1.recherche} ) );		//log apparait dans DOS box
-		q.model('bpclight',q.sql('qget_agent',{RECHERCHE: in1.recherche}),fn_cb);
-	}
-	 */	
-
-
 	//Récupére les détails d'un agent particulier.
 	get_agent: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
@@ -110,40 +112,17 @@ AgentsMod = {
 	//Récupére la liste des résidences administratives. 
 	get_listResidence_admin: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log(q.sql( 'qget_service' + {ID_AGENT: in1.Kage} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('qget_agentResAdmin',{ID_AGENT: in1.Kage}),fn_cb);
 		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
 				+ 'from residence_admin order by id_residence asc', fn_cb);
-//		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin r join agents a on r.id_residence = a.id_residence where a.Kage = '+ in1.Kage, fn_cb);
-//		q.model('bpclight', 'select r.id_residence from agents where Kage = '+ in1.Kage, fn_cb);
 		},	
 
 	//Récupére la résidence administrative d'un agent particulier.
 	get_residence_admin: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-
-//		console.log(q.sql( 'qget_service' + {ID_AGENT: in1.Kage} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('qget_agentResAdmin',{ID_AGENT: in1.Kage}),fn_cb);
-//		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin order by id_residence asc', fn_cb);
-//		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin r join agents a on r.id_residence = a.id_residence where a.Kage = '+ in1.Kage, fn_cb);
-/*
-		q.model('bpclight', 'select r.id_residence from agents where Kage = '+ in1.Kage, fn_cb);
-		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
-				+ 'from residence_admin order by id_residence asc', fn_cb);
-*/				
+//		q.model('bpclight',q.sql('qget_agentResAdmin',{ID_AGENT: in1.Kage}),fn_cb);	
 		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
 				+ 'from residence_admin r join agents a on r.id_residence = a.id_residence where Kage = ' + in1.KageTemp, fn_cb);
-		},				
-
-		//**********get_residence
-
-//*********************************************** 
-//Hard coded query
-//		Etablis.using('db').model('bpclight', 'select kets, LibEts from etablissements where archive = 0', fn_cb); 
-
-//Version with parameter
-//		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
-//*********************************************** 		
+		},						
 		
 	//Récupére la liste de tous les métiers. 
 	get_listMetier: function(in1,fn_cb) {		
