@@ -381,22 +381,16 @@ App.controller.define('CAgent', {
 			}
 		})	
 
- 
- 		alert ('display_AgentsDetails() BEFORE domaine' 
+ /*
+ 		alert ('display_AgentsDetails() ' 
 			+ '\n id_residenceTemp= ' 	+ agentData.id_residenceTemp 
 			+ '\n id_metierTemp= ' 		+ agentData.id_metierTemp  
 			+ '\n id_contrat_travailTemp= ' + agentData.id_contrat_travailTemp 
 			+ '\n residence= ' 		+ App.get('agent combo#cboAgentResAdmin').getValue() 
 			+ '\n metier= ' 		+ App.get('agent combo#cboAgentMetier').getValue()  
 			+ '\n Domaine= ' 		+ App.get('agent combo#cboAgentDomaine').getValue()  );
- 
-/* 		
-		alert ('display_AgentsDetails() AFTER domaine' 
-			+ '\n residence= ' 		+ App.get('agent combo#cboAgentResAdmin').getValue() 
-			+ '\n metier= ' 		+ App.get('agent combo#cboAgentMetier').getValue()  
-			+ '\n Domaine= ' 		+ App.get('agent combo#cboAgentDomaine').getValue() );
+*/ 
 		
- */		
 	},
 	
 
