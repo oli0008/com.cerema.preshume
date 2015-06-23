@@ -109,7 +109,6 @@ AgentsMod = {
 	 
 	get_residence_admin: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log('>>AgentsMod.get_residence_admin()');
 //		console.log(q.sql( 'qget_service' + {ID_AGENT: in1.Kage} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('qget_agentResAdmin',{ID_AGENT: in1.Kage}),fn_cb);
 		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
