@@ -5,8 +5,8 @@
 *	Fonction: Gérer l'accès aux données de la fenêtre 'Modification agent'.
 *
 ************************************************************/
-// 
-// class omneedia db = classe moteur d'abstraction de base de données
+ 
+// Note: class omneedia db = classe moteur d'abstraction de base de données
 
 
 AgentsMod = {
