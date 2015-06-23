@@ -309,13 +309,13 @@ App.controller.define('CAgent', {
 			}
 		})	 
 		
-		App.get('agent textfield#txtSalaire').setValue(''); 
+		App.get('agent numberfield#numSalaire').setValue(''); 
 		App.AgentsMod.get_salaire(agentData,function(err,response) { 
 			if (response == null)
-				App.get('agent textfield#txtSalaire').setValue('');
+				App.get('agent numberfield#numSalaire').setValue('');
 			else {
 					if (response.result.data.length > 0) 
-						App.get('agent textfield#txtSalaire').setValue(response.result.data[0].salaire);
+						App.get('agent numberfield#numSalaire').setValue(response.result.data[0].salaire);
 			}
 		})		
 
