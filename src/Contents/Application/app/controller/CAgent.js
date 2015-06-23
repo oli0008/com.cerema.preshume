@@ -82,40 +82,40 @@ App.controller.define('CAgent', {
 	{
 		var errors = [];
 
-		if (!App.get('agent textfield#txtAgent').getValue()) 
+		if (!App.get('agent textfield#txtAgent').getValue() ) 
 			errors.push("Un agent doit être sélectionné.");
 		else 
 		{
-			if (!App.get('agent combo#cboAgentResAdmin').getValue()) {
+			if (!App.get('agent combo#cboAgentResAdmin').getValue() ) {
 				errors.push("Le champ Résidence administrative est vide.");
 			};		
-			if (!App.get('agent combo#cboAgentMetier').getValue()) {
+			if (!App.get('agent combo#cboAgentMetier').getValue() ) {
 				errors.push("Le champ Metier est vide.");
 			};		
-			if (!App.get('agent combo#cboAgentDomaine').getValue()) {
+			if (!App.get('agent combo#cboAgentDomaine').getValue() ) {
 				errors.push("Le champ Domaine d'intervention est vide.");
 			};		
-			if (!App.get('agent combo#cboAgentThematique').getValue()) {
+			if (!App.get('agent combo#cboAgentThematique').getValue() ) {
 				errors.push("Le champ Thématique est vide.");
 			};		
-			if (!App.get('agent combo#cboTypeContrat').getValue()) {
+			if (!App.get('agent combo#cboTypeContrat').getValue() ) {
 				errors.push("Le champ Type de contrat est vide.");
 			};			
-			if (!App.get('agent textfield#txtNumeroContrat').getValue()) {
+			if (!App.get('agent textfield#txtNumeroContrat').getValue() ) {
 				errors.push("Le champ  Numéro de contrat est vide.");
 			};		
-			if (!App.get('agent numberfield#numSalaire').getValue()) {
+			if (!App.get('agent numberfield#numSalaire').getValue() ) {
 				errors.push("Le champ Salaire est vide.");
 			};		
-			if (!App.get('agent datefield#datDateArrivee').getValue()) {
+			if (!App.get('agent datefield#datDateArrivee').getValue() ) {
 				errors.push("Le champ Date d'arrivée est vide.");
 			};		
-			if (!App.get('agent htmleditor#htmlDescriptionPoste').getValue()) {
+			if (!App.get('agent htmleditor#htmlDescriptionPoste').getValue() ) {
 				errors.push("Le champ Description du poste est vide.");
 			};			
 		}	
 		if (errors.length > 0) {
-			alert('Il faut corriger les erreurs suivantes:\n '+errors.join('\n'))
+			alert('Il faut corriger les erreurs suivantes:\n ' + errors.join('\n') )
 			return;
 		}
 		var agentDetails = {
@@ -133,6 +133,8 @@ App.controller.define('CAgent', {
 //		alert('CAgent.update_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());		
+		
+		alert ('HERE if all OK');
 		
 		alert ('res_admin= ' + agentDetails.res_admin + '\n metier= ' + agentDetails.metier + '\n domaine= ' + agentDetails.domaine_interv 
 			+ '\n thematique= ' + agentDetails.thematique  + '\n type_contrat= ' + agentDetails.type_contrat + '\n num_contrat= ' + agentDetails.num_contrat 
