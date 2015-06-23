@@ -283,8 +283,7 @@ App.controller.define('CAgent', {
 			App.get('agent combo#cboAgentResAdmin').setValue('');
 		else
 			App.get('agent combo#cboAgentResAdmin').setValue(agentData.id_residenceTemp); 
- */
-//get_residence		
+ */		
 
 		App.get('agent combo#cboAgentResAdmin').setValue(''); 
 		App.AgentsMod.get_residence_admin(agentData,function(err,response){
@@ -296,8 +295,6 @@ App.controller.define('CAgent', {
 						App.get('agent combo#cboAgentResAdmin').setValue(response.result.data[0].rue_ville_residence);		
 			}			
 		})	
-
-
 		
 /* 		
 		App.get('agent combo#cboAgentMetier').setValue(''); 
@@ -305,9 +302,7 @@ App.controller.define('CAgent', {
 			App.get('agent combo#cboAgentMetier').setValue('');
 		else
 			App.get('agent combo#cboAgentMetier').setValue(agentData.id_metierTemp); 
- */
-
-//get_metier		
+ */	
 
 		App.get('agent combo#cboAgentMetier').setValue(''); 
 		App.AgentsMod.get_metier(agentData,function(err,response){
@@ -330,9 +325,6 @@ App.controller.define('CAgent', {
 						App.get('agent combo#cboAgentDomaine').setValue(response.result.data[0].nom_domaine);		
 			}			
 		})	
-
-
- 
 		
 		App.get('agent combo#cboAgentThematique').setValue(''); 
 		App.AgentsMod.get_thematique(agentData,function(err,response) {
