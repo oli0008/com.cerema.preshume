@@ -7,7 +7,7 @@
 ************************************************************/
 
 /*****************
-* Déclaration des variables globales pour ce controller
+* Déclaration des variables globales pour ce controlleur
 ******************/
 // Dimmentionnement des objets d'interface
 var VAgent_label_width = 	350;
