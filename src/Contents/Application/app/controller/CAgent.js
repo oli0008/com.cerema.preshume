@@ -145,8 +145,8 @@ App.controller.define('CAgent', {
 		alert ('desc_poste= ' + quest.desc_poste  );
 */
 		alert ('res_admin= ' + quest.res_admin + '\n metier= ' + quest.metier + '\n domaine= ' + quest.domaine_interv 
-			+ '\n thematique= ' + quest.thematique  + 'type_contrat= ' + quest.type_contrat + '\n num_contrat= ' + quest.num_contrat 
-			+ '\n salaire= ' + quest.salaire + '\n date_arrivee= ' + quest.date_arrivee + 'desc_poste= ' + quest.desc_poste  );
+			+ '\n thematique= ' + quest.thematique  + '\n type_contrat= ' + quest.type_contrat + '\n num_contrat= ' + quest.num_contrat 
+			+ '\n salaire= ' + quest.salaire + '\n date_arrivee= ' + quest.date_arrivee + '\n desc_poste= ' + quest.desc_poste  );
 		
 		App.mon_web_service.insert(quest,function(err,response) {
 			if (err) 
