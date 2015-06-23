@@ -136,7 +136,8 @@ App.controller.define('CAgent', {
 		
 		alert ('HERE if all OK');
 		
-		alert ('res_admin= ' + agentDetails.res_admin + '\n metier= ' + agentDetails.metier + '\n domaine= ' + agentDetails.domaine_interv 
+		alert ('Prior to exit \n'
+			+ 'res_admin= ' + agentDetails.res_admin + '\n metier= ' + agentDetails.metier + '\n domaine= ' + agentDetails.domaine_interv 
 			+ '\n thematique= ' + agentDetails.thematique  + '\n type_contrat= ' + agentDetails.type_contrat + '\n num_contrat= ' + agentDetails.num_contrat 
 			+ '\n salaire= ' + agentDetails.salaire + '\n date_arrivee= ' + agentDetails.date_arrivee + '\n desc_poste= ' + agentDetails.desc_poste  );
 /* 		
@@ -278,7 +279,7 @@ App.controller.define('CAgent', {
 
 		App.get('agent combo#cboAgentResAdmin').setValue(''); 
 		App.AgentsMod.get_residence_admin(agentData,function(err,response){
-			console.log(response.result); 
+//			console.log(response.result); 
 			if (response == null)
 				App.get('agent combo#cboAgentResAdmin').setValue('');
 			else {
@@ -379,7 +380,7 @@ App.controller.define('CAgent', {
 			}
 		})	
 
- 
+/*  
  		alert ('display_AgentsDetails() ' 
 			+ '\n id_residenceTemp= ' 	+ agentData.id_residenceTemp 
 			+ '\n id_metierTemp= ' 		+ agentData.id_metierTemp  
@@ -387,7 +388,7 @@ App.controller.define('CAgent', {
 			+ '\n residence= ' 		+ App.get('agent combo#cboAgentResAdmin').getValue() 
 			+ '\n metier= ' 		+ App.get('agent combo#cboAgentMetier').getValue()  
 			+ '\n Domaine= ' 		+ App.get('agent combo#cboAgentDomaine').getValue()  );
- 
+ */
 		
 	},
 	
