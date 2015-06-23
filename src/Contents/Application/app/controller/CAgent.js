@@ -13,7 +13,7 @@
 var VAgent_label_width = 	350;
 var VAgent_width = 			350;
 
-// Variable de validation
+// Variables de validation
 var validation_txtNumeroContrat = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
 
 
