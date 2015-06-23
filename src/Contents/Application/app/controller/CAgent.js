@@ -287,7 +287,7 @@ App.controller.define('CAgent', {
 //get_residence		
 
 		App.get('agent combo#cboAgentResAdmin').setValue(''); 
-		App.AgentsMod.get_residence(agentData,function(err,response){
+		App.AgentsMod.get_residence_admin(agentData,function(err,response){
 //			console.log(response.result); 
 			if (response == null)
 				App.get('agent combo#cboAgentResAdmin').setValue('');
