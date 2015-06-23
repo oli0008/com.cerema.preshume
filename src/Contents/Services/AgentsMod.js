@@ -218,6 +218,14 @@ AgentsMod = {
 //		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
 	},	
+/* 	
+update agents
+set 
+id_residence = xx, 
+id_metier = yy,
+id_contrat_travail = ww
+where Kage =  2638
+	 */
 
 //xxx
 	update_metier: function(in1,fn_cb) {		
