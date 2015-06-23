@@ -80,42 +80,46 @@ App.controller.define('CAgent', {
 	***************************************************************/
 	btnAgentEnregistrer_onclick: function()
 	{
-		var errors = [];
+		var errorsGui = [];
 
 		if (!App.get('agent textfield#txtAgent').getValue() ) 
-			errors.push("Un agent doit être sélectionné.");
+			errorsGui.push("Un agent doit être sélectionné.");
 		else 
 		{
 			if (!App.get('agent combo#cboAgentResAdmin').getValue() ) {
-				errors.push("Le champ Résidence administrative est vide.");
+				errorsGui.push("Le champ Résidence administrative est vide.");
 			};		
 			if (!App.get('agent combo#cboAgentMetier').getValue() ) {
-				errors.push("Le champ Metier est vide.");
+				errorsGui.push("Le champ Metier est vide.");
 			};		
 			if (!App.get('agent combo#cboAgentDomaine').getValue() ) {
-				errors.push("Le champ Domaine d'intervention est vide.");
+				errorsGui.push("Le champ Domaine d'intervention est vide.");
 			};		
 			if (!App.get('agent combo#cboAgentThematique').getValue() ) {
-				errors.push("Le champ Thématique est vide.");
+				errorsGui.push("Le champ Thématique est vide.");
 			};		
 			if (!App.get('agent combo#cboTypeContrat').getValue() ) {
-				errors.push("Le champ Type de contrat est vide.");
-			};			
+				errorsGui.push("Le champ Type de contrat est vide.");
+			};				
 			if (!App.get('agent textfield#txtNumeroContrat').getValue() ) {
-				errors.push("Le champ  Numéro de contrat est vide.");
-			};		
+				errorsGui.push("Le champ  Numéro de contrat est vide.");
+			};
+/*
+	TODO check length NumeroContrat =5 (regex)
+*/
+			
 			if (!App.get('agent numberfield#numSalaire').getValue() ) {
-				errors.push("Le champ Salaire est vide.");
+				errorsGui.push("Le champ Salaire est vide.");
 			};		
 			if (!App.get('agent datefield#datDateArrivee').getValue() ) {
-				errors.push("Le champ Date d'arrivée est vide.");
+				errorsGui.push("Le champ Date d'arrivée est vide.");
 			};		
 			if (!App.get('agent htmleditor#htmlDescriptionPoste').getValue() ) {
-				errors.push("Le champ Description du poste est vide.");
+				errorsGui.push("Le champ Description du poste est vide.");
 			};			
 		}	
-		if (errors.length > 0) {
-			alert('Il faut corriger les erreurs suivantes:\n ' + errors.join('\n') )
+		if (errorsGui.length > 0) {
+			alert('Il faut corriger les erreurs suivantes:\n ' + errorsGui.join('\n') )
 			return;
 		}
 		var agentDetails = {
@@ -403,7 +407,7 @@ App.controller.define('CAgent', {
 		//Récupére l'identifiant de l'agent sélectionné
 		var agent_id = App.get('agent grid#gridAgents').getValue();
 		console.log(agent_id);
-	//	alert('vous avez fait des erreurs:\n '+errors.join('\n'));
+	//	alert('vous avez fait des erreurs:\n '+errorsGui.join('\n'));
 		alert('agent_id = ');// + agent_id.join );
 /* 		if (id) {
 			var obj = {
