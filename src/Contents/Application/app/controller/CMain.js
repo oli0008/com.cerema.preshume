@@ -1,13 +1,19 @@
-/*
+/**************************************************
+*
 *	Controlleur principal
 *
 *	Fonction: Gérer sa fenêtre et ces événements. Le controlleur principal gére aussi les fenêtres secondaires. 
-*/
+*
+**************************************************/
 
-// Déclaration des variables globales
+/******************
+* Déclaration des variables globales
+******************/
 // var VAgent_label_width = 	350;
 // var VAgent_width = 			350;
+
 //var re = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
+
 
 App.controller.define('CMain', {
 
