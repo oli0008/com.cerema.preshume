@@ -127,8 +127,15 @@ AgentsMod = {
 //		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin order by id_residence asc', fn_cb);
 //		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence from residence_admin r join agents a on r.id_residence = a.id_residence where a.Kage = '+ in1.Kage, fn_cb);
 		q.model('bpclight', 'select r.id_residence from agents where Kage = '+ in1.Kage, fn_cb);
+		q.model('bpclight', 'select id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
+				+ 'from residence_admin order by id_residence asc', fn_cb);
+				
+		q.model('bpclight', 'select r.id_residence, concat(rue_residence, \' - \', ville_residence) as rue_ville_residence '
+				+ 'from residence_admin r join agents a on r.id_residence = a.id_residence where Kage = ' + in1.Kage, fn_cb);
+
 		},				
-get_residence
+
+		//**********get_residence
 
 //*********************************************** 
 //Hard coded query
