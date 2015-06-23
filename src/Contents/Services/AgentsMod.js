@@ -156,7 +156,7 @@ AgentsMod = {
 				+ 'm.id_metier = a.id_metier where Kage = ' + in1.KageTemp, fn_cb);	
 	},	
 
-
+//*********************
 
 	//Récupére la liste de tous les domaines d'interventions. 	
 	get_listDomaineIntervention: function(in1,fn_cb) {		
