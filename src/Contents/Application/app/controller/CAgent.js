@@ -139,10 +139,15 @@ App.controller.define('CAgent', {
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());		
 		
-
+/* 
 		alert ('res_admin= ' + quest.res_admin + '\n metier= ' + quest.metier + '\n domaine= ' + quest.domaine_interv + '\n thematique= ' + quest.thematique  );
 		alert ('type_contrat= ' + quest.type_contrat + '\n num_contrat= ' + quest.num_contrat + '\n salaire= ' + quest.salaire + '\n date_arrivee= ' + quest.date_arrivee  );
 		alert ('desc_poste= ' + quest.desc_poste  );
+*/
+		alert ('res_admin= ' + quest.res_admin + '\n metier= ' + quest.metier + '\n domaine= ' + quest.domaine_interv 
+			+ '\n thematique= ' + quest.thematique  + 'type_contrat= ' + quest.type_contrat + '\n num_contrat= ' + quest.num_contrat 
+			+ '\n salaire= ' + quest.salaire + '\n date_arrivee= ' + quest.date_arrivee + 'desc_poste= ' + quest.desc_poste  );
+		
 		App.mon_web_service.insert(quest,function(err,response) {
 			if (err) 
 				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
