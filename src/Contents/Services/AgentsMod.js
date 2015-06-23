@@ -152,7 +152,7 @@ AgentsMod = {
 	//Récupére le métier d'un agent particulier.
 	get_metier: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-		q.model('bpclight', 'select select m.id_metier, m.nom_metier from metier m join agents a on '
+		q.model('bpclight', 'select m.id_metier, m.nom_metier from metier m join agents a on '
 				+ 'm.id_metier = a.id_metier where Kage = ' + in1.KageTemp, fn_cb);	
 	},	
 
