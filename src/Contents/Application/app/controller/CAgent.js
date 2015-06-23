@@ -88,7 +88,7 @@ App.controller.define('CAgent', {
 	 */	
 		if App.get('agent combo#cboAgentResAdmin').getValue() {
 			errors.push("Le champ Résidence administrative est vide.");
-		};		
+		}		
 		if App.get('agent combo#cboAgentMetier').getValue() {
 			errors.push("Le champ Metier est vide.");
 		};		
