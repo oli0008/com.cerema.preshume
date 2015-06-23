@@ -270,7 +270,7 @@ App.controller.define('CAgent', {
 		var obj1 = agentData.Nom;
 		App.get('agent textfield#txtAgent').setValue(obj1.concat( " - ", agentData.Prenom));
 /* 
-		App.AgentsMod.get_agent(agentData,function(err,response) { 
+		App.AgentsMod.get_agentFName(agentData,function(err,response) { 
 			App.get('agent textfield#txtAgent').setValue(response.result.data[0].nom_prenom);
 		})
  */
