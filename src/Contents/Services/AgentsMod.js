@@ -211,20 +211,16 @@ AgentsMod = {
 	
 // ---------------------------------------- Sauvegarde des données -----------------------------------------------//
 
-	//Retourne une sélection de Services.
+	//Met à jour la table agents avec les infos provenants de la fenêtre Modification agent.
 	update_agents: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-//		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
-		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
+		q.model('bpclight', 'update agents set id_residence = ' + in1.res_admin + ', id_metier = ' + in1.metier 
+				+ ', id_contrat_travail = ' + in1.contrat_travail + ' where Kage = ' + in1.Kage, fn_cb);
 	},	
 /* 	
-update agents
-set 
-id_residence = xx, 
-id_metier = yy,
-id_contrat_travail = ww
-where Kage =  2638
+update agents set id_residence = ' + in1.res_admin + ', id_metier = ' + in1.metier + ', id_contrat_travail = ' + in1.contrat_travail + 
+' where Kage = ' + in1.Kage, fn_cb);
+Kage =  2638
 	 */
 
 //xxx
@@ -234,14 +230,21 @@ where Kage =  2638
 //		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
 	},
-
-//xxx
-//update_contrat_travail:
-	update_contrat_travail: function(in1,fn_cb) {		
+	
+	insert_metier: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
 //		q.model('bpclight',q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
+	},
+
+	//Met à jour la table contrat_travail avec les infos provenants de la fenêtre Modification agent.
+	update_contrat_travail: function(in1,fn_cb) {		
+  		var q = AgentsMod.using('db');
+		q.model('bpclight', 'select libelle_poste from agents where Kage = ' + in1.KageTemp, fn_cb);
+		q.model('bpclight', 'update contrat_travail set id_thematique = ' + in1.thematique 
+				+ ', id_contrat_travail = ' + in1.contrat_travail 
+				+ ' where Kage = ' + in1.Kage, fn_cb);
 	},
 
 /* 	

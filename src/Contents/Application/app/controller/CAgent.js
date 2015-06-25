@@ -153,8 +153,8 @@ App.controller.define('CAgent', {
 		}) 
 */
 var errCount = 0;
-
-		App.AgentsMod.update_agent(agentDetails,function(err,response){
+/* 
+		App.AgentsMod.update_agents(agentDetails,function(err,response){
 //			console.log(response.result); 
 			if (err)
 				errCount++;
@@ -175,7 +175,7 @@ var errCount = 0;
 				alert('Une érreur est survenue pendant la sauvagarde des données.'); 
 			else 
 				App.get('agent').close();
-	
+ */	
 	},
 	
 	/***********************************************************
