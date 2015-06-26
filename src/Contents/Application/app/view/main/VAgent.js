@@ -319,7 +319,7 @@ App.view.define('main.VAgent',
 					},
 					labelWidth: VAGENT_LABEL_WIDTH,
 					width: 		VAGENT_WIDTH,
-					maxLength:	2,		//5 char
+					maxLength:	5,		//5 char
 					enforceMaxLength: true,
 					allowBlank: false,
 				//	regex: validation_txtNumeroContrat,
