@@ -133,7 +133,7 @@ AgentsMod = {
 	get_listMetier: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 //		q.model('bpclight', 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb);
-		q.model(BASE_DONNEES, 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb); 
+		q.model(BASE_DONNEES, 'select id_metier, nom_metier from metier order by id_metier asc', fn_cb);  
 	},
 	
 	//Récupére le métier d'un agent particulier.
