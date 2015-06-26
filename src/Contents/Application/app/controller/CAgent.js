@@ -12,8 +12,8 @@
 //nok  var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
 
 // Dimmentionnement des objets d'interface
-var VAGENT_LABEL_WIDTH = 	350;	//VAGENT_LABEL_WIDTH
-var VAGENT_WIDTH = 			350;	//VAGENT_WIDTH
+var VAGENT_LABEL_WIDTH = 	350;	
+var VAGENT_WIDTH = 			350;	
 
 // Variables de validation
 var validation_txtNumeroContrat = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
