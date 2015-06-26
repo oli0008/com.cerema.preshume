@@ -11,7 +11,7 @@
 /*****************
 * Déclaration des constantes pour cette classe
 ******************/
-var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
+var BASE_DONNEES = 'bpclight';	//base de données de l'application
 
 AgentsMod = {
 
