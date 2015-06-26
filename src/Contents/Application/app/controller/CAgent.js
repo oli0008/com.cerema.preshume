@@ -16,8 +16,6 @@ var VAGENT_LABEL_WIDTH = 	350;
 var VAGENT_WIDTH = 			350;	
 
 // Variables de validation
-//var validation_txtNumeroContrat = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#"); 
-// verify only that this pattern is correct, but does nothing if it exceeds 5 char!!
 var VALID_NUMERO_CONTRAT = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
 
 
