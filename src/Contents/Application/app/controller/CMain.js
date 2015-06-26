@@ -9,7 +9,7 @@
 /******************
 * Déclaration des constantes globales à l'application
 ******************/
-//	var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
+	var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
 
 
 /******************
