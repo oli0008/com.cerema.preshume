@@ -6,12 +6,13 @@
 *
 ************************************************************/
  
-// Note: class omneedia db = classe moteur d'abstraction de base de données
 
 /*****************
 * Déclaration des constantes pour cette classe
 ******************/
 var BASE_DONNEES = 'bpclight';	//base de données de l'application 
+
+
 
 AgentsMod = {
 
