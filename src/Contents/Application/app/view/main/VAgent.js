@@ -319,7 +319,7 @@ App.view.define('main.VAgent',
 					},
 					labelWidth: VAGENT_LABEL_WIDTH,
 					width: 		VAGENT_WIDTH,
-					maxLength:	5,			//Limite le nombre de char saisis
+					maxLength:	5,			//Limite le nombre de char dans ce champ.
 					enforceMaxLength: true,
 					allowBlank: false,
 				//	regex: validation_txtNumeroContrat,
