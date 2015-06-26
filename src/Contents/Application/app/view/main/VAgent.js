@@ -322,26 +322,8 @@ App.view.define('main.VAgent',
 					maxLength:	5,			//Limite le nombre de char dans ce champ.
 					enforceMaxLength: true,
 					allowBlank: false,
-				//	regex: validation_txtNumeroContrat,
 					regex: VALID_NUMERO_CONTRAT,
 				},			
-/* 				{
-					xtype: "textfield",
-					fieldLabel: "Salaire",
-					labelAlign: "top",
-					itemId: "txtSalaire", 
-					margin: {
-							top : 10,
-							left : 20					
-					},
-					labelWidth: VAGENT_LABEL_WIDTH,
-					width: 		VAGENT_WIDTH,
-					renderer: function(value) {
-						var new_value = value.replace(',','.');
-						return new_value;
-					},
-					allowBlank: false,
-				},	 */
 				{
 					xtype: "numberfield",
 					fieldLabel: "Salaire",
@@ -355,10 +337,11 @@ App.view.define('main.VAgent',
 					width: 		VAGENT_WIDTH,					  
 					step: 1000,			// Set step so it skips every other number
 				//	value: 555.12,		//initial value of field
-			 /* 	renderer: function(value) {
+/* 					renderer: function(value) {
 						var new_value = value.replace('.','BB');
 						return new_value;
-					},  */
+					},  
+*/
 					decimalPrecision : 2,
 					decimalSeparator : ',',
 					allowBlank: false,
@@ -366,9 +349,10 @@ App.view.define('main.VAgent',
 					minValue: 0, //prevents negative numbers
 
 					// Remove spinner buttons, and arrow key and mouse wheel listeners
-		/* 			hideTrigger: true,
+/* 					hideTrigger: true,
 					keyNavEnabled: false,
-					mouseWheelEnabled: false */
+					mouseWheelEnabled: false 
+*/
 				},						
 				{
 					xtype: "datefield",
