@@ -8,7 +8,10 @@
  
 // Note: class omneedia db = classe moteur d'abstraction de base de données
 
-// OK --  // var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
+/*****************
+* Déclaration des constantes pour cette classe
+******************/
+var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
 
 AgentsMod = {
 
