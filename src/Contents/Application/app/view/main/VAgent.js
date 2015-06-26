@@ -320,7 +320,7 @@ App.view.define('main.VAgent',
 					labelWidth: VAGENT_LABEL_WIDTH,
 					width: 		VAGENT_WIDTH,
 					allowBlank: false,
-					regex: validation_txtNumeroContrat,
+					regex: VALID_NUMERO_CONTRAT,
 				},			
 /* 				{
 					xtype: "textfield",
