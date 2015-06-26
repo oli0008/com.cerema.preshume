@@ -9,6 +9,8 @@
 /*****************
 * Déclaration des constantes globales pour ce controlleur et ses vues
 ******************/
+var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
+
 // Dimmentionnement des objets d'interface
 var VAgent_label_width = 	350;
 var VAgent_width = 			350;
