@@ -7,7 +7,7 @@
 ************************************************************/
 
 /*****************
-* Déclaration des variables globales pour ce controlleur
+* Déclaration des constantes globales pour ce controlleur et ses vues
 ******************/
 // Dimmentionnement des objets d'interface
 var VAgent_label_width = 	350;
@@ -15,6 +15,12 @@ var VAgent_width = 			350;
 
 // Variables de validation
 var validation_txtNumeroContrat = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
+
+
+/******************
+* Déclaration des variables globales pour ce controlleur et ses vues
+******************/
+
 
 
 App.controller.define('CAgent', {

@@ -7,6 +7,12 @@
 **************************************************/
 
 /******************
+* Déclaration des constantes globales à l'application
+******************/
+G_BASE_DONNEES = 'bpclight';	//base de données de l'application
+
+
+/******************
 * Déclaration des variables globales à l'application
 ******************/
 // var VAgent_label_width = 	350;
