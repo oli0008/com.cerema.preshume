@@ -65,12 +65,7 @@ App.view.define('VMain', {
 				//Menu item
 				text: "Modification",
 				itemId: "mnuModAgent"
-			},
-			{
-				//Menu item
-				text: "FutureXXX",
-				itemId: "mnuFutureXXX"
-			}	
+			}
 			]
 		}
 		]				
