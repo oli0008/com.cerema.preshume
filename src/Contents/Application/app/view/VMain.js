@@ -90,7 +90,7 @@ App.view.define('VMain', {
 			{
 				//Menu item
 				text: "Domaine d'intervention",
-				itemId: "mnuDomaineInter"
+				itemId: "mnuDomaineInterv"
 			},
 			{
 				//Menu item
