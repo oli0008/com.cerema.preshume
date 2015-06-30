@@ -72,17 +72,17 @@ App.controller.define('CMain', {
 			else if (p.itemId == "mnuModAgent") 
 				this.openWindowModAgent();
 	
-			else if (p.itemId == "mnuGrade") 
+			else if (p.itemId == "mnuResAdmin") 
 				this.openWindowMaintResAdmin();
-			else if (p.itemId == "mnuGrade") 
+			else if (p.itemId == "mnuThematique") 
 				this.openWindowMaintThematique();
-			else if (p.itemId == "mnuGrade") 
+			else if (p.itemId == "mnuDomaineInterv") 
 				this.openWindowMaintDomainInterv();
-			else if (p.itemId == "mnuGrade") 
+			else if (p.itemId == "mnuTypeContrat") 
 				this.openWindowMaintTypeContrat();
-			else if (p.itemId == "mnuGrade") 
+			else if (p.itemId == "mnuMetier") 
 				this.openWindowMaintMetier();
-			else if (p.itemId == "mnuGrade") 
+			else if (p.itemId == "mnuCategorie") 
 				this.openWindowMaintCategorie();			
 			else if (p.itemId == "mnuGrade") 
 				this.openWindowMaintGrade();
