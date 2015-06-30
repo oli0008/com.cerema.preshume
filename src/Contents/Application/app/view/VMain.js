@@ -28,11 +28,13 @@ App.view.define('VMain', {
 		{
 			//Menu Effectifs
 			text: "Effectifs",
+			width: 70,
 			menu: [
 			{
 				//Menu item
 				text: "Présent",
-				itemId: "mnuPresent"
+				itemId: "mnuPresent",
+
 			},
 			{
 				//Menu item
