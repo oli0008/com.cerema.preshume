@@ -137,8 +137,8 @@ App.view.define('VMain', {
 				//	allowBlank: false,		//false = mandatory filling
 					editable: false,
 					labelAlign: "top",
-					labelWidth: G_VMAIN_CBO_WIDTH,	//200,
-					width: G_VMAIN_CBO_WIDTH,	//250,
+					labelWidth: G_VMAIN_CBO_WIDTH,	
+					width: 		G_VMAIN_CBO_WIDTH,
  					displayField: "LibEts",
 					valueField: "Kets",									
 					store: App.store.create("App.Etablis.get_etablis", {
@@ -157,8 +157,8 @@ App.view.define('VMain', {
 				//	allowBlank: true,			//false = red notification
 					editable: false,
 					labelAlign: "top",
-					labelWidth: 200,
-					width: 200,
+					labelWidth: G_VMAIN_CBO_WIDTH,	
+					width: 		G_VMAIN_CBO_WIDTH,
  					displayField: "LibUni",		//Alt use: LibUnic
 					valueField: "Kuni",									
 					store: App.store.create("App.Unite.get_unite", {
@@ -176,8 +176,8 @@ App.view.define('VMain', {
 				//	allowBlank: false,					//false = mandatory filling
 					editable: false,
 					labelAlign: "top",
-					labelWidth: 200,
-					width: 200,
+					labelWidth: G_VMAIN_CBO_WIDTH,	
+					width: 		G_VMAIN_CBO_WIDTH,
  					displayField: "LibSubc",
 					valueField: "Ksub",			
 					store: App.store.create("App.Service.get_service", {
