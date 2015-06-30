@@ -10,7 +10,7 @@ App.view.define('main.VContratTravail',
 	draggable: true,
 	resizable: false,
 	closeAction: 'destroy',
-	title: 'Modification Contrat de travail',
+	title: 'Maintenance Grade',
 
 	tbar:[
 	//Top bar buttons
