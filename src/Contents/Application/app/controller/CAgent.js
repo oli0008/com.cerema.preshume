@@ -241,8 +241,8 @@ var errCount = 0;
 		//met à jour gridAgents pour cette valeur d'unité"
 		var Kuni2 = App.get('combo#cboAgentUnite').getValue();
 //		console.log(App.get('combo#cboAgentUnite').getValue());
-//*		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
-//*		App.get('combo#cboMainService').getStore().load();
+//*		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Service = Kuni2;
+//*		App.get('grid#gridAgents').getStore().load();
 
 	},
 
