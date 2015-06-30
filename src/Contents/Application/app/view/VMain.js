@@ -39,15 +39,31 @@ App.view.define('VMain', {
 				text: "Future",
 				itemId: "mnuFuture"
 			}	
-				]
+			]
+		},
+		{
+			//Menu ETP
+			text: "ETP",
+			menu: [
+			{
+				//Menu item
+				text: "Présent",
+				itemId: "mnuETPPresent"
 			},
 			{
+				//Menu item
+				text: "Future",
+				itemId: "mnuETPFuture"
+			}	
+			]
+		},
+		{
 			//Menu Agents
 			text: "Agents",
 			menu: [
 			{
 				//Menu item
-				text: "Modifier",
+				text: "Modification",
 				itemId: "mnuModAgent"
 			},
 			{
@@ -55,12 +71,12 @@ App.view.define('VMain', {
 				text: "FutureXXX",
 				itemId: "mnuFutureXXX"
 			}	
-				]
-			}
-			]				
-		},
+			]
+		}
+		]				
+	},
 //********************************************* CENTER *******************************
-		{
+	{
 			region: "center",			
 			split:true,
 			items: [
@@ -268,6 +284,6 @@ App.view.define('VMain', {
 				}
 // *********** TEMP FIX END *********************************************			
 			]	//CENTER 
-		},
+	},
 	]	
 });
