@@ -293,7 +293,7 @@ App.controller.define('CMain', {
 	****************************************************/	
 	openWindowMaintGrade: function()
 	{
-		App.view.create('main.VContratTravail',{			
+		App.view.create('main.VContratTravail',{	 		
 			modal:true
 		}).show();		
 	},
