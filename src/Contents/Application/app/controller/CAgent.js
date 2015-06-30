@@ -273,10 +273,12 @@ alert('agent_onshow() -- before grid paint.');
 //*** TODO ************** Find out how to change store //	
 	
 		//met à jour gridAgents pour cette valeur d'unité"
-		var YYKuni2 = App.get('combo#cboAgentUnite').getValue();
+		var Kuni2 = App.get('combo#cboAgentUnite').getValue();
+		
+alert('CAgent.update_cboAgentService() Kuni2 = ' + Kuni2);
 //		console.log(App.get('combo#cboAgentUnite').getValue());
-//*		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
-//*		App.get('combo#cboMainService').getStore().load();	
+//*		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Service = Kuni2;
+//*		App.get('grid#gridAgents').getStore().load();
 	},
 	
 	/************************************************
@@ -290,10 +292,10 @@ alert('agent_onshow() -- before grid paint.');
 alert('update_gridForService() -- reached');
 
 		//met à jour gridAgents pour cette valeur d'unité"
-		var YYKuni2 = App.get('combo#cboAgentUnite').getValue();
-//		console.log(App.get('combo#cboAgentUnite').getValue());
-//*		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
-//*		App.get('combo#cboMainService').getStore().load();		
+		var Ksub2 = App.get('combo#cboAgentService').getValue();
+//		console.log(App.get('combo#cboAgentService').getValue());
+//*		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Service = Ksub2;
+//*		App.get('grid#gridAgents').getStore().load();	
 	},
 	
 	/************************************************
