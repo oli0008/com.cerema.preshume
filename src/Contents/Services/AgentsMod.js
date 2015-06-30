@@ -72,7 +72,7 @@ AgentsMod = {
 	get_agent: function(in1,fn_cb) {
   		var q = AgentsMod.using('db');
 //		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-		q.model(BASE_DONNEES,q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+	//***	q.model(BASE_DONNEES,q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
 	},	
 
 	readAllAgents: function(o,cb) {	
