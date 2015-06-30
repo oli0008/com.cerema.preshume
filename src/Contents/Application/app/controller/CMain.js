@@ -81,7 +81,13 @@ App.controller.define('CMain', {
 		dummyFn: function(p, record) {
 		alert('dummyFn() -- reached');	
 		},
-		
+
+	
+	/*****************************************************
+	*
+	* Objectif: Afficher l'unité correspondante à l'établissement qui vient d'être sélectionnée. 	
+	*
+	****************************************************/			
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboMainUnite: function(p, record) 
 	{
@@ -93,7 +99,13 @@ App.controller.define('CMain', {
 		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
 		App.get('combo#cboMainUnite').getStore().load();
 	},
+
 	
+	/*****************************************************
+	*
+	* Objectif: Afficher le service correspondant à l'unité qui vient d'être sélectionnée. 	
+	*
+	****************************************************/	
 	//Sélectionner une unité affiche le service correspondant (cela active le store du service)
 	valider_cboMainService: function(p, record) 
 	{
