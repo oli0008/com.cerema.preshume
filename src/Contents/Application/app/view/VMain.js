@@ -28,7 +28,7 @@ App.view.define('VMain', {
 		{
 			//Menu Effectifs
 			text: "Effectifs",
-			width: 70,
+			width: 200,
 			menu: [
 			{
 				//Menu item
