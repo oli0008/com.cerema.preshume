@@ -61,36 +61,36 @@ App.controller.define('CMain', {
 		if (p.itemId) {
 			if (p.itemId=="mnuEffectifPresent") 
 				this.calculerEffectifPresent();
-		//		this.dummyFn();
 			else if (p.itemId == "mnuEffectifFuture") 
 				this.calculerEffectifFuture();
 			
 			else if (p.itemId == "mnuETPPresent") 
 				this.calculerETPPresent();
 			else if (p.itemId == "mnuETPFuture") 
-				this.calculerETPFuture();
-//HHHH			
-/* 			
-			else if (p.itemId == "mnuEffectifFuture") 
-				this.calculerEffectifFuturXXe();
- */			
+				this.calculerETPFuture();		
 			
 			else if (p.itemId == "mnuModAgent") 
-			{
-			//	alert('clic sur mnuModAgent -- TODO');	
-				this.open_window_agent();
-			}
-			
-/* TODO -- temp fix */			
+				this.openWindowModAgent();
+	
 			else if (p.itemId == "mnuGrade") 
-			{
-			//	alert('clic sur mnuModAgent -- TODO');	
-				this.open_window_contrat_travail();
-			}
+				this.openWindowMaintResAdmin();
+			else if (p.itemId == "mnuGrade") 
+				this.openWindowMaintThematique();
+			else if (p.itemId == "mnuGrade") 
+				this.openWindowMaintDomainInterv();
+			else if (p.itemId == "mnuGrade") 
+				this.openWindowMaintTypeContrat();
+			else if (p.itemId == "mnuGrade") 
+				this.openWindowMaintMetier();
+			else if (p.itemId == "mnuGrade") 
+				this.openWindowMaintCategorie();			
+			else if (p.itemId == "mnuGrade") 
+				this.openWindowMaintGrade();
 		};			
 	},
 	
-		dummyFn: function(p, record) {
+		dummyFn: function(p, record) 
+		{
 		alert('dummyFn() -- reached');	
 		},
 
@@ -111,7 +111,6 @@ App.controller.define('CMain', {
 		App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
 		App.get('combo#cboMainUnite').getStore().load();
 	},
-
 	
 	/*****************************************************
 	*
@@ -201,31 +200,104 @@ App.controller.define('CMain', {
 	{	
 	alert('clic sur mnuETPFuture -- TODO');
 	},
-	
-	
-	
-	
-//***********
 
 	/*****************************************************
 	*
 	* Objectif: Rediriger vers la fenêtre de modification d'un agent. 	
 	*
 	****************************************************/
-	open_window_agent: function()
+	openWindowModAgent: function()
 	{
 		App.view.create('main.VAgent',{			
 			modal:true
 		}).show();
 	},
-	
-// old stuff	
-	open_window_contrat_travail: function()
+
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des résidence administratives. 	
+	*
+	****************************************************/	
+	openWindowMaintResAdmin: function()
 	{
 		App.view.create('main.VContratTravail',{			
 			modal:true
 		}).show();		
 	},
+	
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des Thématiques. 	
+	*
+	****************************************************/	
+	openWindowMaintThematique: function()
+	{
+		App.view.create('main.VContratTravail',{			
+			modal:true
+		}).show();		
+	},
+
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des domaines d'intervention. 	
+	*
+	****************************************************/	
+	openWindowMaintDomainInterv: function()
+	{
+		App.view.create('main.VContratTravail',{			
+			modal:true
+		}).show();		
+	},
+	
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des types de contrats. 	
+	*
+	****************************************************/	
+	openWindowMaintTypeContrat: function()
+	{
+		App.view.create('main.VContratTravail',{			
+			modal:true
+		}).show();		
+	},
+	
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des métiers. 	
+	*
+	****************************************************/	
+	openWindowMaintMetier: function()
+	{
+		App.view.create('main.VContratTravail',{			
+			modal:true
+		}).show();		
+	},
+	
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des catégories. 	
+	*
+	****************************************************/	
+	openWindowMaintCategorie: function()
+	{
+		App.view.create('main.VContratTravail',{			
+			modal:true
+		}).show();		
+	},
+		
+	
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des gardes. 	
+	*
+	****************************************************/	
+	openWindowMaintGrade: function()
+	{
+		App.view.create('main.VContratTravail',{			
+			modal:true
+		}).show();		
+	},
+	
 //****************
 	onLoad: function()
 	{
