@@ -65,7 +65,7 @@ App.controller.define('CMain', {
 			else if (p.itemId=="mnuEffectifFuture") 
 			{
 				alert('clic sur mnuEffectifFuture -- TODO');
-			dummyFn();}
+			this.dummyFn();}
 			else if (p.itemId=="mnuModAgent") {
 			//	alert('clic sur mnuModAgent -- TODO');	
 				this.open_window_agent();
