@@ -67,6 +67,47 @@ App.view.define('VMain', {
 				itemId: "mnuModAgent"
 			}
 			]
+		},
+		{
+			//Menu Maintenance
+			text: "Maintenance",
+			menu: [
+			{
+				//Menu item
+				text: "Résidence administrative",
+				itemId: "mnuResAdmin"
+			},
+			{
+				//Menu item
+				text: "Thématique",
+				itemId: "mnuThematique"
+			},
+			{
+				//Menu item
+				text: "Domaine d'intervention",
+				itemId: "mnuDomaineInter"
+			},
+			{
+				//Menu item
+				text: "Type de contrat",
+				itemId: "mnuTypeContrat"
+			},
+			{
+				//Menu item
+				text: "Métier",
+				itemId: "mnuMetier"
+			},
+			{
+				//Menu item
+				text: "Catégorie",
+				itemId: "mnuCategorie"
+			},
+			{
+				//Menu item
+				text: "Grade",
+				itemId: "mnuGrade"
+			}					
+			]
 		}
 		]				
 	},
