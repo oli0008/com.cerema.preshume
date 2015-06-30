@@ -230,6 +230,8 @@ var errCount = 0;
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());
 
+alert('agent_onshow() -- before grid paint.')
+
 		//Efface les infos montrées (displayField) sur les 2 combos esclaves
 		App.get('combo#cboAgentUnite').setValue('');
 		App.get('combo#cboAgentService').setValue('');
