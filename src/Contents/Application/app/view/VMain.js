@@ -137,8 +137,8 @@ App.view.define('VMain', {
 				//	allowBlank: false,		//false = mandatory filling
 					editable: false,
 					labelAlign: "top",
-					labelWidth: 200,
-					width: 250,
+					labelWidth: G_VMAIN_CBO_WIDTH,	//200,
+					width: G_VMAIN_CBO_WIDTH,	//250,
  					displayField: "LibEts",
 					valueField: "Kets",									
 					store: App.store.create("App.Etablis.get_etablis", {
