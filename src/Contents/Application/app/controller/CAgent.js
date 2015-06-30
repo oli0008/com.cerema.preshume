@@ -239,8 +239,11 @@ var errCount = 0;
 //*** TODO ************** Find out how to change store //	
 	
 		//met à jour gridAgents pour cette valeur d'établissement
-//		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
-//		App.get('grid#gridAgents').getStore().load();
+		var Kuni2 = App.get('combo#cboAgentUnite').getValue();
+//		console.log(App.get('combo#cboAgentUnite').getValue());
+//*		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
+//*		App.get('combo#cboMainService').getStore().load();
+
 	},
 
 	/************************************************
@@ -257,6 +260,12 @@ var errCount = 0;
 		App.get('combo#cboAgentService').setValue('');
 		App.get('combo#cboAgentService').getStore().getProxy().extraParams.id_Service = KuniTemp;
 		App.get('combo#cboAgentService').getStore().load();
+		
+//*** TODO ************** Find out how to change store //	
+	
+		//met à jour gridAgents pour cette valeur d'établissement
+//		App.get('grid#gridAgents').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
+//		App.get('grid#gridAgents').getStore().load();		
 	},
 
 	/************************************************
