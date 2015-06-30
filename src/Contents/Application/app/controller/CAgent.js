@@ -41,7 +41,7 @@ App.controller.define('CAgent', {
 				show: "agent_onshow"
 			},
 			"agent combo#cboAgentEtablis": {
-				select: "update_cboAgentUnite"
+				select: "update_cboAgentUnite"		//not used
 			},
 			"agent combo#cboAgentUnite": {
 				select: "update_cboAgentService"
@@ -49,6 +49,9 @@ App.controller.define('CAgent', {
 			"agent combo#cboAgentDomaine": {
 				select: "update_cboAgentThematique"
 			},
+			"agent grid#gridAgents": {
+				beforeitemclick: "display_AgentsDetails"
+			}, 
 			"agent grid#gridAgents": {
 				itemclick: "display_AgentsDetails"
 			}, 
@@ -250,8 +253,9 @@ alert('agent_onshow() -- before grid paint.');
 
 	/************************************************
 	*
-	*	Cette méthode est invoquée quand une unité est sélectionné. Quand cela arrive, la liste des 
-	*	services correspondants est mise à jour(cela active le store du service).
+	* Cette méthode est invoquée quand une unité est sélectionné. Quand cela arrive, la liste des 
+	* services correspondants est mise à jour(cela active le store du service).
+	* Puis le grid est mis à jour en fonction de l'unité sélectionnée.
 	*
 	***********************************************/
 	update_cboAgentService: function(p, record) 
