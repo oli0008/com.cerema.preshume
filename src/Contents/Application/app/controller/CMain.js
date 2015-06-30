@@ -69,7 +69,7 @@ App.controller.define('CMain', {
 				this.calculerETPPresent();
 			else if (p.itemId == "mnuETPFuture") 
 				this.calculerETPFuture();
-HHHH			
+//HHHH			
 			
 			else if (p.itemId == "mnuEffectifFuture") 
 				this.calculerEffectifFuturXXe();
