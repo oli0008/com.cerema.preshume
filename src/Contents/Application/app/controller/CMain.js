@@ -105,6 +105,12 @@ App.controller.define('CMain', {
 		App.get('combo#cboMainService').getStore().load();
 	},
 	
+	/*****************************************************
+	*
+	* Objectif: Calculer les effectifs présents. Cette méthode 
+	* calcule les totaux par catégories d'agent et les totaux pour chaque unité. 	
+	*
+	****************************************************/
 	clickme_onclick: function()
 	{
 		//on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
