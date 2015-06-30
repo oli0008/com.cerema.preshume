@@ -33,13 +33,13 @@ App.view.define('VMain', {
 			{
 				//Menu item
 				text: "Présent",
-				itemId: "mnuPresent",
+				itemId: "mnuEffectifPresent",
 
 			},
 			{
 				//Menu item
 				text: "Future",
-				itemId: "mnuFuture"
+				itemId: "mnuEffectifFuture"
 			}	
 			]
 		},
