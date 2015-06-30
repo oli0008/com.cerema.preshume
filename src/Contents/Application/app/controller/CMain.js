@@ -49,7 +49,7 @@ App.controller.define('CMain', {
 				select: "valider_cboMainService"
 			},
 			"button#btnMainOk": {
-				click: "clickme_onclick"
+				click: "calculerEffectifPresent"
 			}
 		});
 		
@@ -60,18 +60,30 @@ App.controller.define('CMain', {
 	{
 		if (p.itemId) {
 			if (p.itemId=="mnuEffectifPresent") 
-				this.clickme_onclick();
-			//	alert('clic sur mnuEffectifPresent -- TODO');
-			else if (p.itemId=="mnuEffectifFuture") 
+				this.calculerEffectifPresent();
+		//		this.dummyFn();
+			else if (p.itemId == "mnuEffectifFuture") 
+				this.calculerEffectifFuture();
+			
+			else if (p.itemId == "mnuETPPresent") 
+				this.calculerETPPresent();
+			else if (p.itemId == "mnuETPFuture") 
+				this.calculerETPFuture();
+HHHH			
+			
+			else if (p.itemId == "mnuEffectifFuture") 
+				this.calculerEffectifFuturXXe();
+			
+			
+			else if (p.itemId == "mnuModAgent") 
 			{
-				alert('clic sur mnuEffectifFuture -- TODO');
-			this.dummyFn();}
-			else if (p.itemId=="mnuModAgent") {
 			//	alert('clic sur mnuModAgent -- TODO');	
 				this.open_window_agent();
 			}
+			
 /* TODO -- temp fix */			
-						else if (p.itemId=="mnuFutureXXX") {
+			else if (p.itemId == "mnuGrade") 
+			{
 			//	alert('clic sur mnuModAgent -- TODO');	
 				this.open_window_contrat_travail();
 			}
@@ -123,7 +135,7 @@ App.controller.define('CMain', {
 	* calcule les totaux par catégories d'agent et les totaux pour chaque unité. 	
 	*
 	****************************************************/
-	clickme_onclick: function()
+	calculerEffectifPresent: function()
 	{
 		//on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
 		//App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
@@ -155,9 +167,51 @@ App.controller.define('CMain', {
 
 			// ****************************************************************
 		*/
-	},
-//***********
+	},	
 	
+	/*****************************************************
+	*
+	* Objectif: Calculer les effectifs future. Cette méthode 
+	* calcule les totaux par catégories d'agent et les totaux pour chaque unité. 	
+	*
+	****************************************************/
+	calculerEffectifFuture: function()
+	{	
+	alert('clic sur mnuEffectifFuture -- TODO');
+	},
+	
+	/*****************************************************
+	*
+	* Objectif: Calculer les ETP présent. Cette méthode 
+	* calcule les totaux par catégories d'agent et les totaux pour chaque unité. 	
+	*
+	****************************************************/
+	calculerETPPresent: function()
+	{	
+	alert('clic sur mnuETPPresent -- TODO');
+	},	
+		
+	/*****************************************************
+	*
+	* Objectif: Calculer les ETP future. Cette méthode 
+	* calcule les totaux par catégories d'agent et les totaux pour chaque unité. 	
+	*
+	****************************************************/
+	calculerETPFuture: function()
+	{	
+	alert('clic sur mnuETPFuture -- TODO');
+	},
+	
+	
+	
+	
+//***********
+
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de modification d'un agent. 	
+	*
+	****************************************************/
 	open_window_agent: function()
 	{
 		App.view.create('main.VAgent',{			
@@ -165,6 +219,7 @@ App.controller.define('CMain', {
 		}).show();
 	},
 	
+// old stuff	
 	open_window_contrat_travail: function()
 	{
 		App.view.create('main.VContratTravail',{			
