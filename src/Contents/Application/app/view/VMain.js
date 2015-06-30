@@ -46,6 +46,7 @@ App.view.define('VMain', {
 		{
 			//Menu ETP
 			text: "ETP",
+			width: G_VMAIN_MNU_WIDTH,
 			menu: [
 			{
 				//Menu item
@@ -62,6 +63,7 @@ App.view.define('VMain', {
 		{
 			//Menu Agents
 			text: "Agents",
+			width: G_VMAIN_MNU_WIDTH,
 			menu: [
 			{
 				//Menu item
@@ -73,6 +75,7 @@ App.view.define('VMain', {
 		{
 			//Menu Maintenance
 			text: "Maintenance",
+			width: G_VMAIN_MNU_WIDTH,
 			menu: [
 			{
 				//Menu item
