@@ -185,7 +185,24 @@ App.view.define('VMain', {
 												})  // Creation du store	
 				},
 				//*************************
-				
+				{
+					xtype: "datefield",
+					fieldLabel: "Date",
+					labelAlign: "top",
+//renderer DOES NOT WORK!!
+					renderer: Ext.util.Format.dateRenderer('dd/mm/YYYY'),
+//					renderer: Ext.util.Format.dateRenderer("Y-m-d"), //('m/d/Y'),
+//					renderer: Ext.util.Format.dateRenderer('d/m/Y'),					
+					itemId: "datMainDate",
+					margin: {
+							top: 10,
+							left: 10,
+							bottom: 10
+					},
+					labelWidth: G_VMAIN_CBO_WIDTH,
+					width: 		G_VMAIN_CBO_WIDTH,
+					allowBlank: false,
+				},	 				
 				//*************************
 				{
 					xtype: "button",		//xtype création d'un obj GUI
