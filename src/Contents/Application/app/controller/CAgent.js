@@ -45,7 +45,10 @@ App.controller.define('CAgent', {
 			},
 			"agent combo#cboAgentUnite": {
 				select: "update_cboAgentService"
-			},			
+			},	
+			"agent combo#cboAgentService": {
+				select: "update_gridForService"
+			},				
 			"agent combo#cboAgentDomaine": {
 				select: "update_cboAgentThematique"
 			},
@@ -275,7 +278,24 @@ alert('agent_onshow() -- before grid paint.');
 //*		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
 //*		App.get('combo#cboMainService').getStore().load();	
 	},
+	
+	/************************************************
+	*
+	* Quand un service est sélectionné il faut mettre à jour le grid
+	* pour réflecter cette sélection.
+	*
+	***********************************************/
+	update_gridForService: function(p, record) 
+	{
+alert('update_gridForService() -- reached');
 
+		//met à jour gridAgents pour cette valeur d'unité"
+		var YYKuni2 = App.get('combo#cboAgentUnite').getValue();
+//		console.log(App.get('combo#cboAgentUnite').getValue());
+//*		App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
+//*		App.get('combo#cboMainService').getStore().load();		
+	},
+	
 	/************************************************
 	*
 	*	Cette méthode est invoquée quand un domaine d'intervention est sélectionné. Quand cela arrive, la liste des 
