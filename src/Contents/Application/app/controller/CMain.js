@@ -70,10 +70,10 @@ App.controller.define('CMain', {
 			else if (p.itemId == "mnuETPFuture") 
 				this.calculerETPFuture();
 //HHHH			
-			
+/* 			
 			else if (p.itemId == "mnuEffectifFuture") 
 				this.calculerEffectifFuturXXe();
-			
+ */			
 			
 			else if (p.itemId == "mnuModAgent") 
 			{
