@@ -185,11 +185,13 @@ App.view.define('VMain', {
 												})  // Creation du store	
 				},
 				//*************************
+				
+				//*************************
 				{
 					xtype: "button",		//xtype création d'un obj GUI
 					itemId: "btnMainOk",	//xxxx"clickme",
 					text: "Ok", 
-					width: 100,
+					width: 10,
 					margin: {
 							left: 20,
 							top: 28,
