@@ -12,19 +12,19 @@ App.view.define('main.VContratTravail',
 	closeAction: 'destroy',
 	title: 'Maintenance Grade',
 
-	tbar:[
+	bbar:[
 	//Top bar buttons
 	{
 		xtype: "button",
-		itemId: "btnAnnulerContratTravail", 
-		text: "Annuler",
+		itemId: "btnAjouter", 
+		text: "Ajouter",
 	},
 /* TODO - Rollback() */	
 
 	{
 		xtype: "button",
-		itemId: "btnEnregistrerContratTravail", 
-		text: "Enregistrer",
+		itemId: "btnModifier", 
+		text: "Modifier",
 	}
 /* TODO - Commit() */	
 
