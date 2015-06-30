@@ -59,10 +59,12 @@ App.controller.define('CMain', {
 	Menu_onClick: function(p)
 	{
 		if (p.itemId) {
-			if (p.itemId=="mnuPresent") 
-				alert('clic sur mnuPresent -- TODO');
-			else if (p.itemId=="mnuFuture") 
-				alert('clic sur mnuFuture -- TODO');
+			if (p.itemId=="mnuEffectifPresent") 
+			//	clickme_onclick();
+				alert('clic sur mnuEffectifPresent -- TODO');
+			else if (p.itemId=="mnuEffectifFuture") 
+				alert('clic sur mnuEffectifFuture -- TODO');
+			dummyFn();
 			else if (p.itemId=="mnuModAgent") {
 			//	alert('clic sur mnuModAgent -- TODO');	
 				this.open_window_agent();
@@ -75,6 +77,10 @@ App.controller.define('CMain', {
 		};			
 	},
 	
+		dummyFn: function(p, record) {
+		alert('dummyFn() -- reached');	
+		},
+		
 	//Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
 	valider_cboMainUnite: function(p, record) 
 	{
