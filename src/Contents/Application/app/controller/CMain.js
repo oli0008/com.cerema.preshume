@@ -11,7 +11,7 @@
 ******************/
 //nok	var G_BASE_DONNEES = 'bpclight';	//base de données de l'application
 var G_VMAIN_MNU_WIDTH = 100; 		//Définition de la largeur des menus de VMain 
-var G_VMAIN_CBO_WIDTH = 205; 		//Définition de la largeur des combos de VMain
+var G_VMAIN_CBO_WIDTH = 210; 		//Définition de la largeur des combos de VMain
 
 /******************
 * Déclaration des variables globales à l'application
