@@ -60,8 +60,8 @@ App.controller.define('CMain', {
 	{
 		if (p.itemId) {
 			if (p.itemId=="mnuEffectifPresent") 
-			//	clickme_onclick();
-				alert('clic sur mnuEffectifPresent -- TODO');
+				this.clickme_onclick();
+			//	alert('clic sur mnuEffectifPresent -- TODO');
 			else if (p.itemId=="mnuEffectifFuture") 
 			{
 				alert('clic sur mnuEffectifFuture -- TODO');
