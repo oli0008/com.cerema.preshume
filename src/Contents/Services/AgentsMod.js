@@ -68,11 +68,10 @@ AgentsMod = {
   		var q = AgentsMod.using('db');
 		q.model(BASE_DONNEES, 'select Kage, concat(Nom, \' - \', Prenom) as nom_prenom from agents where Kage = ' + in1.KageTemp, fn_cb);
 		},	
-	
+	//Trouve un agent par nom de famille
 	get_agent: function(in1,fn_cb) {
   		var q = AgentsMod.using('db');
-//		console.log(q.sql( 'qget_service' + {RECHERCHE: in1.id_Service} ) );		//log apparait dans DOS box
-	//***	q.model(BASE_DONNEES,q.sql('qget_service',{RECHERCHE: in1.id_Service}),fn_cb);
+		q.model(BASE_DONNEES,q.sql('qget_agent',{RECHERCHE: in1.nom}),fn_cb);
 	},	
 
 	readAllAgents: function(o,cb) {	
