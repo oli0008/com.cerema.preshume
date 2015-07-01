@@ -76,7 +76,7 @@ App.view.define('main.VMaintResAdmin', {
 		{
 			region	: "east",			
 			split	: true,
-//			padding	: 20,
+			padding	: 20,
 			width	: 340,
 			layout	: "vbox",
 			items	: [
