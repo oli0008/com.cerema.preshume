@@ -37,7 +37,7 @@ App.view.define('main.VMaintResAdmin', {
 			region		: "center",			
 			//split		: true,
 			//autoScroll	:true,
-			padding		: 20,	//contours de la region
+			padding		: 10,	//contours de la region
 			width		: 315,
 			height		: '100%',
 			
@@ -76,7 +76,7 @@ App.view.define('main.VMaintResAdmin', {
 		{
 			region	: "east",			
 			split	: true,
-//			padding	: 20,	//contours de la region
+			padding	: 10,	//contours de la region
 			width	: 340,
 			layout	: "vbox",
 			items	: [
