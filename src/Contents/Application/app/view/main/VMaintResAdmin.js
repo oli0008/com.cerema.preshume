@@ -93,7 +93,7 @@ App.view.define('main.VMaintResAdmin', {
 					maxLength	: 50,		//Limite le nombre de char dans ce champ.
 					enforceMaxLength: true,
 					allowBlank: false,	
-					autoScroll: true, 		//autosizing field
+			//		autoScroll: true, 		//autosizing field
 					margin		: 20
 				},
 				{	// Le champ texte Nom
@@ -118,7 +118,7 @@ App.view.define('main.VMaintResAdmin', {
 					maxLength	: 50,			//Limite le nombre de char dans ce champ.
 					enforceMaxLength: true,
 					allowBlank: false,	
-					autoScroll: true,  		//autosizing field
+		//			autoScroll: true,  		//autosizing field
 					margin		: 20
 				},
 				{
