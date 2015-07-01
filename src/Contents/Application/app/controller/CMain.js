@@ -25,7 +25,8 @@ var G_VMAIN_CBO_WIDTH = 210; 		//Définition de la largeur des combos de VMain
 App.controller.define('CMain', {
 
 	views: [
-		"VMain"
+		"VMain",
+		main.VMaintResAdmin
 /* 		,
 		"main.VAgent" */
 /* 		,
