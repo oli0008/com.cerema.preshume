@@ -12,7 +12,7 @@ App.view.define('main.VMaintResAdmin', {
 	alias 	: 'widget.maint',
 	border	: false,
 	width	: 720,
-	height	: 600,
+	height	: 500,
 	title	: 'Maintenance Résidence administrative',
 	
 	bbar:[
