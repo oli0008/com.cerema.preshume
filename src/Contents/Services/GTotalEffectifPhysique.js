@@ -9,6 +9,9 @@ GTotalEffectifPhysique = {
 //		console.log('>>GTotalEffectifPhysique.cherche()');
 //		console.log(q.sql('qget_GTotalEffectifPhysique',{RECHERCHE: in1.recherche}));	//log apparait dans DOS box
 		q.model('bpclight','select LibUnic, GrandTotal from GTotalEffectifPhysique',fn_cb);
+		
+/*** IMPORTANT -- Uses OLD tables **************/
+		
 /* 
 ALT
 //		console.log(q.sql('qget_GTotalEffectifPhysique',{RECHERCHE: in1.param_recherche}));	//log apparait dans DOS box
