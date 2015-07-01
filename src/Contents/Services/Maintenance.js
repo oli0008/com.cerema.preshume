@@ -28,8 +28,8 @@ Maintenance = {
 	create: function(in1,fn_cb) {
   		var q = Maintenance.using('db');
 	//	q.model(BASE_DONNEES,q.sql('qget_agent',{RECHERCHE: in1.nom}),fn_cb);
-		q.model(BASE_DONNEES, 'insert into residence_admin (rue_residence, code_postal_residence, ville_residence)'
-				+ ' values ("' + in1.rue_residence + '", "' + in1.code_postal_residence '", "' + in1.ville_residence '", fn_cb); 
+		q.model(BASE_DONNEES, 'insert into residence_admin (rue_residence, code_postal_residence, ville_residence) values ("' 
+			+ in1.rue_residence + '", "' + in1.code_postal_residence '", "' + in1.ville_residence '", fn_cb); 
 	},
 
 	read: function(in1,fn_cb) {
