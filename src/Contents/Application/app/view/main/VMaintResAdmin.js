@@ -77,7 +77,7 @@ App.view.define('main.VMaintResAdmin', {
 			region	: "east",			
 			split	: true,
 			padding	: 10,	//contours de la region
-			width	: 340,
+			width	: 315,	//340,
 			layout	: "vbox",
 			items	: [
 				{	// Le champ texte ID
