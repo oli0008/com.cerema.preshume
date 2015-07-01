@@ -26,7 +26,7 @@ App.controller.define('CMain', {
 
 	views: [
 		"VMain",
-		"main.VMaintResAdmin""
+		"main.VMaintResAdmin"
 /* 		,
 		"main.VAgent" */
 /* 		,
