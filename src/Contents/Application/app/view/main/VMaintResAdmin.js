@@ -83,25 +83,37 @@ App.view.define('main.VMaintResAdmin', {
 				{	// Le champ texte ID
 					xtype		: "textfield",
 					itemId		: "txtRueResAdmin",
+					fieldLabel	: "Rue",
 //					labelAlign	: "left",
-					labelWidth	: 150,		// VRESADMIN_LABEL_WIDTH,
-					width		: 150,		//  VRESADMIN_WIDTH,
-					maxLength:	5,			//Limite le nombre de char dans ce champ.
+//					labelWidth	: 150,		// VRESADMIN_LABEL_WIDTH,
+//					width		: 150,		//  VRESADMIN_WIDTH,
+					maxLength	: 50,		//Limite le nombre de char dans ce champ.
 					enforceMaxLength: true,
 					allowBlank: false,	
-					fieldLabel	: "Rue",	
 					margin		: 20
 				},
 				{	// Le champ texte Nom
 					xtype		: "textfield",
 					itemId		: "txtCodePResAdmin",
-					fieldLabel	: "Code postal",	
+					fieldLabel	: "Code postal",
+//					labelAlign	: "left",
+//					labelWidth	: 150,		// VRESADMIN_LABEL_WIDTH,
+//					width		: 150,		//  VRESADMIN_WIDTH,
+					maxLength	: 5,			//Limite le nombre de char dans ce champ.
+					enforceMaxLength: true,
+					allowBlank: false,						
 					margin		: 20
 				},
 				{	// Le champ texte Prénom
 					xtype		: "textfield",
 					itemId		: "txtVilleResAdmin",
 					fieldLabel	: "Ville",	
+//					labelAlign	: "left",
+//					labelWidth	: 150,		// VRESADMIN_LABEL_WIDTH,
+//					width		: 150,		//  VRESADMIN_WIDTH,
+					maxLength	: 50,			//Limite le nombre de char dans ce champ.
+					enforceMaxLength: true,
+					allowBlank: false,	
 					margin		: 20
 				},
 				{
