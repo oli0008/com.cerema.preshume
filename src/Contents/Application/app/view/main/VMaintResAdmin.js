@@ -6,7 +6,7 @@
 *
 ***********************************************************/
 
-App.view.define('VMaintResAdmin', {
+App.view.define('main.VMaintResAdmin', {
 
     extend	: 'Ext.window.Window',
 	alias 	: 'widget.maint',
