@@ -67,8 +67,10 @@ App.view.define('main.VMaintResAdmin', {
 					dataIndex: "ville_residence"
 				}
 			],
+/* 			
 			store: App.store.create('App.Maintenance.read',{
 				autoLoad: true
+			 */	
 			})					
 		},
 		{
