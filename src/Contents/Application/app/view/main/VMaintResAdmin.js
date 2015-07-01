@@ -70,8 +70,8 @@ App.view.define('main.VMaintResAdmin', {
 /* 			
 			store: App.store.create('App.Maintenance.read',{
 				autoLoad: true
-			 */	
-			})					
+
+			})				 */					
 		},
 		{
 			region	: "east",			
