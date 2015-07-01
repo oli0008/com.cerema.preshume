@@ -36,6 +36,7 @@ Maintenance = {
 
 	read: function(in1,fn_cb) {
   		var q = Maintenance.using('db');
+		console.log('SELECT id_residence, rue_residence, code_postal_residence, ville_residence FROM residence_admin');
 		q.model(BASE_DONNEES, 'SELECT id_residence, rue_residence, code_postal_residence, ville_residence FROM residence_admin',cb);
 	},
 	update: function(in1,fn_cb) {	
