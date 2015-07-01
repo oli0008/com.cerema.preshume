@@ -70,11 +70,11 @@ App.view.define('main.VMaintResAdmin', {
 					width: 130
 				}
 			],
-/* 			
+ 			
 			store: App.store.create('App.Maintenance.read',{
 				autoLoad: true
 
-			})				 */					
+			})				 				
 		},
 		{
 			region	: "east",			
