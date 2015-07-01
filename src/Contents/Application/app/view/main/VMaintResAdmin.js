@@ -83,7 +83,7 @@ App.view.define('main.VMaintResAdmin', {
 				{	// Le champ texte ID
 					xtype		: "textfield",
 					itemId		: "txtRueResAdmin",
-					labelAlign	: "top",
+					labelAlign	: "left",
 /*					labelWidth	: VRESADMIN_LABEL_WIDTH,
 					width		: VRESADMIN_WIDTH,
 					maxLength:	5,			//Limite le nombre de char dans ce champ.
