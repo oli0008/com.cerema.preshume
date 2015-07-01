@@ -221,6 +221,7 @@ App.controller.define('CMain', {
 	openWindowMaintResAdmin: function()
 	{
 		App.view.create('main.VMaintResAdmin',{
+alert('openWindowMaintResAdmin');
 //		App.view.create('main.VContratTravail',{			
 			modal:true
 		}).show();		
