@@ -89,13 +89,13 @@ App.controller.define('CAgent', {
 	/**************************************************************
 	*
 	*	Méthode de sauvegarde des données de modification d'un agent.
-	*	Cette méthode eregistre toutes les saisie qui apparaissent à l'écran, puis elle detruit cette fenêtre.	
+	*	Cette méthode enregistre toutes les saisies qui apparaissent à l'écran, puis elle détruit cette fenêtre.	
 	*
 	***************************************************************/
 	btnAgentEnregistrer_onclick: function()
 	{
 		var errorsGui = [];
-
+		//Vérification que tous les champs ont été remplis
 		if (!App.get('agent textfield#txtAgent').getValue() ) 
 			errorsGui.push("Un agent doit être sélectionné.");
 		else 
@@ -553,7 +553,5 @@ alert('update_gridForService() -- reached');
 		alert('CAgent.onLoad()');
 		// form loaded	
 	//	Ext.tip.QuickTipManager.init(); // lance de quicktip manager (pour les bulles d'aide)
-	}
-	
-	
+	}	
 });

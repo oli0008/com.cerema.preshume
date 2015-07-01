@@ -1,6 +1,6 @@
 /********************************************************
 *
-*	Vue principale appartenant au controlleur principal.
+*	Vue principale de l'application. Elle est gérée par le controlleur principal.
 *
 *	Fonction: Afficher les composants graphiques de la fenêtre ( menu principale & composants de la fenêtre principale).
 *

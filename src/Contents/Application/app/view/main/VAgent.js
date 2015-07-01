@@ -1,3 +1,11 @@
+/********************************************************
+*
+*	Vue gérée par le controlleur CAgent.
+*
+*	Fonction: Afficher les composants graphiques de la fenêtre "Modification agent".
+*
+***********************************************************/
+
 App.view.define('main.VAgent', 
 {
     extend: 'Ext.window.Window',
