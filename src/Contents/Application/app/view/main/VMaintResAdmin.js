@@ -56,15 +56,18 @@ App.view.define('main.VMaintResAdmin', {
 				},
 				{
 					text: "Rue", 
-					dataIndex: "rue_residence"
+					dataIndex: "rue_residence",
+					width: 100
 				},				
 				{
 					text: "Code postal", 
-					dataIndex: "code_postal_residence"
+					dataIndex: "code_postal_residence",
+					width: 10
 				},
 				{
 					text: "Ville", 
-					dataIndex: "ville_residence"
+					dataIndex: "ville_residence",
+					width: 100
 				}
 			],
 /* 			
@@ -77,7 +80,7 @@ App.view.define('main.VMaintResAdmin', {
 			region	: "east",			
 			split	: true,
 			padding	: 10,	//contours de la region
-			width	: 315,	//340,
+			width	: 340,
 			layout	: "vbox",
 			items	: [
 				{	// Le champ texte ID
