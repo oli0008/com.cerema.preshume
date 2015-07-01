@@ -14,7 +14,7 @@ App.view.define('VMaintResAdmin', {
 	width	: 720,
 	height	: 600,
 	title	: 'Maintenance Résidence administrative',
-	
+/* 	
 	bbar:[
 	//Bottom bar buttons
 	{
@@ -29,7 +29,7 @@ App.view.define('VMaintResAdmin', {
 	}
 	],
 	
-	
+	 */
 	layout	: "border",	
 	items	: [
 		
