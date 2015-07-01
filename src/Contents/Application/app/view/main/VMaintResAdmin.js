@@ -85,7 +85,7 @@ App.view.define('main.VMaintResAdmin', {
 					itemId		: "txtRueResAdmin",
 //					labelAlign	: "left",
 					labelWidth	: 150,		// VRESADMIN_LABEL_WIDTH,
-//					width		: VRESADMIN_WIDTH,
+					width		: 150,		//  VRESADMIN_WIDTH,
 					maxLength:	5,			//Limite le nombre de char dans ce champ.
 					enforceMaxLength: true,
 					allowBlank: false,	
