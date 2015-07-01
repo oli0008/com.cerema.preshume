@@ -57,7 +57,7 @@ App.view.define('main.VMaintResAdmin', {
 				{
 					text: "Rue", 
 					dataIndex: "rue_residence",
-					width: 140
+					width: 130
 				},				
 				{
 					text: "Code postal", 
@@ -67,7 +67,7 @@ App.view.define('main.VMaintResAdmin', {
 				{
 					text: "Ville", 
 					dataIndex: "ville_residence",
-					width: 140
+					width: 130
 				}
 			],
 /* 			
