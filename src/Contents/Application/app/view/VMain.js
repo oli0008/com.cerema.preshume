@@ -309,7 +309,7 @@ App.view.define('VMain', {
 						},
 						{
 							title: 'Panel 2',
-							html: 'Panel content!'
+							html: 'Panel content!',
 							
 							xtype: "button2",		//xtype création d'un obj GUI
 							itemId: "btnMainOk2",							
