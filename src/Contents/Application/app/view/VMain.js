@@ -294,10 +294,7 @@ App.view.define('VMain', {
 					},
 					layout: {
 						// layout-specific configs go here
-						type: 'accordion',
-						titleCollapse: false,
-						animate: true,
-						activeOnTop: true
+						type: 'accordion'
 					},
 					items: [
 					{
