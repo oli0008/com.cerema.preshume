@@ -108,8 +108,9 @@ App.controller.define('CMain', {
 
         /*****************************************************
          *
-         * Objectif: Calculer les effectifs présents. Cette méthode
-         * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
+         * Objectif: Calculer les effectifs présents. Cette méthode vérifie que les information déja stockées sont 
+		 * encore valide ...
+		 * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
          *
          ****************************************************/
         calculerEffectifPresent: function() {
@@ -145,6 +146,29 @@ App.controller.define('CMain', {
 		*/
         },
 
+
+        /*****************************************************
+         *
+         * Objectif: Calculer les grands totaux des effectifs présents. 
+         *
+         ****************************************************/
+        calculerGTotalEffectifPresent: function() {
+            //run query on data in table effectifs_physique
+
+		}
+
+
+        /*****************************************************
+         *
+         * Objectif: Calculer les grands totaux des effectifs présents. 
+         *
+         ****************************************************/
+        calculerGTotalETPPresent: function() {
+            //run query on data in table effectifs_ETP
+
+		}
+			
+		
         /*****************************************************
          *
          * Objectif: Calculer les effectifs future. Cette méthode
