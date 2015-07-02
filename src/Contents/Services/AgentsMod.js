@@ -39,7 +39,7 @@ AgentsMod = {
 		// 2eme argument = response		
   		var q = AgentsMod.using('db');	
 //		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
-		q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ', fn_cb);
+		q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb);
 //		q.model(BASE_DONNEES,q.sql('qget_etablis'),fn_cb);  
 	},
 	
