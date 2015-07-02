@@ -181,7 +181,7 @@ App.view.define('VMain', {
 
                 {
                     xtype: "grid",
-                    itemId: "gridTotalsPresent",
+                    itemId: "gridTotalsPresent1",
                     title: "Effectif à dateXXX",
                     titleAlign: "center",
                     margin: 0,
