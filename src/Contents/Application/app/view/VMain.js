@@ -302,6 +302,6 @@ App.view.define('VMain', {
 					items: [
 					]
 				}
-		]
-	}
-});
+			]
+		}
+]});
