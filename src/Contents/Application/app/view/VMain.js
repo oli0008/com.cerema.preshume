@@ -284,7 +284,6 @@ App.view.define('VMain', {
 // *********** TEMP FIX START *******************************************	
 				{	// Un panel avec un layout accordion
 					xtype: 'panel',
-					margin:20,
 					title: 'Accordion Layout',
 					width: 300,
 					height: 300,
