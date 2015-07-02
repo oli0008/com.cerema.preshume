@@ -26,7 +26,6 @@ App.view.define('VMain', {
 			{
                 //Menu Agents
                 text: "Agents",
-                //			width: G_VMAIN_MNU_WIDTH,
                 menu: [{
                     //Menu item
                     text: "Modification",
@@ -35,7 +34,6 @@ App.view.define('VMain', {
             }, {
                 //Menu Maintenance
                 text: "Maintenance",
-                //			width: G_VMAIN_MNU_WIDTH,
                 menu: [{
                     //Menu item
                     text: "Résidence administrative",
