@@ -161,7 +161,6 @@ App.view.define('VMain', {
                     ]
                 },
 				{
-//						{
                             xtype: "grid",
                             itemId: "gridTotalsPresent",
                             margin: 0,
@@ -175,54 +174,8 @@ App.view.define('VMain', {
                                 text: "Total agent",
                                 dataIndex: "agentTotal"
                             }],
-                            store: App.store.create("App.EffectifPhysique.cherche")
-   //                     }					
-					
-				}
-/*
-                { // Un panel avec un layout accordion
-                    xtype: 'panel',
-                    margin: 20,
-                    title: 'Accordion Layout',
-                    width: 300,
-                    height: 300,
-                    defaults: {
-                        // applied to each contained panel
-     //                   /*bodyStyle: 'padding:15px'*/	/*
-                    },
-                    layout: {
-                        // layout-specific configs go here
-                        type: 'accordion'
-                    },
-                    items: [{
-                        title: "panel 1",
-                        html: "panel1"
-                    }, {
-                        title: "panel 2",
-                        html: "panel2"
-                    }, {
-                        title: "panel 3",
-                        items: [
-						{
-                            xtype: "grid",
-                            itemId: "gridTotalsPresent",
-                            margin: 0,
-                            columns: [{
-                                text: "Unité",
-                                dataIndex: "LibUnic"
-                            }, {
-                                text: "Catégorie",
-                                dataIndex: "LibCgr"
-                            }, {
-                                text: "Total agent",
-                                dataIndex: "agentTotal"
-                            }],
-                            store: App.store.create("App.EffectifPhysique.cherche")
-                        }
-						]
-                    }]
-                }
-*/				
+                            store: App.store.create("App.EffectifPhysique.cherche")					
+				}			
             ]
         }
     ]
