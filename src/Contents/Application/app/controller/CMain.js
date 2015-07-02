@@ -291,6 +291,7 @@ App.controller.define('CMain', {
 	onLoad: function()
 	{
 		// form loaded	
+		alert('onLoad');
 		this.calculerEffectifPresent();
 //		this.calculerETPPresent();
 /* 				
