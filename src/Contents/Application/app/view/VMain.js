@@ -316,9 +316,8 @@ App.view.define('VMain', {
 						},
 						{
 							title: 'Panel 3',
-							html: 'Panel content!',
-							
-							{	//grid1_start
+							items: [
+{	//grid1_start
 					layout: "hbox",
 				//	border: true,
 					items:[
@@ -381,7 +380,10 @@ App.view.define('VMain', {
 
 				}//,	//grid2_end		
 				]
-				}
+				}							
+							]
+							
+							
 						}
 					]
 				},
