@@ -331,7 +331,7 @@ App.view.define('main.VAgent',
 				},			
 				{
 					xtype: "numberfield",
-					fieldLabel: "Salaire",
+					fieldLabel: "Indice de rémunération",
 					labelAlign: "top",
 					itemId: "numSalaire", 
 					margin: {
