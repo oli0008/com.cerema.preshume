@@ -314,6 +314,7 @@ App.view.define('VMain', {
 						{							
 							xtype: "grid",
 							itemId: "gridTotalsPresent",
+							margin: 0,
 							columns: [
 							{
 								text: "Unité",
