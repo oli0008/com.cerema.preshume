@@ -61,18 +61,6 @@ App.controller.define('CMain', {
 	Menu_onClick: function(p)
 	{
 		if (p.itemId) {
-/* 			if (p.itemId=="mnuEffectifPresent") 
-				this.calculerEffectifPresent();
-			else if (p.itemId == "mnuEffectifFuture") 
-				this.calculerEffectifFuture();
-			
-			else if (p.itemId == "mnuETPPresent") 
-				this.calculerETPPresent();
-			else if (p.itemId == "mnuETPFuture") 
-				this.calculerETPFuture();		
-			
-			else 
-		 */		
 			if (p.itemId == "mnuModAgent") 
 				this.openWindowModAgent();
 	
@@ -303,12 +291,22 @@ App.controller.define('CMain', {
 		}).show();		
 	},
 	
-//****************
+	/*****************************************************
+	*
+	* Objectif: calcule les effectifs et les ETP présent à l'ouverture de l'application.
+	*
+	****************************************************/	
 	onLoad: function()
 	{
 		// form loaded	
 		alert('onLoad()');
-		//App.get('textfield#text1').setValue('bonjour');
+		this.calculerEffectifPresent();
+//		this.calculerETPPresent();
+/* 				
+//on date_change 
+		this.calculerEffectifFuture();
+		this.calculerETPFuture();		
+ */
 	}
 	
 	
