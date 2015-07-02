@@ -160,7 +160,7 @@ App.view.define('VMain', {
                         }
                     ]
                 },
-				
+/* 				
 				{
                             xtype: "grid",
                             itemId: "gridTotalsPresent",
@@ -179,7 +179,7 @@ App.view.define('VMain', {
                             }],
                             store: App.store.create("App.EffectifPhysique.cherche")					
 				},
-				
+		 */		
 //MMMMMMMMMMM
 	{
 		height: 250,
