@@ -181,7 +181,7 @@ App.view.define('VMain', {
 //MMMMMMMMMMM
 	{
 		height: 250,
-		width: "100%",
+//		width: "100%",
 		border: false,
 		items: [
 		{
