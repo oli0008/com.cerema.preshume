@@ -276,8 +276,117 @@ App.view.define('VMain', {
 				},
 */	
 //************************************ Layout final end *****************************					
+
+//MMMMMMMMMMMMMMMMMMMMMMMMM
+
+//MMMMMMMMMMMMMMMMMMMMMMMMM
 				
 // *********** TEMP FIX START *******************************************	
+				{	// Un panel avec un layout accordion
+					xtype: 'panel',
+					margin:20,
+					title: 'Accordion Layout',
+					width: 300,
+					height: 300,
+					defaults: {
+						// applied to each contained panel
+						bodyStyle: 'padding:15px'
+					},
+					layout: {
+						// layout-specific configs go here
+						type: 'accordion',
+						titleCollapse: false,
+						animate: true,
+						activeOnTop: true
+					},
+					items: [
+						{
+							title: 'Panel 1',
+							html: 'Panel content!'
+							
+							xtype: "button1",		//xtype création d'un obj GUI
+							itemId: "btnMainOk1",
+						},
+						{
+							title: 'Panel 2',
+							html: 'Panel content!'
+							
+							xtype: "button2",		//xtype création d'un obj GUI
+							itemId: "btnMainOk2",							
+						},
+						{
+							title: 'Panel 3',
+							html: 'Panel content!'
+							
+							{	//grid1_start
+					layout: "hbox",
+				//	border: true,
+					items:[
+					{
+						xtype: "grid",			//xtype création d'un obj GUI
+						itemId: "gridTotalsPresent",
+						columns: [
+						{
+							text: "Unité",
+							dataIndex: "LibUnic"
+							},
+							{
+							text: "Catégorie",
+							dataIndex: "LibCgr"
+							},
+							{
+							text: "Total agent",
+							dataIndex: "agentTotal"
+							}
+						],
+				//		flex: 1,
+				//		width: "100%",
+						width: "50%",
+				//		store: App.store.create("App.Agents.cherche")		//???
+						//invocation de la méthode dans le web service "EffectifPhysique.cherche()" qui a été préchargé avec un paramétre
+						store: App.store.create("App.EffectifPhysique.cherche")	
+				},	//grid1_end
+				{	//grid2_start
+					xtype: "grid",			//xtype création d'un obj GUI
+					itemId: "gridGrandTotalpresent",
+					columns: [
+					{
+						text: "Unité",
+						dataIndex: "LibUni"
+					},					
+					{
+						text: "Total unité",
+						dataIndex: "GrandTotal"	//sum(CountAge) as GrandTotal
+					}
+					],
+				//	flex: 1,
+				//	width: "100%",
+					width: "50%",
+					store: App.store.create("App.GTotalEffectifPhysique.cherche", {autoload: true})
+/*
+					App.store.create(
+					fields: [ 
+						//	'Service', 'Cat', 'Type','Valeur'
+							'Service', 'Cat','Valeur'
+							],				
+					data: 	[
+							{	'Service' : "SG",
+							'Cat':	"A+",
+						//	'Type': "A",
+							'Valeur': "3"
+							}
+							] 
+					)
+ */					
+
+				}//,	//grid2_end		
+				]
+				}
+						}
+					]
+				},
+
+/* OLI	
 				{	//grid1_start
 					layout: "hbox",
 				//	border: true,
@@ -342,6 +451,7 @@ App.view.define('VMain', {
 				}//,	//grid2_end		
 				]
 				}
+ OLI	*/			
 // *********** TEMP FIX END *********************************************			
 			]	//CENTER 
 	},
