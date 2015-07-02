@@ -71,7 +71,8 @@ App.controller.define('CMain', {
 			else if (p.itemId == "mnuETPFuture") 
 				this.calculerETPFuture();		
 			
-			else if (p.itemId == "mnuModAgent") 
+			else 
+			if (p.itemId == "mnuModAgent") 
 				this.openWindowModAgent();
 	
 			else if (p.itemId == "mnuResAdmin") 
@@ -305,6 +306,7 @@ App.controller.define('CMain', {
 	onLoad: function()
 	{
 		// form loaded	
+		alert('onLoad()');
 		//App.get('textfield#text1').setValue('bonjour');
 	}
 	
