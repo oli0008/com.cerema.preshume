@@ -10,7 +10,7 @@
 * Déclaration des constantes globales à l'application
 ******************/
 var G_VMAIN_CBO_WIDTH = 210; 		//Définition de la largeur des combos de VMain
-var G_DTERMED = 3; 					//valeur de etablissement.Kets = DterMed
+var G_DTERMED = 1; 					//valeur de etablissement.Kets = DterMed
 /******************
 * Déclaration des variables globales à l'application
 ******************/
