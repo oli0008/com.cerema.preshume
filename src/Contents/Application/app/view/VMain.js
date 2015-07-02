@@ -310,7 +310,32 @@ App.view.define('VMain', {
 					},
 					{
 						title: "panel 3",
-						html: "panel3"
+						items: [
+						{							
+							xtype: "grid",
+							itemId: "gridTotalsPresent",
+							columns: [
+							{
+								text: "Unité",
+								dataIndex: "LibUnic"
+								},
+								{
+								text: "Catégorie",
+								dataIndex: "LibCgr"
+								},
+								{
+								text: "Total agent",
+								dataIndex: "agentTotal"
+								}
+							],
+							store: App.store.create({
+								fields: [
+								],
+								data: [
+								]								
+							})
+						}
+						]
 					}
 					]
 				}
