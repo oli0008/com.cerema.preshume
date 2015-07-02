@@ -160,7 +160,7 @@ App.view.define('VMain', {
                         }
                     ]
                 },
-/*				
+				
 				{
                             xtype: "grid",
                             itemId: "gridTotalsPresent",
@@ -177,7 +177,7 @@ App.view.define('VMain', {
                             }],
                             store: App.store.create("App.EffectifPhysique.cherche")					
 				}	
-*/				
+				
 //MMMMMMMMMMM
 	{
 		height: 250,
@@ -195,6 +195,10 @@ App.view.define('VMain', {
 				flex: 1,			//trouble with bottom space usage
 				items: [
 				{
+					xtype: "label",
+					fieldLabel: "labelL1"
+				},	
+				{
 					xtype: "button",
 					fieldLabel: "buttonL1"
 				},
@@ -208,7 +212,11 @@ App.view.define('VMain', {
 			{
 				layout: "vbox",
 				flex: 1,
-				items: [				
+				items: [
+				{
+					xtype: "label",
+					fieldLabel: "labelR1"
+				},				
 				{
 					xtype: "button",
 					fieldLabel: "buttonR1"  						
