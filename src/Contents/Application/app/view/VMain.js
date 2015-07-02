@@ -326,7 +326,7 @@ App.view.define('VMain', {
 								dataIndex: "agentTotal"
 								}
 							],
-							store: App.store.create("App.EffectifPhysique.cherche",{autoLoad: true})	
+							store: App.store.create("App.EffectifPhysique.cherche")	
 						}
 						]
 					}
