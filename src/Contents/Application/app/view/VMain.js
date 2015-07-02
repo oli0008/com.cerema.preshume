@@ -23,38 +23,6 @@ App.view.define('VMain', {
             xtype: "Menu", //xtype création d'un obj GUI
             itemId: "MenuPanel",
             menu: [
-/*
-			{
-				
-                //Menu Effectifs
-                text: "Effectifs",
-                //			width: G_VMAIN_MNU_WIDTH,
-                menu: [{
-                    //Menu item
-                    text: "Présent",
-                    itemId: "mnuEffectifPresent",
-
-                }, {
-                    //Menu item
-                    text: "Future",
-                    itemId: "mnuEffectifFuture"
-                }]
-            }, 
-			{
-                //Menu ETP
-                text: "ETP",
-                //			width: G_VMAIN_MNU_WIDTH,
-                menu: [{
-                    //Menu item
-                    text: "Présent",
-                    itemId: "mnuETPPresent"
-                }, {
-                    //Menu item
-                    text: "Future",
-                    itemId: "mnuETPFuture"
-                }]
-            }, 
-*/
 			{
                 //Menu Agents
                 text: "Agents",
