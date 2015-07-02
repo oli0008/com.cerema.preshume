@@ -24,12 +24,6 @@ App.controller.define('CMain', {
 
 	views: [
 		"VMain"
-//		,
-//		"main.VMaintResAdmin"
-/* 		,
-		"main.VAgent" */
-/* 		,
-		"main.VContratTravail" */
 	],
 	
 	models: [
