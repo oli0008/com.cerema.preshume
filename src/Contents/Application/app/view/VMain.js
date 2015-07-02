@@ -316,7 +316,7 @@ App.view.define('VMain', {
 						},
 						{
 							title: 'Panel 3',
-							html: 'Panel content!'
+							html: 'Panel content!',
 							
 							{	//grid1_start
 					layout: "hbox",
