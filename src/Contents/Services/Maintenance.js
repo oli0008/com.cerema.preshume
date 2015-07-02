@@ -36,9 +36,7 @@ Maintenance = {
 
 	read: function(in1,fn_cb) {
   		var q = Maintenance.using('db');
-		console.log('SELECT id_residence, rue_residence, code_postal_residence, ville_residence FROM residence_admin');
 		q.model(BASE_DONNEES, 'SELECT id_residence, rue_residence, code_postal_residence, ville_residence FROM residence_admin', fn_cb);
-//		Maintenance.using('db').query('bpclight','SELECT id_residence, rue_residence, code_postal_residence, ville_residence FROM residence_admin',fn_cb);
 	},
 	
 	update: function(in1,fn_cb) {	
@@ -46,18 +44,18 @@ Maintenance = {
 		q.model(BASE_DONNEES, 'UPDATE residence_admin SET rue_residence = "' + in1.rue_residence 
 				+ '", code_postal_residence = "' + in1.code_postal_residence  
 				+ '", ville_residence = "' + in1.ville_residence 
-				+ '" WHERE id_residence = ' + in1.id_residence + ' ',cb);
+				+ '" WHERE id_residence = ' + in1.id_residence + ' ',fn_cb);
 	}
 /* 	
 	,
-	delete: function(o,cb) {	// Delete = delete
-		Agents.using('db').query('bpclight','DELETE FROM agents WHERE kage='+o.matri,cb);
+	delete: function(in1,fn_cb) {	// Delete = delete
+		Agents.using('db').query('bpclight','DELETE FROM agents WHERE kage='+in1.matri,fn_cb);
 	}
 */
 /* 
-	create: function(o,cb) {	// Create = insert
-		console.log('INSERT INTO agents (nom,prenom) VALUES ("'+o.nom+'","'+o.prenom+'")');
-		Agents.using('db').model('bpclight','INSERT INTO agents (nom,prenom) VALUES ("'+o.nom+'","'+o.prenom+'")',cb);
+	create: function(in1,fn_cb) {	// Create = insert
+		console.log('INSERT INTO agents (nom,prenom) VALUES ("'+in1.nom+'","'+in1.prenom+'")');
+		Agents.using('db').model('bpclight','INSERT INTO agents (nom,prenom) VALUES ("'+in1.nom+'","'+in1.prenom+'")',fn_cb);
 	},
  */	
 }
