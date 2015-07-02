@@ -289,10 +289,10 @@ App.controller.define('CMain', {
 	* Objectif: Rediriger vers la fenêtre de maintenance des gardes. 	
 	*
 	****************************************************/	
-	show: function()
+	OnShow: function()
 	{
 		alert('onShow()');
-				this.calculerEffectifPresent();
+		this.calculerEffectifPresent();
 //		this.calculerETPPresent();
 /* 
 		App.view.create('main.VContratTravail',{	 		
@@ -310,7 +310,7 @@ App.controller.define('CMain', {
 	{
 		// form loaded	
 		alert('onLoad()');
-		show();
+		onShow();
 		//this.		calculerEffectifPresent();
 //		this.calculerETPPresent();
 /* 				
