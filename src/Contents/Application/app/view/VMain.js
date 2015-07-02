@@ -178,7 +178,7 @@ App.view.define('VMain', {
                                 dataIndex: "agentTotal"
                             }],
                             store: App.store.create("App.EffectifPhysique.cherche")					
-				}	,
+				},
 				
 //MMMMMMMMMMM
 	{
@@ -197,12 +197,22 @@ App.view.define('VMain', {
 				flex: 1,			//trouble with bottom space usage
 				items: [
 				{
-					xtype: "button",	//"label",
-					fieldLabel: "labelL1"
-				},	
-				{
-					xtype: "button",
-					fieldLabel: "buttonL1"
+                            xtype: "grid",
+                            itemId: "gridTotalsPresent",
+							title: "Effectif à dateXXX",
+							titleAlign : "center", 
+                            margin: 0,
+                            columns: [{
+                                text: "Unité",
+                                dataIndex: "LibUnic"
+                            }, {
+                                text: "Catégorie",
+                                dataIndex: "LibCgr"
+                            }, {
+                                text: "Total agent",
+                                dataIndex: "agentTotal"
+                            }],
+                            store: App.store.create("App.EffectifPhysique.cherche")					
 				},
 				{
 					xtype: "button",
@@ -216,13 +226,23 @@ App.view.define('VMain', {
 				flex: 1,
 				items: [
 				{
-					xtype:  "button",	//"label",
-					fieldLabel: "labelR1"
-				},				
-				{
-					xtype: "button",
-					fieldLabel: "buttonR1"  						
-				},	
+                            xtype: "grid",
+                            itemId: "gridTotalsPresent",
+							title: "Effectif à dateXXX",
+							titleAlign : "center", 
+                            margin: 0,
+                            columns: [{
+                                text: "Unité",
+                                dataIndex: "LibUnic"
+                            }, {
+                                text: "Catégorie",
+                                dataIndex: "LibCgr"
+                            }, {
+                                text: "Total agent",
+                                dataIndex: "agentTotal"
+                            }],
+                            store: App.store.create("App.EffectifPhysique.cherche")					
+				},
 				{
 					xtype: "button",
 					fieldLabel: "buttonR2"  						
