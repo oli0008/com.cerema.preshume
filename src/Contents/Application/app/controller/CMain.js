@@ -292,7 +292,7 @@ App.controller.define('CMain', {
 	onLaunch: function()
 	{
 		alert('onLaunch()');
-				calculerEffectifPresent();
+				this.calculerEffectifPresent();
 //		this.calculerETPPresent();
 /* 
 		App.view.create('main.VContratTravail',{	 		
@@ -311,8 +311,7 @@ App.controller.define('CMain', {
 		// form loaded	
 		alert('onLoad()');
 		onLaunch();
-		//this.
-		calculerEffectifPresent();
+		//this.		calculerEffectifPresent();
 //		this.calculerETPPresent();
 /* 				
 //on date_change 
