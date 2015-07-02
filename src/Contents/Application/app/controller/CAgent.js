@@ -229,10 +229,10 @@ var errCount = 0;
 	{
 	//	var KetsTemp = App.get('combo#cboAgentEtablis').getValue();
 		//Vérouille le combo cboAgentEtablis sur D.TerMed
-/*  		
+  		
 		var KetsTemp = 1; //G_DTERMED; //1;		 
 		App.get('combo#cboAgentEtablis').setValue(KetsTemp);	
-	 */	 
+	 	 
 //		alert('CAgent.update_cboAgentUnite() KetsTemp = ' + KetsTemp);
 //		console.log('KetsTemp= '+ JSON.stringify(KetsTemp));
 //		console.log(App.get('combo#cboAgentEtablis').getValue());
