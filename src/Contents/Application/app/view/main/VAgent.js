@@ -80,9 +80,9 @@ App.view.define('main.VAgent',
 			margin: 5,
 			displayField: "LibEts",
 			valueField: "Kets",
-			store: App.store.create("App.Etablis.get_etablis", {
+//			store: App.store.create("App.Etablis.get_etablis", {
 			//Cette requette ne récupére que l'établissement DTerMed
-//			store: App.store.create("App.AgentsMod.get_etablis1", {	autoLoad: true }		) 		// Creation du store			
+			store: App.store.create("App.AgentsMod.get_etablis1", {	autoLoad: true }		) 		// Creation du store			
 		},
 		//*************************	
 		{
