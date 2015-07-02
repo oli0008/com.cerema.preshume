@@ -16,6 +16,7 @@ var VAGENT_LABEL_WIDTH = 	350;
 var VAGENT_WIDTH = 			350;	
 
 // Variables de validation
+
 var VALID_NUMERO_CONTRAT = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
 
 
