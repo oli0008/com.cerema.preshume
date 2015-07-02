@@ -179,6 +179,26 @@ App.view.define('VMain', {
                     store: App.store.create("App.EffectifPhysique.cherche")
                 },
 
+                {
+                    xtype: "grid",
+                    itemId: "gridTotalsPresent",
+                    title: "Effectif à dateXXX",
+                    titleAlign: "center",
+                    margin: 0,
+                    columns: [{
+                        text: "Unité",
+                        dataIndex: "LibUnic"
+                    }, {
+                        text: "Catégorie",
+                        dataIndex: "LibCgr"
+                    }, {
+                        text: "Total agent",
+                        dataIndex: "agentTotal"
+                    }],
+                    store: App.store.create("App.EffectifPhysique.cherche")
+                },
+
+				
                 //MMMMMMMMMMM
                 {
                     height: 250,
