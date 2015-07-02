@@ -136,9 +136,7 @@ App.view.define('VMain', {
                             width: G_VMAIN_CBO_WIDTH,
                             displayField: "LibUni", //Alt use: LibUnic
                             valueField: "Kuni",
-                            store: App.store.create("App.Unite.get_unite", {
-                                    autoLoad: true
-                                }) // Creation du store
+                            store: App.store.create("App.Unite.get_unite") // Creation du store
                         }, {
                             xtype: "combo",
                             itemId: "cboMainService",
@@ -154,9 +152,7 @@ App.view.define('VMain', {
                             width: G_VMAIN_CBO_WIDTH,
                             displayField: "LibSubc",
                             valueField: "Ksub",
-                            store: App.store.create("App.Service.get_service", {
-                                    autoLoad: true
-                                }) // Creation du store	
+                            store: App.store.create("App.Service.get_service") // Creation du store	
                         },
                         //*************************
                         {
