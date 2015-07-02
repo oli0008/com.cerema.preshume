@@ -286,7 +286,7 @@ App.controller.define('CMain', {
 		
 	/*****************************************************
 	*
-	* Objectif: Rediriger vers la fenêtre de maintenance des gardes. 	
+	* Objectif: . 	
 	*
 	****************************************************/	
 	OnShow: function()
