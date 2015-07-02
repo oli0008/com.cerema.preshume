@@ -289,9 +289,9 @@ App.controller.define('CMain', {
 	* Objectif: Rediriger vers la fenêtre de maintenance des gardes. 	
 	*
 	****************************************************/	
-	onShow: function()
+	onLaunch: function()
 	{
-		alert('onShow()');
+		alert('onLaunch()');
 		App.view.create('main.VContratTravail',{	 		
 			modal:true
 		}).show();		
@@ -306,7 +306,7 @@ App.controller.define('CMain', {
 	{
 		// form loaded	
 		alert('onLoad()');
-		onShow();
+		onLaunch();
 		//this.
 		calculerEffectifPresent();
 //		this.calculerETPPresent();
