@@ -28,7 +28,7 @@ App.view.define('main.VAgent',
 		text: "Annuler",
 	},
 /* TODO - Rollback() */	
-
+//	'->',			//Met les autres éléments du coté droit
 	{
 		xtype: "button",
 		itemId: "btnAgentEnregistrer", 
