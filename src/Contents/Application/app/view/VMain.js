@@ -300,6 +300,18 @@ App.view.define('VMain', {
 						activeOnTop: true
 					},
 					items: [
+					{
+						title: "panel 1",
+						html: "panel1"
+					},
+					{
+						title: "panel 2",
+						html: "panel2"
+					},
+					{
+						title: "panel 3",
+						html: "panel3"
+					}
 					]
 				}
 			]
