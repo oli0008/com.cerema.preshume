@@ -160,8 +160,26 @@ App.view.define('VMain', {
                         }
                     ]
                 },
-
-
+				{
+						{
+                            xtype: "grid",
+                            itemId: "gridTotalsPresent",
+                            margin: 0,
+                            columns: [{
+                                text: "Unité",
+                                dataIndex: "LibUnic"
+                            }, {
+                                text: "Catégorie",
+                                dataIndex: "LibCgr"
+                            }, {
+                                text: "Total agent",
+                                dataIndex: "agentTotal"
+                            }],
+                            store: App.store.create("App.EffectifPhysique.cherche")
+                        }					
+					
+				},
+/*
                 { // Un panel avec un layout accordion
                     xtype: 'panel',
                     margin: 20,
@@ -184,7 +202,8 @@ App.view.define('VMain', {
                         html: "panel2"
                     }, {
                         title: "panel 3",
-                        items: [{
+                        items: [
+						{
                             xtype: "grid",
                             itemId: "gridTotalsPresent",
                             margin: 0,
@@ -199,9 +218,11 @@ App.view.define('VMain', {
                                 dataIndex: "agentTotal"
                             }],
                             store: App.store.create("App.EffectifPhysique.cherche")
-                        }]
+                        }
+						]
                     }]
                 }
+*/				
             ]
         }
     ]
