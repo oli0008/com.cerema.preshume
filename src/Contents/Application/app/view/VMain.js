@@ -160,6 +160,7 @@ App.view.define('VMain', {
                         }
                     ]
                 },
+/*				
 				{
                             xtype: "grid",
                             itemId: "gridTotalsPresent",
@@ -175,7 +176,54 @@ App.view.define('VMain', {
                                 dataIndex: "agentTotal"
                             }],
                             store: App.store.create("App.EffectifPhysique.cherche")					
-				}			
+				}	
+*/				
+//MMMMMMMMMMM
+	{
+		height: 250,
+		width: "100%",
+		border: false,
+		items: [
+		{
+			layout: "hbox",
+			width: "100%",
+			border: false,
+			items: [
+			{
+// Colonne inférieure gauche				
+				layout: "vbox",
+				flex: 1,			//trouble with bottom space usage
+				items: [
+				{
+					xtype: "button",
+					fieldLabel: "buttonL1"
+				},
+				{
+					xtype: "button",
+					fieldLabel: "buttonL2"					
+				}
+				]
+			},
+// Colonne inférieure droite
+			{
+				layout: "vbox",
+				flex: 1,
+				items: [				
+				{
+					xtype: "button",
+					fieldLabel: "buttonR1"  						
+				},	
+				{
+					xtype: "button",
+					fieldLabel: "buttonR2"  						
+				}
+				]
+			}
+			]
+		}
+		]
+	}
+//MMMMMMMMMMM
             ]
         }
     ]
