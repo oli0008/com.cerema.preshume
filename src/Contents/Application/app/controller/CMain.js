@@ -61,7 +61,7 @@ App.controller.define('CMain', {
 	Menu_onClick: function(p)
 	{
 		if (p.itemId) {
-			if (p.itemId=="mnuEffectifPresent") 
+/* 			if (p.itemId=="mnuEffectifPresent") 
 				this.calculerEffectifPresent();
 			else if (p.itemId == "mnuEffectifFuture") 
 				this.calculerEffectifFuture();
@@ -72,6 +72,7 @@ App.controller.define('CMain', {
 				this.calculerETPFuture();		
 			
 			else 
+		 */		
 			if (p.itemId == "mnuModAgent") 
 				this.openWindowModAgent();
 	
