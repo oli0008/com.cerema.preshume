@@ -188,7 +188,7 @@ App.view.define('VMain', {
                     height: 300,
                     defaults: {
                         // applied to each contained panel
-                        /*bodyStyle: 'padding:15px'*/
+     //                   /*bodyStyle: 'padding:15px'*/	/*
                     },
                     layout: {
                         // layout-specific configs go here
