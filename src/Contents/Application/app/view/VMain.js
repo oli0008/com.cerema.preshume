@@ -448,7 +448,7 @@ App.view.define('VMain', {
 							}
 							] 
 					)
- */					
+ 					
 
 				}//,	//grid2_end		
 				]
