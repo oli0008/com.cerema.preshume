@@ -178,7 +178,7 @@ App.view.define('VMain', {
                             store: App.store.create("App.EffectifPhysique.cherche")
                         }					
 					
-				},
+				}
 /*
                 { // Un panel avec un layout accordion
                     xtype: 'panel',
