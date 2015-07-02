@@ -22,8 +22,7 @@ App.view.define('VMain', {
             baseCls: 'cls-header',
             xtype: "Menu", //xtype création d'un obj GUI
             itemId: "MenuPanel",
-            menu: [
-			{
+            menu: [{
                 //Menu Agents
                 text: "Agents",
                 menu: [{
@@ -160,80 +159,69 @@ App.view.define('VMain', {
                         }
                     ]
                 },
- 				
-				{
-                            xtype: "grid",
-                            itemId: "gridTotalsPresent",
-							title: "Effectif à dateXXX",
-							titleAlign : "center", 
-                            margin: 0,
-                            columns: [{
-                                text: "Unité",
-                                dataIndex: "LibUnic"
-                            }, {
-                                text: "Catégorie",
-                                dataIndex: "LibCgr"
-                            }, {
-                                text: "Total agent",
-                                dataIndex: "agentTotal"
-                            }],
-                            store: App.store.create("App.EffectifPhysique.cherche")					
-				},
-		 		
-//MMMMMMMMMMM
-	{
-		height: 250,
-//		width: "100%",
-		border: false,
-		items: [
-		{
-			layout: "hbox",
-//			width: "100%",
-			border: false,
-			items: [
-			{
-// Colonne inférieure gauche				
-				layout: "vbox",
-				flex: 1,			//trouble with bottom space usage
-				items: [
-				{
-					xtype: "button",	//"label",
-					fieldLabel: "labelL1"
-				},	
-				{
-					xtype: "button",
-					fieldLabel: "buttonL1"
-				},
-				{
-					xtype: "button",
-					fieldLabel: "buttonL2"					
-				}
-				]
-			},
-// Colonne inférieure droite
-			{
-				layout: "vbox",
-				flex: 1,
-				items: [
-				{
-					xtype:  "button",	//"label",
-					fieldLabel: "labelR1"
-				},				
-				{
-					xtype: "button",
-					fieldLabel: "buttonR1"  						
-				},	
-				{
-					xtype: "button",
-					fieldLabel: "buttonR2"  						
-				}
-				]
-			}
-			]
-		}
-		]
-	}
-//MMMMMMMMMMM
+
+                {
+                    xtype: "grid",
+                    itemId: "gridTotalsPresent",
+                    title: "Effectif à dateXXX",
+                    titleAlign: "center",
+                    margin: 0,
+                    columns: [{
+                        text: "Unité",
+                        dataIndex: "LibUnic"
+                    }, {
+                        text: "Catégorie",
+                        dataIndex: "LibCgr"
+                    }, {
+                        text: "Total agent",
+                        dataIndex: "agentTotal"
+                    }],
+                    store: App.store.create("App.EffectifPhysique.cherche")
+                },
+
+                //MMMMMMMMMMM
+                {
+                    height: 250,
+                    //		width: "100%",
+                    border: false,
+                    items: [{
+                        layout: "hbox",
+                        //			width: "100%",
+                        border: false,
+                        items: [{
+                                // Colonne inférieure gauche				
+                                layout: "vbox",
+                                flex: 1, //trouble with bottom space usage
+                                items: [{
+                                    xtype: "button", //"label",
+                                    fieldLabel: "labelL1"
+                                }, {
+                                    xtype: "button",
+                                    fieldLabel: "buttonL1"
+                                }, {
+                                    xtype: "button",
+                                    fieldLabel: "buttonL2"
+                                }]
+                            },
+                            // Colonne inférieure droite
+                            {
+                                layout: "vbox",
+                                flex: 1,
+                                items: [{
+                                    xtype: "button", //"label",
+                                    fieldLabel: "labelR1"
+                                }, {
+                                    xtype: "button",
+                                    fieldLabel: "buttonR1"
+                                }, {
+                                    xtype: "button",
+                                    fieldLabel: "buttonR2"
+                                }]
+                            }
+                        ]
+                    }]
+                }
+                //MMMMMMMMMMM
             ]
         }
     ]
