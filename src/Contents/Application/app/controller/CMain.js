@@ -292,7 +292,8 @@ App.controller.define('CMain', {
 	{
 		// form loaded	
 		alert('onLoad');
-		this.calculerEffectifPresent();
+		//this.
+		calculerEffectifPresent();
 //		this.calculerETPPresent();
 /* 				
 //on date_change 
