@@ -12,8 +12,6 @@
 ******************/
 var BASE_DONNEES = 'bpclight';	//base de données de l'application 
 
-
-
 AgentsMod = {
 
 //*********************************************** 
