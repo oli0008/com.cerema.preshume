@@ -292,9 +292,13 @@ App.controller.define('CMain', {
 	onLaunch: function()
 	{
 		alert('onLaunch()');
+				calculerEffectifPresent();
+//		this.calculerETPPresent();
+/* 
 		App.view.create('main.VContratTravail',{	 		
 			modal:true
-		}).show();		
+		}).show();	
+ */		
 	},
 	
 	/*****************************************************
