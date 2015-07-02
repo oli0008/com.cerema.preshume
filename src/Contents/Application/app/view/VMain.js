@@ -326,12 +326,7 @@ App.view.define('VMain', {
 								dataIndex: "agentTotal"
 								}
 							],
-							store: App.store.create({
-								fields: [
-								],
-								data: [
-								]								
-							})
+							store: App.store.create("App.EffectifPhysique.cherche")	
 						}
 						]
 					}
