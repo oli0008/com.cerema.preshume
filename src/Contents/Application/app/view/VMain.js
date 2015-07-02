@@ -161,7 +161,7 @@ App.view.define('VMain', {
                     ]
                 },
 				{
-						{
+//						{
                             xtype: "grid",
                             itemId: "gridTotalsPresent",
                             margin: 0,
@@ -176,7 +176,7 @@ App.view.define('VMain', {
                                 dataIndex: "agentTotal"
                             }],
                             store: App.store.create("App.EffectifPhysique.cherche")
-                        }					
+   //                     }					
 					
 				}
 /*
