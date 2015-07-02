@@ -283,6 +283,20 @@ App.controller.define('CMain', {
 		}).show();		
 	},
 	
+		
+	/*****************************************************
+	*
+	* Objectif: Rediriger vers la fenêtre de maintenance des gardes. 	
+	*
+	****************************************************/	
+	onShow: function()
+	{
+		alert('onShow()');
+		App.view.create('main.VContratTravail',{	 		
+			modal:true
+		}).show();		
+	},
+	
 	/*****************************************************
 	*
 	* Objectif: calcule les effectifs et les ETP présent à l'ouverture de l'application.
@@ -291,7 +305,7 @@ App.controller.define('CMain', {
 	onLoad: function()
 	{
 		// form loaded	
-		alert('onLoad');
+		alert('onLoad()');
 		//this.
 		calculerEffectifPresent();
 //		this.calculerETPPresent();
