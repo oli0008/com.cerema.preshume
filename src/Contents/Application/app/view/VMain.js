@@ -195,7 +195,7 @@ App.view.define('VMain', {
 				flex: 1,			//trouble with bottom space usage
 				items: [
 				{
-					xtype: "label",
+					xtype: "button",	//"label",
 					fieldLabel: "labelL1"
 				},	
 				{
@@ -214,7 +214,7 @@ App.view.define('VMain', {
 				flex: 1,
 				items: [
 				{
-					xtype: "label",
+					xtype:  "button",	//"label",
 					fieldLabel: "labelR1"
 				},				
 				{
