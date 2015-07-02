@@ -194,7 +194,7 @@ App.view.define('VMain', {
 			{
 // Colonne inférieure gauche				
 				layout: "vbox",
-				flex: 1,			//trouble with bottom space usage
+//				flex: 1,			//trouble with bottom space usage
 				items: [
 				{
                             xtype: "grid",
