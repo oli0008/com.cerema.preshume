@@ -30,5 +30,5 @@ where
 	and
 	s.archive = 0
 	and
-	e.Kets = 1
+	e.Kets <> 1
 order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub
