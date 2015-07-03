@@ -68,6 +68,7 @@ App.view.define('VMain', {
         {
             region: "center",
             split: true,
+			layout: "vbox",
             items: [{ // 1er ligne
                     layout: "hbox",
                     border: true, //false,
@@ -168,9 +169,11 @@ App.view.define('VMain', {
 						layout: "hbox",
 						items: [
 						{
+							width: "50%",
 							html: "0"
 						},
 						{
+							width: "50%",
 							html: "1"
 						}
 						]
@@ -179,9 +182,11 @@ App.view.define('VMain', {
 						layout: "hbox",
 						items: [
 						{
+							width: "50%",
 							html: "00"
 						},
 						{
+							width: "50%",
 							html: "11"
 						}						
 						]						
