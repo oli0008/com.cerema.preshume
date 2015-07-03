@@ -1,6 +1,11 @@
-/* selectionne tous les agents en fonction qui ne sont ni vacataires ni stagiaires */
+/*	and
+	e.Kets = {P_ETABLIS}*/
+/* e.Kets = 1 == DTerMed */
+/* u.Kuni = 5 == LAP */
+/* s.Ksub = 47 == SGRN */	
+
 select 
-	a.Nom, a.Prenom, a.Matri, 
+	a.Nom, a.Prenom, a.Matri, a.Kage, a.id_residence, a.id_metier, a.id_contrat_travail,
 	e.Kets, e.LibEts, 
 	u.Kuni, u.LibUnic, 
 	s.Ksub, s.LibSubC
@@ -24,11 +29,4 @@ where
 	u.archive = 0
 	and
 	s.archive = 0
-	and
-	e.Kets = {P_ETABLIS}
-order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub	
-
-/* e.Kets = 1 == DTerMed */
-/* u.Kuni = 5 == LAP */
-/* s.Ksub = 47 == SGRN */	
-
+order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub
