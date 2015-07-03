@@ -171,11 +171,11 @@ App.view.define('VMain', {
 						flex: 1,
 						items: [
 						{
-							width: "50%",
+							flex: 1,
 							html: "0"
 						},
 						{
-							width: "50%",
+							flex: 1,
 							html: "1"
 						}
 						]
@@ -186,11 +186,11 @@ App.view.define('VMain', {
 						flex: 1,
 						items: [
 						{
-							width: "50%",
+							flex: 1,
 							html: "00"
 						},
 						{
-							width: "50%",
+							flex: 1,
 							html: "11"
 						}						
 						]						
