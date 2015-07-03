@@ -167,7 +167,7 @@ App.view.define('VMain', {
 					items: [
 					{
 						layout: "hbox",
-						height: "100%",
+						width: "100%",
 						flex: 1,
 						items: [
 						{
@@ -182,7 +182,7 @@ App.view.define('VMain', {
 					},
 					{
 						layout: "hbox",
-						height: "100%",
+						width: "100%",
 						flex: 1,
 						items: [
 						{
