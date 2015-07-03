@@ -194,7 +194,8 @@ App.view.define('VMain', {
 								dataIndex: "agentTotal"
 							}
 							],
-							store: App.store.create("App.EffectifPhysique.cherche")
+	//						store: App.store.create("App.EffectifPhysique.cherche")	//calculate_EffPresent	//
+							store: App.store.create("App.EffectifPhysique.calculate_EffPresent")	//	//
 					//		store: App.store.create("App.EffectifPhysique.get_Eff")
 						},
 						{
