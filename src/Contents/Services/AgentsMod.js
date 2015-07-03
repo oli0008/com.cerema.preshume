@@ -22,7 +22,7 @@ AgentsMod = {
 //		q.model(BASE_DONNEES,q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
 //*********************************************** 
 /* 
-	cherche: function(in1,fn_cb) {
+	XX_cherche: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response	
   		var q = Agents.using('db');
@@ -253,7 +253,7 @@ Kage =  2638
 /* 	
 ///////////////////////////////
 	 
-	 cherche: function(in1,fn_cb) {
+	 YY_cherche: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response
 		var q = AgentsMod.using('db');  
