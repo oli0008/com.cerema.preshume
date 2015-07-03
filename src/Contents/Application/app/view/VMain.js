@@ -226,14 +226,12 @@ App.view.define('VMain', {
 						{
 							flex: 1,
 							height: "100%",
-							margin: 10,
 							border: true,
 							html: "00"
 						},
 						{
 							flex: 1,
 							height: "100%",
-							margin: 10,
 							border: true,
 							html: "11"
 						}						
