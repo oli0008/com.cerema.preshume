@@ -182,7 +182,8 @@ App.view.define('VMain', {
 							columns: [
 							{
 								text: "Service",
-								dataIndex: "LibUnic"
+								dataIndex: "LibUnic",
+								flex: 1
 							},
 							{
 								text: "CatFP",
