@@ -1,5 +1,17 @@
-// class EffectifPhysique
-// class omneedia db = classe moteur d'abstraction de base de données
+/***********************************************************
+*
+*	class EffectifPhysique
+*
+*	Fonction: Gérer les effectifs physiques.
+*
+************************************************************/
+ 
+
+/*****************
+* Déclaration des constantes pour cette classe
+******************/
+var BASE_DONNEES = 'bpclight';	//base de données de l'application 
+
 
 EffectifPhysique = {
 	//Calcule les effectif présents
@@ -14,12 +26,11 @@ EffectifPhysique = {
 	},
 	
 	
-	//Récupére 1 établissement prédéfinit. 	 
-	get_EffPresent: function(in1,fn_cb) {
-		// 1er argument = error
-		// 2eme argument = response		
+	//Récupére les effectif présents du mois 	 
+	get_EffPresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
 		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
+		q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb);
 		q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb);
 //		q.model(BASE_DONNEES,q.sql('qget_etablis'),fn_cb);  
 	}
