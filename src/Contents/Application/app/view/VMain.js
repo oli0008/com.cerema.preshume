@@ -199,8 +199,8 @@ App.view.define('VMain', {
 							}
 							],
 	//						store: App.store.create("App.EffectifPhysique.cherche")	//calculate_EffPresent	//
-							store: App.store.create("App.EffectifPhysique.calculate_EffPresent")	//	//
-					//		store: App.store.create("App.EffectifPhysique.get_Eff")
+					//		store: App.store.create("App.EffectifPhysique.calculate_EffPresent")	//	//
+							store: App.store.create("App.EffectifPhysique.get_Eff")
 						},
 						{
 							flex: 1,
