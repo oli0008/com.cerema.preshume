@@ -318,10 +318,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         onLoad: function() {
-			App.get('mainform').on('show',function() {
-				
-					alert('bidon');
-			});
+
             // form loaded	
    //         alert('onLoad()');
             //onShow();
