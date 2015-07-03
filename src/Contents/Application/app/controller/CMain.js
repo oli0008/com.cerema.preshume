@@ -298,7 +298,7 @@ App.controller.define('CMain', {
          * Objectif: .
          *
          ****************************************************/
-        OnShow: function() {
+        onShow: function() {
             alert('onShow()');
             this.calculerEffectifPresent();
             //		this.calculerETPPresent();
