@@ -172,6 +172,7 @@ App.controller.define('CMain', {
  //           App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
             App.get('grid#gridTotalsPresent').getStore().load();
+			this.calculerGTotalEffectifPresent();
 
         },
 //MMMMMMMMMMM
@@ -183,7 +184,7 @@ App.controller.define('CMain', {
          ****************************************************/
         calculerGTotalEffectifPresent: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
-
+           App.get('grid#gridGdTotalsPresent').getStore().load();
 		},
 
 
@@ -329,11 +330,6 @@ App.controller.define('CMain', {
      //oli        this.calculerEffectifPresent();
 			 this.lireEffectifPresent();
             //		this.calculerETPPresent();
-            /* 
-		App.view.create('main.VContratTravail',{	 		
-			modal:true
-		}).show();	
- */
         },
 
         /*****************************************************
