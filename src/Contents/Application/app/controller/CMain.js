@@ -44,7 +44,7 @@ App.controller.define('CMain', {
                     click: "calculerEffectifPresent"
                 },
 				"mainform": {
-					render: "OnShow"
+					render: "onShow"
 				}
             });
 
