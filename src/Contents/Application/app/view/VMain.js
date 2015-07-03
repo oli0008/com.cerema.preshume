@@ -173,7 +173,6 @@ App.view.define('VMain', {
 						items: [
 						{
 							flex: 1,
-							border: false,
 							title: "Effectif réel",
 							height: "100%",
 							xtype: "grid",							
