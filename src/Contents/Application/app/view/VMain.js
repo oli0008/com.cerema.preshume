@@ -167,12 +167,14 @@ App.view.define('VMain', {
 					width: "100%",
 					border: false,
 					items: [
+					//Section supérieure
 					{
 						layout: "hbox",
 						width: "100%",
 						flex: 1,
 						border: false,
 						items: [
+						//grid haut gauche
 						{
 							flex: 1,
 							title: "Effectif réel",
@@ -202,9 +204,12 @@ App.view.define('VMain', {
 					//		store: App.store.create("App.EffectifPhysique.calculate_EffPresent")	//	//
 							store: App.store.create("App.EffectifPhysique.get_EffPresent")
 						},
+						//grid haut droit
 						{
+
 							flex: 1,
 							title: "Effectif ETP",
+							titleAlign : "center",
 							height: "100%",
 							xtype: "grid",							
 							columns: [
@@ -225,18 +230,21 @@ App.view.define('VMain', {
 						}
 						]
 					},
+					//Section inférieure
 					{
 						layout: "hbox",
 						width: "100%",
 						flex: 1,
 						border: false,
 						items: [
+						//graph bas gauche
 						{
 							flex: 1,
 							height: "100%",
 							border: true,
 							html: "00"
 						},
+						//graph bas droit
 						{
 							flex: 1,
 							height: "100%",
