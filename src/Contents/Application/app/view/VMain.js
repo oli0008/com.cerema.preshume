@@ -176,7 +176,15 @@ App.view.define('VMain', {
 							height: "100%",
 							xtype: "grid",							
 							columns: [
-							
+							{
+								text: "Service"
+							},
+							{
+								text: "CatFP"
+							},
+							{
+								text: "Effectif"
+							}
 							],
 							store: App.store.create({
 								fields: [],
@@ -188,7 +196,15 @@ App.view.define('VMain', {
 							height: "100%",
 							xtype: "grid",							
 							columns: [
-							
+							{
+								text: "Service"
+							},
+							{
+								text: "CatFP"
+							},
+							{
+								text: "ETP"
+							}							
 							],
 							store: App.store.create({
 								fields: [],
