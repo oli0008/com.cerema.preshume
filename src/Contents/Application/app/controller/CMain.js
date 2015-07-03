@@ -148,7 +148,46 @@ App.controller.define('CMain', {
 			// ****************************************************************
 		*/
         },
+//MMMMMMMMMMM
 
+        /*****************************************************
+         *
+         * Objectif: Récupérer les effectifs présents qui ont étés stockées pour le mois courrant. 
+         *
+         ****************************************************/
+        lireEffectifPresent: function() {
+            //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
+            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
+
+
+            //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
+            //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
+
+            //
+
+            // on charge le store avec une variable "recherche"
+            tempVar = 1;
+            //		console.log('** HERE **');
+            //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
+            //Passe un parametre au Store 
+            App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche = '11';
+            // on rafraichit le store
+            App.get('grid#gridTotalsPresent').getStore().load();
+
+            /*
+			//combo logic here
+			// **************************************************************** 
+			Selection Logique des combos
+			E	U 	S 	
+			0	0	0	tous les établissements
+			1	0	0	par établissements
+			1	1	0	par unité
+			1	1 	1 	par service
+
+			// ****************************************************************
+		*/
+        },
+//MMMMMMMMMMM
 
         /*****************************************************
          *

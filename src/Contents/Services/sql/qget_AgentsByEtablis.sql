@@ -18,17 +18,6 @@ from
 	join etablissements e
 		on e.Kets = u.Kets
 where 
-	a.actif = 1 
-	and 
-	a.kgra <> 66 		/* stagiaire */
-	and 
-	a.kgra <> 67 		/* vacataire */
-	and
-	e.archive = 0
-	and
-	u.archive = 0
-	and
-	s.archive = 0
-	and
+
 	e.Kets = 1
 order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub
