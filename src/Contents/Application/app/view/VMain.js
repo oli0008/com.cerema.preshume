@@ -195,7 +195,6 @@ App.view.define('VMain', {
 						},
 						{
 							flex: 1,
-							border: false,
 							title: "Effectif ETP",
 							height: "100%",
 							xtype: "grid",							
