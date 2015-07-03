@@ -43,6 +43,9 @@ App.controller.define('CMain', {
                 "button#btnMainOk": {
                     click: "calculerEffectifPresent"
                 }
+				"mainform": {
+					show: "onShow"
+				}
             });
 
             App.init('VMain', this.onLoad);
@@ -314,7 +317,7 @@ App.controller.define('CMain', {
         onLoad: function() {
             // form loaded	
    //         alert('onLoad()');
-            onShow();
+            //onShow();
             //this.		calculerEffectifPresent();
             //		this.calculerETPPresent();
             /* 				
