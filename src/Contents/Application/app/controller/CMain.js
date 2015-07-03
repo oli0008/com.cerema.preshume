@@ -153,7 +153,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         calculerGTotalEffectifPresent: function() {
-            //run query on data in table effectifs_physique
+            //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
 
 		}
 
@@ -164,7 +164,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         calculerGTotalETPPresent: function() {
-            //run query on data in table effectifs_ETP
+            //run query on data in table effectifs_ETP cf G_TotalETPPres.sql
 
 		}
 			
