@@ -195,7 +195,7 @@ App.view.define('VMain', {
 							}
 							],
 							store: App.store.create("App.EffectifPhysique.cherche")
-					//		store: App.store.create("App.EffectifPhysique.get_EffPresent")
+					//		store: App.store.create("App.EffectifPhysique.get_Eff")
 						},
 						{
 							flex: 1,
