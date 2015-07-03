@@ -44,7 +44,10 @@ App.controller.define('CMain', {
                     click: "calculerEffectifPresent"
                 },
 				"mainform": {
-					show: "onShow"
+					show: function() {
+						
+						alert('fsdklfj');
+					}
 				}
             });
 
