@@ -73,7 +73,7 @@ App.view.define('VMain', {
                     layout: "hbox",
                     border: true, //false,
                     width: "100%",
-					height: 100,
+					height: 80,
                     items: [{
                             xtype: "combo",
                             itemId: "cboMainEtablis",
@@ -173,10 +173,12 @@ App.view.define('VMain', {
 						items: [
 						{
 							flex: 1,
+							height: "100%",
 							html: "0"
 						},
 						{
 							flex: 1,
+							height: "100%",
 							html: "1"
 						}
 						]
@@ -188,10 +190,12 @@ App.view.define('VMain', {
 						items: [
 						{
 							flex: 1,
+							height: "100%",
 							html: "00"
 						},
 						{
 							flex: 1,
+							height: "100%",
 							html: "11"
 						}						
 						]						
