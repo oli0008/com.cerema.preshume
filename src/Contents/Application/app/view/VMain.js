@@ -179,7 +179,7 @@ App.view.define('VMain', {
 							flex: 1,
 							title: "Effectif réel",
 							titleAlign : "center",
-							height: "100%",
+							height: "50%",	//"100%",
 							xtype: "grid",	
 							itemId: "gridTotalsPresent",
 							columns: [
@@ -203,7 +203,7 @@ App.view.define('VMain', {
 							],
 	//						store: App.store.create("App.EffectifPhysique.cherche")	//calculate_EffPresent	//
 					//		store: App.store.create("App.EffectifPhysique.calculate_EffPresent")	//	//
-							store: App.store.create("App.EffectifPhysique.get_EffPresent")
+							store: App.store.create("App.EffectifPhysique.get_effPresent")
 						},
 						//grid haut droit
 						{
@@ -240,10 +240,28 @@ App.view.define('VMain', {
 						//graph bas gauche
 						{
 							flex: 1,
+							title: "GRAND TOTAL Effectif réel",
+							titleAlign : "center",
 							height: "100%",
-							border: true,
-						//	html: "00"
-						xtype: "button",  text: "Ok"
+							xtype: "grid",	
+							itemId: "gridGdTotalsPresent",
+							columns: [
+							{
+								text: "Département",
+							//	dataIndex: "LibUnic",
+								dataIndex: "lib_departement_ep",
+					//			flex: 1
+							},
+							{
+								text: "Grand Total",
+							//	dataIndex: "LibCgr"
+								dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal
+								
+							}
+							],
+	//						store: App.store.create("App.EffectifPhysique.cherche")	//calculate_EffPresent	//
+					//		store: App.store.create("App.EffectifPhysique.calculate_EffPresent")	//	//
+							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")
 						},
 						//graph bas droit
 						{
