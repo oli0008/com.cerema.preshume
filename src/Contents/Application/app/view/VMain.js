@@ -174,12 +174,27 @@ App.view.define('VMain', {
 						{
 							flex: 1,
 							height: "100%",
-							html: "0"
+							xtype: "grid",							
+							columns: [
+							
+							],
+							store: App.store.create({
+								fields: [],
+								data: []
+							})
+							]
 						},
 						{
 							flex: 1,
 							height: "100%",
-							html: "1"
+							xtype: "grid",							
+							columns: [
+							
+							],
+							store: App.store.create({
+								fields: [],
+								data: []
+							})
 						}
 						]
 					},
