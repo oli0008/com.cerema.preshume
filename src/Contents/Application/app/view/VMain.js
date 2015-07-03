@@ -255,7 +255,8 @@ App.view.define('VMain', {
 							{
 								text: "Grand Total",
 							//	dataIndex: "LibCgr"
-								dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal					
+					//			dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal
+								dataIndex: "sum(count_agent)"		//sum(count_agent) as GrandTotal								
 							}
 							],
 							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")
