@@ -177,7 +177,8 @@ App.view.define('VMain', {
 							flex: 1,
 							title: "Effectif réel",
 							height: "100%",
-							xtype: "grid",							
+							xtype: "grid",	
+							itemId: "gridTotalsPresent",
 							columns: [
 							{
 								text: "Service"
@@ -189,10 +190,7 @@ App.view.define('VMain', {
 								text: "Effectif"
 							}
 							],
-							store: App.store.create({
-								fields: [],
-								data: []
-							})
+							store: App.store.create("App.EffectifPhysique.cherche")
 						},
 						{
 							flex: 1,

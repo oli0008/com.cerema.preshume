@@ -299,8 +299,8 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         onShow: function() {
-            alert('onShow()');
-            this.calculerEffectifPresent();
+          //  alert('onShow()');
+             this.calculerEffectifPresent();
             //		this.calculerETPPresent();
             /* 
 		App.view.create('main.VContratTravail',{	 		
