@@ -176,6 +176,7 @@ App.view.define('VMain', {
 						{
 							flex: 1,
 							title: "Effectif réel",
+							padding: 10,
 							height: "100%",
 							xtype: "grid",							
 							columns: [
@@ -197,6 +198,7 @@ App.view.define('VMain', {
 						{
 							flex: 1,
 							title: "Effectif ETP",
+							padding: 10,
 							height: "100%",
 							xtype: "grid",							
 							columns: [
