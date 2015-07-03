@@ -179,7 +179,7 @@ App.view.define('VMain', {
 							flex: 1,
 							title: "Effectif réel",
 							titleAlign : "center",
-							height: "50%",	//"100%",
+							height: "100%",
 							xtype: "grid",	
 							itemId: "gridTotalsPresent",
 							columns: [
