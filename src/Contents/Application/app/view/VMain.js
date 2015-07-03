@@ -162,7 +162,7 @@ App.view.define('VMain', {
                 },
 				{
 					layout: "vbox",
-					height: "100%",
+					flex: 1,
 					width: "100%",
 					items: [
 					{
