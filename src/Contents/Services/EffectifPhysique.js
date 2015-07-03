@@ -3,7 +3,8 @@
 
 EffectifPhysique = {
 	//Calcule les effectif présents
-	 cherche: function(in1,fn_cb) {
+//	 cherche: function(in1,fn_cb) {
+	calculate_EffPresent: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response		
 		var q = EffectifPhysique.using('db');  
