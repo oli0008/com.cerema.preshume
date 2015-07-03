@@ -187,7 +187,7 @@ App.view.define('VMain', {
 								text: "Service",
 							//	dataIndex: "LibUnic",
 								dataIndex: "lib_departement_ep",
-								flex: 1
+					//			flex: 1
 							},
 							{
 								text: "CatFP",
@@ -207,7 +207,6 @@ App.view.define('VMain', {
 						},
 						//grid haut droit
 						{
-
 							flex: 1,
 							title: "Effectif ETP",
 							titleAlign : "center",
