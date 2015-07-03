@@ -23,8 +23,7 @@ var G_VMAIN_CBO_WIDTH = 210; //Définition de la largeur des combos de VMain
 App.controller.define('CMain', {
 
     views: [
-        "VMain",
-		"VAgent"
+        "VMain"
     ],
 
     models: [],
@@ -49,7 +48,7 @@ App.controller.define('CMain', {
 				}
             });
 
-            App.init('VAgent', this.onLoad);
+            App.init('VMain', this.onLoad);
 
         },
         Menu_onClick: function(p) {
