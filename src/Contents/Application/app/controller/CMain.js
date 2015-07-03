@@ -153,6 +153,7 @@ App.controller.define('CMain', {
         /*****************************************************
          *
          * Objectif: Récupérer les effectifs présents qui ont étés stockées pour le mois courrant. 
+
          *
          ****************************************************/
         lireEffectifPresent: function() {
