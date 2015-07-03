@@ -244,7 +244,7 @@ App.view.define('VMain', {
 							height: "100%",
 							border: true,
 						//	html: "00"
-						xtype: "button"
+						xtype: "button",  text: "Ok"
 						},
 						//graph bas droit
 						{
