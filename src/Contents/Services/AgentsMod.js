@@ -80,8 +80,6 @@ AgentsMod = {
 	
 	get_allAgents: function(in1,fn_cb) {	
 	  	var q = AgentsMod.using('db'); 
-//		console.log('>>AgentsMod.get_allAgents()');
-//		console.log(q.sql('qget_allAgents'));		//log apparait dans DOS box
 		q.model(BASE_DONNEES,q.sql('qget_allAgents'),fn_cb);  
 	},
 	
@@ -90,12 +88,14 @@ AgentsMod = {
 		console.log('>>AgentsMod.get_agentsByEtablis() VVVV');
 //		console.log(q.sql( 'qget_agentsByEtablis' + {P_ETABLIS: in1.id_Etablis} ) );		//log apparait dans DOS box
 		// Temp fix: have set Kets = 1
-//OLI		q.model(BASE_DONNEES,q.sql('qget_agentsByEtablis',{P_ETABLIS: 1}),fn_cb);		
+	q.model(BASE_DONNEES,q.sql('qget_agentsByEtablis',{P_ETABLIS: 1}),fn_cb);		
 //		q.model(BASE_DONNEES,q.sql('qget_agentsByEtablis',{P_ETABLIS: in1.id_Etablis}),fn_cb);
+/* 
 	q.model(BASE_DONNEES,'select a.Nom, a.Prenom, a.Matri, e.Kets, e.LibEts, u.Kuni, u.LibUnic, s.Ksub, s.LibSubC' 
 	+ ' from agents a join unites u on u.Kuni = a.Kuni join subdis s on s.Ksub = a.Ksub join etablissements e on e.Kets = u.Kets'
 	+ ' where a.actif = 1 and a.kgra <> 66 and a.kgra <> 67 and e.archive = 0 and u.archive = 0 and s.archive = 0 and e.Kets = 1'
 	+ ' order by a.Nom, a.Prenom,e.Kets, u.Kuni, s.Ksub	',fn_cb);	
+	 */
 	},
 	
 	get_agentsByUnite: function(in1, in2, fn_cb) {	
