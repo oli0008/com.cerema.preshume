@@ -42,7 +42,7 @@ App.controller.define('CMain', {
                 },
                 "button#btnMainOk": {
                     click: "calculerEffectifPresent"
-                }
+                },
 				"mainform": {
 					show: "onShow"
 				}
