@@ -182,16 +182,20 @@ App.view.define('VMain', {
 							columns: [
 							{
 								text: "Service",
-								dataIndex: "LibUnic",
+							//	dataIndex: "LibUnic",
+								dataIndex: "lib_departement_ep",
 								flex: 1
 							},
 							{
 								text: "CatFP",
-								dataIndex: "LibCgr"
+							//	dataIndex: "LibCgr"
+								dataIndex: "lib_categorie_ep"
+								
 							},
 							{
 								text: "Effectif",
-								dataIndex: "agentTotal"
+							//	dataIndex: "agentTotal"
+								dataIndex: "count_agent"
 							}
 							],
 	//						store: App.store.create("App.EffectifPhysique.cherche")	//calculate_EffPresent	//
