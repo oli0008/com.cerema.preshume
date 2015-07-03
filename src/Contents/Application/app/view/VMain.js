@@ -170,8 +170,8 @@ App.view.define('VMain', {
 					//Section supérieure
 					{
 						layout: "hbox",
-						width: "100%",
-						flex: 1,
+						width: "100%",	//
+						flex: 1,		//takes up all height
 						border: false,
 						items: [
 						//grid haut gauche
