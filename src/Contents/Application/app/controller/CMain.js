@@ -166,7 +166,7 @@ App.controller.define('CMain', {
         calculerGTotalETPPresent: function() {
             //run query on data in table effectifs_ETP cf G_TotalETPPres.sql
 
-		}
+		},
 			
 		
         /*****************************************************
