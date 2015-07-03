@@ -148,12 +148,24 @@ App.controller.define('CMain', {
 			// ****************************************************************
 		*/
         },
-//MMMMMMMMMMM
+
+        /*****************************************************
+         *
+         * Objectif: Lire la date de calcul. 
+		 * Si l'utilisateur n'a pas sélectionné de date ou si c'est une date  pour le mois courrant.
+		 * on calculera un effectif present.
+		 * Toutes les dates passées sont considéreés comme des dates du mois courrant.
+		 * Les dates supérieures au mois courrant actionneront les calculs pour les effectifs futures et le ETP futures.
+         *
+         ****************************************************/
+        lireDateDeCalcule: function() {
+            //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
+   //        App.get('grid#gridGdTotalsPresent').getStore().load();
+		},
 
         /*****************************************************
          *
          * Objectif: Récupérer les effectifs présents qui ont étés stockées pour le mois courrant. 
-
          *
          ****************************************************/
         lireEffectifPresent: function() {
@@ -179,7 +191,7 @@ App.controller.define('CMain', {
 
         /*****************************************************
          *
-         * Objectif: Calculer les grands totaux des effectifs présents. 
+         * Objectif: Calculer les grands totaux des effectifs présents pour le mois courrant.
          *
          ****************************************************/
         calculerGTotalEffectifPresent: function() {
