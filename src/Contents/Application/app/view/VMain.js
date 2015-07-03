@@ -165,6 +165,7 @@ App.view.define('VMain', {
 					layout: "vbox",
 					flex: 1,
 					width: "100%",
+					border: false,
 					items: [
 					{
 						layout: "hbox",
