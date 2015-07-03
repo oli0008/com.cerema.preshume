@@ -181,13 +181,16 @@ App.view.define('VMain', {
 							itemId: "gridTotalsPresent",
 							columns: [
 							{
-								text: "Service"
+								text: "Service",
+								dataIndex: "LibUnic"
 							},
 							{
-								text: "CatFP"
+								text: "CatFP",
+								dataIndex: "LibCgr"
 							},
 							{
-								text: "Effectif"
+								text: "Effectif",
+								dataIndex: "agentTotal"
 							}
 							],
 							store: App.store.create("App.EffectifPhysique.cherche")
