@@ -167,26 +167,12 @@ App.controller.define('CMain', {
             //
 
             // on charge le store avec une variable "recherche"
-            tempVar = 1;
-            //		console.log('** HERE **');
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
             //Passe un parametre au Store 
-            App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche = '11';
+ //           App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
             App.get('grid#gridTotalsPresent').getStore().load();
 
-            /*
-			//combo logic here
-			// **************************************************************** 
-			Selection Logique des combos
-			E	U 	S 	
-			0	0	0	tous les établissements
-			1	0	0	par établissements
-			1	1	0	par unité
-			1	1 	1 	par service
-
-			// ****************************************************************
-		*/
         },
 //MMMMMMMMMMM
 
@@ -340,7 +326,8 @@ App.controller.define('CMain', {
          ****************************************************/
         onShow: function() {
           //  alert('onShow()');
-             this.calculerEffectifPresent();
+        //     this.calculerEffectifPresent();
+			 this.lireEffectifPresent();
             //		this.calculerETPPresent();
             /* 
 		App.view.create('main.VContratTravail',{	 		
