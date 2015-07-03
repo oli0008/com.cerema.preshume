@@ -155,7 +155,7 @@ App.controller.define('CMain', {
         calculerGTotalEffectifPresent: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
 
-		}
+		},
 
 
         /*****************************************************
