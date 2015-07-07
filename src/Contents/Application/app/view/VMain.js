@@ -262,8 +262,8 @@ App.view.define('VMain', {
 						//graph bas gauche
 						{							
 							flex: 1,
-							title: "GRAND TOTAL Effectif réel",
-							titleAlign : "center",
+				//			title: "GRAND TOTAL Effectif réel",
+				//			titleAlign : "center",
 							height: "100%",
 							xtype: "text",
 							/*
