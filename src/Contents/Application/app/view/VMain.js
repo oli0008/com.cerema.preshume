@@ -271,7 +271,7 @@ App.view.define('VMain', {
 							{
 								text: "Département",
 								dataIndex: "lib_departement_ep",
-								flex: 1
+					//			flex: 1
 							},
 							{
 								text: "Grand Total",
