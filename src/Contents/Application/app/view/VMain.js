@@ -265,9 +265,9 @@ App.view.define('VMain', {
 							border: true,
 				//			html: "22", 
 							xtype: "chart",
-							           style: 'background:#fff',
-            animate: true,
-            shadow: true,
+							style: 'background:#fff',
+							animate: true,
+							shadow: true,
       //      store: store1,
             axes: [{
                 type: 'Numeric',
@@ -297,7 +297,21 @@ App.view.define('VMain', {
                     this.setTitle(storeItem.get('name') + ': ' + storeItem.get('data1') + ' $');
                   }
                 },
-			}],			
+//PPP
+                label: {
+                  display: 'insideEnd',
+                  'text-anchor': 'middle',
+                    field: 'data1',
+                    renderer: Ext.util.Format.numberRenderer('0'),
+                    orientation: 'vertical',
+                    color: '#333'
+                },
+                xField: 'name',
+                yField: 'data1'
+            }]				
+				
+//PPP				
+//			}],			
 							
 							
 							
