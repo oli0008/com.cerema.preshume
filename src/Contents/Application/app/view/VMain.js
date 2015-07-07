@@ -311,6 +311,7 @@ App.view.define('VMain', {
 //ZZ						
 						]
 					},
+//////////////////////////////////////////////////////					
 					//Section inférieure
 					{
 						layout: "hbox",
