@@ -216,6 +216,9 @@ App.view.define('VMain', {
 								ftype: 'groupingsummary'
 								
 							} 
+								
+								
+						//	{ftype:'grouping'}
 							],
 							store: App.store.create("App.EffectifPhysique.get_effPresent",
 							{
