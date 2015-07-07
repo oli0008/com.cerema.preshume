@@ -202,7 +202,9 @@ App.view.define('VMain', {
 							}
 							],
 							features: [
-							{groupHeaderTpl: '{columnName}: {name} ({rows.length} Item{[values.rows.length > 1 ? "s" : ""]})'} //,
+						//	{
+								groupHeaderTpl: '{columnName}: {name} ({rows.length} Item{[values.rows.length > 1 ? "s" : ""]})'
+								//} //,
 						//	{ftype:'grouping'}
 							],
 							store: App.store.create("App.EffectifPhysique.get_effPresent",
