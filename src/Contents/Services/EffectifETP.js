@@ -27,7 +27,7 @@ EffectifETP = {
 	
 	
 	//Récupére les effectifs ETP présents du mois 	 
-	get_effectifETP: function(in1,fn_cb) {	
+	get_effectifETPPresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
 console.log('get_effPresent()');
 		q.model(BASE_DONNEES, 'select  lib_departement_etp, lib_categorie_etp, sum_quot,  Kets,  date_etp '
