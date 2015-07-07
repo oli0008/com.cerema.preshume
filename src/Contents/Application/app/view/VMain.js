@@ -269,6 +269,7 @@ App.view.define('VMain', {
 							animate: true,
 							shadow: true,
       //      store: store1,
+	  store: App.store.create("App.EffectifPhysique.get_effPresent")
             axes: [{
                 type: 'Numeric',
                 position: 'left',
@@ -343,7 +344,7 @@ App.view.define('VMain', {
 							],
 */	
 				//		store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
-						store: App.store.create("App.EffectifPhysique.get_effPresent")
+//oli						store: App.store.create("App.EffectifPhysique.get_effPresent")
 						
 /* Ext.create('Ext.chart.Chart', {
    renderTo: Ext.getBody(),
