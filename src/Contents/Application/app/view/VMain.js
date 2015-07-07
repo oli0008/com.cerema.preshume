@@ -201,7 +201,10 @@ App.view.define('VMain', {
 								dataIndex: "count_agent"
 							}
 							],
-							features: [{ftype:'grouping'}],
+							features: [
+							  groupHeaderTpl: '{columnName}: {name} ({rows.length} Item{[values.rows.length > 1 ? "s" : ""]})',
+							{ftype:'grouping'}
+							],
 							store: App.store.create("App.EffectifPhysique.get_effPresent",
 							{
 								groupField:  "lib_departement_ep",
