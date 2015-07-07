@@ -262,13 +262,13 @@ App.view.define('VMain', {
 							columns: [
 							{
 								text: "Service",
-								dataIndex: "lib_departement_ep",
+								dataIndex: "lib_departement_etp",
 								hidden: true
 					//			flex: 1
 							},
 							{
 								text: "CatFP",
-								dataIndex: "lib_categorie_ep"
+								dataIndex: "lib_categorie_etp"
 								
 							},
 							/*{
@@ -281,7 +281,7 @@ App.view.define('VMain', {
 								sortable: true, 
 								align:"right", 
 								renderer:  Ext.util.Format.numberRenderer('0'), 
-								dataIndex: 'count_agent',
+								dataIndex: 'sum_quot',	//'count_agent',
 								summaryType: 'sum',
 								summaryRenderer:function(v){
 									return "<b>"+v+"</b>";
@@ -296,9 +296,9 @@ App.view.define('VMain', {
 							],
 							store: App.store.create("App.EffectifPhysique.get_effPresent",
 							{
-								groupField:  "lib_departement_ep",
+								groupField:  "lib_departement_etp",
 								listeners: {
-							//		load: function(p) { alert('listeners: groupField1');}
+							//		load: function(p) { alert('listeners: groupField2');}
 								}
 							}
 							)
