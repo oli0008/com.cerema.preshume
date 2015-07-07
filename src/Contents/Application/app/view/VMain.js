@@ -266,14 +266,14 @@ App.view.define('VMain', {
 				//			html: "22", 
 							xtype: "chart",
 							style: 'background:#fff',
-							animate: true,
-							shadow: true,
+					//		animate: true,
+					//		shadow: true,
       //      store: store1,
 	  store: App.store.create("App.EffectifPhysique.get_effPresent"),
             axes: [{
                 type: 'Numeric',
                 position: 'left',
-                fields: ['data1'],
+                fields: ['lib_categorie_ep'],
                 label: {
                     renderer: Ext.util.Format.numberRenderer('0,0')
                 },
@@ -283,7 +283,7 @@ App.view.define('VMain', {
             }, {
                 type: 'Category',
                 position: 'bottom',
-                fields: ['name'],
+                fields: ['lib_departement_ep'],
                 title: 'Month of the Year'
             }],
             series: [{
@@ -295,20 +295,20 @@ App.view.define('VMain', {
                   width: 140,
                   height: 28,
                   renderer: function(storeItem, item) {
-                    this.setTitle(storeItem.get('name') + ': ' + storeItem.get('data1') + ' $');
+                    this.setTitle(storeItem.get('lib_departement_ep') + ': ' + storeItem.get('lib_categorie_ep') + ' $');
                   }
                 },
 //PPP
                 label: {
                   display: 'insideEnd',
                   'text-anchor': 'middle',
-                    field: 'data1',
+                    field: 'lib_categorie_ep',
                     renderer: Ext.util.Format.numberRenderer('0'),
                     orientation: 'vertical',
                     color: '#333'
                 },
-                xField: 'name',
-                yField: 'data1'
+                xField: 'lib_departement_ep',
+                yField: 'lib_categorie_ep'
             }],				
 				
 //PPP				
