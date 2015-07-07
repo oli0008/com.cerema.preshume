@@ -308,7 +308,7 @@ App.view.define('VMain', {
                 },
                 xField: 'name',
                 yField: 'data1'
-            }]				
+            }],				
 				
 //PPP				
 //			}],			
