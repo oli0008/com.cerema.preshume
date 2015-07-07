@@ -201,7 +201,7 @@ App.view.define('VMain', {
 								dataIndex: "count_agent"
 							}
 							],
-							store: App.store.create("App.EffectifPhysique.get_effPresent"
+							store: App.store.create("App.EffectifPhysique.get_effPresent",
 							{
 								groupField:  "lib_departement_ep",
 								listeners: {
