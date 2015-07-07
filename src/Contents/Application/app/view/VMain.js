@@ -265,6 +265,8 @@ App.view.define('VMain', {
 							title: "GRAND TOTAL Effectif réel",
 							titleAlign : "center",
 							height: "100%",
+							xtype: "text",
+							/*
 							xtype: "grid",	
 							itemId: "gridGdTotalsPresent",
 							columns: [
@@ -278,7 +280,9 @@ App.view.define('VMain', {
 								dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal								
 							}
 							],
-							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")							
+						*/	
+							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
+							
 						},
 						//graph bas droit
 						{
