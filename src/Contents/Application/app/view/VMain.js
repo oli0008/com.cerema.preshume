@@ -299,7 +299,7 @@ App.view.define('VMain', {
 								ftype: 'groupingsummary'				
 							} 
 							],
-							store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent",
+							store: App.store.create("App.EffectifETP.get_effectifETPPresent",
 							{
 								groupField:  "lib_departement_etp",
 								listeners: {
