@@ -350,12 +350,8 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         onLoad: function() {
-
             // form loaded	
    //         alert('onLoad()');
-            //onShow();
-            //this.		calculerEffectifPresent();
-            //		this.calculerETPPresent();
             /* 				
 //on date_change 
 		this.calculerEffectifFuture();
