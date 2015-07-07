@@ -270,15 +270,12 @@ App.view.define('VMain', {
 							columns: [
 							{
 								text: "Département",
-							//	dataIndex: "LibUnic",
 								dataIndex: "lib_departement_ep",
 					//			flex: 1
 							},
 							{
 								text: "Grand Total",
-							//	dataIndex: "LibCgr"
-								dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal
-					//			dataIndex: "sum(count_agent)"		//sum(count_agent) as GrandTotal								
+								dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal								
 							}
 							],
 							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")
