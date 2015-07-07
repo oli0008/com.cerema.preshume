@@ -40,8 +40,6 @@ console.log('get_effPresent()');
 	get_gdTotalEffPresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
 console.log('get_gdTotalEffPresent()');
-//07 JUL		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
-	//	q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb);
 		q.model(BASE_DONNEES, 'select lib_departement_ep, sum(count_agent) as GrandTotal '
 			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' '
 			+ 'group by lib_departement_ep', fn_cb);
