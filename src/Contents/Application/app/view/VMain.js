@@ -265,6 +265,43 @@ App.view.define('VMain', {
 							border: true,
 				//			html: "22", 
 							xtype: "chart",
+							           style: 'background:#fff',
+            animate: true,
+            shadow: true,
+      //      store: store1,
+            axes: [{
+                type: 'Numeric',
+                position: 'left',
+                fields: ['data1'],
+                label: {
+                    renderer: Ext.util.Format.numberRenderer('0,0')
+                },
+                title: 'Number of Hits',
+                grid: true,
+                minimum: 0
+            }, {
+                type: 'Category',
+                position: 'bottom',
+                fields: ['name'],
+                title: 'Month of the Year'
+            }],
+            series: [{
+                type: 'column',
+                axis: 'left',
+                highlight: true,
+                tips: {
+                  trackMouse: true,
+                  width: 140,
+                  height: 28,
+                  renderer: function(storeItem, item) {
+                    this.setTitle(storeItem.get('name') + ': ' + storeItem.get('data1') + ' $');
+                  }
+                },
+							
+							
+							
+							
+							
 /* Ext.define('WeatherPoint', {
     extend: 'Ext.data.Model',
  //   fields: ['temperature', 'date']	
