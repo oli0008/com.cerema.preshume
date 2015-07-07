@@ -203,7 +203,7 @@ App.view.define('VMain', {
 							],
 							features: [
 							{
-								groupHeaderTpl: '{columnName}: {name} ({rows.length} agents{[values.rows.length > 1 ? "s" : ""]})',
+								groupHeaderTpl: '{columnName}: {name} ({rows.length} agent{[values.rows.length > 1 ? "s" : ""]})',
 								ftype: 'groupingsummary'
 								
 							} 
