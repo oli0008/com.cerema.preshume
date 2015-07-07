@@ -284,7 +284,7 @@ App.view.define('VMain', {
 							}
 							],
 							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")
-*/							
+							
 						},
 						//graph bas droit
 						{
