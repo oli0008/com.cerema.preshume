@@ -263,7 +263,7 @@ App.view.define('VMain', {
 						{
 				//			flex: 1,
 				//			height: "100%",
-							border: true,
+				//			border: true,
 							html: "22"							
 /*							
 							flex: 1,
