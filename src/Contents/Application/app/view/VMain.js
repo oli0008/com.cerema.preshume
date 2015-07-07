@@ -297,7 +297,7 @@ App.view.define('VMain', {
                     this.setTitle(storeItem.get('name') + ': ' + storeItem.get('data1') + ' $');
                   }
                 },
-				],			
+			}],			
 							
 							
 							
