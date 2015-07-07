@@ -205,7 +205,7 @@ App.view.define('VMain', {
 							{
 								groupField:  "lib_departement_ep",
 								listeners: {
-									function(p) { alert('Groupé');}
+									load: function(p) { alert('Groupé');}
 								}
 							}
 							)
