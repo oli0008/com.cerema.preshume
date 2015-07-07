@@ -266,7 +266,7 @@ App.view.define('VMain', {
 				//			titleAlign : "center",
 							height: "100%",
 						//	xtype: "button",
-							html: "11"
+							html: "11",
 							/*
 							xtype: "grid",	
 							itemId: "gridGdTotalsPresent",
