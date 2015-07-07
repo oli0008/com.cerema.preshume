@@ -264,11 +264,11 @@ App.view.define('VMain', {
 							height: "100%",
 							border: true,
 							html: "22", 
-Ext.define('WeatherPoint', {
+/* Ext.define('WeatherPoint', {
     extend: 'Ext.data.Model',
  //   fields: ['temperature', 'date']	
     fields: ['lib_departement_ep', 'lib_categorie_ep']
-});
+}); */
 
 
 /*					
