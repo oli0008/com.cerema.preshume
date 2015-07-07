@@ -214,12 +214,7 @@ App.view.define('VMain', {
 							],
 							features: [
 							{
-								groupHeaderTpl:  Ext.create('Ext.XTemplate',
-									'{columnName}: {name} '
-								}),
-								
-								
-								//'{columnName}: {name} ({rows.length} agent{[values.rows.length > 1 ? "s" : ""]})',
+								groupHeaderTpl:  '{columnName}: {name}',
 								ftype: 'groupingsummary'
 								
 							} 
