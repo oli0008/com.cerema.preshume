@@ -177,7 +177,7 @@ App.view.define('VMain', {
 						//grid haut gauche
 						{
 							flex: 1,
-							title: "Effectif réel",
+							title: "Effectif physique",
 							titleAlign : "center",
 							height: "100%",
 							xtype: "grid",	
