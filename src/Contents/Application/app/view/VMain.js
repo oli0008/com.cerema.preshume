@@ -211,7 +211,7 @@ App.view.define('VMain', {
 											alert(name);
 											return Ext.String.trim(name);
 									}
-								},
+								}),
 								
 								
 								//'{columnName}: {name} ({rows.length} agent{[values.rows.length > 1 ? "s" : ""]})',
