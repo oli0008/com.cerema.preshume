@@ -184,7 +184,7 @@ App.controller.define('CMain', {
  //           App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
             App.get('grid#gridTotalsPresent').getStore().load();
-	//		this.calculerGTotalEffectifPresent();
+			this.calculerGTotalEffectifPresent();
 
         },
 //MMMMMMMMMMM
