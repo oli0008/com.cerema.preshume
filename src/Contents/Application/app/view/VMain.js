@@ -264,8 +264,8 @@ App.view.define('VMain', {
 				//			flex: 1,
 				//			height: "100%",
 				//			border: true,
-							html: "22"							
-/*							
+				//			html: "22"							
+							
 							flex: 1,
 							title: "GRAND TOTAL Effectif réel",
 							titleAlign : "center",
