@@ -198,7 +198,7 @@ App.view.define('VMain', {
 								text: "Effectif",
 								dataIndex: "count_agent"
 							}*/
-							{
+							{	//calcule la somme pour ce service
 								header: "Effectif", 
 								width: 100, 
 								sortable: true, 
