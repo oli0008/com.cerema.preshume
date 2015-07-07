@@ -264,7 +264,8 @@ App.view.define('VMain', {
 							flex: 1,
 							height: "100%",
 							border: true,
-							html: "22"							
+							xtype: "button"
+					//		html: "22"							
 /*							
 							flex: 1,
 							title: "GRAND TOTAL Effectif réel",
