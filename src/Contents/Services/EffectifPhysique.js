@@ -29,7 +29,8 @@ EffectifPhysique = {
 	//Récupére les effectif présents du mois 	 
 	get_effPresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
-		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
+//07 JUL		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
+console.log('get_effPresent()');
 	//	q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb);
 		q.model(BASE_DONNEES, 'select  lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep '
 			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' ', fn_cb);
