@@ -165,7 +165,7 @@ App.controller.define('CMain', {
 
         /*****************************************************
          *
-         * Objectif: Récupérer les effectifs présents qui ont étés stockées pour le mois courrant. 
+         * Objectif: Récupérer les effectifs Physque présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
         lireEffectifPresent: function() {
@@ -182,12 +182,11 @@ App.controller.define('CMain', {
             // on rafraichit le store
             App.get('grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
-        },
-		
+        },		
 
         /*****************************************************
          *
-         * Objectif: Récupérer les effectifs présents qui ont étés stockées pour le mois courrant. 
+         * Objectif: Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
         lireETPPresent: function() {
