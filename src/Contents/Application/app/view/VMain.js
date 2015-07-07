@@ -186,6 +186,7 @@ App.view.define('VMain', {
 							{
 								text: "Service",
 								dataIndex: "lib_departement_ep",
+								hidden: true
 					//			flex: 1
 							},
 							{
