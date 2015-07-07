@@ -270,7 +270,7 @@ App.view.define('VMain', {
 					//		shadow: true,
       //      store: store1,
 	  store: App.store.create("App.EffectifPhysique.get_effPresent"),
-	  autoLoad: true,
+	  load: true,
             axes: [{
                 type: 'Numeric',
                 position: 'left',
