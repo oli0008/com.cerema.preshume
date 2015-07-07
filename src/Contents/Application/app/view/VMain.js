@@ -260,14 +260,20 @@ App.view.define('VMain', {
 						border: false,
 						items: [
 						//graph bas gauche
-						{							
+						{	
+							flex: 1,
+							height: "100%",
+							border: true,
+							html: "11"
+
+/*						
 							flex: 1,
 				//			title: "GRAND TOTAL Effectif réel",
 				//			titleAlign : "center",
 							height: "100%",
 						//	xtype: "button",
 							html: "11",
-							/*
+/*
 							xtype: "grid",	
 							itemId: "gridGdTotalsPresent",
 							columns: [
@@ -282,7 +288,7 @@ App.view.define('VMain', {
 							}
 							],
 						*/	
-	//						store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
+						store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
 							
 						},
 						//graph bas droit
