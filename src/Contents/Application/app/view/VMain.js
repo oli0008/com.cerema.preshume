@@ -264,7 +264,8 @@ App.view.define('VMain', {
 							flex: 1,
 						//	height: "100%",
 							border: true,
-							xtype: "button"
+							xtype: "button",
+							itemId: "gridGdTot"
 					//		html: "22"							
 /*							
 							flex: 1,
