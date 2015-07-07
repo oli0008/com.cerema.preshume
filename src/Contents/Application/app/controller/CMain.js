@@ -41,7 +41,6 @@ App.controller.define('CMain', {
                     select: "valider_cboMainService"
                 },
                 "button#btnMainOk": {
-     //               click: "calculerEffectifPresent"
 					click: "lireEffectifPresent"
                 },
 				"mainform": {
