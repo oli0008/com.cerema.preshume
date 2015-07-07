@@ -214,8 +214,7 @@ App.view.define('VMain', {
 							features: [
 							{
 								groupHeaderTpl:  '{columnName}: {name}',
-								ftype: 'groupingsummary'
-								
+								ftype: 'groupingsummary'				
 							} 
 							],
 							store: App.store.create("App.EffectifPhysique.get_effPresent",
