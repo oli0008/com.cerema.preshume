@@ -227,6 +227,7 @@ App.view.define('VMain', {
 							)
 						},
 						//grid haut droit
+/* 						
 						{		//gridEffectifETP
 							flex: 1,
 							title: "Effectif ETP",
@@ -249,9 +250,60 @@ App.view.define('VMain', {
 								data: []
 							})
 						}
-						
-						
-						
+	 */					
+//ZZ						
+						{
+							flex: 1,
+							title: "Effectif physique",
+							titleAlign : "center",
+							height: "100%",
+							xtype: "grid",	
+							itemId: "gridEffectifETP",		//"gridEffectifPhysque",
+							columns: [
+							{
+								text: "Service",
+								dataIndex: "lib_departement_ep",
+								hidden: true
+					//			flex: 1
+							},
+							{
+								text: "CatFP",
+								dataIndex: "lib_categorie_ep"
+								
+							},
+							/*{
+								text: "Effectif",
+								dataIndex: "count_agent"
+							}*/
+							{	//calcule la somme pour ce service
+								header: "Effectif", 
+								width: 100, 
+								sortable: true, 
+								align:"right", 
+								renderer:  Ext.util.Format.numberRenderer('0'), 
+								dataIndex: 'count_agent',
+								summaryType: 'sum',
+								summaryRenderer:function(v){
+									return "<b>"+v+"</b>";
+								}					
+							}
+							],
+							features: [
+							{
+								groupHeaderTpl:  '{columnName}: {name}',
+								ftype: 'groupingsummary'				
+							} 
+							],
+							store: App.store.create("App.EffectifPhysique.get_effPresent",
+							{
+								groupField:  "lib_departement_ep",
+								listeners: {
+							//		load: function(p) { alert('listeners: groupField1');}
+								}
+							}
+							)
+						},						
+//ZZ						
 						]
 					},
 					//Section inférieure
