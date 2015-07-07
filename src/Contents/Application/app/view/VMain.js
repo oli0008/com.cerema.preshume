@@ -265,7 +265,7 @@ App.view.define('VMain', {
 				//			title: "GRAND TOTAL Effectif réel",
 				//			titleAlign : "center",
 							height: "100%",
-							xtype: "text",
+							xtype: "button",
 							/*
 							xtype: "grid",	
 							itemId: "gridGdTotalsPresent",
