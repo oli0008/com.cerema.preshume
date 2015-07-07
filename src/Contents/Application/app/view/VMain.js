@@ -181,7 +181,7 @@ App.view.define('VMain', {
 							titleAlign : "center",
 							height: "100%",
 							xtype: "grid",	
-							itemId: "gridTotalsPresent",
+							itemId: "gridEffectifPhysque",
 							columns: [
 							{
 								text: "Service",
