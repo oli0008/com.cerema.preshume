@@ -265,7 +265,8 @@ App.view.define('VMain', {
 				//			title: "GRAND TOTAL Effectif réel",
 				//			titleAlign : "center",
 							height: "100%",
-							xtype: "button",
+						//	xtype: "button",
+							html: "11"
 							/*
 							xtype: "grid",	
 							itemId: "gridGdTotalsPresent",
@@ -281,7 +282,7 @@ App.view.define('VMain', {
 							}
 							],
 						*/	
-					//		store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
+							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
 							
 						},
 						//graph bas droit
