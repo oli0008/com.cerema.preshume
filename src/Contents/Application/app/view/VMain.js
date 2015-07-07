@@ -221,13 +221,13 @@ App.view.define('VMain', {
 							{
 								groupField:  "lib_departement_ep",
 								listeners: {
-							//		load: function(p) { alert('Groupé');}
+							//		load: function(p) { alert('listeners: groupField1');}
 								}
 							}
 							)
 						},
 						//grid haut droit
-						{
+						{		//gridEffectifETP
 							flex: 1,
 							title: "Effectif ETP",
 							titleAlign : "center",
@@ -249,6 +249,9 @@ App.view.define('VMain', {
 								data: []
 							})
 						}
+						
+						
+						
 						]
 					},
 					//Section inférieure
