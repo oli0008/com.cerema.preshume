@@ -265,6 +265,11 @@ App.view.define('VMain', {
 							height: "100%",
 							border: true,
 							html: "22", 
+Ext.define('WeatherPoint', {
+    extend: 'Ext.data.Model',
+ //   fields: ['temperature', 'date']	
+    fields: ['lib_departement_ep', 'lib_categorie_ep']
+});
 
 
 /*					
@@ -286,8 +291,18 @@ App.view.define('VMain', {
 							}
 							],
 */	
-						store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
-							
+				//		store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
+						
+Ext.create('Ext.chart.Chart', {
+   renderTo: Ext.getBody(),
+   width: 400,
+   height: 300,
+ //  store: store
+ store: App.store.create("App.EffectifPhysique.get_effPresent")
+ 
+});
+
+						
 						},
 						//graph bas droit
 						{
