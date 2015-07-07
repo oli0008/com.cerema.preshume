@@ -203,7 +203,18 @@ App.view.define('VMain', {
 							],
 							features: [
 							{
-								groupHeaderTpl: '{columnName}: {name} ({rows.length} agent{[values.rows.length > 1 ? "s" : ""]})',
+								groupHeaderTpl:  Ext.create('Ext.XTemplate',
+									'{columnName}: {name} ',
+									'{name:this.sumUp}',
+									{
+										sumUp: function(name) {
+											alert(name);
+											return Ext.String.trim(name);
+									}
+								},
+								
+								
+								//'{columnName}: {name} ({rows.length} agent{[values.rows.length > 1 ? "s" : ""]})',
 								ftype: 'groupingsummary'
 								
 							} 
