@@ -185,7 +185,30 @@ App.controller.define('CMain', {
             // on rafraichit le store
             App.get('grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
+        },
+		
 
+        /*****************************************************
+         *
+         * Objectif: Récupérer les effectifs présents qui ont étés stockées pour le mois courrant. 
+         *
+         ****************************************************/
+        lireETPPresent: function() {
+            //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
+            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
+
+
+            //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
+            //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
+
+            //
+
+            // on charge le store avec une variable "recherche"
+            //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
+            //Passe un parametre au Store 
+ //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
+            // on rafraichit le store
+            App.get('grid#gridEffectifETP').getStore().load();
         },
 //MMMMMMMMMMM
 
