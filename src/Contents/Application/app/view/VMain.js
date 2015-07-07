@@ -263,7 +263,8 @@ App.view.define('VMain', {
  							flex: 1,
 							height: "100%",
 							border: true,
-							html: "22", 
+				//			html: "22", 
+							xtype: "chart",
 /* Ext.define('WeatherPoint', {
     extend: 'Ext.data.Model',
  //   fields: ['temperature', 'date']	
@@ -291,6 +292,7 @@ App.view.define('VMain', {
 							],
 */	
 				//		store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
+						store: App.store.create("App.EffectifPhysique.get_effPresent")
 						
 /* Ext.create('Ext.chart.Chart', {
    renderTo: Ext.getBody(),
