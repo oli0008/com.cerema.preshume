@@ -185,11 +185,13 @@ App.view.define('VMain', {
 							columns: [
 							{
 								text: "Service",
+							//	dataIndex: "LibUnic",
 								dataIndex: "lib_departement_ep",
 					//			flex: 1
 							},
 							{
 								text: "CatFP",
+							//	dataIndex: "LibCgr"
 								dataIndex: "lib_categorie_ep"
 								
 							},
@@ -224,7 +226,7 @@ App.view.define('VMain', {
 							{
 								groupField:  "lib_departement_ep",
 								listeners: {
-							//		load: function(p) { alert('Groupé');}
+									load: function(p) { alert('Groupé');}
 								}
 							}
 							)
