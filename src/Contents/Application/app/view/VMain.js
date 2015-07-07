@@ -254,7 +254,7 @@ App.view.define('VMain', {
 //ZZ						
 						{
 							flex: 1,
-							title: "Effectif physique",
+							title: "Effectif ETP",
 							titleAlign : "center",
 							height: "100%",
 							xtype: "grid",	
