@@ -330,7 +330,6 @@ App.view.define('VMain', {
                     this.setTitle(storeItem.get('lib_departement_ep') + ': ' + storeItem.get('lib_categorie_ep') + ' $');
                   }
                 },
-//PPP
                 label: {
                   display: 'insideEnd',
                   'text-anchor': 'middle',
@@ -342,12 +341,7 @@ App.view.define('VMain', {
                 xField: 'lib_departement_ep',
                 yField: 'lib_categorie_ep'
             }],				
-				
-//PPP				
-//			}],			
-							
-							
-							
+															
 							
 /* Ext.define('WeatherPoint', {
     extend: 'Ext.data.Model',
