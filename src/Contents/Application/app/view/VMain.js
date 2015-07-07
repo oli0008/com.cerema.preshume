@@ -262,7 +262,7 @@ App.view.define('VMain', {
 						//graph bas gauche
 						{
 							flex: 1,
-							height: "100%",
+						//	height: "100%",
 							border: true,
 							xtype: "button"
 					//		html: "22"							
