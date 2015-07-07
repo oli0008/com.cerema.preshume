@@ -233,7 +233,7 @@ App.view.define('VMain', {
 							titleAlign : "center",
 							height: "100%",
 							xtype: "grid",	
-							itemId: "gridEffectifETP",		//"gridEffectifPhysque",
+							itemId: "gridEffectifETP",		
 							columns: [
 							{
 								text: "Service",
@@ -278,11 +278,10 @@ App.view.define('VMain', {
 								}
 							}
 							)
-						},						
-//ZZ						
+						},												
 						]
 					},
-//////////////////////////////////////////////////////					
+//---------------------------------------------------------				
 					//Section inférieure
 					{
 						layout: "hbox",
@@ -357,27 +356,6 @@ App.view.define('VMain', {
 }); */
 
 
-/*					
-							flex: 1,
-							title: "GRAND TOTAL Effectif réel",
-							titleAlign : "center",
-							height: "100%",
-							xtype: "grid",	
-							itemId: "gridGdTotalsPresent",
-							columns: [
-							{
-								text: "Département",
-								dataIndex: "lib_departement_ep",
-					//			flex: 1
-							},
-							{
-								text: "Grand Total",
-								dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal								
-							}
-							],
-*/	
-				//		store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
-//oli						store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent")
 						
 /* Ext.create('Ext.chart.Chart', {
    renderTo: Ext.getBody(),
