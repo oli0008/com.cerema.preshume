@@ -195,22 +195,27 @@ App.view.define('VMain', {
 								dataIndex: "lib_categorie_ep"
 								
 							},
-							{
+							/*{
 								text: "Effectif",
 							//	dataIndex: "agentTotal"
 								dataIndex: "count_agent"
+							}*/
+							{
+								header: "Effectif", 
+								width: 100, 
+								sortable: true, 
+								align:"right", 
+								renderer:  Ext.util.Format.numberRenderer('0'), 
+								dataIndex: 'count_agent',
+								summaryType: 'sum'/*,
+								summaryRenderer:function(v){
+								}					*/		
 							}
 							],
 							features: [
 							{
 								groupHeaderTpl:  Ext.create('Ext.XTemplate',
-									'{columnName}: {name} ',
-									'{name:this.sumUp}',
-									{
-										sumUp: function(name) {
-											alert(name);
-											return Ext.String.trim(name);
-									}
+									'{columnName}: {name} '
 								}),
 								
 								
