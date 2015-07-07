@@ -292,14 +292,14 @@ App.view.define('VMain', {
 */	
 				//		store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
 						
-Ext.create('Ext.chart.Chart', {
+/* Ext.create('Ext.chart.Chart', {
    renderTo: Ext.getBody(),
    width: 400,
    height: 300,
  //  store: store
  store: App.store.create("App.EffectifPhysique.get_effPresent")
  
-});
+}); */
 
 						
 						},
