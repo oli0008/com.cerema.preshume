@@ -281,6 +281,7 @@ App.view.define('VMain', {
 								sortable: true, 
 								align:"right", 
 								renderer:  Ext.util.Format.numberRenderer('0'), 
+						//		renderer:  Ext.util.Format.numberRenderer('0.00'), 
 								dataIndex: 'sum_quot',	//'count_agent',
 								summaryType: 'sum',
 								summaryRenderer:function(v){
