@@ -358,6 +358,7 @@ App.controller.define('CMain', {
           //  alert('onShow()');
      //oli        this.calculerEffectifPresent();
 			 this.lireEffectifPresent();
+			 this.lireETPPresent();
             //		this.calculerETPPresent();
         },
 
