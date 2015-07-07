@@ -14,7 +14,7 @@ var BASE_DONNEES = 'bpclight';	//base de données de l'application
 
 
 EffectifPhysique = {
-	//Calcule les effectif présents
+	//Calcule les effectifs Physique présents
 //	 cherche: function(in1,fn_cb) {
 	calculate_EffPresent: function(in1,fn_cb) {
 		// 1er argument = error
@@ -26,7 +26,7 @@ EffectifPhysique = {
 	},
 	
 	
-	//Récupére les effectif présents du mois 	 
+	//Récupére les effectifs Physique présents du mois 	 
 	get_effPresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
 console.log('get_effPresent()');
@@ -36,7 +36,7 @@ console.log('get_effPresent()');
 	},
 	
 	
-	//Récupére les grand totaux des effectif présents du mois 	 
+	//Récupére les grand totaux des effectifs présents du mois 	 
 	get_gdTotalEffPresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
 console.log('get_gdTotalEffPresent()');
