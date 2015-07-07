@@ -207,9 +207,10 @@ App.view.define('VMain', {
 								align:"right", 
 								renderer:  Ext.util.Format.numberRenderer('0'), 
 								dataIndex: 'count_agent',
-								summaryType: 'sum'/*,
+								summaryType: 'sum',
 								summaryRenderer:function(v){
-								}					*/		
+									return "<b>"+v+"</b>";
+								}					
 							}
 							],
 							features: [
