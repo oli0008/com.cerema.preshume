@@ -217,7 +217,7 @@ App.view.define('VMain', {
 								ftype: 'groupingsummary'				
 							} 
 							],
-							store: App.store.create("App.EffectifPhysique.get_effPresent",
+							store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent",
 							{
 								groupField:  "lib_departement_ep",
 								listeners: {
@@ -299,7 +299,7 @@ App.view.define('VMain', {
 								ftype: 'groupingsummary'				
 							} 
 							],
-							store: App.store.create("App.EffectifPhysique.get_effPresent",
+							store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent",
 							{
 								groupField:  "lib_departement_etp",
 								listeners: {
@@ -330,7 +330,7 @@ App.view.define('VMain', {
 					//		animate: true,
 					//		shadow: true,
       //      store: store1,
-	  store: App.store.create("App.EffectifPhysique.get_effPresent"),
+	  store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent"),
 //	  load: true,
             axes: [{
                 type: 'Numeric',
@@ -406,14 +406,14 @@ App.view.define('VMain', {
 							],
 */	
 				//		store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")	
-//oli						store: App.store.create("App.EffectifPhysique.get_effPresent")
+//oli						store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent")
 						
 /* Ext.create('Ext.chart.Chart', {
    renderTo: Ext.getBody(),
    width: 400,
    height: 300,
  //  store: store
- store: App.store.create("App.EffectifPhysique.get_effPresent")
+ store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent")
  
 }); */
 
