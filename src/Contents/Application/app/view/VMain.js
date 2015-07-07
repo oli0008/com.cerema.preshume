@@ -226,32 +226,7 @@ App.view.define('VMain', {
 							}
 							)
 						},
-						//grid haut droit
-/* 						
-						{		//gridEffectifETP
-							flex: 1,
-							title: "Effectif ETP",
-							titleAlign : "center",
-							height: "100%",
-							xtype: "grid",							
-							columns: [
-							{
-								text: "Service"
-							},
-							{
-								text: "CatFP"
-							},
-							{
-								text: "ETP"
-							}							
-							],
-							store: App.store.create({
-								fields: [],
-								data: []
-							})
-						}
-	 */					
-//ZZ						
+						//grid haut droit						
 						{
 							flex: 1,
 							title: "Effectif ETP",
@@ -280,20 +255,13 @@ App.view.define('VMain', {
 								width: 100, 
 								sortable: true, 
 								align:"right", 
-						//		renderer:  Ext.util.Format.numberRenderer('0'), 
 								renderer:  Ext.util.Format.numberRenderer('0.00'), 
 								dataIndex: 'sum_quot',	//'count_agent',
 								summaryType: 'sum',
-								summaryRenderer:function(v)
-	/* 							
-	{
-									return "<b>"+v+"</b>";
-								 }	
-								 */
-									{
+								summaryRenderer:function(v)	{
 									var t=String(v).split('.');
 									if (t[1]) return t[0]+','+t[1].substr(0,2); else return v+',00'; 
-									}
+								}
 							}
 							],
 							features: [
