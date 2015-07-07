@@ -59,7 +59,7 @@
     "api": [
         "Agents",
         "AgentsMod",
-        "EffectifPhysique",
+        "EffectifETP",
         "EffectifPhysique",
         "Etablis",
         "GTotalEffectifPhysique",

@@ -1,8 +1,8 @@
 /***********************************************************
 *
-*	class EffectifPhysique
+*	class EffectifETP
 *
-*	Fonction: Gérer les effectifs physiques.
+*	Fonction: Gérer les effectifs ETP.
 *
 ************************************************************/
  
@@ -13,14 +13,14 @@
 var BASE_DONNEES = 'bpclight';	//base de données de l'application 
 
 
-EffectifPhysique = {
+EffectifETP = {
 	//Calcule les effectifs Physique présents
 //	 cherche: function(in1,fn_cb) {
 	calculate_EffPresent: function(in1,fn_cb) {
 		// 1er argument = error
 		// 2eme argument = response		
-		var q = EffectifPhysique.using('db');  
-//		console.log('>>EffectifPhysique.cherche()');
+		var q = EffectifETP.using('db');  
+//		console.log('>>EffectifETP.cherche()');
 //		console.log(q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}));	//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);
 	},
@@ -48,4 +48,4 @@ console.log('get_gdTotalEffPresent()');
 	
 };
 
-module.exports = EffectifPhysique;
+module.exports = EffectifETP;
