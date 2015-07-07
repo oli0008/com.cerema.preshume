@@ -260,14 +260,7 @@ App.view.define('VMain', {
 						border: false,
 						items: [
 						//graph bas gauche
-						{
-							flex: 1,
-						//	height: "100%",
-							border: true,
-							xtype: "button",
-							itemId: "gridGdTot"
-					//		html: "22"							
-/*							
+						{							
 							flex: 1,
 							title: "GRAND TOTAL Effectif réel",
 							titleAlign : "center",
@@ -285,8 +278,7 @@ App.view.define('VMain', {
 								dataIndex: "GrandTotal"		//sum(count_agent) as GrandTotal								
 							}
 							],
-							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")
-*/							
+							store: App.store.create("App.EffectifPhysique.get_gdTotalEffPresent")							
 						},
 						//graph bas droit
 						{
