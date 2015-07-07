@@ -286,7 +286,11 @@ App.view.define('VMain', {
 								summaryType: 'sum',
 								summaryRenderer:function(v){
 									return "<b>"+v+"</b>";
-								}					
+								}	
+					//				{
+					//				var t=String(v).split('.');
+					//				if (t[1]) return t[0]+','+t[1].substr(0,2); else return v+',00'; 
+					//				}
 							}
 							],
 							features: [
