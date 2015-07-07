@@ -131,9 +131,9 @@ App.controller.define('CMain', {
             //		console.log('** HERE **');
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
             //Passe un parametre au Store 
-            App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche = '11';
+            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
-            App.get('grid#gridTotalsPresent').getStore().load();
+            App.get('grid#gridEffectifPhysque').getStore().load();
 
             /*
 			//combo logic here
@@ -181,9 +181,9 @@ App.controller.define('CMain', {
             // on charge le store avec une variable "recherche"
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
             //Passe un parametre au Store 
- //           App.get('grid#gridTotalsPresent').getStore().getProxy().extraParams.param_recherche = '11';
+ //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
-            App.get('grid#gridTotalsPresent').getStore().load();
+            App.get('grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
 
         },
