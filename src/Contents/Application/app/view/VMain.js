@@ -261,7 +261,7 @@ App.view.define('VMain', {
 						items: [
 						//graph bas gauche
 						{
-						//	flex: 1,
+							flex: 1,
 						//	height: "100%",
 							border: true,
 							xtype: "button"
