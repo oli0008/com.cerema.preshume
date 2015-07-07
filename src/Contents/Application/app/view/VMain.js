@@ -201,8 +201,6 @@ App.view.define('VMain', {
 								dataIndex: "count_agent"
 							}
 							],
-	//						store: App.store.create("App.EffectifPhysique.cherche")	//calculate_EffPresent	//
-					//		store: App.store.create("App.EffectifPhysique.calculate_EffPresent")	//	//
 							store: App.store.create("App.EffectifPhysique.get_effPresent")
 						},
 						//grid haut droit
