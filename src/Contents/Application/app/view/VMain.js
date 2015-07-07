@@ -204,7 +204,7 @@ App.view.define('VMain', {
 							features: [
 							{
 								groupHeaderTpl: '{columnName}: {name} ({rows.length} Item{[values.rows.length > 1 ? "s" : ""]})',
-								ftype: 'groupsummary'
+								ftype: 'groupingsummary'
 								
 							} 
 								
