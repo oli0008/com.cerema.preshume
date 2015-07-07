@@ -201,7 +201,6 @@ App.controller.define('CMain', {
             //Passe un parametre au Store 
  //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
-			alert('lireETPPresent'); 
             App.get('grid#gridEffectifETP').getStore().load();
         },
 //MMMMMMMMMMM
