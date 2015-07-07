@@ -255,7 +255,7 @@ App.view.define('VMain', {
 					{
 						layout: "hbox",
 						width: "100%",
-				//		flex: 1,
+						flex: 1,
 						border: false,
 						items: [
 						//graph bas gauche
