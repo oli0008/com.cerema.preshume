@@ -185,19 +185,16 @@ App.view.define('VMain', {
 							columns: [
 							{
 								text: "Service",
-							//	dataIndex: "LibUnic",
 								dataIndex: "lib_departement_ep",
 					//			flex: 1
 							},
 							{
 								text: "CatFP",
-							//	dataIndex: "LibCgr"
 								dataIndex: "lib_categorie_ep"
 								
 							},
 							/*{
 								text: "Effectif",
-							//	dataIndex: "agentTotal"
 								dataIndex: "count_agent"
 							}*/
 							{
