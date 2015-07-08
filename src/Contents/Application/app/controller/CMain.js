@@ -103,7 +103,7 @@ var startMessage = 'Votre catégorie : ',
 if (adult) { // La variable « adult » contient un booléen, on peut donc directement la soumettre à la structure if sans opérateur conditionnel
     endMessage = '18+';
 } else {
-    endMessage = '-18';
+    endMessage = '-18'; 
 }
 
 alert(startMessage + endMessage);
