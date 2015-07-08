@@ -96,14 +96,17 @@ App.controller.define('CMain', {
 			this.AfficherEffectifETP(chosenDate);
 	 
 	 
-var drawer = prompt('Entrez la valeur 1 :');
-switch (drawer) {
-    case '1':
-        alert('Bravo ! drawer = ' + drawer);   
-    break;
-    default:
-        alert('Perdu !');
-} 
+var startMessage = 'Votre catégorie : ',
+    endMessage,
+    adult = confirm('Êtes-vous majeur ?');
+
+if (adult) { // La variable « adult » contient un booléen, on peut donc directement la soumettre à la structure if sans opérateur conditionnel
+    endMessage = '18+';
+} else {
+    endMessage = '-18';
+}
+
+alert(startMessage + endMessage);
  
 	 
 		 },
