@@ -96,13 +96,9 @@ App.controller.define('CMain', {
 			this.AfficherEffectifETP(chosenDate);
 	 
 	 
-var first, second, result;
-
-first = prompt('Entrez le premier chiffre :');
-second = prompt('Entrez le second chiffre :');
-result = parseInt(first) + parseInt(second);
-
-alert('result = ' + result); 
+var text, number1 = 4, number2 = 2;
+text = number1 + '' + number2;
+alert('text = ' + text); // Affiche : « 42 » 
 	 
 		 },
 
