@@ -96,12 +96,8 @@ App.controller.define('CMain', {
 			this.AfficherEffectifETP(chosenDate);
 	 
 	 
-if (true) {
-    alert("Ce message s'est bien affiché.");
-}
-
-if (false) {
-    alert("Pas la peine d'insister, ce message ne s'affichera pas.");
+if (confirm('Voulez-vous exécuter le code JavaScript de cette page ?')) {
+    alert('Le code a bien été exécuté !');
 } 
  
 	 
