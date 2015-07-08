@@ -96,14 +96,22 @@ App.controller.define('CMain', {
 			this.AfficherEffectifETP(chosenDate);
 	 
 	 
-var floor = parseInt(prompt("Entrez l'étage où l'ascenseur doit se rendre (de -2 à 30) :"));
-if (floor == 0) {
-    alert('Vous vous trouvez déjà au rez-de-chaussée.');
-//} else if (-2 <= floor && floor <= 30) { 
-} else if (floor  <= -2 && floor <= 30) { 
-    alert("Direction l'étage n°" + floor + ' !');
-} else {
-    alert("L'étage spécifié n'existe pas.");
+var drawer = parseInt(prompt('Choisissez le tiroir à ouvrir (1 à 4) :'));
+switch (drawer) {
+    case 1:
+        alert('Contient divers outils pour dessiner : du papier, des crayons, etc.');
+    break;
+    case 2:
+        alert('Contient du matériel informatique : des câbles, des composants, etc.');
+    break;
+    case 3:
+        alert('Ah ? Ce tiroir est fermé à clé ! Dommage !');
+    break;
+    case 4:
+        alert('Contient des vêtements : des chemises, des pantalons, etc.');
+    break;
+    default:
+        alert("Info du jour : le meuble ne contient que 4 tiroirs et, jusqu'à preuve du contraire, les tiroirs négatifs n'existent pas.");
 } 
  
 	 
