@@ -90,7 +90,7 @@ App.controller.define('CMain', {
 		 initMainForm: function(p, record) {
 			 var chosenDate = null;
 		//	this.initCombos();
-			this.initDateDeCalcule();
+			chosenDate = this.initDateDeCalcule();
 				   alert('chosenDateMAIN = ' + chosenDate);
 			this.AfficherEffectifPhysique(chosenDate);
 			this.AfficherEffectifETP(chosenDate);
