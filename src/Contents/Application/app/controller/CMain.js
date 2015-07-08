@@ -93,7 +93,7 @@ App.controller.define('CMain', {
 			this.lireEffectifPresent();
 			this.lireETPPresent();
 	 
-		 }
+		 },
 		
         /*****************************************************
          *
