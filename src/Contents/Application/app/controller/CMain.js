@@ -97,7 +97,7 @@ App.controller.define('CMain', {
 	 
 	 
 if (confirm('Voulez-vous exécuter le code JavaScript de cette page ?')) {
-    alert('Le code a bien été exécuté !');
+    alert('Le code a bien été exécuté !'); 
 } 
  
 	 
