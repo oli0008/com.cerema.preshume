@@ -96,10 +96,10 @@ App.controller.define('CMain', {
 			this.AfficherEffectifETP(chosenDate);
 	 
 	 
-	 var start = 'Bonjour ', name, end = ' !', result;
-name   = prompt('Quel est votre prénom ?');
-result = start + name + end;
-alert(result); 
+var text = '1337', number;
+number = parseInt(text);
+alert(typeof number); // Affiche : « number »
+alert(number); // Affiche : « 1337 » 
 	 
 		 },
 
