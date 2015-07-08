@@ -80,6 +80,19 @@ App.controller.define('CMain', {
 
         /*****************************************************
          *
+         * Objectif: 
+		 * 1 - Initialiser tous les combos.
+		 * 2 - Initialiser le date.
+		 * 3 - Lire les effectifs physique et ETP présent.
+		 * 4 - Afficher les graphique des effectifs. 
+         *
+         ****************************************************/
+		 initMainForm: : function(p, record) {
+			 
+		 }
+		
+        /*****************************************************
+         *
          * Objectif: Afficher l'unité correspondante à l'établissement qui vient d'être sélectionnée.
          *
          ****************************************************/
