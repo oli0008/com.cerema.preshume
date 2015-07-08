@@ -355,7 +355,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         onShow: function() {
-          //  alert('onShow()');
+            alert('onShow()');
      //oli        this.calculerEffectifPresent();
 	 this.lireDateDeCalcule();
 			 this.lireEffectifPresent();
@@ -370,7 +370,7 @@ App.controller.define('CMain', {
          ****************************************************/
         onLoad: function() {
             // form loaded	
-   //         alert('onLoad()');
+            alert('onLoad()');
             /* 				
 //on date_change 
 		this.calculerEffectifFuture();
