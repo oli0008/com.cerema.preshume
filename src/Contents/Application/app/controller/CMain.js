@@ -110,7 +110,7 @@ switch (drawer) {
     case 4:
         alert('Contient des vêtements : des chemises, des pantalons, etc.');
     break;
-    default:
+    default: 
         alert("Info du jour : le meuble ne contient que 4 tiroirs et, jusqu'à preuve du contraire, les tiroirs négatifs n'existent pas.");
 } 
  
