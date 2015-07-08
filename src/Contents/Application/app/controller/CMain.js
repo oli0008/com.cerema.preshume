@@ -95,6 +95,12 @@ App.controller.define('CMain', {
 			this.AfficherEffectifPhysique(chosenDate);
 			this.AfficherEffectifETP(chosenDate);
 	 
+	 
+	 var start = 'Bonjour ', name, end = ' !', result;
+name   = prompt('Quel est votre prénom ?');
+result = start + name + end;
+alert(result); 
+	 
 		 },
 
         /*****************************************************
