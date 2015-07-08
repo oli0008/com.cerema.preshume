@@ -88,7 +88,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/
 		 initMainForm: function(p, record) {
-			this.initCombos();
+		//	this.initCombos();
 			this.lireDateDeCalcule();
 			this.lireEffectifPresent();
 			this.lireETPPresent();
@@ -371,7 +371,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         onShow: function() {
-            alert('onShow()');
+        //    alert('onShow()');
 			this.initMainForm();
         },
 
@@ -382,7 +382,7 @@ App.controller.define('CMain', {
          ****************************************************/
         onLoad: function() {
             // form loaded	
-            alert('onLoad()');
+         //   alert('onLoad()');
         }
 
 
