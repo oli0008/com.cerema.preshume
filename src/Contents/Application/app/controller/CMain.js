@@ -106,7 +106,7 @@ if (age <= 0) { // Il faut bien penser au fait que l'utilisateur peut rentrer un
 } else if (1 <= age && age < 18) {
 
     alert("Vous n'êtes pas encore majeur.");
-
+ 
 } else if (18 <= age && age < 50) {
 
     alert('Vous êtes majeur mais pas encore senior.');
