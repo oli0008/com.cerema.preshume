@@ -96,11 +96,13 @@ App.controller.define('CMain', {
 			this.AfficherEffectifETP(chosenDate);
 	 
 	 
-var number = 4, text = '4', result;
-result = number == text;
-alert('result = ' + result); // Affiche  « true » alors que « number » est un nombre et « text » une chaîne de caractères
-result = number === text;
-alert('result = ' + result); 
+if (true) {
+    alert("Ce message s'est bien affiché.");
+}
+
+if (false) {
+    alert("Pas la peine d'insister, ce message ne s'affichera pas.");
+} 
  
 	 
 		 },
