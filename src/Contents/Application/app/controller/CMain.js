@@ -41,7 +41,7 @@ App.controller.define('CMain', {
                     select: "valider_cboMainService"
                 },
                 "mainform button#btnMainOk": {
-					click: "lireEffectifPresent"
+					click: "AfficherEffectifPhysique"
                 },
 				"mainform": {
 					render: "onShow"
@@ -89,11 +89,26 @@ App.controller.define('CMain', {
          ****************************************************/
 		 initMainForm: function(p, record) {
 		//	this.initCombos();
-			this.lireDateDeCalcule();
-			this.lireEffectifPresent();
+			this.initDateDeCalcule();
+			this.AfficherEffectifPhysique(thisDate);
 			this.lireETPPresent();
 	 
 		 },
+
+        /*****************************************************
+         *
+         * Objectif: Lire la date de calcul. 
+		 * Si l'utilisateur n'a pas sélectionné de date ou si c'est une date  pour le mois courrant.
+		 * on calculera un effectif present.
+		 * Toutes les dates passées sont considéreés comme des dates du mois courrant.
+		 * Les dates supérieures au mois courrant actionneront les calculs pour les effectifs futures et le ETP futures.
+         *
+         ****************************************************/
+        initDateDeCalcule: function() {
+            //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
+           var dateMain = App.get('mainform datefield#datMainDate').getValue();
+		   alert('date = ' + dateMain);
+		},
 		
         /*****************************************************
          *
@@ -168,25 +183,10 @@ App.controller.define('CMain', {
 
         /*****************************************************
          *
-         * Objectif: Lire la date de calcul. 
-		 * Si l'utilisateur n'a pas sélectionné de date ou si c'est une date  pour le mois courrant.
-		 * on calculera un effectif present.
-		 * Toutes les dates passées sont considéreés comme des dates du mois courrant.
-		 * Les dates supérieures au mois courrant actionneront les calculs pour les effectifs futures et le ETP futures.
-         *
-         ****************************************************/
-        lireDateDeCalcule: function() {
-            //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
-           var dateMain = App.get('mainform datefield#datMainDate').getValue();
-		   alert('date = ' + dateMain);
-		},
-
-        /*****************************************************
-         *
          * Objectif: Récupérer les effectifs Physque présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
-        lireEffectifPresent: function() {
+        AfficherEffectifPhysique: function() {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
             //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
 
