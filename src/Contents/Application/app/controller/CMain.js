@@ -111,6 +111,7 @@ App.controller.define('CMain', {
            var chosenDate = App.get('mainform datefield#datMainDate').getValue();
 		   alert('date = ' + chosenDate);
 		   chosenDate = "TOTO";
+		    alert('date = ' + chosenDate);
 		   return (chosenDate);
 		},
 		
