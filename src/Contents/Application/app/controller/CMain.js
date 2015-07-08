@@ -98,7 +98,7 @@ App.controller.define('CMain', {
 	 
 var drawer = prompt('Entrez la valeur 1 :');
 switch (drawer) {
-    case 1:
+    case '1':
         alert('Bravo !');
     break;
     default:
