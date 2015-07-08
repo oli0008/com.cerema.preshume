@@ -90,8 +90,8 @@ App.controller.define('CMain', {
 		 initMainForm: function(p, record) {
 		//	this.initCombos();
 			this.initDateDeCalcule();
-			this.AfficherEffectifPhysique(thisDate);
-			this.lireETPPresent();
+			this.AfficherEffectifPhysique(chosenDate);
+			this.AfficherEffectifETP(chosenDate);
 	 
 		 },
 
@@ -106,8 +106,9 @@ App.controller.define('CMain', {
          ****************************************************/
         initDateDeCalcule: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
-           var dateMain = App.get('mainform datefield#datMainDate').getValue();
-		   alert('date = ' + dateMain);
+           var chosenDate = App.get('mainform datefield#datMainDate').getValue();
+		   alert('date = ' + chosenDate);
+		   return (chosenDate);
 		},
 		
         /*****************************************************
@@ -186,7 +187,7 @@ App.controller.define('CMain', {
          * Objectif: Récupérer les effectifs Physque présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
-        AfficherEffectifPhysique: function() {
+        AfficherEffectifPhysique: function(chosenDate) {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
             //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
 
@@ -207,7 +208,7 @@ App.controller.define('CMain', {
          * Objectif: Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
-        lireETPPresent: function() {
+        AfficherEffectifETP: function(chosenDate) {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
             //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
 
