@@ -40,7 +40,7 @@ App.controller.define('CMain', {
                 "combo#cboMainUnite": {
                     select: "valider_cboMainService"
                 },
-                "button#btnMainOk": {
+                "mainform button#btnMainOk": {
 					click: "lireEffectifPresent"
                 },
 				"mainform": {
@@ -160,7 +160,8 @@ App.controller.define('CMain', {
          ****************************************************/
         lireDateDeCalcule: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
-   //        App.get('grid#gridGdTotalsPresent').getStore().load();
+           var dateMain = App.get('mainform datefield#datMainDate').getValue();
+		   alert('date = ' + dateMain);
 		},
 
         /*****************************************************
@@ -356,6 +357,7 @@ App.controller.define('CMain', {
         onShow: function() {
           //  alert('onShow()');
      //oli        this.calculerEffectifPresent();
+	 lireDateDeCalcule();
 			 this.lireEffectifPresent();
 			 this.lireETPPresent();
             //		this.calculerETPPresent();
