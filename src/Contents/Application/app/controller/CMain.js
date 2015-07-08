@@ -357,7 +357,7 @@ App.controller.define('CMain', {
         onShow: function() {
           //  alert('onShow()');
      //oli        this.calculerEffectifPresent();
-	 lireDateDeCalcule();
+	 this.lireDateDeCalcule();
 			 this.lireEffectifPresent();
 			 this.lireETPPresent();
             //		this.calculerETPPresent();
