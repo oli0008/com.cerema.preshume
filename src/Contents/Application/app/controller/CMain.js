@@ -96,9 +96,12 @@ App.controller.define('CMain', {
 			this.AfficherEffectifETP(chosenDate);
 	 
 	 
-var text, number1 = 4, number2 = 2;
-text = number1 + '' + number2;
-alert('text = ' + text); // Affiche : « 42 » 
+var number = 4, text = '4', result;
+result = number == text;
+alert('result = ' + result); // Affiche  « true » alors que « number » est un nombre et « text » une chaîne de caractères
+result = number === text;
+alert('result = ' + result); 
+ 
 	 
 		 },
 
