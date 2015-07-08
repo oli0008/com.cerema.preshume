@@ -91,6 +91,7 @@ App.controller.define('CMain', {
 			 var chosenDate = null;
 		//	this.initCombos();
 			this.initDateDeCalcule();
+				   alert('chosenDateMAIN = ' + chosenDate);
 			this.AfficherEffectifPhysique(chosenDate);
 			this.AfficherEffectifETP(chosenDate);
 	 
@@ -109,6 +110,7 @@ App.controller.define('CMain', {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
            var chosenDate = App.get('mainform datefield#datMainDate').getValue();
 		   alert('date = ' + chosenDate);
+		   chosenDate = "TOTO";
 		   return (chosenDate);
 		},
 		
