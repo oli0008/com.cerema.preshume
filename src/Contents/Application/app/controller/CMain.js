@@ -87,8 +87,12 @@ App.controller.define('CMain', {
 		 * 4 - Afficher les graphique des effectifs. 
          *
          ****************************************************/
-		 initMainForm: : function(p, record) {
-			 
+		 initMainForm: function(p, record) {
+			this.initCombos();
+			this.lireDateDeCalcule();
+			this.lireEffectifPresent();
+			this.lireETPPresent();
+	 
 		 }
 		
         /*****************************************************
@@ -361,34 +365,24 @@ App.controller.define('CMain', {
             }).show();
         },
 
-
         /*****************************************************
          *
-         * Objectif: .
+         * Objectif: Gére l'affichage initial de la page principale au démarrage de l'application.
          *
          ****************************************************/
         onShow: function() {
             alert('onShow()');
-     //oli        this.calculerEffectifPresent();
-	 this.lireDateDeCalcule();
-			 this.lireEffectifPresent();
-			 this.lireETPPresent();
-            //		this.calculerETPPresent();
+			this.initMainForm();
         },
 
         /*****************************************************
          *
-         * Objectif: calcule les effectifs et les ETP présent à l'ouverture de l'application.
+         * Objectif: NOT USED *** 
          *
          ****************************************************/
         onLoad: function() {
             // form loaded	
             alert('onLoad()');
-            /* 				
-//on date_change 
-		this.calculerEffectifFuture();
-		this.calculerETPFuture();		
- */
         }
 
 
