@@ -92,6 +92,7 @@ App.controller.define('CMain', {
          ****************************************************/
 		 initMainForm: function(p, record) {
 			 var chosenDate = null;
+			 
 		//	this.initCombos();
 			chosenDate = this.initDateDeCalcule();
 // alert('chosenDateMAIN = ' + chosenDate);
