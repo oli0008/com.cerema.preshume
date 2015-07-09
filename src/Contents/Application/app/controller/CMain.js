@@ -41,7 +41,7 @@ App.controller.define('CMain', {
                     select: "valider_cboMainService"
                 },
                 "mainform datefield#datMainDate": {
-                    select: "valider_date"
+                    select: "analyser_date"
                 },
                 "mainform button#btnMainOk": {
 					click: "AfficherEffectifPhysique"
@@ -106,13 +106,12 @@ App.controller.define('CMain', {
         /*****************************************************
          *
          * Objectif: 
-		 * 1 - Initialiser tous les combos.
-		 * 2 - Initialiser le date.
-		 * 3 - Lire les effectifs physique et ETP présent.
-		 * 4 - Afficher les graphique des effectifs. 
+		 * Décider en fonction de la date selectionnée si on affiche les effectifs présent ou futur.
+		 * Si la date est <= à aujourd'hui on affiche les données sauvegardées le 1er du mois. (effectifs physique et ETP présents)
+		 * Si la date est > aujourd'hui on calcule les effectifs physique et ETP futurs.  
          *
          ****************************************************/		 
-		 valider_date:function(){
+		 analyser_date:function(){
 			 
 		//	this.initDateDeCalcule();
            var selectedDate = App.get('mainform datefield#datMainDate').getValue();
@@ -120,7 +119,7 @@ App.controller.define('CMain', {
 				selectedDate = new Date();  // defaults to today
 			   console.log('selectedDate = ' + selectedDate);	
 			}
-	alert('valider_date:function().selectedDate= ' + selectedDate);
+	alert('analyser_date:function().selectedDate= ' + selectedDate);
 		 },
 
         /*****************************************************
