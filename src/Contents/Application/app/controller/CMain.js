@@ -123,7 +123,7 @@ App.controller.define('CMain', {
 		App.get('combo#cboMainEtablis').setValue(KetsTemp);
 //	App.get('combo#cboMainEtablis').setValue('toto');		
 		v = App.get('combo#cboMainEtablis').setValue(KetsTemp);
-		console.log(v);
+		console.log(v); 
  alert('initCombos- cbo= ' + v);
  
 	App.get('combo#cboMainEtablis').setValue('toto');
