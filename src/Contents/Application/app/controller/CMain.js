@@ -9,9 +9,9 @@
 /******************
  * Déclaration des constantes globales à l'application
  ******************/
-var TODAY = new Date();		//******* Formatter date **************
-var G_VMAIN_CBO_WIDTH = 210; //Définition de la largeur des combos de VMain
-//var G_DTERMED = 2; 					//valeur de etablissement.Kets = DterMed
+var TODAY = new Date();					//******* Formatter date **************
+var G_VMAIN_CBO_WIDTH = 210; 	//Définition de la largeur des combos de VMain
+var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
 /******************
  * Déclaration des variables globales à l'application
  ******************/
@@ -119,9 +119,10 @@ App.controller.define('CMain', {
 
  alert('initCombos');
 			//Régle le combo Etablissement sur DterMed
-			var KetsTemp = 1; //G_DTERMED; //1;		 
-			App.get('combo#cboMainEtablis').setValue(KetsTemp);
-			
+			var KetsTemp = G_DTERMED; 		 
+			v = App.get('combo#cboMainEtablis').setValue(KetsTemp);
+
+console.log(v)	;		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
             App.get('combo#cboMainService').setValue('');
