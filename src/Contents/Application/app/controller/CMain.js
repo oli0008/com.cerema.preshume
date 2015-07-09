@@ -95,8 +95,7 @@ App.controller.define('CMain', {
 			this.AfficherEffectifPhysique(chosenDate);
 			this.AfficherEffectifETP(chosenDate);
 	 
-	 
-
+	
  
 	 
 		 },
@@ -113,14 +112,10 @@ App.controller.define('CMain', {
         initDateDeCalcule: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
            var chosenDate = App.get('mainform datefield#datMainDate').getValue();
-		   alert('chosenDateCalc = ' + chosenDate);
-		   if (chosenDate == ''){
-			   console.log();
-				chosenDate = "todayBl";	//temp fix
-			}
-					   if (chosenDate == null){
-			   console.log('chosenDateCalc = ' + chosenDate);
-				chosenDate = "todayNULL";	//temp fix
+		   alert('chosenDateCalcXXX = ' + chosenDate);
+			if (chosenDate == null){
+				chosenDate = "todayNULLxxx";	//temp fix
+			   console.log('chosenDateCalc = ' + chosenDate);	
 			}
 		   return (chosenDate);
 		},
