@@ -80,10 +80,6 @@ App.controller.define('CMain', {
             };
         },
 
-        dummyFn: function(p, record) {
-            alert('dummyFn() -- reached');
-        },
-
         /*****************************************************
          * Objectif: 
 		 * Au démarrage de l'application intitialise la fenêtre principale.
@@ -117,7 +113,8 @@ App.controller.define('CMain', {
          ****************************************************/
 		 initCombos: function(p) {
 
- alert('initCombos');
+// alert('initCombos');
+
 			//Régle le combo Etablissement sur DterMed
 			var KetsTemp = G_DTERMED; 		 
 			App.get('combo#cboMainEtablis').setValue(KetsTemp);
