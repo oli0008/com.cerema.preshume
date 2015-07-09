@@ -113,7 +113,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/		 
 		 valider_date:function(){
-//alert('valider_date:function()'); 
+alert('valider_date:function()'); 
 		//	this.initDateDeCalcule();
            var selectedDate = App.get('mainform datefield#datMainDate').getValue();
 			if (selectedDate == null){
