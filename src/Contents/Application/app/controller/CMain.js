@@ -44,7 +44,7 @@ App.controller.define('CMain', {
                     select: "analyser_date"
                 },
                 "mainform button#btnMainOk": {
-					click: "AfficherEffectifPhysique"
+					click: "afficherEffectifPhysique"
                 },
 				"mainform": {
 					render: "onShow"
@@ -95,8 +95,8 @@ App.controller.define('CMain', {
 		//	this.initCombos();
 			chosenDate = this.initDateDeCalcule();
 				   alert('chosenDateMAIN = ' + chosenDate);
-			this.AfficherEffectifPhysique(chosenDate);
-			this.AfficherEffectifETP(chosenDate);
+			this.afficherEffectifPhysique(chosenDate);
+			this.afficherEffectifETP(chosenDate);
 	 
 	
  
@@ -112,12 +112,19 @@ App.controller.define('CMain', {
          *
          ****************************************************/		 
 		 analyser_date:function(){
-			 
-		//	this.initDateDeCalcule();
-           var selectedDate = App.get('mainform datefield#datMainDate').getValue();
+			var today = new Date();		//******* Formatter date **************
+			var selectedDate = App.get('mainform datefield#datMainDate').getValue();
+			
 			if (selectedDate == null){
-				selectedDate = new Date();  // defaults to today
+				selectedDate = today;  // defaults to today
 			   console.log('selectedDate = ' + selectedDate);	
+			}
+			if (selectedDate <= today){
+				this.afficherEffectifPhysique(today);
+				this.afficherEffectifETP(today);
+			} else {
+//				this.afficherEffectifPhysique(selectedDate);
+//				this.afficherEffectifETP(selectedDate);
 			}
 	alert('analyser_date:function().selectedDate= ' + selectedDate);
 		 },
@@ -217,7 +224,7 @@ App.controller.define('CMain', {
          * Objectif: Récupérer les effectifs Physque présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
-        AfficherEffectifPhysique: function(chosenDate) {
+        afficherEffectifPhysique: function(chosenDate) {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
             //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
 
@@ -238,7 +245,7 @@ App.controller.define('CMain', {
          * Objectif: Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
-        AfficherEffectifETP: function(chosenDate) {
+        afficherEffectifETP: function(chosenDate) {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
             //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
 
