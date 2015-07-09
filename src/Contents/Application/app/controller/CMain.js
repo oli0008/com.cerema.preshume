@@ -121,6 +121,7 @@ App.controller.define('CMain', {
 
 		var KetsTemp = 1; //G_DTERMED; //1;		 
 	//	App.get('combo#cboAgentEtablis').setValue(KetsTemp);
+	App.get('combo#cboAgentEtablis').setValue('toto');
 		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
