@@ -114,7 +114,8 @@ App.controller.define('CMain', {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
            var chosenDate = App.get('mainform datefield#datMainDate').getValue();
 		   if (chosenDate == ''){
-				chosenDate = "today";	//temp fix
+			   console.log();
+				chosenDate = "todayBl";	//temp fix
 			}
 		   return (chosenDate);
 		},
