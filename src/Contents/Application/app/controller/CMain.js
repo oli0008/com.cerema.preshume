@@ -119,13 +119,15 @@ App.controller.define('CMain', {
 				selectedDate = today;  // defaults to today
 			   console.log('selectedDate = ' + selectedDate);	
 			}
+			/*
 			if (selectedDate <= today){
 				this.afficherEffectifPhysique(today);
 				this.afficherEffectifETP(today);
 			} else {
+				*/
 				this.calculerEffectifFuture(selectedDate);
 				this.calculerETPFuture(selectedDate);
-			}
+		//	}
 	alert('analyser_date:function().selectedDate= ' + selectedDate);
 		 },
 
