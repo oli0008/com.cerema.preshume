@@ -120,9 +120,8 @@ App.controller.define('CMain', {
  alert('initCombos');
 			//Régle le combo Etablissement sur DterMed
 			var KetsTemp = G_DTERMED; 		 
-			v = App.get('combo#cboMainEtablis').setValue(KetsTemp);
-
-console.log(v)	;		
+			App.get('combo#cboMainEtablis').setValue(KetsTemp);
+		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
             App.get('combo#cboMainService').setValue('');
