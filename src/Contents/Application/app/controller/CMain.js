@@ -38,10 +38,10 @@ App.controller.define('CMain', {
                 "mainform combo#cboMainEtablis": {
                     select: "select_cboMainEtablis"
                 },
-                "combo#cboMainUnite": {
+                "mainform combo#cboMainUnite": {
                     select: "select_cboMainUnite"
                 },
-                "combo#cboMainService": {
+                "mainform combo#cboMainService": {
                     select: "select_cboMainService"
                 },
                 "mainform datefield#datMainDate": {
