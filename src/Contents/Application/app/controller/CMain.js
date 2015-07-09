@@ -126,7 +126,7 @@ App.controller.define('CMain', {
 		console.log(v); 
  alert('initCombos- cbo= ' + v);
  
-	App.get('combo#cboMainEtablis').setValue('toto');
+//	App.get('combo#cboMainEtablis').setValue('toto');
 		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
