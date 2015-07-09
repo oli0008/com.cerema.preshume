@@ -313,8 +313,8 @@ alert(' select_cboMainService');
 			alert('data= ' + data.Kets + ', sd=' + data.sd + ', ed=' + data.ed );
 			
             //Passe un parametre au Store 
- //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
-           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.data; //'1';
+            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
+ //test          App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.data; //'1';
             // on rafraichit le store
             App.get('grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
