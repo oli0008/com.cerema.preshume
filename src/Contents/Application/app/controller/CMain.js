@@ -114,7 +114,7 @@ App.controller.define('CMain', {
            var chosenDate = App.get('mainform datefield#datMainDate').getValue();
 	//	   alert('chosenDateCalcXXX = ' + chosenDate);
 			if (chosenDate == null){
-				chosenDate = "todayNULLxxx";	//temp fix
+				chosenDate = "today";	//temp fix
 			   console.log(chosenDate);	
 			}
 		   return (chosenDate);
