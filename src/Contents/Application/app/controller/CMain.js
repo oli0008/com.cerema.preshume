@@ -130,10 +130,7 @@ App.controller.define('CMain', {
         /*****************************************************
          *
          * Objectif: Lire la date de calcul. 
-		 * Si l'utilisateur n'a pas sélectionné de date ou si c'est une date  pour le mois courrant.
-		 * on calculera un effectif present.
-		 * Toutes les dates passées sont considéreés comme des dates du mois courrant.
-		 * Les dates supérieures au mois courrant actionneront les calculs pour les effectifs futures et le ETP futures.
+		 * Si l'utilisateur n'a pas sélectionné de date ou si elle est vide, elle est fixée à la date d'aujourd'hui.
          *
          ****************************************************/
         initDateDeCalcule: function() {
