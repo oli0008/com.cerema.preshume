@@ -304,7 +304,7 @@ alert(' select_cboMainService');
             // on charge le store avec une variable "recherche"
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
             //Passe un parametre au Store 
-            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = 6; //G_DTERMED; //'1';
+            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
             // on rafraichit le store
             App.get('grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
