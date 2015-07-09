@@ -41,6 +41,9 @@ App.controller.define('CMain', {
                 "combo#cboMainUnite": {
                     select: "select_cboMainUnite"
                 },
+                "combo#cboMainService": {
+                    select: "select_cboMainService"
+                },
                 "mainform datefield#datMainDate": {
                     select: "analyser_date"
                 },
