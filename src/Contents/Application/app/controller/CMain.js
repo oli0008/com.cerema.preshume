@@ -261,6 +261,9 @@ App.controller.define('CMain', {
         },
 //MMMMMMMMMMM
 
+
+
+//MMMMMMMMMMM
         /*****************************************************
          *
          * Objectif: Calculer les grands totaux des effectifs présents pour le mois courrant.
@@ -289,18 +292,8 @@ App.controller.define('CMain', {
          * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
          *
          ****************************************************/
-        calculerEffectifFuture: function() {
-            alert('clic sur mnuEffectifFuture -- TODO');
-        },
-
-        /*****************************************************
-         *
-         * Objectif: Calculer les ETP présent. Cette méthode
-         * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
-         *
-         ****************************************************/
-        calculerETPPresent: function() {
-            alert('clic sur mnuETPPresent -- TODO');
+        calculerEffectifFuture: function(thisDate) {
+            alert('calculerEffectifFuture -- TODO');
         },
 
         /*****************************************************
@@ -309,8 +302,8 @@ App.controller.define('CMain', {
          * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
          *
          ****************************************************/
-        calculerETPFuture: function() {
-            alert('clic sur mnuETPFuture -- TODO');
+        calculerETPFuture: function(thisDate) {
+            alert('calculerETPFuture -- TODO');
         },
 
         /*****************************************************
