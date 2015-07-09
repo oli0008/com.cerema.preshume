@@ -259,32 +259,20 @@ App.controller.define('CMain', {
             // on rafraichit le store
             App.get('grid#gridEffectifETP').getStore().load();
         },
-//MMMMMMMMMMM
 
 
-
-//MMMMMMMMMMM
+/
         /*****************************************************
          *
          * Objectif: Calculer les grands totaux des effectifs présents pour le mois courrant.
          *
          ****************************************************/
+/*		 
         calculerGTotalEffectifPresent: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
            App.get('grid#gridGdTotalsPresent').getStore().load();
 		},
-
-
-        /*****************************************************
-         *
-         * Objectif: Calculer les grands totaux des effectifs présents. 
-         *
-         ****************************************************/
-        calculerGTotalETPPresent: function() {
-            //run query on data in table effectifs_ETP cf G_TotalETPPres.sql
-
-		},
-			
+*/		
 		
         /*****************************************************
          *
