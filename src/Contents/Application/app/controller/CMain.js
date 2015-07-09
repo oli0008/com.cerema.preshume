@@ -113,8 +113,9 @@ App.controller.define('CMain', {
         initDateDeCalcule: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
            var chosenDate = App.get('mainform datefield#datMainDate').getValue();
-		   if chosenDate == '';
+		   if ()chosenDate == ''){
 				chosenDate = "today";	//temp fix
+			}
 		   return (chosenDate);
 		},
 		
