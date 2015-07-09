@@ -113,9 +113,14 @@ App.controller.define('CMain', {
          *
          ****************************************************/		 
 		 valider_date:function(){
-		//	   var selectedDate = App.get('mainform datefield#datMainDate').getValue(); 
-		alert('valider_date:function()');
-		this.initDateDeCalcule();
+//alert('valider_date:function()');
+		//	this.initDateDeCalcule();
+           var selectedDate = App.get('mainform datefield#datMainDate').getValue();
+			if (selectedDate == null){
+				selectedDate = "today";	//temp fix
+			   console.log('selectedDate = ' + selectedDate);	
+			}
+	alert('valider_date:function().selectedDate= ' + selectedDate);
 		 },
 
         /*****************************************************
