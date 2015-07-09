@@ -113,7 +113,7 @@ App.controller.define('CMain', {
          ****************************************************/
 		 lireCombos: function(p) {
 
-// alert('lireCombos');
+ alert('lireCombos');
 		 }
 		 
 //***		 
