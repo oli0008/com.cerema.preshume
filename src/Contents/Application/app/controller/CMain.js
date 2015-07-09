@@ -46,7 +46,6 @@ App.controller.define('CMain', {
                 "mainform button#btnMainOk": {
 					click: "AfficherEffectifPhysique"
                 },
-				"xxx"
 				"mainform": {
 					render: "onShow"
 				}
