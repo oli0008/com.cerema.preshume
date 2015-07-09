@@ -40,9 +40,13 @@ App.controller.define('CMain', {
                 "combo#cboMainUnite": {
                     select: "valider_cboMainService"
                 },
+                "mainform datefield#datMainDate": {
+                    select: "valider_date"
+                },
                 "mainform button#btnMainOk": {
 					click: "AfficherEffectifPhysique"
                 },
+				"xxx"
 				"mainform": {
 					render: "onShow"
 				}
@@ -98,6 +102,21 @@ App.controller.define('CMain', {
 	
  
 	 
+		 },
+
+        /*****************************************************
+         *
+         * Objectif: 
+		 * 1 - Initialiser tous les combos.
+		 * 2 - Initialiser le date.
+		 * 3 - Lire les effectifs physique et ETP présent.
+		 * 4 - Afficher les graphique des effectifs. 
+         *
+         ****************************************************/		 
+		 valider_date:function(){
+		//	   var selectedDate = App.get('mainform datefield#datMainDate').getValue(); 
+		alert('valider_date:function()');
+		this.initDateDeCalcule();
 		 },
 
         /*****************************************************
