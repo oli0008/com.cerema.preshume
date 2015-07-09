@@ -9,6 +9,7 @@
 /******************
  * Déclaration des constantes globales à l'application
  ******************/
+var TODAY = new Date();		//******* Formatter date **************
 var G_VMAIN_CBO_WIDTH = 210; //Définition de la largeur des combos de VMain
 //var G_DTERMED = 2; 					//valeur de etablissement.Kets = DterMed
 /******************
@@ -112,17 +113,17 @@ App.controller.define('CMain', {
          *
          ****************************************************/		 
 		 analyser_date:function(){
-			var today = new Date();		//******* Formatter date **************
-//	alert('analyser_date:function().today= ' + today);
+//***			var TODAY = new Date();		//******* Formatter date **************
+//	alert('analyser_date:function().TODAY= ' + TODAY);
 
 			var selectedDate = App.get('mainform datefield#datMainDate').getValue();
 			
 			if (selectedDate == null){
-				selectedDate = today;  // defaults to today	
+				selectedDate = TODAY;  // defaults to TODAY	
 			}
-			if (selectedDate <= today){
-				this.afficherEffectifPhysique(today);
-				this.afficherEffectifETP(today);
+			if (selectedDate <= TODAY){
+				this.afficherEffectifPhysique(TODAY);
+				this.afficherEffectifETP(TODAY);
 			} else {
 				this.calculerEffectifFuture(selectedDate);
 				this.calculerETPFuture(selectedDate);
@@ -142,7 +143,7 @@ App.controller.define('CMain', {
            var selectedDate = App.get('mainform datefield#datMainDate').getValue();
 		   
 			if (selectedDate == null){
-				selectedDate = new Date();  // defaults to today	
+				selectedDate = TODAY;    // defaults to today	
 			}
 		   return (selectedDate);
 		},
