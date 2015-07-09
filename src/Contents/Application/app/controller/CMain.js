@@ -111,13 +111,13 @@ App.controller.define('CMain', {
          ****************************************************/
         initDateDeCalcule: function() {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
-           var chosenDate = App.get('mainform datefield#datMainDate').getValue();
-	//	   alert('chosenDateCalcXXX = ' + chosenDate);
-			if (chosenDate == null){
-				chosenDate = "today";	//temp fix
-			   console.log('chosenDate = ' + chosenDate);	
+           var selectedDate = App.get('mainform datefield#datMainDate').getValue();
+	//	   alert('selectedDateCalcXXX = ' + selectedDate);
+			if (selectedDate == null){
+				selectedDate = "today";	//temp fix
+			   console.log('selectedDate = ' + selectedDate);	
 			}
-		   return (chosenDate);
+		   return (selectedDate);
 		},
 		
         /*****************************************************
