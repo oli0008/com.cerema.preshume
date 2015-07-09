@@ -100,7 +100,7 @@ App.controller.define('CMain', {
 			chosenDate = this.initDateDeCalcule();
 // alert('chosenDateMAIN = ' + chosenDate);
 			
-	///		this.lireCombos(p);
+	//		this.lireCombos(p);
 		//	this.afficherEffectifETP(chosenDate);
  
 			this.afficherEffectifPhysique(chosenDate);
@@ -122,7 +122,21 @@ App.controller.define('CMain', {
 		var KetsTemp = 1; //G_DTERMED; //1;		 
 		App.get('combo#cboAgentEtablis').setValue(KetsTemp);
 		
-		
+            //Efface les infos montrées (displayField) sur les 2 combos esclaves
+            App.get('combo#cboMainUnite').setValue('');
+            App.get('combo#cboMainService').setValue('');
+            App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
+            App.get('combo#cboMainUnite').getStore().load();
+
+//*** TODO ************** Find out how to change store //				
+
+		//met à jour gridAgents pour cette valeur d'unité"			
+ //           var Kuni2 = App.get('combo#cboMainUnite').getValue();
+            //		console.log(App.get('combo#cboMainUnite').getValue());
+            //Efface l'info montrée (displayField) sur le combo esclave
+//            App.get('combo#cboMainService').setValue('');
+ //           App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
+ //           App.get('combo#cboMainService').getStore().load();			
 		},
 
         /*****************************************************
