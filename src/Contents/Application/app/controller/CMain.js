@@ -261,7 +261,6 @@ App.controller.define('CMain', {
         },
 
 
-/
         /*****************************************************
          *
          * Objectif: Calculer les grands totaux des effectifs présents pour le mois courrant.
