@@ -121,7 +121,7 @@ App.controller.define('CMain', {
 
 		var KetsTemp = 1; //G_DTERMED; //1;		 
 		App.get('combo#cboMainEtablis').setValue(KetsTemp);
-	App.get('combo#cboMainEtablis').setValue('toto');		
+//	App.get('combo#cboMainEtablis').setValue('toto');		
 		v = App.get('combo#cboMainEtablis').setValue(KetsTemp);
 		console.log(v);
  alert('initCombos- cbo= ' + v);
