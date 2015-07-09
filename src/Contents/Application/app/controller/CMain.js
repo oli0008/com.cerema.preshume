@@ -306,10 +306,11 @@ alert(' select_cboMainService');
 			
 	//	Kets:	G_DTERMED,
 			var data = {
-				Kets:	6,
+				Kets:	G_DTERMED,
 				sd:		'2015-07-01',
 				ed:		'2015-07-31'
 			};
+			alert('data= ' + data.Kets + ', sd=' + data.sd + ', ed=' + data.ed );
 			
             //Passe un parametre au Store 
  //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
