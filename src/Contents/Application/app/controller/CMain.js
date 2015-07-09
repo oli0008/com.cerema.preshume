@@ -111,22 +111,22 @@ App.controller.define('CMain', {
 
         /*****************************************************
          * Objectif: 
-		 * Au démarrage de l'application intitialise la fenêtre principale.
-		 * 1 - Initialiser tous les combos.
+		 * Au démarrage de l'application intitialise lles 3 combos.
+		 * Régle le combo Etablissement sur DterMed et efface l'affichage des combos Unite et Service.
          *
          ****************************************************/
 		 initCombos: function(p) {
 
  alert('initCombos');
-
+		//Régle le combo Etablissement sur DterMed
 		var KetsTemp = 1; //G_DTERMED; //1;		 
 		App.get('combo#cboMainEtablis').setValue(KetsTemp);
+		
 //	App.get('combo#cboMainEtablis').setValue('toto');		
-		v = App.get('combo#cboMainEtablis').setValue(KetsTemp);
-		console.log(v); 
- alert('initCombos- cbo= ' + v);
+//		v = App.get('combo#cboMainEtablis').setValue(KetsTemp);
+//		console.log(v); 
+// alert('initCombos- cbo= ' + v);
  
-//	App.get('combo#cboMainEtablis').setValue('toto');
 		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
