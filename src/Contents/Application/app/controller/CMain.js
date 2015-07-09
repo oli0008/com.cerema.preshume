@@ -94,7 +94,7 @@ App.controller.define('CMain', {
 			 var chosenDate = null;
 		//	this.initCombos();
 			chosenDate = this.initDateDeCalcule();
-				   alert('chosenDateMAIN = ' + chosenDate);
+ alert('chosenDateMAIN = ' + chosenDate);
 			this.afficherEffectifPhysique(chosenDate);
 			this.afficherEffectifETP(chosenDate);
 	 
@@ -113,11 +113,12 @@ App.controller.define('CMain', {
          ****************************************************/		 
 		 analyser_date:function(){
 			var today = new Date();		//******* Formatter date **************
+alert('analyser_date:function().today= ' + today);
+
 			var selectedDate = App.get('mainform datefield#datMainDate').getValue();
 			
 			if (selectedDate == null){
-				selectedDate = today;  // defaults to today
-			   console.log('selectedDate = ' + selectedDate);	
+				selectedDate = today;  // defaults to today	
 			}
 			if (selectedDate <= today){
 				this.afficherEffectifPhysique(today);
@@ -126,7 +127,6 @@ App.controller.define('CMain', {
 				this.calculerEffectifFuture(selectedDate);
 				this.calculerETPFuture(selectedDate);
 			}
-	alert('analyser_date:function().selectedDate= ' + selectedDate);
 		 },
 
         /*****************************************************
@@ -142,8 +142,7 @@ App.controller.define('CMain', {
             //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
            var selectedDate = App.get('mainform datefield#datMainDate').getValue();
 			if (selectedDate == null){
-				selectedDate = new Date();  // defaults to today
-//console.log('selectedDate = ' + selectedDate);	
+				selectedDate = new Date();  // defaults to today	
 			}
 		   return (selectedDate);
 		},
