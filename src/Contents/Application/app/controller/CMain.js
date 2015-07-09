@@ -115,6 +115,22 @@ App.controller.define('CMain', {
 		 * 1 - Initialiser tous les combos.
          *
          ****************************************************/
+		 initCombos: function(p) {
+
+ alert('initCombos');
+
+		var KetsTemp = 1; //G_DTERMED; //1;		 
+		App.get('combo#cboAgentEtablis').setValue(KetsTemp);
+		
+		
+		},
+
+        /*****************************************************
+         * Objectif: 
+		 * Au démarrage de l'application intitialise la fenêtre principale.
+		 * 1 - Initialiser tous les combos.
+         *
+         ****************************************************/
 		 lireCombosUnite: function(p) {
 
  alert('lireCombosUnite');
