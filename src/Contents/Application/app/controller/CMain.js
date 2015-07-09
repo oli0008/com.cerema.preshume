@@ -35,7 +35,7 @@ App.controller.define('CMain', {
                 "menu>menuitem": {
                     click: "Menu_onClick"
                 },
-                "combo#cboMainEtablis": {
+                "mainform combo#cboMainEtablis": {
                     select: "select_cboMainEtablis"
                 },
                 "combo#cboMainUnite": {
@@ -80,6 +80,7 @@ App.controller.define('CMain', {
             };
         },
 
+
         /*****************************************************
          * Objectif: 
 		 * Au démarrage de l'application intitialise la fenêtre principale.
@@ -117,7 +118,7 @@ App.controller.define('CMain', {
 
 			//Régle le combo Etablissement sur DterMed
 			var KetsTemp = G_DTERMED; 		 
-			App.get('combo#cboMainEtablis').setValue(KetsTemp);
+			App.get('mainform combo#cboMainEtablis').setValue(KetsTemp);
 		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
@@ -193,8 +194,8 @@ App.controller.define('CMain', {
          ****************************************************/
         //Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
         select_cboMainEtablis: function(p, record) {
-            var Kets2 = App.get('combo#cboMainEtablis').getValue();
-            //		console.log(App.get('combo#cboMainEtablis').getValue());
+            var Kets2 = App.get('mainform combo#cboMainEtablis').getValue();
+            //		console.log(App.get('mainform combo#cboMainEtablis').getValue());
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
             App.get('combo#cboMainService').setValue('');
@@ -255,7 +256,7 @@ alert(' select_cboMainService');
          ****************************************************/
         calculerEffectifPresent: function() {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
+            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
 
 
             //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
@@ -293,7 +294,7 @@ alert(' select_cboMainService');
          ****************************************************/
         afficherEffectifPhysique: function(chosenDate) {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
+            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
 
             //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
             //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
@@ -324,7 +325,7 @@ alert(' select_cboMainService');
          ****************************************************/
         afficherEffectifETP: function(chosenDate) {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainEtablis').getValue();
+            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
 
             //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
             //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
