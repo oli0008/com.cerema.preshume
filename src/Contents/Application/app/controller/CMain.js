@@ -81,7 +81,6 @@ App.controller.define('CMain', {
             alert('dummyFn() -- reached');
         },
 
-
         /*****************************************************
          * Objectif: 
 		 * Au démarrage de l'application intitialise la fenêtre principale.
@@ -97,13 +96,27 @@ App.controller.define('CMain', {
 			chosenDate = this.initDateDeCalcule();
 // alert('chosenDateMAIN = ' + chosenDate);
 			
-			this.lireCombos(xxx);
+			this.lireCombos(p);
 		//	this.afficherEffectifETP(chosenDate);
  
 			this.afficherEffectifPhysique(chosenDate);
 			this.afficherEffectifETP(chosenDate); 
 		 },
 
+//****		 
+
+        /*****************************************************
+         * Objectif: 
+		 * Au démarrage de l'application intitialise la fenêtre principale.
+		 * 1 - Initialiser tous les combos.
+         *
+         ****************************************************/
+		 lireCombos: function(p) {
+
+// alert('lireCombos');
+		 }
+		 
+//***		 
         /*****************************************************
          * Objectif: 
 		 * Décider en fonction de la date selectionnée si on affiche les effectifs présent ou futur.
