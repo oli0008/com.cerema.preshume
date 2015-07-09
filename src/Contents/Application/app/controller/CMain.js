@@ -113,7 +113,7 @@ App.controller.define('CMain', {
          ****************************************************/		 
 		 analyser_date:function(){
 			var today = new Date();		//******* Formatter date **************
-alert('analyser_date:function().today= ' + today);
+//	alert('analyser_date:function().today= ' + today);
 
 			var selectedDate = App.get('mainform datefield#datMainDate').getValue();
 			
