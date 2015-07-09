@@ -271,7 +271,7 @@ alert(' select_cboMainService');
             //		console.log('** HERE **');
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
             //Passe un parametre au Store 
-            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
+            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = 1;
             // on rafraichit le store
             App.get('grid#gridEffectifPhysque').getStore().load();
 
