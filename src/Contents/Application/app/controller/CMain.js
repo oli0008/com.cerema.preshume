@@ -119,7 +119,7 @@ App.controller.define('CMain', {
 				chosenDate = "todayBl";	//temp fix
 			}
 					   if (chosenDate == null){
-			   console.log();
+			   console.log('chosenDateCalc = ' + chosenDate);
 				chosenDate = "todayNULL";	//temp fix
 			}
 		   return (chosenDate);
