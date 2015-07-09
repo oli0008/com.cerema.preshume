@@ -139,8 +139,8 @@ alert('analyser_date:function().today= ' + today);
          *
          ****************************************************/
         initDateDeCalcule: function() {
-            //run query on data in table effectifs_physique cf G_TotalPhyPres.sql
            var selectedDate = App.get('mainform datefield#datMainDate').getValue();
+		   
 			if (selectedDate == null){
 				selectedDate = new Date();  // defaults to today	
 			}
