@@ -216,8 +216,9 @@ alert(' select_cboMainEtablis -- NOT USED');
          ****************************************************/
         //Sélectionner une unité affiche le service correspondant (cela active le store du service)
         select_cboMainUnite: function(p, record) {
+			
             var Kuni2 = App.get('combo#cboMainUnite').getValue();
-            //		console.log(App.get('combo#cboMainUnite').getValue());
+console.log(App.get('combo#cboMainUnite').getValue());
             //Efface l'info montrée (displayField) sur le combo esclave
             App.get('combo#cboMainService').setValue('');
             App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
