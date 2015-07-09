@@ -304,9 +304,9 @@ alert(' select_cboMainService');
             // on charge le store avec une variable "recherche"
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
 			
-
+	//	Kets:	G_DTERMED,
 			var data = {
-				Kets:	G_DTERMED,
+				Kets:	6,
 				sd:		'2015-07-01',
 				ed:		'2015-07-31'
 			};
