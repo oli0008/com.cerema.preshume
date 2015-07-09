@@ -97,7 +97,7 @@ App.controller.define('CMain', {
 			chosenDate = this.initDateDeCalcule();
 // alert('chosenDateMAIN = ' + chosenDate);
 			
-			this.lireCombos(p);
+	///		this.lireCombos(p);
 		//	this.afficherEffectifETP(chosenDate);
  
 			this.afficherEffectifPhysique(chosenDate);
@@ -112,9 +112,20 @@ App.controller.define('CMain', {
 		 * 1 - Initialiser tous les combos.
          *
          ****************************************************/
-		 lireCombos: function(p) {
+		 lireCombosUnite: function(p) {
 
- alert('lireCombos');
+ alert('lireCombosUnite');
+		 },
+
+        /*****************************************************
+         * Objectif: 
+		 * Au démarrage de l'application intitialise la fenêtre principale.
+		 * 1 - Initialiser tous les combos.
+         *
+         ****************************************************/
+		 lireCombosService: function(p) {
+
+ alert('lireCombosService');
 		 },
 		 
 //***		 
@@ -169,6 +180,10 @@ App.controller.define('CMain', {
             App.get('combo#cboMainService').setValue('');
             App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
             App.get('combo#cboMainUnite').getStore().load();
+			
+			//met à jour l'affichage des effectifs
+alert(' valider_cboMainUnite');
+			this.analyser_date();
         },
 
         /*****************************************************
@@ -184,6 +199,10 @@ App.controller.define('CMain', {
             App.get('combo#cboMainService').setValue('');
             App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
             App.get('combo#cboMainService').getStore().load();
+			
+			//met à jour l'affichage des effectifs
+alert(' valider_cboMainService');
+			this.analyser_date();
         },
 
         /*****************************************************
