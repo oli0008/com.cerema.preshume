@@ -303,8 +303,17 @@ alert(' select_cboMainService');
 
             // on charge le store avec une variable "recherche"
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
+			
+
+			var data = {
+				Kets:	G_DTERMED,
+				sd:		'2015-07-01',
+				ed:		'2015-07-31'
+			}
+			
             //Passe un parametre au Store 
-            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
+ //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
+           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.data; //'1';
             // on rafraichit le store
             App.get('grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
