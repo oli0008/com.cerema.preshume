@@ -118,31 +118,15 @@ App.controller.define('CMain', {
 		 initCombos: function(p) {
 
  alert('initCombos');
-		//Régle le combo Etablissement sur DterMed
-		var KetsTemp = 1; //G_DTERMED; //1;		 
-		App.get('combo#cboMainEtablis').setValue(KetsTemp);
-		
-//	App.get('combo#cboMainEtablis').setValue('toto');		
-//		v = App.get('combo#cboMainEtablis').setValue(KetsTemp);
-//		console.log(v); 
-// alert('initCombos- cbo= ' + v);
- 
-		
+			//Régle le combo Etablissement sur DterMed
+			var KetsTemp = 1; //G_DTERMED; //1;		 
+			App.get('combo#cboMainEtablis').setValue(KetsTemp);
+			
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('combo#cboMainUnite').setValue('');
             App.get('combo#cboMainService').setValue('');
             App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
-            App.get('combo#cboMainUnite').getStore().load();
-
-//*** TODO ************** Find out how to change store //				
-
-		//met à jour gridAgents pour cette valeur d'unité"			
- //           var Kuni2 = App.get('combo#cboMainUnite').getValue();
-            //		console.log(App.get('combo#cboMainUnite').getValue());
-            //Efface l'info montrée (displayField) sur le combo esclave
-//            App.get('combo#cboMainService').setValue('');
- //           App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
- //           App.get('combo#cboMainService').getStore().load();			
+            App.get('combo#cboMainUnite').getStore().load();	
 		},
 
         /*****************************************************
