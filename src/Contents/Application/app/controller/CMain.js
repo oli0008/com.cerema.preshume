@@ -218,7 +218,8 @@ alert(' select_cboMainEtablis -- NOT USED');
         select_cboMainUnite: function(p, record) {
 			
             var Kuni2 = App.get('combo#cboMainUnite').getValue();
-console.log(App.get('combo#cboMainUnite').getValue());
+//console.log(App.get('combo#cboMainUnite').getValue());
+console.log('Kuni2 =' + Kuni2 );
             //Efface l'info montrée (displayField) sur le combo esclave
             App.get('combo#cboMainService').setValue('');
             App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
