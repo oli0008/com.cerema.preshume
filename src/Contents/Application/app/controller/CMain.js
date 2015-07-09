@@ -115,7 +115,7 @@ App.controller.define('CMain', {
 	//	   alert('chosenDateCalcXXX = ' + chosenDate);
 			if (chosenDate == null){
 				chosenDate = "today";	//temp fix
-			   console.log(chosenDate);	
+			   console.log('chosenDate = ' + chosenDate);	
 			}
 		   return (chosenDate);
 		},
