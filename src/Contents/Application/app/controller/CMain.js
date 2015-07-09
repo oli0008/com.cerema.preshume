@@ -36,10 +36,10 @@ App.controller.define('CMain', {
                     click: "Menu_onClick"
                 },
                 "combo#cboMainEtablis": {
-                    select: "valider_cboMainUnite"
+                    select: "select_cboMainEtablis"
                 },
                 "combo#cboMainUnite": {
-                    select: "valider_cboMainService"
+                    select: "select_cboMainUnite"
                 },
                 "mainform datefield#datMainDate": {
                     select: "analyser_date"
@@ -172,7 +172,7 @@ App.controller.define('CMain', {
          *
          ****************************************************/
         //Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
-        valider_cboMainUnite: function(p, record) {
+        select_cboMainEtablis: function(p, record) {
             var Kets2 = App.get('combo#cboMainEtablis').getValue();
             //		console.log(App.get('combo#cboMainEtablis').getValue());
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
@@ -182,7 +182,7 @@ App.controller.define('CMain', {
             App.get('combo#cboMainUnite').getStore().load();
 			
 			//met à jour l'affichage des effectifs
-alert(' valider_cboMainUnite');
+alert(' select_cboMainEtablis');
 			this.analyser_date();
         },
 
@@ -192,7 +192,7 @@ alert(' valider_cboMainUnite');
          *
          ****************************************************/
         //Sélectionner une unité affiche le service correspondant (cela active le store du service)
-        valider_cboMainService: function(p, record) {
+        select_cboMainUnite: function(p, record) {
             var Kuni2 = App.get('combo#cboMainUnite').getValue();
             //		console.log(App.get('combo#cboMainUnite').getValue());
             //Efface l'info montrée (displayField) sur le combo esclave
@@ -201,7 +201,26 @@ alert(' valider_cboMainUnite');
             App.get('combo#cboMainService').getStore().load();
 			
 			//met à jour l'affichage des effectifs
-alert(' valider_cboMainService');
+alert(' select_cboMainUnite');
+			this.analyser_date();
+        },
+
+        /*****************************************************
+         * Objectif: 
+		 * Afficher le service correspondant à l'unité qui vient d'être sélectionnée.
+         *
+         ****************************************************/
+        //Sélectionner une unité affiche le service correspondant (cela active le store du service)
+        select_cboMainService: function(p, record) {
+/*             var Kuni2 = App.get('combo#cboMainUnite').getValue();
+            //		console.log(App.get('combo#cboMainUnite').getValue());
+            //Efface l'info montrée (displayField) sur le combo esclave
+            App.get('combo#cboMainService').setValue('');
+            App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
+            App.get('combo#cboMainService').getStore().load();
+			 */
+			//met à jour l'affichage des effectifs
+alert(' select_cboMainService');
 			this.analyser_date();
         },
 
