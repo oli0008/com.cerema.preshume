@@ -83,8 +83,8 @@ App.controller.define('CMain', {
 
 
         /*****************************************************
-         *
          * Objectif: 
+		 * Au démarrage de l'application intitialise la fenêtre principale.
 		 * 1 - Initialiser tous les combos.
 		 * 2 - Initialiser le date.
 		 * 3 - Lire les effectifs physique et ETP présent.
@@ -101,15 +101,10 @@ App.controller.define('CMain', {
 		//	this.afficherEffectifETP(chosenDate);
  
 			this.afficherEffectifPhysique(chosenDate);
-			this.afficherEffectifETP(chosenDate);
-	 
-	
- 
-	 
+			this.afficherEffectifETP(chosenDate); 
 		 },
 
         /*****************************************************
-         *
          * Objectif: 
 		 * Décider en fonction de la date selectionnée si on affiche les effectifs présent ou futur.
 		 * Si la date est <= à aujourd'hui on affiche les données sauvegardées le 1er du mois. (effectifs physique et ETP présents)
@@ -132,8 +127,8 @@ App.controller.define('CMain', {
 		 },
 
         /*****************************************************
-         *
-         * Objectif: Lire la date de calcul. 
+         * Objectif: 
+		 * Lire la date de calcul. 
 		 * Si l'utilisateur n'a pas sélectionné de date ou si elle est vide, elle est fixée à la date d'aujourd'hui.
          *
          ****************************************************/
@@ -147,8 +142,8 @@ App.controller.define('CMain', {
 		},
 		
         /*****************************************************
-         *
-         * Objectif: Afficher l'unité correspondante à l'établissement qui vient d'être sélectionnée.
+         * Objectif: 
+		 * Afficher l'unité correspondante à l'établissement qui vient d'être sélectionnée.
          *
          ****************************************************/
         //Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
@@ -163,8 +158,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Afficher le service correspondant à l'unité qui vient d'être sélectionnée.
+         * Objectif: 
+		 * Afficher le service correspondant à l'unité qui vient d'être sélectionnée.
          *
          ****************************************************/
         //Sélectionner une unité affiche le service correspondant (cela active le store du service)
@@ -178,8 +173,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Calculer les effectifs présents. Cette méthode vérifie que les information déja stockées sont 
+         * Objectif: 
+		 * Calculer les effectifs présents. Cette méthode vérifie que les information déja stockées sont 
 		 * encore valide ...
 		 * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
          *
@@ -218,8 +213,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Récupérer les effectifs Physque présents qui ont étés stockées pour le mois courrant. 
+         * Objectif: 
+		 * Récupérer les effectifs Physque présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
         afficherEffectifPhysique: function(chosenDate) {
@@ -239,8 +234,8 @@ App.controller.define('CMain', {
         },		
 
         /*****************************************************
-         *
-         * Objectif: Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
+         * Objectif: 
+		 * Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
         afficherEffectifETP: function(chosenDate) {
@@ -272,8 +267,8 @@ App.controller.define('CMain', {
 */		
 		
         /*****************************************************
-         *
-         * Objectif: Calculer les effectifs future. Cette méthode
+         * Objectif: 
+		 * Calculer les effectifs future. Cette méthode
          * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
          *
          ****************************************************/
@@ -282,8 +277,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Calculer les ETP future. Cette méthode
+         * Objectif: 
+		 * Calculer les ETP future. Cette méthode
          * calcule les totaux par catégories d'agent et les totaux pour chaque unité.
          *
          ****************************************************/
@@ -292,8 +287,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de modification d'un agent.
+         * Objectif: 
+		 * Rediriger vers la fenêtre de modification d'un agent.
          *
          ****************************************************/
         openWindowModAgent: function() {
@@ -303,8 +298,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de maintenance des résidence administratives.
+         * Objectif: 
+		 * Rediriger vers la fenêtre de maintenance des résidence administratives.
          *
          ****************************************************/
         openWindowMaintResAdmin: function() {
@@ -315,8 +310,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de maintenance des Thématiques.
+         * Objectif: 
+		 *Rediriger vers la fenêtre de maintenance des Thématiques.
          *
          ****************************************************/
         openWindowMaintThematique: function() {
@@ -326,8 +321,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de maintenance des domaines d'intervention.
+         * Objectif: 
+		 * Rediriger vers la fenêtre de maintenance des domaines d'intervention.
          *
          ****************************************************/
         openWindowMaintDomainInterv: function() {
@@ -337,8 +332,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de maintenance des types de contrats.
+         * Objectif: 
+		 * Rediriger vers la fenêtre de maintenance des types de contrats.
          *
          ****************************************************/
         openWindowMaintTypeContrat: function() {
@@ -348,8 +343,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de maintenance des métiers.
+         * Objectif: 
+		 * Rediriger vers la fenêtre de maintenance des métiers.
          *
          ****************************************************/
         openWindowMaintMetier: function() {
@@ -359,8 +354,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de maintenance des catégories.
+         * Objectif: 
+		 * Rediriger vers la fenêtre de maintenance des catégories.
          *
          ****************************************************/
         openWindowMaintCategorie: function() {
@@ -371,8 +366,8 @@ App.controller.define('CMain', {
 
 
         /*****************************************************
-         *
-         * Objectif: Rediriger vers la fenêtre de maintenance des gardes.
+         * Objectif: 
+		 * Rediriger vers la fenêtre de maintenance des gardes.
          *
          ****************************************************/
         openWindowMaintGrade: function() {
@@ -382,8 +377,8 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
-         * Objectif: Gére l'affichage initial de la page principale au démarrage de l'application.
+         * Objectif: 
+		 * Gére l'affichage initial de la page principale au démarrage de l'application.
          *
          ****************************************************/
         onShow: function() {
@@ -392,7 +387,6 @@ App.controller.define('CMain', {
         },
 
         /*****************************************************
-         *
          * Objectif: NOT USED *** 
          *
          ****************************************************/
