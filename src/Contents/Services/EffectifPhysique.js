@@ -30,9 +30,12 @@ EffectifPhysique = {
 	get_effectifPhysiquePresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
 console.log('get_effectifPhysiquePresent()');
-		q.model(BASE_DONNEES, 'select  lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep '
-			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' ', fn_cb);
+//GG		q.model(BASE_DONNEES, 'select  lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep '
+//GG			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' ', fn_cb);
 //		q.model(BASE_DONNEES,q.sql('qget_etablis'),fn_cb);  
+
+		q.model(BASE_DONNEES, 'select  lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep '
+			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' and kets = 1', fn_cb);
 	},
 	
 	
