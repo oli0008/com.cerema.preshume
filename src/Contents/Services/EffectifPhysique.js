@@ -38,8 +38,8 @@ console.log('get_effectifPhysiquePresent()');
 //			+ 'from effectif_physique where date_ep >= ' + in1.data.sd + ' and date_ep <= '  + in1.data.ed + ' and kets = ' + in1.data.Kets);
 		q.model(BASE_DONNEES, 'select  lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep '
 //			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' and kets = 1', fn_cb);
+			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' and kets = ' + in1.data.Kets, fn_cb);
 //			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' and kets = ' + in1.Kets, fn_cb);
-			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' and kets = ' + in1.Kets, fn_cb);
 //			+ 'from effectif_physique where date_ep >= ' + in1.data.sd + ' and date_ep <= '  + in1.data.ed + ' and kets = ' + in1.data.Kets, fn_cb);			
 	},
 
