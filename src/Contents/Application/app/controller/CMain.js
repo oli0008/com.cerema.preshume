@@ -121,10 +121,10 @@ App.controller.define('CMain', {
 			App.get('mainform combo#cboMainEtablis').setValue(KetsTemp);
 		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
-            App.get('combo#cboMainUnite').setValue('');
-            App.get('combo#cboMainService').setValue('');
-            App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
-            App.get('combo#cboMainUnite').getStore().load();	
+            App.get('mainform combo#cboMainUnite').setValue('');
+            App.get('mainform combo#cboMainService').setValue('');
+            App.get('mainform combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
+            App.get('mainform combo#cboMainUnite').getStore().load();	
 		},
 
         /*****************************************************
@@ -197,10 +197,10 @@ App.controller.define('CMain', {
             var Kets2 = App.get('mainform combo#cboMainEtablis').getValue();
             //		console.log(App.get('mainform combo#cboMainEtablis').getValue());
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
-            App.get('combo#cboMainUnite').setValue('');
-            App.get('combo#cboMainService').setValue('');
-            App.get('combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
-            App.get('combo#cboMainUnite').getStore().load();
+            App.get('mainform combo#cboMainUnite').setValue('');
+            App.get('mainform combo#cboMainService').setValue('');
+            App.get('mainform combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
+            App.get('mainform combo#cboMainUnite').getStore().load();
 			
 			//met à jour l'affichage des effectifs
 alert(' select_cboMainEtablis -- NOT USED');
@@ -219,9 +219,9 @@ alert(' select_cboMainEtablis -- NOT USED');
 //console.log(App.get('combo#cboMainUnite').getValue());
 console.log('Kuni2 =' + Kuni2 );
             //Efface l'info montrée (displayField) sur le combo esclave
-            App.get('combo#cboMainService').setValue('');
-            App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
-            App.get('combo#cboMainService').getStore().load();
+            App.get('mainform combo#cboMainService').setValue('');
+            App.get('mainform combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
+            App.get('mainform combo#cboMainService').getStore().load();
 			
 			//met à jour l'affichage des effectifs
 alert(' select_cboMainUnite');
@@ -238,9 +238,9 @@ alert(' select_cboMainUnite');
 /*             var Kuni2 = App.get('combo#cboMainUnite').getValue();
             //		console.log(App.get('combo#cboMainUnite').getValue());
             //Efface l'info montrée (displayField) sur le combo esclave
-            App.get('combo#cboMainService').setValue('');
-            App.get('combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
-            App.get('combo#cboMainService').getStore().load();
+            App.get('mainform combo#cboMainService').setValue('');
+            App.get('mainform combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
+            App.get('mainform combo#cboMainService').getStore().load();
 			 */
 			//met à jour l'affichage des effectifs
 alert(' select_cboMainService');
@@ -256,7 +256,7 @@ alert(' select_cboMainService');
          ****************************************************/
         calculerEffectifPresent: function() {
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
+            //App.get('mainform combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
 
 
             //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
@@ -269,9 +269,9 @@ alert(' select_cboMainService');
             //		console.log('** HERE **');
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
             //Passe un parametre au Store 
-            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = 1;
+            App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = 1;
             // on rafraichit le store
-            App.get('grid#gridEffectifPhysque').getStore().load();
+            App.get('mainform grid#gridEffectifPhysque').getStore().load();
 
             /*
 			//combo logic here
@@ -311,10 +311,10 @@ alert(' select_cboMainService');
 //	alert('data= ' + data.Kets + ', sd=' + data.sd + ', ed=' + data.ed );
 			
             //Passe un parametre au Store 
-            App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
+            App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
  //test          App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.data; //'1';
             // on rafraichit le store
-            App.get('grid#gridEffectifPhysque').getStore().load();
+            App.get('mainform grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
         },		
 
@@ -335,7 +335,7 @@ alert(' select_cboMainService');
             //Passe un parametre au Store 
  //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
-            App.get('grid#gridEffectifETP').getStore().load();
+            App.get('mainform grid#gridEffectifETP').getStore().load();
         },
 
 
