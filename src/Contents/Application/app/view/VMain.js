@@ -84,6 +84,7 @@ App.view.define('VMain', {
                             fieldLabel: "Etablissement",
                             //	allowBlank: false,		//false = mandatory filling
                             editable: false,
+							disabled: true,			//empéche de changer la valeur
                             labelAlign: "top",
                             labelWidth: G_VMAIN_CBO_WIDTH,
                             width: G_VMAIN_CBO_WIDTH,
