@@ -123,8 +123,8 @@ App.controller.define('CMain', {
 				this.afficherEffectifPhysique(today);
 				this.afficherEffectifETP(today);
 			} else {
-//				this.afficherEffectifPhysique(selectedDate);
-//				this.afficherEffectifETP(selectedDate);
+				this.calculerEffectifFuture(selectedDate);
+				this.calculerETPFuture(selectedDate);
 			}
 	alert('analyser_date:function().selectedDate= ' + selectedDate);
 		 },
