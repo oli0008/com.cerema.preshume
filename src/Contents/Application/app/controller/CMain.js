@@ -206,7 +206,8 @@ App.controller.define('CMain', {
 			if (selectedDate == null){
 				selectedDate = TODAY;    // defaults to today	
 			}
-		   return (selectedDate.toString("yyyy-MM-dd") );
+		  // return (selectedDate.toString("yyyy-MM-dd") );
+		   return(selectedDate);
 		},
 		
         /*****************************************************
