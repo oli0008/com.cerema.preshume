@@ -33,7 +33,7 @@ console.log('get_effectifETPPresent()');
 //oo		q.model(BASE_DONNEES, 'select  lib_departement_etp, lib_categorie_etp, sum_quot,  Kets,  date_etp '
 //oo			+ 'from effectif_etp where date_etp >= \'2015-07-01\' and date_etp <= \'2015-07-31\' ', fn_cb);
 // //////////////////			
-		var sql = "select lib_departement_etp, lib_categorie_etp, sum_quot, Kets, date_etp from effectif_physique where date_etp >= '" 
+		var sql = "select lib_departement_etp, lib_categorie_etp, sum_quot, Kets, date_etp from effectif_etp where date_etp >= '" 
 				+ in1.sd + "' and date_etp <= '" + in1.ed + "' and ";
 		var params= [];
 		if (in1.Kets!= -1) 
