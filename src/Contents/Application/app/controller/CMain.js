@@ -464,14 +464,15 @@ alert(' select_cboMainEtablis -- NOT USED');
          *
          ****************************************************/
         onShow: function(p, record) {
-			 var chosenDate = null;
+	//		 var chosenDate = null;
 	//		 this.createDates();
 			 
 			this.initCombos();
-			chosenDate = this.initDateDeCalcule();
+		//	chosenDate = 
+			this.initDateDeCalcule();
 						
-			this.afficherEffectifPhysique(chosenDate);
-			this.afficherEffectifETP(chosenDate); 
+			this.afficherEffectifPhysique();
+			this.afficherEffectifETP(); 
 		},
 
         /*****************************************************
