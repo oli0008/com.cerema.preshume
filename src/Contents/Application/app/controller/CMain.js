@@ -27,7 +27,7 @@ var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
 var selData = {
 	Kets:	-1,
 	Kuni:	-1,
-	Kserv:	-1,
+	Ksub:	-1,
 	sd:		MONTH_START_DATE,
 	ed:		MONTH_END_DATE 
 };
