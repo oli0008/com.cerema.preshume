@@ -107,6 +107,7 @@ App.controller.define('CMain', {
 			 
 			var dd = new Date();
 			var y = dd.getFullYear();	//getFullYear()
+ alert('createDates: y = ' +y);
 			var m = dd.getMonth();
 			var maxDay = dd.getDaysInMonth(y,6);
 //			var maxDay = dd.getDaysInMonth(2015,07);
