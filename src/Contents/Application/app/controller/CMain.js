@@ -123,7 +123,7 @@ App.controller.define('CMain', {
 		 createDates: function(d) {
 			 
 			var dd = TODAY;
-			var y = dd.getFullYear();	//getFullYear()
+	//		var y = dd.getFullYear();	//getFullYear()
 			var m = TODAY.getMonth();
 			var maxDay = TODAY.getDaysInMonth(y,m);
 			
