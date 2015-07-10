@@ -280,7 +280,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 				var d = App.get('datefield#datMainDate').getValue();
 				this.prepareDate(d);
 			}
-	 		
+	 		//met à jour le grid
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams = selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
@@ -306,7 +306,9 @@ alert(' select_cboMainEtablis -- NOT USED');
  //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
             // on rafraichit le store
   //oo          App.get('mainform grid#gridEffectifETP').getStore().load();
-//***********************			
+//***********************	
+
+		
 			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
 				selData.Kets=App.get('combo#cboMainEtablis').getValue();			
@@ -318,7 +320,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 				var d = App.get('datefield#datMainDate').getValue();
 				this.prepareDate(d);
 			}
-	 		
+	 		//met à jour le grid
 			App.get('mainform grid#gridEffectifETP').getStore().getProxy().extraParams = selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifETP').getStore().load();			
