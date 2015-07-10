@@ -192,7 +192,7 @@ console.log( Kuni2 );
  */			
 			//met à jour l'affichage des effectifs
 			selData.Kuni = Kuni2;
-alert('Kets= ' + selData.Kets + 'Kuni= ' + selData.Kuni);
+//alert('Kets= ' + selData.Kets + 'Kuni= ' + selData.Kuni);
 			this.analyser_date();
         },
 
@@ -210,8 +210,10 @@ alert('Kets= ' + selData.Kets + 'Kuni= ' + selData.Kuni);
 				unite: Kuni2,
 				service: Ksub2			
 			};
-
-			App.get('mainform grid#gridEffectifPhysque').getStore().load();
+			//met à jour l'affichage des effectifs
+			selData.Kuni = Kuni2;
+			selData.Ksub = Ksub2;
+	//NOK		App.get('mainform grid#gridEffectifPhysque').getStore().load();
 			this.analyser_date();
         },
 
