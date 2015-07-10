@@ -127,7 +127,7 @@ App.controller.define('CMain', {
 /* 			else { 
 				selectedDate = s.toString("yyyy-MM-dd");
 			} */
-/* 			this.prepareDate(d);
+ 	//NOK		this.prepareDate(d);
 			
 		alert('analyser_date: s= ' + s);		
 			if (s <= TODAY){
@@ -137,7 +137,7 @@ App.controller.define('CMain', {
 			} else { 
 				this.calculerEffectifFuture();
 				this.calculerETPFuture();
-			} */
+			} 
 		 },
 
         /*****************************************************
