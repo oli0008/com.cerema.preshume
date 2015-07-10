@@ -239,7 +239,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 			
             var Kuni2 = App.get('combo#cboMainUnite').getValue();
 //console.log(App.get('combo#cboMainUnite').getValue());
-console.log('Kuni2 =' + Kuni2 );
+//console.log('Kuni2 =' + Kuni2 );
             //Efface l'info montrée (displayField) sur le combo esclave
             App.get('mainform combo#cboMainService').setValue('');
             App.get('mainform combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
