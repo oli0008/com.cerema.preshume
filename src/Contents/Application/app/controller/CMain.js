@@ -15,6 +15,7 @@ var MONTH_END_DATE  = TODAY;		//new Date().toString("yyyy-MM-dd");
 
 var G_VMAIN_CBO_WIDTH = 210; 	//Définition de la largeur des combos de VMain
 var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
+
 /******************
  * Déclaration des variables globales à l'application
  ******************/
@@ -87,38 +88,13 @@ App.controller.define('CMain', {
             };
         },
 
-
-        /*****************************************************
+       /*****************************************************
          * Objectif: 
 		 * Au démarrage de l'application intitialise la fenêtre principale.
 		 * 1 - Initialiser tous les combos.
 		 * 2 - Initialiser le date.
 		 * 3 - Lire les effectifs physique et ETP présent.
 		 * 4 - Afficher les graphique des effectifs. 
-         *
-         ****************************************************/
-
-//****	
-       /*****************************************************
-         * Objectif: 
-         *
-         ****************************************************/	 
-		 createDates: function(d) {
-			 
-			var dd = new Date();
-			var y = dd.getFullYear();
-			var m = dd.getMonth();
-			var maxDay = dd.getDaysInMonth(y,m);
-
-			MONTH_START_DATE = y + '-' + m + '-' + '01';			
-			MONTH_END_DATE =   y + '-' + m + '-' + maxDay;
-		 },
-
-
-        /*****************************************************
-         * Objectif: 
-		 * Au démarrage de l'application intitialise lles 3 combos.
-		 * Régle le combo Etablissement sur DTerMed et efface l'affichage des combos Unite et Service.
          *
          ****************************************************/
 		 initCombos: function(p) {
@@ -128,7 +104,7 @@ App.controller.define('CMain', {
 
 			//Régle le combo Etablissement sur DterMed
 			var KetsTemp = G_DTERMED; 		 
-			var cbo=App.get('mainform combo#cboMainEtablis');
+			var cbo = App.get('mainform combo#cboMainEtablis');
 			cbo.getStore().load();
 			cbo.setValue(KetsTemp);
 			cbo.setDisabled(true);
@@ -152,9 +128,10 @@ App.controller.define('CMain', {
 			
 			if (s == null){
 				selectedDate = TODAY;  // defaults to TODAY		
-			} else { 
+			} 
+/* 			else { 
 				selectedDate = s.toString("yyyy-MM-dd");
-			}
+			} */
 		
 			if (selectedDate <= TODAY){
 				this.afficherEffectifPhysique(TODAY);
@@ -290,27 +267,52 @@ alert(' select_cboMainEtablis -- NOT USED');
 
 		
             //Passe un parametre au Store 
-            App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';  
-			          
- 			if (App.get('combo#cboMainEtablis').getValue()!="") selData.Kets=App.get('combo#cboMainEtablis').getValue();
-/* 			
+ //           App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';  
+ 
+			// Rafraichi        
+ 			if (App.get('combo#cboMainEtablis').getValue()!="") 
+				selData.Kets=App.get('combo#cboMainEtablis').getValue();			
 			if (App.get('combo#cboMainUnite').getValue()!= "") 
 				selData.Kuni = App.get('combo#cboMainUnite').getValue();
  			if (App.get('combo#cboMainService').getValue()!= "") 
 				selData.Kserv = App.get('combo#cboMainService').getValue();
 			if (App.get('datefield#datMainDate').getValue()!= "") {
 				var d = App.get('datefield#datMainDate').getValue();
-				//convertion de date à string pour SQL
-				selData.sd = d.toString("yyyy-MM-dd");
-				selData.ed = selData.sd;
+				this.prepareDate(d);
+
+
 			}
-	 */		
+	 		
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams=selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
-        },		
+        },
+		
+        /*****************************************************
+         * Objectif: 
+		 * Reformater le date en String format pour requettes SQL.
+		 * Prend en entrée un paramétre, la date selectionnée.
+		 * Ecrit le résultat dans un objet global.
+         *
+         ****************************************************/
+		 prepareDate: function(chosenDate) {
+			//Si on calcule il n'y a qu'une date 
+			if (chosenDate > TODAY) {
+				selData.sd = chosenDate.toString("yyyy-MM-dd");
+				selData.ed = null;			
+			} else {	//On lit de la table donc il y a une date de début et de fin)
+				//construction des dates de recherche 
+				var dd = TODAY; 	//new Date();
+				var y = dd.getFullYear();
+				var m = dd.getMonth();
+				var maxDay = dd.getDaysInMonth(y,m);
 
+				selData.sd = y + '-' + m + '-' + '01';			
+				selData.ed =   y + '-' + m + '-' + maxDay;
+			}
+		},				
+		 
         /*****************************************************
          * Objectif: 
 		 * Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
