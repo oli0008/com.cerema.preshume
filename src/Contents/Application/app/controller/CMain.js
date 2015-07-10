@@ -131,6 +131,7 @@ App.controller.define('CMain', {
 			
 			
 			if (s <= TODAY){
+		alert('analyser_date: s= ' + s);
 				this.afficherEffectifPhysique();
 				this.afficherEffectifETP();
 			} else { 
