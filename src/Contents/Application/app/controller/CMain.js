@@ -24,9 +24,9 @@ var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
 //var re = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
 
 var selData = {
-	Kets:	0,
-	Kuni:	0,
-	Kserv:	0,
+	Kets:	-1,
+	Kuni:	-1,
+	Kserv:	-1,
 	sd:		MONTH_START_DATE,
 	ed:		MONTH_END_DATE 
 };
@@ -329,17 +329,14 @@ console.log('Kuni2 =' + Kuni2 );
 			//if ()
 			
 // MULTIPLE PARAMETRES ****************************
-			var data = {
-				Kets:	G_DTERMED,
-				sd:		'2015-07-01',
-				ed:		'2015-07-31'
-			};
 //	alert('data= ' + data.Kets + ', sd=' + data.sd + ', ed=' + data.ed );
 			
             //Passe un parametre au Store 
             App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
 			
- //test          App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.data; //'1';
+ //test          
+ 			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
+			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams=selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
