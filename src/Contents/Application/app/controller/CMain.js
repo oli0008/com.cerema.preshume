@@ -331,11 +331,11 @@ alert(' select_cboMainEtablis -- NOT USED');
             App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';  
 			
  //test          
- 			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
+ 			if (App.get('combo#cboMainEtablis').getValue()!="") selData.Kets=App.get('combo#cboMainEtablis').getValue();
 /* 			
-			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
- 			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
-			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
+			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kuni=App.get('combo#cboMainUnite').getValue();
+ 			if (App.get('combo#cboMainService').getValue()!="") selData.Kserv=App.get('combo#cboMainService').getValue();
+			if (App.get('datefield#datMainDate').getValue()!="") selData.dat=App.get('datefield#datMainDate').getValue();
 	 */		
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams=selData;
             // on rafraichit le store
