@@ -291,7 +291,7 @@ alert(' select_cboMainEtablis -- NOT USED');
          * Objectif: 
 		 * Reformater le date en String format pour requettes SQL.
 		 * Prend en entrée un paramétre, la date selectionnée.
-		 * Ecrit le résultat dans un objet global.
+		 * Ecrit les dates de début et de fin dans un objet global.
          *
          ****************************************************/
 		 prepareDate: function(chosenDate) {
