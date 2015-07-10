@@ -264,10 +264,11 @@ alert(' select_cboMainEtablis -- NOT USED');
         afficherEffectifPhysique: function(chosenDate) { 
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
             //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
-
 		
             //Passe un parametre au Store 
  //           App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';  
+
+//**********************************
  
 			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
@@ -307,7 +308,6 @@ alert(' select_cboMainEtablis -- NOT USED');
             // on rafraichit le store
   //oo          App.get('mainform grid#gridEffectifETP').getStore().load();
 //***********************	
-
 		
 			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
@@ -323,10 +323,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 	 		//met à jour le grid
 			App.get('mainform grid#gridEffectifETP').getStore().getProxy().extraParams = selData;
             // on rafraichit le store
-            App.get('mainform grid#gridEffectifETP').getStore().load();			
-			
-			
-			
+            App.get('mainform grid#gridEffectifETP').getStore().load();				
         },
 
 
