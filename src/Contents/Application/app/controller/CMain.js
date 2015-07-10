@@ -258,7 +258,7 @@ console.log('Kuni2 =' + Kuni2 );
             App.get('mainform combo#cboMainService').getStore().load();
 			
 			//met à jour l'affichage des effectifs
-alert(' select_cboMainUnite');
+//alert(' select_cboMainUnite');
 			this.analyser_date();
         },
 
@@ -276,8 +276,9 @@ alert(' select_cboMainUnite');
             App.get('mainform combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
             App.get('mainform combo#cboMainService').getStore().load();
 			 */
+			 
 			//met à jour l'affichage des effectifs
-alert(' select_cboMainService');
+//alert(' select_cboMainService');
 			this.analyser_date();
         },
 
@@ -335,6 +336,7 @@ alert(' select_cboMainService');
 
             // on charge le store avec une variable "recherche"
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
+			//if ()
 			
 // MULTIPLE PARAMETRES ****************************
 			var data = {
