@@ -129,7 +129,7 @@ App.controller.define('CMain', {
 			} */
 			this.prepareDate(d);
 			
-			
+		alert('analyser_date: s= ' + s);		
 			if (s <= TODAY){
 	//	alert('analyser_date: s= ' + s);
 				this.afficherEffectifPhysique();
