@@ -175,6 +175,7 @@ alert('analyser_date1:selectedDate= ' + selectedDate);
 			if (selectedDate == null){
 				selectedDate = TODAY;  // defaults to TODAY		
 			} else { 
+			 alert('analyser_date333');
 				selectedDate.toString("yyyy-MM-dd");
 			}
  alert('analyser_date2:selectedDate= ' + selectedDate);			
