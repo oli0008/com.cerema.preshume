@@ -140,7 +140,7 @@ App.controller.define('CMain', {
 			var cbo=App.get('mainform combo#cboMainEtablis');
 			cbo.getStore().load();
 			cbo.setValue(KetsTemp);
-			cbo.disabled(true);
+			//cbo.disabled(true);
 		
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('mainform combo#cboMainUnite').setValue('');
