@@ -126,10 +126,12 @@ App.controller.define('CMain', {
 	//		var y = dd.getFullYear();	//getFullYear()
 	//		var m = dd.getMonth();
 	//		var maxDay = dd.getDaysInMonth(y,m);
-			var maxDay = dd.getDaysInMonth(2015,07);
+	//		var maxDay = dd.getDaysInMonth(2015,07);
 			
 			var y = '2015';
 			var m = '07';
+			var maxDay = '31';
+			
 			MONTH_START_DATE = y + '-' + m + '01';			//new Date().toString		//("yyyy-MM-dd");	
 			MONTH_END_DATE = y + '-' + m + maxDay;
  alert('createDates: MONTH_START_DATE = = ' + MONTH_START_DATE);
