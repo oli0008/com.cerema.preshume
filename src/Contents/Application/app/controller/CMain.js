@@ -330,7 +330,7 @@ console.log('Kuni2 =' + Kuni2 );
 //	alert('data= ' + data.Kets + ', sd=' + data.sd + ', ed=' + data.ed );
 			
             //Passe un parametre au Store 
-            App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
+            App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1'; 
 			
  //test          
  			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
