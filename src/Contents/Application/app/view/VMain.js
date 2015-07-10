@@ -277,7 +277,7 @@ App.view.define('VMain', {
 						flex: 1,
 						border: false,
 						items: [
-						//graph bas gauche
+						//----------------------graph bas gauche
 						{	
  							flex: 1,
 							height: "100%",
@@ -330,7 +330,7 @@ App.view.define('VMain', {
 					yField: 'lib_categorie_ep'
 					}],																
 					},
-					//graph bas droit
+					//----------------------graph bas droit
 					{
 							flex: 1,
 							height: "100%",
