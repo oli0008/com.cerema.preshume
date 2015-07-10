@@ -57,7 +57,6 @@ App.controller.define('CMain', {
                 "mainform datefield#datMainDate": {
                     select: "analyser_date"
                 },
-
 				"mainform": {
 					render: "onShow"
 				}
