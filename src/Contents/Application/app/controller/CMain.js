@@ -171,13 +171,13 @@ App.controller.define('CMain', {
          ****************************************************/		 
 		 analyser_date:function(){
 			var selectedDate = App.get('mainform datefield#datMainDate').getValue();
-			
+alert('analyser_date1:selectedDate= ' + selectedDate);				
 			if (selectedDate == null){
 				selectedDate = TODAY;  // defaults to TODAY		
 			} else { 
 				selectedDate.toString("yyyy-MM-dd");
 			}
- alert('analyser_date:selectedDate= ' + selectedDate);			
+ alert('analyser_date2:selectedDate= ' + selectedDate);			
 			if (selectedDate <= TODAY){
 				this.afficherEffectifPhysique(TODAY);
 				this.afficherEffectifETP(TODAY);
