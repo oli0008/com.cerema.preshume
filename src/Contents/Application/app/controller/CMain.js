@@ -302,15 +302,16 @@ alert(' select_cboMainEtablis -- NOT USED');
 			} else {	//On lit de la table donc il y a une date de début et de fin)
 				//construction des dates de recherche 
 				var dd = TODAY; 	//new Date();
-			alert('prepareDate: TODAY = ' + TODAY);
+			
 				var y = dd.getFullYear();
 				var m = dd.getMonth();
 				
 			alert('prepareDate: m = ' + m);
 				var maxDay = dd.getDaysInMonth(y,m);
 
-				selData.sd = y + '-' + m + '-' + '01';			
+				selData.sd = y + '-' + (m+1) + '-' + '01';			
 				selData.ed =   y + '-' + m + '-' + maxDay;
+			alert('prepareDate: selData.sd = ' + selData.sd);
 			}
 		},				
 		 
