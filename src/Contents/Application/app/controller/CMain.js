@@ -114,7 +114,7 @@ App.controller.define('CMain', {
 			 var td = String(d).split(' ');
  alert('truncateDate: td[0]= ' + td[0]);
 			 return td[0];
-		 }
+		 },
 
 
         /*****************************************************
