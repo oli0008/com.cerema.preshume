@@ -304,14 +304,14 @@ alert(' select_cboMainEtablis -- NOT USED');
 				var dd = TODAY; 	//new Date();
 			
 				var y = dd.getFullYear();
-				var m++ = dd.getMonth();
-				
+				var m = dd.getMonth() + 1;		//month are zero based
+			
 				
 			alert('prepareDate: m = ' + m);
 				var maxDay = dd.getDaysInMonth(y,m);
 
 				selData.sd = y + '-' + m + '-' + '01';			
-				selData.ed =   y + '-' + m + '-' + maxDay;
+				selData.ed = y + '-' + m + '-' + maxDay;
 			alert('prepareDate: selData.sd = ' + selData.sd);
 			}
 		},				
