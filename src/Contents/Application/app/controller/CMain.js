@@ -21,6 +21,13 @@ var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
 
 //var re = new RegExp ("[0-9]{5}");	//("#[0-9]{5}#");
 
+var selData = {
+	Kets:	0,
+	Kuni:	0,
+	Kserv:	0,
+	sd:		TODAY,
+	ed:		TODAY 
+};
 
 App.controller.define('CMain', {
 
