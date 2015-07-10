@@ -180,6 +180,7 @@ alert('analyser_date1:s= ' + s);
 			}
  alert('analyser_date2:selectedDate= ' + selectedDate);			
 			if (selectedDate <= TODAY){
+alert('analyser_date1:TODAY= ' + s);
 				this.afficherEffectifPhysique(TODAY);
 				this.afficherEffectifETP(TODAY);
 			} else {
