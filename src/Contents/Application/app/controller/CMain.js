@@ -334,6 +334,11 @@ console.log('Kuni2 =' + Kuni2 );
 			
  //test          
  			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
+/* 			
+			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
+ 			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
+			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kets=App.get('combo#cboMainUnite').getValue();
+	 */		
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams=selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
