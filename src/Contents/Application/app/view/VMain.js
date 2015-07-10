@@ -90,9 +90,7 @@ App.view.define('VMain', {
                             width: G_VMAIN_CBO_WIDTH,
                             displayField: "LibEts",
                             valueField: "Kets",
-                            store: App.store.create("App.Etablis.get_etablis", {
-                                    autoLoad: true
-                                }) // Creation du store				
+                            store: App.store.create("App.Etablis.get_etablis") // Creation du store				
                         },
                         //*************************
                         {
