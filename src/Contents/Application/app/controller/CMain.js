@@ -90,11 +90,7 @@ App.controller.define('CMain', {
 
        /*****************************************************
          * Objectif: 
-		 * Au démarrage de l'application intitialise la fenêtre principale.
-		 * 1 - Initialiser tous les combos.
-		 * 2 - Initialiser le date.
-		 * 3 - Lire les effectifs physique et ETP présent.
-		 * 4 - Afficher les graphique des effectifs. 
+		 * Initialiser tous les combos.
          *
          ****************************************************/
 		 initCombos: function(p) {
