@@ -286,6 +286,48 @@ alert(' select_cboMainEtablis -- NOT USED');
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
         },
+
+		 
+        /*****************************************************
+         * Objectif: 
+		 * Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
+         *
+         ****************************************************/
+        afficherEffectifETP: function(chosenDate) {
+            //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
+            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
+
+            //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
+            //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
+
+            // on charge le store avec une variable "recherche"
+            //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
+            //Passe un parametre au Store 
+ //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
+            // on rafraichit le store
+  //oo          App.get('mainform grid#gridEffectifETP').getStore().load();
+//***********************			
+			//Relit les 3 combos et la date       
+ 			if (App.get('combo#cboMainEtablis').getValue()!="") 
+				selData.Kets=App.get('combo#cboMainEtablis').getValue();			
+			if (App.get('combo#cboMainUnite').getValue()!= "") 
+				selData.Kuni = App.get('combo#cboMainUnite').getValue();
+ 			if (App.get('combo#cboMainService').getValue()!= "") 
+				selData.Kserv = App.get('combo#cboMainService').getValue();
+			if (App.get('datefield#datMainDate').getValue()!= "") {
+				var d = App.get('datefield#datMainDate').getValue();
+				this.prepareDate(d);
+			}
+	 		
+			App.get('mainform grid#gridEffectifETP').getStore().getProxy().extraParams = selData;
+            // on rafraichit le store
+            App.get('mainform grid#gridEffectifETP').getStore().load();			
+			
+			
+			
+        },
+
+
 		
         /*****************************************************
          * Objectif: 
@@ -310,27 +352,6 @@ alert(' select_cboMainEtablis -- NOT USED');
 				selData.ed = y + '-' + m + '-' + maxDay;
 			}
 		},				
-		 
-        /*****************************************************
-         * Objectif: 
-		 * Récupérer les effectifs ETP présents qui ont étés stockées pour le mois courrant. 
-         *
-         ****************************************************/
-        afficherEffectifETP: function(chosenDate) {
-            //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
-
-            //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
-            //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
-
-            // on charge le store avec une variable "recherche"
-            //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
-            //Passe un parametre au Store 
- //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
-            // on rafraichit le store
-            App.get('mainform grid#gridEffectifETP').getStore().load();
-        },
-
 
         /*****************************************************
          *
