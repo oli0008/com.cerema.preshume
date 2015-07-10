@@ -263,8 +263,7 @@ console.log('Kuni2 =' + Kuni2 );
             //Efface l'info montrée (displayField) sur le combo esclave
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams={
 				unite: Kuni2,
-				service: Ksub2
-				
+				service: Ksub2			
 			};
 			App.get('mainform grid#gridEffectifPhysque').getStore().load();
 			this.analyser_date();
