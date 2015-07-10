@@ -35,11 +35,15 @@ EffectifPhysique = {
 
 // console.log( 'select  lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep '
 //			+ 'from effectif_physique where date_ep >= ' + in1.data.sd + ' and date_ep <= '  + in1.data.ed + ' and kets = ' + in1.data.Kets);
-		var sql="select lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep from effectif_physique where ";
+		var sql = "select lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep from effectif_physique where ";
 		var params= [];
-		if (in1.Kets!= -1) params.push("Kets=" + in1.Kets);
-		if (in1.Kuni!= -1) params.push("Kuni=" + in1.Kuni);		
-		sql+=params.join('and ');
+		if (in1.Kets!= -1) 
+			params.push("Kets=" + in1.Kets);
+		if (in1.Kuni!= -1) 
+			params.push("Kuni=" + in1.Kuni);
+		if (in1.Ksub!= -1) 
+			params.push("Ksub=" + in1.Ksub);		
+		sql += params.join('and ');
 		console.log(sql);
 		q.model(BASE_DONNEES, sql, fn_cb);
 
