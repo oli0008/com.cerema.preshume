@@ -339,7 +339,9 @@ alert(' select_cboMainEtablis -- NOT USED');
  			if (App.get('combo#cboMainService').getValue()!= "") 
 				selData.Kserv = App.get('combo#cboMainService').getValue();
 			if (App.get('datefield#datMainDate').getValue()!= "") {
-				selData.sd = App.get('datefield#datMainDate').getValue();
+				var d = App.get('datefield#datMainDate').getValue();
+				//convertion de date à string pour SQL
+				selData.sd = d.toString("yyyy-MM-dd");
 				selData.ed = selData.sd;
 			}
 	 */		
