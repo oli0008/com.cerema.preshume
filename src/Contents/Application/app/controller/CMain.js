@@ -183,16 +183,9 @@ console.log( Kuni2 );
             App.get('mainform combo#cboMainService').setValue('');
             App.get('mainform combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
             App.get('mainform combo#cboMainService').getStore().load();
-			
-/* 			
-	Kets:	-1,
-	Kuni:	-1,
-	Ksub:	-1, 
-			
- */			
+					
 			//met à jour l'affichage des effectifs
 			selData.Kuni = Kuni2;
-//alert('Kets= ' + selData.Kets + 'Kuni= ' + selData.Kuni);
 			this.analyser_date();
         },
 
