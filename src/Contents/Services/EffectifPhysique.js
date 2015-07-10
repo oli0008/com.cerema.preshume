@@ -40,7 +40,7 @@ EffectifPhysique = {
 //**		var sql = "select lib_departement_ep, lib_categorie_ep, count_agent,  Kets,  date_ep from effectif_physique where ";
 		
 		var sql = "select lib_departement_ep, lib_categorie_ep, count_agent, Kets, date_ep from effectif_physique where date_ep >= '" 
-				+ in1.sd + "' and date_ep <= '" + in1.ed + "'";
+				+ in1.sd + "' and date_ep <= '" + in1.ed + "' and ";
 		var params= [];
 		if (in1.Kets!= -1) 
 			params.push("Kets=" + in1.Kets);
