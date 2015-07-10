@@ -304,6 +304,8 @@ alert(' select_cboMainEtablis -- NOT USED');
 				var dd = TODAY; 	//new Date();
 				var y = dd.getFullYear();
 				var m = dd.getMonth();
+				
+			alert('prepareDate: m = ' + m);
 				var maxDay = dd.getDaysInMonth(y,m);
 
 				selData.sd = y + '-' + m + '-' + '01';			
