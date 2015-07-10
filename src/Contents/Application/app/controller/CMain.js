@@ -226,7 +226,7 @@ App.controller.define('CMain', {
             App.get('mainform combo#cboMainUnite').getStore().load();
 			
 			//met à jour l'affichage des effectifs
-alert(' select_cboMainEtablis -- NOT USED');
+alert(' select_cboMainEtablis -- NOT USED'); 
 			this.analyser_date();
         },
 
