@@ -135,7 +135,7 @@ App.controller.define('CMain', {
 
         /*****************************************************
          * Objectif: 
-		 * Lire la date de calcul. 
+		 * Initialiser la date de calcul si necessaire. 
 		 * Si l'utilisateur n'a pas sélectionné de date ou si elle est vide, elle est fixée à la date d'aujourd'hui.
          * 
          ****************************************************/
