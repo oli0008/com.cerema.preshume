@@ -99,9 +99,6 @@ App.controller.define('CMain', {
          ****************************************************/
 		 initCombos: function(p) {
 
-// alert('initCombos');
-//	this.createDates();
-
 			//Régle le combo Etablissement sur DterMed
 			var KetsTemp = G_DTERMED; 		 
 			var cbo = App.get('mainform combo#cboMainEtablis');
