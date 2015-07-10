@@ -131,10 +131,11 @@ App.controller.define('CMain', {
 			
 		alert('analyser_date: s= ' + s);		
 			if (s <= TODAY){
-	//	alert('analyser_date: s= ' + s);
+		alert('analyser_date: s <= TODAY, s= ' + s);
 				this.afficherEffectifPhysique();
 				this.afficherEffectifETP();
 			} else { 
+	alert('analyser_date: s > TODAY, s= ' + s);
 				this.calculerEffectifFuture();
 				this.calculerETPFuture();
 			} 
