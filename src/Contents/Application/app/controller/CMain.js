@@ -192,7 +192,7 @@ console.log( Kuni2 );
  */			
 			//met à jour l'affichage des effectifs
 			selData.Kuni = Kuni2;
-//alert(' select_cboMainUnite');
+alert('Kets= ' + selData.Kets + 'Kuni= ' + selData.Kuni');
 			this.analyser_date();
         },
 
