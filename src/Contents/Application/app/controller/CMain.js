@@ -141,16 +141,20 @@ App.controller.define('CMain', {
          * Objectif: 
 		 * Lire la date de calcul. 
 		 * Si l'utilisateur n'a pas sélectionné de date ou si elle est vide, elle est fixée à la date d'aujourd'hui.
-         *
+         * 
          ****************************************************/
         initDateDeCalcule: function() {
-           var selectedDate = App.get('mainform datefield#datMainDate').getValue();
+           var d = App.get('mainform datefield#datMainDate').getValue();
 		   
-			if (selectedDate == null){
-				selectedDate = TODAY;    // defaults to today	
+			if (d == null){
+		//		selectedDate = TODAY;    // defaults to today	
+				
+				selData.sd = TODAY;			
+				selData.ed = TODAY;
+				
 			}
 		  // return (selectedDate.toString("yyyy-MM-dd") );
-		   return(selectedDate);
+//		   return(selectedDate);
 		},
 		
         /*****************************************************
