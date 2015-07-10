@@ -9,7 +9,7 @@
 /******************
  * Déclaration des constantes globales à l'application
  ******************/
-var TODAY = new Date().toString("yyyy-MMM-dd");				//("d-MMM-yyyy"); // 19-Nov-2007
+var TODAY = new Date().toString("yyyy-MM-dd");			//("yyyy-MM-dd") ==  "2008-04-13"
 
 var G_VMAIN_CBO_WIDTH = 210; 	//Définition de la largeur des combos de VMain
 var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
@@ -196,7 +196,7 @@ App.controller.define('CMain', {
 			if (selectedDate == null){
 				selectedDate = TODAY;    // defaults to today	
 			}
-		   return (this.truncateDate(selectedDate));
+		   return (selectedDate.toString("yyyy-MM-dd") );
 		},
 		
         /*****************************************************
