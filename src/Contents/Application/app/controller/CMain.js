@@ -281,7 +281,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 				this.prepareDate(d);
 			}
 	 		
-			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams=selData;
+			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams = selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
 	//		this.calculerGTotalEffectifPresent();
