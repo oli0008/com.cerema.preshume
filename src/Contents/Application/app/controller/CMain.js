@@ -323,15 +323,12 @@ alert(' select_cboMainEtablis -- NOT USED');
 
             // on charge le store avec une variable "recherche"
             //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
-			//if ()
-			
-// MULTIPLE PARAMETRES ****************************
-//	alert('data= ' + data.Kets + ', sd=' + data.sd + ', ed=' + data.ed );
+
+
 			
             //Passe un parametre au Store 
             App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';  
-			
- //test          
+			          
  			if (App.get('combo#cboMainEtablis').getValue()!="") selData.Kets=App.get('combo#cboMainEtablis').getValue();
 /* 			
 			if (App.get('combo#cboMainUnite').getValue()!= "") 
