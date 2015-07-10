@@ -206,7 +206,6 @@ App.controller.define('CMain', {
 				this.calculerEffectifFuture(selectedDate);
 				this.calculerETPFuture(selectedDate);
 			}
-			alert('createDates: MONTH_END_DATE = ' + MONTH_END_DATE);
 		 },
 
         /*****************************************************
