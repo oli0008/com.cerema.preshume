@@ -104,7 +104,18 @@ App.controller.define('CMain', {
 			this.afficherEffectifETP(chosenDate); 
 		 },
 
-//****		 
+//****	
+       /*****************************************************
+         * Objectif: 
+         *
+         ****************************************************/	 
+		 truncateDate: function(d) {
+ alert('truncateDate: d= ' + d);
+			 var td = String(d).split(' ');
+ alert('truncateDate: td[0]= ' + td[0]);
+			 return td[0];
+		 }
+
 
         /*****************************************************
          * Objectif: 
@@ -184,7 +195,7 @@ App.controller.define('CMain', {
 			if (selectedDate == null){
 				selectedDate = TODAY;    // defaults to today	
 			}
-		   return (selectedDate);
+		   return (this.truncateDate(selectedDate));
 		},
 		
         /*****************************************************
