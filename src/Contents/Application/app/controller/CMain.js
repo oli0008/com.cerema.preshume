@@ -284,7 +284,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 		 * Récupérer les effectifs Physque présents qui ont étés stockées pour le mois courrant. 
          *
          ****************************************************/
-        afficherEffectifPhysique: function(chosenDate) {
+        afficherEffectifPhysique: function(chosenDate) { 
             //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
             //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
 
