@@ -9,7 +9,7 @@
 /******************
  * Déclaration des constantes globales à l'application
  ******************/
-var TODAY = new Date().toString("yyyy-MM-dd");			//("yyyy-MM-dd") ==  "2008-04-13"
+var TODAY = new Date();		//.toString("yyyy-MM-dd");			//("yyyy-MM-dd") ==  "2008-04-13"
 var MONTH_START_DATE = TODAY;		//new Date().toString("yyyy-MM-dd");	
 var MONTH_END_DATE  = TODAY;		//new Date().toString("yyyy-MM-dd");	
 
@@ -333,9 +333,14 @@ alert(' select_cboMainEtablis -- NOT USED');
  //test          
  			if (App.get('combo#cboMainEtablis').getValue()!="") selData.Kets=App.get('combo#cboMainEtablis').getValue();
 /* 			
-			if (App.get('combo#cboMainUnite').getValue()!="") selData.Kuni=App.get('combo#cboMainUnite').getValue();
- 			if (App.get('combo#cboMainService').getValue()!="") selData.Kserv=App.get('combo#cboMainService').getValue();
-			if (App.get('datefield#datMainDate').getValue()!="") selData.dat=App.get('datefield#datMainDate').getValue();
+			if (App.get('combo#cboMainUnite').getValue()!= "") 
+				selData.Kuni = App.get('combo#cboMainUnite').getValue();
+ 			if (App.get('combo#cboMainService').getValue()!= "") 
+				selData.Kserv = App.get('combo#cboMainService').getValue();
+			if (App.get('datefield#datMainDate').getValue()!= "") {
+				selData.sd = App.get('datefield#datMainDate').getValue();
+				selData.ed = selData.sd;
+			}
 	 */		
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams=selData;
             // on rafraichit le store
