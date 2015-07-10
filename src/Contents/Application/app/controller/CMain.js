@@ -9,7 +9,7 @@
 /******************
  * Déclaration des constantes globales à l'application
  ******************/
-var TODAY = new Date();					//******* Formatter date **************
+var TODAY = new Date().toString("yyyy-MM-ddT");				//******* Formatter date **************
 var G_VMAIN_CBO_WIDTH = 210; 	//Définition de la largeur des combos de VMain
 var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
 /******************
