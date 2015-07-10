@@ -100,18 +100,6 @@ App.controller.define('CMain', {
 		 * 4 - Afficher les graphique des effectifs. 
          *
          ****************************************************/
-		 initMainForm: function(p, record) {
-			 var chosenDate = null;
-	//		 this.createDates();
-			 
-			this.initCombos();
-			chosenDate = this.initDateDeCalcule();
-			
-	//		this.lireCombos(p);
- 
-			this.afficherEffectifPhysique(chosenDate);
-			this.afficherEffectifETP(chosenDate); 
-		 },
 
 //****	
        /*****************************************************
@@ -503,10 +491,18 @@ console.log('Kuni2 =' + Kuni2 );
 		 * Gére l'affichage initial de la page principale au démarrage de l'application.
          *
          ****************************************************/
-        onShow: function() {
-        //    alert('onShow()');
-			this.initMainForm();
-        },
+        onShow: function(p, record) {
+			 var chosenDate = null;
+	//		 this.createDates();
+			 
+			this.initCombos();
+			chosenDate = this.initDateDeCalcule();
+			
+	//		this.lireCombos(p);
+			
+			this.afficherEffectifPhysique(chosenDate);
+			this.afficherEffectifETP(chosenDate); 
+		},
 
         /*****************************************************
          * Objectif: NOT USED *** 
