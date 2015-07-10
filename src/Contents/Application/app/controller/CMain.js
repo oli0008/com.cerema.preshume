@@ -145,30 +145,7 @@ App.controller.define('CMain', {
             App.get('mainform combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = KetsTemp;
             App.get('mainform combo#cboMainUnite').getStore().load();	
 		},
-
-        /*****************************************************
-         * Objectif: 
-		 * Au démarrage de l'application intitialise la fenêtre principale.
-		 * 1 - Initialiser tous les combos.
-         *
-         ****************************************************/
-		 lireCombosUnite: function(p) {
-
- alert('lireCombosUnite');
-		 },
-
-        /*****************************************************
-         * Objectif: 
-		 * Au démarrage de l'application intitialise la fenêtre principale.
-		 * 1 - Initialiser tous les combos.
-         *
-         ****************************************************/
-		 lireCombosService: function(p) {
-
- alert('lireCombosService');
-		 },
 		 
-//***		 
         /*****************************************************
          * Objectif: 
 		 * Décider en fonction de la date selectionnée si on affiche les effectifs présent ou futur.
