@@ -27,8 +27,8 @@ var selData = {
 	Kets:	0,
 	Kuni:	0,
 	Kserv:	0,
-	sd:		FIRST_DAY_OF_MONTH,
-	ed:		LAST_DAY_OF_MONTH 
+	sd:		MONTH_START_DATE,
+	ed:		MONTH_END_DATE 
 };
 
 App.controller.define('CMain', {
