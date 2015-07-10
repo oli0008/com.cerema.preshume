@@ -102,7 +102,7 @@ App.controller.define('CMain', {
          ****************************************************/
 		 initMainForm: function(p, record) {
 			 var chosenDate = null;
-			 this.createDates();
+	//		 this.createDates();
 			 
 			this.initCombos();
 			chosenDate = this.initDateDeCalcule();
