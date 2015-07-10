@@ -132,7 +132,9 @@ App.controller.define('CMain', {
 /* 			else { 
 				selectedDate = s.toString("yyyy-MM-dd");
 			} */
-		
+			this.prepareDate(d);
+			
+			
 			if (selectedDate <= TODAY){
 				this.afficherEffectifPhysique(TODAY);
 				this.afficherEffectifETP(TODAY);
@@ -213,6 +215,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 				unite: Kuni2,
 				service: Ksub2			
 			};
+
 			App.get('mainform grid#gridEffectifPhysque').getStore().load();
 			this.analyser_date();
         },
@@ -301,18 +304,13 @@ alert(' select_cboMainEtablis -- NOT USED');
 				selData.ed = null;			
 			} else {	//On lit de la table donc il y a une date de début et de fin)
 				//construction des dates de recherche 
-				var dd = TODAY; 	//new Date();
-			
+				var dd = TODAY; 	
 				var y = dd.getFullYear();
 				var m = dd.getMonth() + 1;		//month are zero based
-			
-				
-			alert('prepareDate: m = ' + m);
 				var maxDay = dd.getDaysInMonth(y,m);
 
 				selData.sd = y + '-' + m + '-' + '01';			
 				selData.ed = y + '-' + m + '-' + maxDay;
-			alert('prepareDate: selData.sd = ' + selData.sd);
 			}
 		},				
 		 
