@@ -269,7 +269,7 @@ alert(' select_cboMainEtablis -- NOT USED');
             //Passe un parametre au Store 
  //           App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';  
  
-			// Rafraichi        
+			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
 				selData.Kets=App.get('combo#cboMainEtablis').getValue();			
 			if (App.get('combo#cboMainUnite').getValue()!= "") 
@@ -279,8 +279,6 @@ alert(' select_cboMainEtablis -- NOT USED');
 			if (App.get('datefield#datMainDate').getValue()!= "") {
 				var d = App.get('datefield#datMainDate').getValue();
 				this.prepareDate(d);
-
-
 			}
 	 		
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams=selData;
