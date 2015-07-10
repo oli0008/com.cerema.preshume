@@ -10,8 +10,8 @@
  * Déclaration des constantes globales à l'application
  ******************/
 var TODAY = new Date().toString("yyyy-MM-dd");			//("yyyy-MM-dd") ==  "2008-04-13"
-var FIRST_DAY_OF_MONTH = new Date().toString("yyyy-MM-dd");	
-var LAST_DAY_OF_MONTH = new Date().toString("yyyy-MM-dd");	
+var MONTH_START_DATE = TODAY;		//new Date().toString("yyyy-MM-dd");	
+var MONTH_END_DATE  = TODAY;		//new Date().toString("yyyy-MM-dd");	
 
 var G_VMAIN_CBO_WIDTH = 210; 	//Définition de la largeur des combos de VMain
 var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
@@ -102,6 +102,7 @@ App.controller.define('CMain', {
          ****************************************************/
 		 initMainForm: function(p, record) {
 			 var chosenDate = null;
+			 this.createDates();
 			 
 			this.initCombos();
 			chosenDate = this.initDateDeCalcule();
@@ -119,11 +120,16 @@ App.controller.define('CMain', {
          * Objectif: 
          *
          ****************************************************/	 
-		 truncateDate: function(d) {
- alert('truncateDate: d= ' + d);
-			 var td = String(d).split(' ');
- alert('truncateDate: td[0]= ' + td[0]);
-			 return td[0];
+		 createDates: function(d) {
+			 
+			var y = TODAY.getFullYear();
+			var m = TODAY.getMonth();
+			var maxDay = TODAY.getDaysInMonth(y,m);
+			
+			MONTH_START_DATE = y + '-' + m + '01';			//new Date().toString		//("yyyy-MM-dd");	
+			MONTH_END_DATE = y + '-' + m + maxDay;
+ alert('createDates: MONTH_START_DATE = = ' + MONTH_START_DATE);
+ alert('createDates: MONTH_END_DATE = = ' + MONTH_END_DATE);
 		 },
 
 
