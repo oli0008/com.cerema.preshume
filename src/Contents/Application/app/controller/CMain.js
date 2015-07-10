@@ -57,9 +57,7 @@ App.controller.define('CMain', {
                 "mainform datefield#datMainDate": {
                     select: "analyser_date"
                 },
-                "mainform button#btnMainOk": {
-					click: "afficherEffectifPhysique"
-                },
+
 				"mainform": {
 					render: "onShow"
 				}
@@ -108,8 +106,8 @@ App.controller.define('CMain', {
          ****************************************************/	 
 		 createDates: function(d) {
 			 
-			var dd = TODAY;
-	//		var y = dd.getFullYear();	//getFullYear()
+			var dd = new Date();
+			var y = dd.getFullYear();	//getFullYear()
 	//		var m = dd.getMonth();
 	//		var maxDay = dd.getDaysInMonth(y,m);
 	//		var maxDay = dd.getDaysInMonth(2015,07);
@@ -191,7 +189,7 @@ App.controller.define('CMain', {
 			if (selectedDate <= TODAY){
 				this.afficherEffectifPhysique(TODAY);
 				this.afficherEffectifETP(TODAY);
-			} else {
+			} else { 
 				this.calculerEffectifFuture(selectedDate);
 				this.calculerETPFuture(selectedDate);
 			}
