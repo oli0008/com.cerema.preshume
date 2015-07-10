@@ -454,9 +454,13 @@ alert(' select_cboMainEtablis -- NOT USED');
             }).show();
         },
 
-        /*****************************************************
+       /*****************************************************
          * Objectif: 
-		 * Gére l'affichage initial de la page principale au démarrage de l'application.
+		 * Au démarrage de l'application intitialise la fenêtre principale.
+		 * 1 - Initialiser tous les combos.
+		 * 2 - Initialiser le date.
+		 * 3 - Lire les effectifs physique et ETP présent.
+		 * 4 - Afficher les graphique des effectifs. 
          *
          ****************************************************/
         onShow: function(p, record) {
