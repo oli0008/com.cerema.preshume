@@ -187,7 +187,7 @@ console.log( Kuni2 );
 /* 			
 	Kets:	-1,
 	Kuni:	-1,
-	Ksub:	-1,
+	Ksub:	-1, 
 			
  */			
 			//met à jour l'affichage des effectifs
