@@ -281,8 +281,7 @@ App.view.define('VMain', {
 						{	
  							flex: 1,
 							height: "100%",
-							border: true,
-				//			html: "22", 
+							border: true, 
 							xtype: "chart",
 							style: 'background:#fff',
 					//		animate: true,
