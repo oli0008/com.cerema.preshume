@@ -108,16 +108,12 @@ App.controller.define('CMain', {
 			var dd = new Date();
 			var y = dd.getFullYear();
 			var m = dd.getMonth();
+			var maxDay = dd.getDaysInMonth(y,m);
 alert('createDates: m = ' +m);
-			var maxDay = dd.getDaysInMonth(y,2);
-//			var maxDay = dd.getDaysInMonth(2015,07);
-/* 			
-			var y = '2015';
-			var m = '07';
-			var maxDay = '31';
-	 */		
+alert('createDates: maxDay = ' +maxDay);
+
 			MONTH_START_DATE = y + '-' + m + '-' + '01';			//new Date().toString		//("yyyy-MM-dd");	
-			MONTH_END_DATE = y + '-' + m + '-' + maxDay;
+			MONTH_END_DATE =   y + '-' + m + '-' + maxDay;
  alert('createDates: MONTH_START_DATE = ' + MONTH_START_DATE);
  alert('createDates: MONTH_END_DATE = ' + MONTH_END_DATE);
 		 },
