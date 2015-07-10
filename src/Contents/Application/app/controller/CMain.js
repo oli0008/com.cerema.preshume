@@ -143,14 +143,9 @@ App.controller.define('CMain', {
            var d = App.get('mainform datefield#datMainDate').getValue();
 		   
 			if (d == null){
-		//		selectedDate = TODAY;    // defaults to today	
-				
 				selData.sd = TODAY;			
-				selData.ed = TODAY;
-				
+				selData.ed = TODAY;	
 			}
-		  // return (selectedDate.toString("yyyy-MM-dd") );
-//		   return(selectedDate);
 		},
 		
         /*****************************************************
