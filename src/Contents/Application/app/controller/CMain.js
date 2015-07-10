@@ -124,7 +124,7 @@ App.controller.define('CMain', {
 		 initCombos: function(p) {
 
 // alert('initCombos');
-this.createDates();
+//	this.createDates();
 
 			//Régle le combo Etablissement sur DterMed
 			var KetsTemp = G_DTERMED; 		 
@@ -465,9 +465,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 			 
 			this.initCombos();
 			chosenDate = this.initDateDeCalcule();
-			
-	//		this.lireCombos(p);
-			
+						
 			this.afficherEffectifPhysique(chosenDate);
 			this.afficherEffectifETP(chosenDate); 
 		},
