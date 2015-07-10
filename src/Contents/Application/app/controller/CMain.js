@@ -120,7 +120,9 @@ App.controller.define('CMain', {
 			var s = App.get('mainform datefield#datMainDate').getValue();	
 			
 			if (s == null){
-				selectedDate = TODAY;  // defaults to TODAY		
+		//		selectedDate = TODAY;  // defaults to TODAY	
+				selData.sd = TODAY;			
+				selData.ed = TODAY;				
 			} 
 /* 			else { 
 				selectedDate = s.toString("yyyy-MM-dd");
@@ -128,12 +130,12 @@ App.controller.define('CMain', {
 			this.prepareDate(d);
 			
 			
-			if (selectedDate <= TODAY){
-				this.afficherEffectifPhysique(TODAY);
-				this.afficherEffectifETP(TODAY);
+			if (s <= TODAY){
+				this.afficherEffectifPhysique();
+				this.afficherEffectifETP();
 			} else { 
-				this.calculerEffectifFuture(selectedDate);
-				this.calculerETPFuture(selectedDate);
+				this.calculerEffectifFuture();
+				this.calculerETPFuture();
 			}
 		 },
 
