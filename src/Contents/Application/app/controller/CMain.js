@@ -348,6 +348,7 @@ console.log('Kuni2 =' + Kuni2 );
 			
             //Passe un parametre au Store 
             App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';
+			
  //test          App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.data; //'1';
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
