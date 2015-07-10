@@ -10,6 +10,8 @@
  * Déclaration des constantes globales à l'application
  ******************/
 var TODAY = new Date().toString("yyyy-MM-dd");			//("yyyy-MM-dd") ==  "2008-04-13"
+var FIRST_DAY_OF_MONTH = new Date().toString("yyyy-MM-dd");	
+var LAST_DAY_OF_MONTH = new Date().toString("yyyy-MM-dd");	
 
 var G_VMAIN_CBO_WIDTH = 210; 	//Définition de la largeur des combos de VMain
 var G_DTERMED = 1; 				//valeur de etablissement.Kets = DterMed
@@ -25,8 +27,8 @@ var selData = {
 	Kets:	0,
 	Kuni:	0,
 	Kserv:	0,
-	sd:		TODAY,
-	ed:		TODAY 
+	sd:		FIRST_DAY_OF_MONTH,
+	ed:		LAST_DAY_OF_MONTH 
 };
 
 App.controller.define('CMain', {
