@@ -96,7 +96,7 @@ App.controller.define('CMain', {
 			 
 			this.initCombos();
 			chosenDate = this.initDateDeCalcule();
-// alert('chosenDateMAIN = ' + chosenDate);
+ alert('chosenDate = ' + chosenDate);
 			
 	//		this.lireCombos(p);
 		//	this.afficherEffectifETP(chosenDate);
