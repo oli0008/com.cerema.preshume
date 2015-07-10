@@ -124,8 +124,9 @@ App.controller.define('CMain', {
 			 
 			var dd = TODAY;
 	//		var y = dd.getFullYear();	//getFullYear()
-	//		var m = TODAY.getMonth();
-			var maxDay = dd.getDaysInMonth(y,m);
+	//		var m = dd.getMonth();
+	//		var maxDay = dd.getDaysInMonth(y,m);
+			var maxDay = dd.getDaysInMonth(2015,07);
 			
 			MONTH_START_DATE = y + '-' + m + '01';			//new Date().toString		//("yyyy-MM-dd");	
 			MONTH_END_DATE = y + '-' + m + maxDay;
