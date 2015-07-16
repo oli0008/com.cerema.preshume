@@ -233,11 +233,17 @@ App.controller.define('CMain', {
  
 			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
-				selData.Kets=App.get('combo#cboMainEtablis').getValue();			
+				selData.Kets = App.get('combo#cboMainEtablis').getValue();
+			else
+				selData.Kets = -1;
 			if (App.get('combo#cboMainUnite').getValue()!= "") 
 				selData.Kuni = App.get('combo#cboMainUnite').getValue();
+			else
+				selData.Kuni = -1;
  			if (App.get('combo#cboMainService').getValue()!= "") 
 				selData.Kserv = App.get('combo#cboMainService').getValue();
+			else
+				selData.Kserv = -1;
 			if (App.get('datefield#datMainDate').getValue()!= "") {
 				var d = App.get('datefield#datMainDate').getValue();
 				this.prepareDate(d);
@@ -258,11 +264,17 @@ App.controller.define('CMain', {
  		
 			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
-				selData.Kets=App.get('combo#cboMainEtablis').getValue();			
+				selData.Kets=App.get('combo#cboMainEtablis').getValue();	
+			else
+				selData.Kets = -1;			
 			if (App.get('combo#cboMainUnite').getValue()!= "") 
 				selData.Kuni = App.get('combo#cboMainUnite').getValue();
+			else
+				selData.Kuni = -1;
  			if (App.get('combo#cboMainService').getValue()!= "") 
 				selData.Kserv = App.get('combo#cboMainService').getValue();
+			else
+				selData.Kserv = -1;
 			if (App.get('datefield#datMainDate').getValue()!= "") {
 				var d = App.get('datefield#datMainDate').getValue();
 				this.prepareDate(d);
