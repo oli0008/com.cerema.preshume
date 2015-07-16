@@ -292,14 +292,14 @@ App.view.define('VMain', {
 						label: {
 						renderer: Ext.util.Format.numberRenderer('0,0')
 					},
-						title: 'Number of Hits',
+						title: "Nombre d'agents",
 						grid: true,
 					minimum: 0
 					}, {
 					type: 'Category',
 					position: 'bottom',
 					fields: ['lib_departement_ep'],
-					title: 'Month of the Year'
+					title: "Catégories FP"
 					}],
 						series: [{
 						type: 'column',
@@ -347,7 +347,7 @@ App.view.define('VMain', {
 					type: 'Category',
 					position: 'bottom',
 					fields: ['lib_departement_ep'],
-					title: 'Month of the Year'
+					title: "Catégories FP"
 					}],
 						series: [{
 						type: 'column',
