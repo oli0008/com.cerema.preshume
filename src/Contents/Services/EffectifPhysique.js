@@ -36,7 +36,7 @@ EffectifPhysique = {
 			params.push("Kuni=" + in1.Kuni);
 		if (in1.Ksub!= -1) 
 			params.push("Ksub=" + in1.Ksub);		
-		sql += params.join('and ');
+		sql += params.join(' and ');
  console.log(sql);
 		q.model(BASE_DONNEES, sql, fn_cb);			
 	},
