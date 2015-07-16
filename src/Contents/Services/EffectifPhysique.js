@@ -15,7 +15,6 @@ var BASE_DONNEES = 'bpclight';	//base de données de l'application
 
 EffectifPhysique = {
 	//Calcule les effectifs Physique présents
-//	 cherche: function(in1,fn_cb) {
 	calculate_EffPresent: function(in1,fn_cb) {
 		var q = EffectifPhysique.using('db');  
 		
