@@ -14,24 +14,6 @@ var BASE_DONNEES = 'bpclight';	//base de données de l'application
 
 AgentsMod = {
 
-//*********************************************** 
-//Hard coded query
-//		Etablis.using('db').model(BASE_DONNEES, 'select kets, LibEts from etablissements where archive = 0', fn_cb); 
-
-//Version with parameter
-//		q.model(BASE_DONNEES,q.sql('qget_EffectifPhysique',{RECHERCHE: in1.param_recherche}),fn_cb);	
-//*********************************************** 
-/* 
-	XX_cherche: function(in1,fn_cb) {
-		// 1er argument = error
-		// 2eme argument = response	
-  		var q = Agents.using('db');
-//		console.log('>>Agents.cherche()');
-//		console.log(q.sql('qget_agent' + {RECHERCHE: in1.recherche} ) );		//log apparait dans DOS box
-		q.model(BASE_DONNEES,q.sql('qget_agent',{RECHERCHE: in1.recherche}),fn_cb);
-	}
-*/	
-
 // ---------------------------------------- Lecture des données ------------------------------------------//
 	 //Récupére 1 établissement prédéfinit. 	 
 	get_etablis1: function(in1,fn_cb) {
