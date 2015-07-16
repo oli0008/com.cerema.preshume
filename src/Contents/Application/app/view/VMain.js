@@ -284,11 +284,7 @@ App.view.define('VMain', {
 							border: true, 
 							xtype: "chart",
 							style: 'background:#fff',
-					//		animate: true,
-					//		shadow: true,
-      //      				store: store1,
 							store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent"),
-//	  						load: true,
 						axes: [{
 						type: 'Numeric',
 						position: 'left',
@@ -330,25 +326,13 @@ App.view.define('VMain', {
 					}],																
 					},
 					//----------------------graph bas droit
-					
-//oo					{
-//oo							flex: 1,
-//oo							height: "100%",
-//oo							border: true,
-//oo							html: "11"
-//oo					}
-////////////////*************
-						{	
+											{	
  							flex: 1,
 							height: "100%",
 							border: true, 
 							xtype: "chart",
 							style: 'background:#fff',
-					//		animate: true,
-					//		shadow: true,
-      //      				store: store1,
 							store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent"),
-//	  						load: true,
 						axes: [{
 						type: 'Numeric',
 						position: 'left',
@@ -388,9 +372,7 @@ App.view.define('VMain', {
 					xField: 'lib_departement_ep',
 					yField: 'lib_categorie_ep'
 					}],																
-					}
-
-///////////////////*****************					
+					}					
 					]						
 					}
 					]					
