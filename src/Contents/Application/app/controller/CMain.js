@@ -179,8 +179,8 @@ alert(' select_cboMainEtablis -- NOT USED');
         select_cboMainUnite: function(p, record) {
 			
             var Kuni2 = App.get('combo#cboMainUnite').getValue();
-console.log('OLI----select_cboMainUnite()');
-console.log( Kuni2 );
+/* console.log('OLI----select_cboMainUnite()');
+console.log( Kuni2 ); */
             //Efface l'info montrée (displayField) sur le combo esclave
             App.get('mainform combo#cboMainService').setValue('');
             App.get('mainform combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
@@ -188,6 +188,7 @@ console.log( Kuni2 );
 					
 			//met à jour l'affichage des effectifs
 			selData.Kuni = Kuni2;
+			alert('select_cboMainUnite pre-MAJ');
 			this.analyser_date();
         },
 
