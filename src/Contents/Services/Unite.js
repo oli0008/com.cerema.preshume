@@ -7,7 +7,8 @@ Unite = {
   		var q = Unite.using('db');
 		console.log('>>Unite.get_unite() --- in1.id_Etablis');
 				console.log(in1.id_Etablis);
-		console.log(q.sql( 'qget_unite' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
+//		console.log(q.sql( 'qget_unite' + {RECHERCHE: in1.id_Etablis} ) );		//log apparait dans DOS box
+		console.log( 'qget_unite' + {RECHERCHE: in1.id_Etablis} );		//log apparait dans DOS box
 		q.model('bpclight',q.sql('qget_unite',{RECHERCHE: in1.id_Etablis}),fn_cb);
 	}
 };
