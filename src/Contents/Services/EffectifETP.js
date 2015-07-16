@@ -27,7 +27,7 @@ EffectifETP = {
 	//Récupére les effectifs ETP présents du mois 	 
 	get_effectifETPPresent: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
-console.log('get_effectifETPPresent() ---YYYYYYYYYYYY');
+// console.log('get_effectifETPPresent()');
 			
 		var sql = "select lib_departement_etp, lib_categorie_etp, sum_quot, Kets, date_etp from effectif_etp where date_etp >= '" 
 				+ in1.sd + "' and date_etp <= '" + in1.ed + "' and ";
@@ -39,7 +39,7 @@ console.log('get_effectifETPPresent() ---YYYYYYYYYYYY');
 		if (in1.Ksub!= -1) 
 			params.push("Ksub=" + in1.Ksub);		
 		sql += params.join('and ');
-		console.log(sql);
+// console.log(sql);
 		q.model(BASE_DONNEES, sql, fn_cb);
 			
 			
