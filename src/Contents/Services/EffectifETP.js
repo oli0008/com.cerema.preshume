@@ -52,7 +52,7 @@ EffectifETP = {
 	//Récupére les grand totaux des effectifs présents du mois 	 
 	get_gdTotalEffETP: function(in1,fn_cb) {	
   		var q = AgentsMod.using('db');	
-console.log('get_gdTotalEffPresent()');
+// console.log('get_gdTotalEffPresent()');
 		q.model(BASE_DONNEES, 'select lib_departement_ep, sum(count_agent) as GrandTotal '
 			+ 'from effectif_physique where date_ep >= \'2015-07-01\' and date_ep <= \'2015-07-31\' '
 			+ 'group by lib_departement_ep', fn_cb);
