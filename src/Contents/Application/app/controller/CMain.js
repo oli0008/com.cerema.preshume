@@ -181,8 +181,7 @@ alert(' select_cboMainEtablis -- NOT USED');
         select_cboMainUnite: function(p, record) {
 			
             var Kuni2 = App.get('combo#cboMainUnite').getValue();
-/* console.log('OLI----select_cboMainUnite()');
-console.log( Kuni2 ); */
+			
             //Efface l'info montrée (displayField) sur le combo esclave
             App.get('mainform combo#cboMainService').setValue('');
 			selData.Ksub = -1;
@@ -191,7 +190,6 @@ console.log( Kuni2 ); */
 					
 			//met à jour l'affichage des effectifs
 			selData.Kuni = Kuni2;
-			alert('select_cboMainUnite pre-MAJ');
 			this.analyser_date();
         },
 
@@ -202,18 +200,13 @@ console.log( Kuni2 ); */
          ****************************************************/
         //Sélectionner une unité affiche le service correspondant (cela active le store du service)
         select_cboMainService: function(p, record) {
-console.log('HERE----select_cboMainService()');
+			
             var Kuni2 = App.get('combo#cboMainUnite').getValue();
 			var Ksub2 = App.get('combo#cboMainService').getValue();
-            //Efface l'info montrée (displayField) sur le combo esclave
-/* 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams={
-				unite: Kuni2,
-				service: Ksub2			
-			}; */
+			
 			//met à jour l'affichage des effectifs
 			selData.Kuni = Kuni2;
 			selData.Ksub = Ksub2;
-	//NOK		App.get('mainform grid#gridEffectifPhysque').getStore().load();
 			this.analyser_date();
         },
 
