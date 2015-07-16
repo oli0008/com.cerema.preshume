@@ -158,7 +158,7 @@ App.controller.define('CMain', {
         //Sélectionner un établissement affiche l'unité correspondante (cela active le store de l'unité)
         select_cboMainEtablis: function(p, record) {
             var Kets2 = App.get('mainform combo#cboMainEtablis').getValue();
-            //		console.log(App.get('mainform combo#cboMainEtablis').getValue());
+
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('mainform combo#cboMainUnite').setValue('');
 			selData.Kuni = -1;
@@ -168,7 +168,7 @@ App.controller.define('CMain', {
             App.get('mainform combo#cboMainUnite').getStore().load();
 			
 			//met à jour l'affichage des effectifs
-alert(' select_cboMainEtablis -- NOT USED'); 
+ 
 			this.analyser_date();
         },
 
