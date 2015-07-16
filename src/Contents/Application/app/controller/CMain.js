@@ -161,7 +161,9 @@ App.controller.define('CMain', {
             //		console.log(App.get('mainform combo#cboMainEtablis').getValue());
             //Efface les infos montrées (displayField) sur les 2 combos esclaves
             App.get('mainform combo#cboMainUnite').setValue('');
+			selData.Kuni = -1;
             App.get('mainform combo#cboMainService').setValue('');
+			selData.Ksub = -1;
             App.get('mainform combo#cboMainUnite').getStore().getProxy().extraParams.id_Etablis = Kets2;
             App.get('mainform combo#cboMainUnite').getStore().load();
 			
@@ -183,6 +185,7 @@ alert(' select_cboMainEtablis -- NOT USED');
 console.log( Kuni2 ); */
             //Efface l'info montrée (displayField) sur le combo esclave
             App.get('mainform combo#cboMainService').setValue('');
+			selData.Ksub = -1;
             App.get('mainform combo#cboMainService').getStore().getProxy().extraParams.id_Service = Kuni2;
             App.get('mainform combo#cboMainService').getStore().load();
 					
