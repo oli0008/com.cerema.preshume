@@ -330,12 +330,67 @@ App.view.define('VMain', {
 					}],																
 					},
 					//----------------------graph bas droit
-					{
-							flex: 1,
+					
+//oo					{
+//oo							flex: 1,
+//oo							height: "100%",
+//oo							border: true,
+//oo							html: "11"
+//oo					}
+////////////////*************
+						{	
+ 							flex: 1,
 							height: "100%",
-							border: true,
-							html: "11"
-					}						
+							border: true, 
+							xtype: "chart",
+							style: 'background:#fff',
+					//		animate: true,
+					//		shadow: true,
+      //      				store: store1,
+							store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent"),
+//	  						load: true,
+						axes: [{
+						type: 'Numeric',
+						position: 'left',
+						fields: ['lib_categorie_ep'],
+						label: {
+						renderer: Ext.util.Format.numberRenderer('0,0')
+					},
+						title: 'Number of Hits',
+						grid: true,
+					minimum: 0
+					}, {
+					type: 'Category',
+					position: 'bottom',
+					fields: ['lib_departement_ep'],
+					title: 'Month of the Year'
+					}],
+						series: [{
+						type: 'column',
+						axis: 'left',
+						highlight: true,
+						tips: {
+							trackMouse: true,
+							width: 140,
+							height: 28,
+							renderer: function(storeItem, item) {
+						this.setTitle(storeItem.get('lib_departement_ep') + ': ' + storeItem.get('lib_categorie_ep') + ' $');
+						}
+						},
+						label: {
+						display: 'insideEnd',
+						'text-anchor': 'middle',
+						field: 'lib_categorie_ep',
+						renderer: Ext.util.Format.numberRenderer('0'),
+						orientation: 'vertical',
+						color: '#333'
+					},
+					xField: 'lib_departement_ep',
+					yField: 'lib_categorie_ep'
+					}],																
+					}
+
+///////////////////*****************					
 					]						
 					}
 					]					
