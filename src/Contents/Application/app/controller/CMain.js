@@ -125,6 +125,8 @@ App.controller.define('CMain', {
 			} 
 
 			if (s <= TODAY){
+				alert('maj 2 grid');
+				
 				this.afficherEffectifPhysique();
 				this.afficherEffectifETP();
 			} else { 
@@ -219,14 +221,6 @@ console.log('HERE----select_cboMainService()');
          *
          ****************************************************/
         calculerEffectifPresent: function() {
-            //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('mainform combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
-
-            //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
-            //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
-
-            // on charge le store avec une variable "recherche"
-            //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
 			
             //Passe un parametre au Store 
             App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = 1;
@@ -253,13 +247,6 @@ console.log('HERE----select_cboMainService()');
          *
          ****************************************************/
         afficherEffectifPhysique: function(chosenDate) { 
-            //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
-		
-            //Passe un parametre au Store 
- //           App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams.Kets = G_DTERMED; //'1';  
-
-//**********************************
  
 			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
@@ -286,20 +273,7 @@ console.log('HERE----select_cboMainService()');
          *
          ****************************************************/
         afficherEffectifETP: function(chosenDate) {
-            //on passe la valeur sélectionnée dans cboMainEtablis comme argument à la requette pour charger cboMainUnite
-            //App.get('combo#cboMainUnite').getStore().getProxy().extraParams.recherche = App.get('mainform combo#cboMainEtablis').getValue();
-
-            //on passe la valeur sélectionnée dans cboMainUnite comme argument à la requette pour charger cboMainService
-            //App.get('grid#grid1').getStore().getProxy().extraParams.recherche = App.get('combo#cboMainUnite').getValue();
-
-            // on charge le store avec une variable "recherche"
-            //	App.get('grid#grid1').getStore().getProxy().extraParams.recherche=App.get('textfield#text1').getValue();
-            //Passe un parametre au Store 
- //           App.get('grid#gridEffectifPhysque').getStore().getProxy().extraParams.param_recherche = '11';
-            // on rafraichit le store
-  //oo          App.get('mainform grid#gridEffectifETP').getStore().load();
-//***********************	
-		
+ 		
 			//Relit les 3 combos et la date       
  			if (App.get('combo#cboMainEtablis').getValue()!="") 
 				selData.Kets=App.get('combo#cboMainEtablis').getValue();			
