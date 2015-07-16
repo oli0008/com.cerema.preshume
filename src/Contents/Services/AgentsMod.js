@@ -20,7 +20,7 @@ AgentsMod = {
 		// 1er argument = error
 		// 2eme argument = response		
   		var q = AgentsMod.using('db');	
-		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
+//		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
 		q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb);
 //		q.model(BASE_DONNEES,q.sql('qget_etablis'),fn_cb);  
 	},
@@ -69,7 +69,7 @@ AgentsMod = {
 	  	var q = AgentsMod.using('db');
 //		console.log(q.sql( 'qget_agentsByEtablis' + {P_ETABLIS: in1.id_Etablis} ) );		//log apparait dans DOS box
 		// Temp fix: have set Kets = 1
-		console.log(q.sql('qget_agentsByEtablis',{P_ETABLIS: 1}));
+//		console.log(q.sql('qget_agentsByEtablis',{P_ETABLIS: 1}));
 	q.model(BASE_DONNEES,q.sql('qget_agentsByEtablis',{P_ETABLIS: 1}),fn_cb);		
 //		q.model(BASE_DONNEES,q.sql('qget_agentsByEtablis',{P_ETABLIS: in1.id_Etablis}),fn_cb);
 /* 
