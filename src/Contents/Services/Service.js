@@ -6,7 +6,6 @@ Service = {
   		var q = Service.using('db');
 
 		console.log(q.sql('qget_service'+{RECHERCHE:in1.id_Service}));		//log apparait dans DOS box
-console.log('>>Service.get_service() --END---');
 		q.model('bpclight',q.sql('qget_service',{RECHERCHE:in1.id_Service}),fn_cb);
 		
 	
