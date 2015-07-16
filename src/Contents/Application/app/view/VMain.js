@@ -332,11 +332,11 @@ App.view.define('VMain', {
 							border: true, 
 							xtype: "chart",
 							style: 'background:#fff',
-							store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent"),
+							store: App.store.create("App.EffectifETP.get_effectifETPPresent"),
 						axes: [{
 						type: 'Numeric',
 						position: 'left',
-						fields: ['lib_categorie_ep'],
+						fields: ['lib_categorie_etp'],
 						label: {
 						renderer: Ext.util.Format.numberRenderer('0,0')
 					},
@@ -346,7 +346,7 @@ App.view.define('VMain', {
 					}, {
 					type: 'Category',
 					position: 'bottom',
-					fields: ['lib_departement_ep'],
+					fields: ['lib_departement_etp'],
 					title: "Catégories FP"
 					}],
 						series: [{
@@ -358,19 +358,19 @@ App.view.define('VMain', {
 							width: 140,
 							height: 28,
 							renderer: function(storeItem, item) {
-						this.setTitle(storeItem.get('lib_departement_ep') + ': ' + storeItem.get('lib_categorie_ep') + ' $');
+						this.setTitle(storeItem.get('lib_departement_etp') + ': ' + storeItem.get('lib_categorie_etp') + ' $');
 						}
 						},
 						label: {
 						display: 'insideEnd',
 						'text-anchor': 'middle',
-						field: 'lib_categorie_ep',
+						field: 'lib_categorie_etp',
 						renderer: Ext.util.Format.numberRenderer('0'),
 						orientation: 'vertical',
 						color: '#333'
 					},
-					xField: 'lib_departement_ep',
-					yField: 'lib_categorie_ep'
+					xField: 'lib_departement_etp',
+					yField: 'lib_categorie_etp'
 					}],																
 					}					
 					]						
