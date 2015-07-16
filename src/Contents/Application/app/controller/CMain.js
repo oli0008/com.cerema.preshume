@@ -125,8 +125,6 @@ App.controller.define('CMain', {
 			} 
 
 			if (s <= TODAY){
-				alert('maj 2 grid');
-				
 				this.afficherEffectifPhysique();
 				this.afficherEffectifETP();
 			} else { 
@@ -224,18 +222,6 @@ App.controller.define('CMain', {
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
 
-            /*
-			//combo logic here
-			// **************************************************************** 
-			Selection Logique des combos
-			E	U 	S 	
-			0	0	0	tous les établissements
-			1	0	0	par établissements
-			1	1	0	par unité
-			1	1 	1 	par service
-
-			// ****************************************************************
-		*/
         },
 
         /*****************************************************
@@ -260,7 +246,6 @@ App.controller.define('CMain', {
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams = selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
-	//		this.calculerGTotalEffectifPresent();
         },
 
 		 
