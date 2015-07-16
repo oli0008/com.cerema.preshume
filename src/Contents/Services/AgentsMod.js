@@ -20,9 +20,7 @@ AgentsMod = {
 		// 1er argument = error
 		// 2eme argument = response		
   		var q = AgentsMod.using('db');	
-//		console.log('select Kets, LibEts from etablissements where archive = 0 and Kets = 1 ');		//log apparait dans DOS box
-		q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb);
-//		q.model(BASE_DONNEES,q.sql('qget_etablis'),fn_cb);  
+		q.model(BASE_DONNEES, 'select Kets, LibEts from etablissements where archive = 0 and Kets = 1', fn_cb); 
 	},
 	
 	//Retourne une sélection d'Unités.
@@ -43,11 +41,11 @@ AgentsMod = {
 
 
 	//Récupére les détails d'un agent particulier.
-	get_agentFName: function(in1,fn_cb) {
-//xx	get_agent: function(in1,fn_cb) {		
+	get_agentFName: function(in1,fn_cb) {		
   		var q = AgentsMod.using('db');
 		q.model(BASE_DONNEES, 'select Kage, concat(Nom, \' - \', Prenom) as nom_prenom from agents where Kage = ' + in1.KageTemp, fn_cb);
 		},	
+		
 	//Trouve un agent par nom de famille
 	get_agent: function(in1,fn_cb) {
   		var q = AgentsMod.using('db');
