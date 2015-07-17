@@ -299,7 +299,7 @@ App.view.define('VMain', {
                                         width: 140,
                                         height: 28,
                                         renderer: function(storeItem, item) {
-                                            this.setTitle(storeItem.get('lib_departement_ep') + ': ' + storeItem.get('lib_categorie_ep') + ' $');
+                                            this.setTitle(storeItem.get('lib_departement_ep') + ': ' + storeItem.get('lib_categorie_ep') );
                                         }
                                     },
                                     label: {
@@ -310,7 +310,7 @@ App.view.define('VMain', {
                                         orientation: 'vertical',
                                         color: '#333'
                                     },
-                                    xField: 'lib_departement_etp',
+                                    xField: 'lib_departement_ep',
                                     yField: 'count_agent'
                                 }],
                             },
@@ -320,12 +320,13 @@ App.view.define('VMain', {
                                 height: "100%",
                                 border: true,
                                 xtype: "chart",
+								itemId: "chartETP",
                                 style: 'background:#fff',
                                 store: App.store.create("App.EffectifETP.get_effectifETPPresent"),
                                 axes: [{
                                     type: 'Numeric',
                                     position: 'left',
-                                    fields: ['lib_categorie_etp'],
+                                    fields: ['sum_quot'],
                                     label: {
                                         renderer: Ext.util.Format.numberRenderer('0,0')
                                     },
@@ -335,7 +336,7 @@ App.view.define('VMain', {
                                 }, {
                                     type: 'Category',
                                     position: 'bottom',
-                                    fields: ['lib_departement_etp'],
+                                    fields: ['lib_categorie_etp'],
                                     title: "Catégories FP"
                                 }],
                                 series: [{
@@ -347,7 +348,7 @@ App.view.define('VMain', {
                                         width: 140,
                                         height: 28,
                                         renderer: function(storeItem, item) {
-                                            this.setTitle(storeItem.get('lib_departement_etp') + ': ' + storeItem.get('lib_categorie_etp') + ' $');
+                                            this.setTitle(storeItem.get('lib_departement_etp') + ': ' + storeItem.get('lib_categorie_etp') );
                                         }
                                     },
                                     label: {
