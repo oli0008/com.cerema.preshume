@@ -310,7 +310,7 @@ App.view.define('VMain', {
                                         orientation: 'vertical',
                                         color: '#333'
                                     },
-                                    xField: 'lib_categorie_ep',
+                                    xField: 'lib_departement_etp',
                                     yField: 'count_agent'
                                 }],
                             },
