@@ -360,7 +360,7 @@ App.view.define('VMain', {
                                         color: '#333'
                                     },
                                     xField: 'lib_departement_etp',
-                                    yField: 'lib_categorie_etp'
+                                    yField: 'sum_quot'
                                 }],
                             }
                         ]
