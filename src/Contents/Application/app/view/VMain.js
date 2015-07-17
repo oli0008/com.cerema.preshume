@@ -277,7 +277,7 @@ App.view.define('VMain', {
                                 axes: [{
                                     type: 'Numeric',
                                     position: 'left',
-                                    fields: ['lib_categorie_ep'],
+                                    fields: ['count_agent'],
                                     label: {
                                         renderer: Ext.util.Format.numberRenderer('0')
                                     },
@@ -287,7 +287,7 @@ App.view.define('VMain', {
                                 }, {
                                     type: 'Category',
                                     position: 'bottom',
-                                    fields: ['lib_departement_ep'],
+                                    fields: ['lib_categorie_ep'],
                                     title: "Catégories FP"
                                 }],
                                 series: [{
