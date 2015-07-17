@@ -311,7 +311,7 @@ App.view.define('VMain', {
                                         color: '#333'
                                     },
                                     xField: 'lib_categorie_ep',
-                                    yField: 'lib_categorie_ep'
+                                    yField: 'count_agent'
                                 }],
                             },
                             //----------------------graph bas droit
