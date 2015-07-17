@@ -244,10 +244,14 @@ App.controller.define('CMain', {
 			App.get('mainform grid#gridEffectifPhysque').getStore().getProxy().extraParams = selData;
             // on rafraichit le store
             App.get('mainform grid#gridEffectifPhysque').getStore().load();
-			// mettre à jour le graphique
+			// mettre à jour le graphique 1
 			console.log(selData);
 			App.get('mainform chart#chartEffectifPhysique').getStore().getProxy().extraParams = selData;
 			App.get('mainform chart#chartEffectifPhysique').getStore().load();
+			// mettre à jour le graphique 2
+			console.log(selData);
+			App.get('mainform chart#chartETP').getStore().getProxy().extraParams = selData;
+			App.get('mainform chart#chartETP').getStore().load();
         },
 
 		 
