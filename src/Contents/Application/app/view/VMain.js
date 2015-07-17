@@ -271,6 +271,7 @@ App.view.define('VMain', {
                                 height: "100%",
                                 border: true,
                                 xtype: "chart",
+								itemId: "chartEffectifPhysique",
                                 style: 'background:#fff',
                                 store: App.store.create("App.EffectifPhysique.get_effectifPhysiquePresent"),
                                 axes: [{
@@ -278,7 +279,7 @@ App.view.define('VMain', {
                                     position: 'left',
                                     fields: ['lib_categorie_ep'],
                                     label: {
-                                        renderer: Ext.util.Format.numberRenderer('0,0')
+                                        renderer: Ext.util.Format.numberRenderer('0')
                                     },
                                     title: "Nombre d'agents",
                                     grid: true,
